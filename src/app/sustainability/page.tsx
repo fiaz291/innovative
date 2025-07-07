@@ -82,9 +82,9 @@ export default function CareerPage() {
             <div className='text-xl md:text-6xl whitespace-pre-line text-center font-black'>{`Taking the Message to Classrooms`}</div>
             <p className='text-base md:text-3xl my-10 px-5 md:px-25 text-center'>Because learning happens best where curiosity lives, Jumbo Junior goes beyond the screen and into <strong>schools across Pakistan.</strong> Through interactive sessions and on-ground activities, we’re helping students understand how small actions today lead to a greener, cleaner tomorrow.</p>
             <div className='flex flex-col md:flex-row gap-5'>
-                <Image src={classroom1} alt='classroom-image'/>
-                <Image src={classroom2} alt='classroom-image'/>
-                <Image src={classroom3} alt='classroom-image'/>
+                <Image src={classroom1} alt='classroom-image' className='md:w-[33%]'/>
+                <Image src={classroom2} alt='classroom-image' className='md:w-[33%]'/>
+                <Image src={classroom3} alt='classroom-image' className='md:w-[33%]'/>
             </div>
         </div>
 
