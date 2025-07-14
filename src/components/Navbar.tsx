@@ -4,9 +4,9 @@ import premiumLogo from '../assets/innovative-premium-logo.svg';
 import logo from '../assets/innovative-logo.svg';
 import rectangle from '../assets/rectangle-bg.svg'
 
-export default function Navbar({isPremium = true}: {isPremium?: boolean}) {
+export default function Navbar({isPremium = true, isTransparentBg = false}: {isPremium?: boolean, isTransparentBg?: boolean}) {
   return (
-    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${isPremium ? 'text-black' : 'text-white'}`}>
+    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${isPremium || isTransparentBg ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'}`}>
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-10">
           <Image
@@ -59,13 +59,13 @@ export default function Navbar({isPremium = true}: {isPremium?: boolean}) {
                 Back
             </div> :
             <div className="relative ">
-                <div className="flex items-center gap-1 cursor-pointer relative z-1">
+                <div className={`flex items-center gap-1 cursor-pointer relative z-1 ${isTransparentBg && 'text-white'}`}>
                     Premium
                 </div>
                 <Image
                   src={rectangle}
                   alt="Logo"
-                  className="absolute bottom-[0px] left-[-6px] max-w-[70px]"
+                  className="absolute bottom-[0px] left-[-6px] max-w-[80px]"
                 />
             </div>
             }

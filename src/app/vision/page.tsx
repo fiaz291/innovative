@@ -1,4 +1,4 @@
-import heroImg from '../../assets/lp-hero.webp';
+import heroImg from '../../assets/vision.webp';
 import Navbar from "@/components/Navbar";
 import LearnMore from '@/components/LearnMore';
 
