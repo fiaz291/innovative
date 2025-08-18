@@ -8,7 +8,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
 });
