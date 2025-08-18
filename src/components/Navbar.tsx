@@ -21,11 +21,23 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
           <ul className={`hidden md:flex items-center gap-8 text-sm font-medium`}>
             {isPremium ? 
                 <>
-                    <li className="flex items-center gap-1 cursor-pointer">
+                    <li
+                     onClick={() => router.push('/premium-lp')}
+                     className="flex items-center gap-1 cursor-pointer">
                       Home <ChevronDown className="w-4 h-4" />
                     </li>
-                    <li className="flex items-center gap-1 cursor-pointer">
-                      Our Products <ChevronDown className="w-4 h-4" />
+                    <li className="relative group cursor-pointer">
+                      <div className="flex items-center gap-1">
+                        Our Products <ChevronDown className="w-4 h-4" />
+                      </div>
+                      <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] text-black z-50">
+                        <li
+                          onClick={() => router.push('/digestive-premium')}
+                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          Digestive Premium
+                        </li>
+                      </ul>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
                       Creations <ChevronDown className="w-4 h-4" />
