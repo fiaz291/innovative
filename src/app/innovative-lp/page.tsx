@@ -22,7 +22,7 @@ export default function LandingPage() {
           className="text-white w-full bg-no-repeat bg-center md:bg-cover pb-50 md:pb-200">
               <Navbar isPremium={false} />
               <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30">
-                  <div className="text-2xl md:text-8xl mt-50 md:mt-100">One Bite is never enough.</div>
+                  <div className="text-2xl md:text-8xl text-center mt-50 md:mt-100">One Bite is never enough.</div>
               </div>
         </div>
 
