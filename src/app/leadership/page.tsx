@@ -9,7 +9,7 @@ export default function CareerPage() {
             <div className="w-full bg-no-repeat bg-center md:bg-cover">
                   <Navbar isPremium={false} isTransparentBg />
                   <div className="flex flex-col gap-4 items-center text-center font-black mx-5 md:mx-30">
-                      <div className="text-2xl md:text-8xl mt-25 md:mt-50 whitespace-pre-line">{`Leadership that\ninspires innovation.`}</div>
+                      <div className="text-2xl md:text-6xl mt-25 md:mt-50 whitespace-pre-line">{`Leadership that\ninspires innovation.`}</div>
                       <div className="text-lg md:text-4xl my-10 md:my-15"> Our Leadership</div>
                   </div>
 

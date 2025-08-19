@@ -19,7 +19,7 @@ export default function CareerPage() {
           className="text-white w-full bg-no-repeat bg-center md:bg-cover pb-50 md:pb-200">
               <Navbar isPremium={false} />
               <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30">
-                  <div className="text-2xl md:text-8xl mt-50 md:mt-100 whitespace-pre-line text-center">{`Stay In. Stand Out.\nStay Ahead`}</div>
+                  <div className="text-2xl md:text-6xl mt-50 md:mt-100 whitespace-pre-line text-center">{`Stay In. Stand Out.\nStay Ahead`}</div>
               </div>
         </div>
 
@@ -48,7 +48,7 @@ export default function CareerPage() {
 
         <div className='flex flex-col md:flex-row gap-2 md:gap-8 md:px-30 text-white'>
             <div className='bg-[#94673d] px-10 py-15 flex flex-col'>
-                <div className='font-black flex items-center gap-10 text-2xl md:text-8xl mb-12'>
+                <div className='font-black flex items-center gap-10 text-2xl md:text-6xl mb-12'>
                     Your Journey Begins Here
                 </div>
                 <div className='font-semibold text-xl md:text-3xl'>
@@ -61,7 +61,7 @@ export default function CareerPage() {
                 </div>
             </div>
             <div className='bg-[#8e2e19] px-10 py-15 flex flex-col'>
-                <div className='font-black flex items-center gap-10 text-2xl md:text-8xl mb-12'>
+                <div className='font-black flex items-center gap-10 text-2xl md:text-6xl mb-12'>
                     Internships & Programs
                 </div>
                 <div className='font-semibold text-xl md:text-3xl'>

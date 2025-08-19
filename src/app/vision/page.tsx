@@ -9,15 +9,15 @@ export default function LandingPage() {
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="text-white w-full bg-no-repeat bg-center md:bg-cover pb-50 md:pb-200">
+          className="text-white w-full bg-no-repeat bg-center md:bg-cover pb-25 md:pb-100">
               <Navbar isPremium={false} />
               <div className="flex flex-col gap-4 items-center text-center font-black mx-5 md:mx-30">
-                  <div className="text-2xl md:text-8xl mt-50 md:mt-100 whitespace-pre-line">{`Where Every Bite\nBrings a Smile`}</div>
+                  <div className="text-2xl md:text-4xl mt-25 md:mt-50 whitespace-pre-line">{`Where Every Bite\nBrings a Smile`}</div>
               </div>
         </div>
 
         <div className='flex flex-col my-15 md:m-30'>
-            <div className='text-xl md:text-6xl whitespace-pre-line text-center font-black'>Our Vision</div>
+            <div className='text-xl md:text-4xl whitespace-pre-line text-center font-black'>Our Vision</div>
             <p className='text-base md:text-3xl my-2 md:my-10 px-5 md:px-25 text-center'>At <strong>Innovative Biscuits,</strong> we believe that <strong>revery biscuit is a moment of joy</strong> - a reason to smile, share, and savour. With every bite, we carry a promise of excellence, crafted with care and baked with purpose.</p>
             <p className='text-base md:text-3xl my-2 md:my-10 px-5 md:px-25 text-center'>We take this joy seriously — and that means <strong>responsibility at every step:</strong></p>
         </div>
@@ -54,15 +54,15 @@ export default function LandingPage() {
         </div>
 
         <div className='flex flex-col my-15 md:m-30'>
-            <div className='text-xl md:text-6xl whitespace-pre-line text-center font-black'>Our Mission</div>
+            <div className='text-xl md:text-4xl whitespace-pre-line text-center font-black'>Our Mission</div>
             <p className='text-base md:text-3xl my-2 md:my-10 px-5 md:px-25 text-center'>At <strong>Innovative Biscuits,</strong> we are more than biscuit manufacturers  - we are tastemakers, trailblazers, and change-makers. Rooted in a deep love for food and a passion for national progress, we believe in creating not just great products, but a greater purpose. Innovation is our compass - guiding us to reimagine the ordinary through bold, responsible, and visionary thinking.</p>
         </div>
 
         <div className='flex mt-15 mb-25 text-white'>
             <div className='w-full md:w-[40%] bg-[#123a5e] p-25'>
-              <p className='flex items-center text-xl md:text-6xl font-black py-5 md:pt-5 md:pb-25 border-b'>{`Agile Thinking`}</p>
-              <p className='flex items-center text-xl md:text-6xl font-black py-5 md:pt-5 md:pb-25 border-b'>{`Resilient Foundations`}</p>
-              <p className='flex items-center text-xl md:text-6xl font-black py-5 md:pt-5 md:pb-25'>{`Elevated Experiences`}</p>
+              <p className='flex items-center text-xl md:text-4xl font-black py-5 md:pt-5 md:pb-25 border-b'>{`Agile Thinking`}</p>
+              <p className='flex items-center text-xl md:text-4xl font-black py-5 md:pt-5 md:pb-25 border-b'>{`Resilient Foundations`}</p>
+              <p className='flex items-center text-xl md:text-4xl font-black py-5 md:pt-5 md:pb-25'>{`Elevated Experiences`}</p>
             </div>
             <div className='hidden md:block md:w-[60%] bg-[#5899af] p-25'>
                 <p className='text-lg md:text-3xl pt-5 pb-13 border-b'>

@@ -22,7 +22,7 @@ export default function LandingPage() {
           className="text-white w-full bg-no-repeat bg-center md:bg-cover pb-25 md:pb-100">
               <Navbar isPremium={false} />
               <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30">
-                  <div className="text-2xl md:text-8xl text-center mt-25 md:mt-50">One Bite is never enough.</div>
+                  <div className="text-2xl md:text-6xl text-center mt-25 md:mt-50">One Bite is never enough.</div>
               </div>
         </div>
 
@@ -58,7 +58,7 @@ export default function LandingPage() {
         <div className='my-15'>
             <div className="pl-15 text-xl md:text-4xl mb-15 font-black">Stay Connected</div>
             <div className='flex py-15 bg-[#123a5e] items-center text-white'>
-                <div className='hidden md:block px-15 w-[30%] font-black text-2xl md:text-6xl'>{`Discover\n what's new`}</div>
+                <div className='hidden md:block px-15 w-[30%] font-black text-2xl md:text-4xl'>{`Discover\n what's new`}</div>
                 <UpcomingCarousel />
             </div>
         </div>

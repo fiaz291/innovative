@@ -44,8 +44,24 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                     </li>
                 </> : 
                 <>
-                    <li className="flex items-center gap-1 cursor-pointer">
-                      How We Are <ChevronDown className="w-4 h-4" />
+                    <li className="relative group cursor-pointer">
+                      <div className="flex items-center gap-1">
+                        How We Are <ChevronDown className="w-4 h-4" />
+                      </div>
+                      <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] text-black z-50">
+                        <li
+                          onClick={() => router.push('/leadership')}
+                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          Leadership
+                        </li>
+                        <li
+                          onClick={() => router.push('/vision')}
+                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          Vision
+                        </li>
+                      </ul>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
                       Our Products <ChevronDown className="w-4 h-4" />
@@ -61,18 +77,6 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                         Our Impact <ChevronDown className="w-4 h-4" />
                       </div>
                       <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] text-black z-50">
-                        <li
-                          onClick={() => router.push('/leadership')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Leadership
-                        </li>
-                        <li
-                          onClick={() => router.push('/vision')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Vision
-                        </li>
                         <li
                           onClick={() => router.push('/sustainability')}
                           className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"

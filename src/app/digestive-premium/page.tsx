@@ -26,7 +26,7 @@ export default function DigestivePremiumPage() {
           className="w-full bg-[#f8d3ca] pb-50 md:pb-100">
               <Navbar />
               <div className="flex flex-col gap-4 items-center mx-5 md:mx-30">
-                  <div className="text-2xl md:text-8xl font-black mt-12 md:mt-25 whitespace-pre-line text-center">{`Not Just Bicuits. An Experience.`}</div>
+                  <div className="text-2xl md:text-6xl font-black mt-12 md:mt-25 whitespace-pre-line text-center">{`Not Just Bicuits. An Experience.`}</div>
                   <div className="text-base md:text-3xl mt-5 text-center px-10 md:px-30">
                     Discover the premium side of snacking with Innovative Biscuits. Made from carefully selected ingredients, our premium range combines wholesome goodness with refined taste—perfect for those who crave quality in every bite.
                   </div>
@@ -36,7 +36,7 @@ export default function DigestivePremiumPage() {
                   <Image src={original} alt='original-image' className="absolute w-[20%] md:w-[15%] top-5 left-19 md:top-5 md:left-113"/>
                   <Image src={biscuit} alt='original-image' className="absolute w-[20%] top-15 md:top-40 left-0 right-0 mx-auto"/>
                   <div className="text-5xl md:text-[14rem] text-[#740101] font-black mt-12 md:mt-25 text-center">Digestive</div>
-                  <div className="text-6xl md:text-[18rem] text-[#740101] font-black text-center">{`Original`}</div>
+                  <div className="text-4xl md:text-[18rem] text-[#740101] font-black text-center">{`Original`}</div>
                   <div className="flex mt-10">
                     <div className="md:pl-28">
                         <div className="text-base md:text-5xl text-center md:text-left">{`Innovative Digestive Original is crafted with high-fiber whole wheat and naturally sourced brown sugar, offering a perfect balance of health and flavor. With no artificial colors or preservatives, it's a smart, satisfying snack for those who value both wellness and great taste.`}</div>
