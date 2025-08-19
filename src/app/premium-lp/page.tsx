@@ -9,8 +9,7 @@ export default function LandingPage() {
     return (
        <div
         className={`
-          text-black w-full md:h-[3511px] bg-no-repeat bg-cover bg-[#f5c899]
-          md:bg-[url('/assets/bg-image1.webp')]
+          text-black w-full bg-no-repeat bg-cover bg-[#f5c899]
         `}
       >
 
@@ -27,7 +26,7 @@ export default function LandingPage() {
                 <InfoContainer image={creationsImg} title='Creations' description='Crafted from the Inside Out'/>
             </div>
 
-            <Image src={girlImg} alt='bg-lp' className='md:hidden block'/>
+            <Image src={girlImg} alt='bg-lp'/>
       </div>
     );
   }
