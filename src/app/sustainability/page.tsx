@@ -19,10 +19,10 @@ export default function CareerPage() {
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="text-white w-full bg-no-repeat bg-center md:bg-cover pb-50 md:pb-200">
+          className="text-white w-full bg-no-repeat bg-center md:bg-cover pb-25 md:pb-100">
               <Navbar isPremium={false} />
               <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30">
-                  <div className="text-2xl md:text-6xl mt-50 md:mt-100 whitespace-pre-line text-center">{`Good for You.\nBetter for the Planet.`}</div>
+                  <div className="text-2xl md:text-6xl mt-25 md:mt-50 whitespace-pre-line text-center">{`Good for You.\nBetter for the Planet.`}</div>
               </div>
         </div>
 
