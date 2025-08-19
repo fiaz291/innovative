@@ -1,16 +1,19 @@
-import bgImage from '../../assets/bg-image1.webp';
+import girlImg from '../../assets/Girl.webp'
 import Navbar from "@/components/Navbar";
 import ourProductsImg from '../../assets/our-products.png';
 import creationsImg from '../../assets/creations.png';
 import InfoContainer from '@/components/InfoContainer';
+import Image from 'next/image';
 
 export default function LandingPage() {
     return (
-      <div
-        style={{
-          backgroundImage: `url(${bgImage.src})`,
-        }}
-        className="text-black w-full h-[3511px] bg-no-repeat bg-cover ">
+       <div
+        className={`
+          text-black w-full md:h-[3511px] bg-no-repeat bg-cover bg-[#f5c899]
+          md:bg-[url('/assets/bg-image1.webp')]
+        `}
+      >
+
             <Navbar />
             <div className="flex flex-col gap-4 items-center font-black my-15 mx-5 md:mx-30">
                 <div className="text-2xl md:text-5xl">Innovative Premium</div>
@@ -24,7 +27,7 @@ export default function LandingPage() {
                 <InfoContainer image={creationsImg} title='Creations' description='Crafted from the Inside Out'/>
             </div>
 
-
+            <Image src={girlImg} alt='bg-lp' className='md:hidden block'/>
       </div>
     );
   }
