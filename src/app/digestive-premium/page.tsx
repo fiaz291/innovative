@@ -2,15 +2,13 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import digestiveVertical from '../../assets/digestive-vertical.webp';
-import digestiveSugarFreeVertical from '../../assets/digestive-suger-free-vertical.webp';
-import digestiveSmall from '../../assets/digestive-small-pack.webp';
-import digestiveSugarFreeSmall from '../../assets/digestive-sugar-free-small-pack.png';
 import biscuit from '../../assets/biscuit.webp';
 import digestiveText from '../../assets/digestive-original.png';
-import innovativeBiscuitLogo from '../../assets/innovative-biscuit-logo.png';
+import sugarFreeText from '../../assets/sugar-free-text.png';
 import wheat from '../../assets/wheat.webp';
 import singleWheat from '../../assets/single-wheat.webp';
+import digestiveBoxes from '../../assets/boxes.png'
+import sugarFreeBoxes from '../../assets/sugar-free-boxes.png'
 import {
   Search,
   Mic,
@@ -25,15 +23,13 @@ export default function DigestivePremiumPage() {
     return (
     <div className="overflow-hidden">
         <div
-          className="w-full bg-[#e7ad72] pb-50 md:pb-100">
+          className="w-full bg-[#e7ad72] pb-10">
               <Navbar />
               <div className="relative flex flex-col px-10 md:px-30 mt-12 md:mt-25">
-                  <Image src={innovativeBiscuitLogo} alt='innovative-logo' className="w-[10%] mx-auto mb-5"/>
-                  <Image src={digestiveText} alt='digestive-copy' className="w-[60%] mx-auto"/>
-                  <Image src={biscuit} alt='biscuit' className="absolute w-[35%] top-0 right-[-50px] md:right-[-200px]"/>
-                  <Image src={wheat} alt='wheat-image' className="absolute w-[50%] top-[110px] md:top-0 md:bottom-0 md:my-auto left-[-70px] md:left-[-330px]"/>
+                  <Image src={digestiveText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={biscuit} alt='biscuit' className="absolute w-[30%] top-0 right-[-50px] md:right-[-200px]"/>
+                  <Image src={wheat} alt='wheat-image' className="absolute w-[50%] top-[110px] md:top-[-50px] md:bottom-0 md:my-auto left-[-70px] md:left-[-400px]"/>
                   <Image src={singleWheat} alt='wheat-image' className="absolute w-[40%] top-[160px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"/>
-                  <div className="text-7xl md:text-[18rem] text-[#740101] font-black text-center">{`Original`}</div>
                   <div className="flex mt-20 md:mt-40">
                     <div className="md:pl-28">
                         <div className="text-lg md:text-5xl text-center md:text-left font-medium">{`Simple Goodness, Perfectly Baked`}</div>
@@ -66,20 +62,17 @@ export default function DigestivePremiumPage() {
                         </div>
 
                     </div>
-                    <Image src={digestiveVertical} alt='classroom-image' className="hidden md:block w-[35%]"/>
-                    <Image src={digestiveSmall} alt='classroom-image' className="absolute w-[40%] md:w-[20%] bottom-[-8rem] md:bottom-[-7rem] right-[2rem] md:right-[24rem]"/>
+                    <Image src={digestiveBoxes} alt='boxes-image' className="hidden md:block w-[35%]"/>
                   </div>
               </div>
         </div>
-        <div className="w-full bg-[#c8eff8] pb-50 md:pb-100">
-              <div className="relative flex flex-col px-10 md:px-30">
-                <Image src={innovativeBiscuitLogo} alt='innovative-logo' className="w-[10%] mx-auto mb-5 mt-15"/>
-                <Image src={digestiveText} alt='digestive-copy' className="w-[60%] mx-auto"/>
+        <div className="w-full bg-[#88d9eb] pb-10">
+              <div className="relative flex flex-col px-10 md:px-30 pt-12 md:pt-25">
+                <Image src={sugarFreeText} alt='digestive-copy' className="w-[75%] mx-auto"/>
                 <Image src={biscuit} alt='original-image' className="absolute w-[20%] top-[1rem] md:top-[2rem] right-[-1.5rem] md:right-[-7rem]"/>
                 <Image src={biscuit} alt='original-image' className="absolute w-[20%] top-[7rem] md:top-[40rem] left-[-2.5rem] md:left-[-13rem]"/>
                 <Image src={wheat} alt='wheat-image' className="absolute w-[30%] top-[1rem] md:top-[2rem] left-[-3.5rem] md:left-[-12rem]"/>
                 <Image src={singleWheat} alt='wheat-image' className="absolute w-[40%] top-[180px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"/>
-                  <div className="text-5xl md:text-[14rem] text-[#162850] font-black text-center">{`Sugar Free`}</div>
                   <div className="flex mt-10">
                     <div className="md:pl-28">
                         <div className="text-lg md:text-5xl text-center md:text-left font-medium">{`Healthy Snacking, Elevated`}</div>
@@ -112,8 +105,7 @@ export default function DigestivePremiumPage() {
                         </div>
 
                     </div>
-                    <Image src={digestiveSugarFreeVertical} alt='classroom-image' className="hidden md:block w-[35%]"/>
-                    <Image src={digestiveSugarFreeSmall} alt='classroom-image' className="absolute w-[40%] md:w-[20%] bottom-[-8rem] md:bottom-[-7rem] right-[2rem] md:right-[24rem]"/>
+                    <Image src={sugarFreeBoxes} alt='boxes-image' className="hidden md:block w-[35%]"/>
                   </div>
               </div>
               <div className="mt-30 mx-5 md:mx-70 p-4">
