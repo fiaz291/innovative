@@ -6,9 +6,11 @@ import digestiveVertical from '../../assets/digestive-vertical.webp';
 import digestiveSugarFreeVertical from '../../assets/digestive-suger-free-vertical.webp';
 import digestiveSmall from '../../assets/digestive-small-pack.webp';
 import digestiveSugarFreeSmall from '../../assets/digestive-sugar-free-small-pack.png';
-import original from '../../assets/original.png';
-import sugarFree from '../../assets/sugar-free.png';
 import biscuit from '../../assets/biscuit.webp';
+import digestiveText from '../../assets/digestive-original.png';
+import innovativeBiscuitLogo from '../../assets/innovative-biscuit-logo.png';
+import wheat from '../../assets/wheat.webp';
+import singleWheat from '../../assets/single-wheat.webp';
 import {
   Search,
   Mic,
@@ -21,30 +23,26 @@ import {
 
 export default function DigestivePremiumPage() {
     return (
-    <div>
+    <div className="overflow-hidden">
         <div
-          className="w-full bg-[#f8d3ca] pb-50 md:pb-100">
+          className="w-full bg-[#e7ad72] pb-50 md:pb-100">
               <Navbar />
-              <div className="flex flex-col gap-4 items-center mx-5 md:mx-30">
-                  <div className="text-2xl md:text-6xl font-black mt-12 md:mt-25 whitespace-pre-line text-center">{`Not Just Bicuits. An Experience.`}</div>
-                  <div className="text-base md:text-3xl mt-5 text-center px-10 md:px-30">
-                    Discover the premium side of snacking with Innovative Biscuits. Made from carefully selected ingredients, our premium range combines wholesome goodness with refined taste—perfect for those who crave quality in every bite.
-                  </div>
-              </div>
-
-              <div className="relative flex flex-col px-10 md:px-30">
-                  <Image src={original} alt='original-image' className="absolute w-[20%] md:w-[15%] top-5 left-19 md:top-5 md:left-113"/>
-                  <Image src={biscuit} alt='original-image' className="absolute w-[20%] top-15 md:top-40 left-0 right-0 mx-auto"/>
-                  <div className="text-5xl md:text-[14rem] text-[#740101] font-black mt-12 md:mt-25 text-center">Digestive</div>
-                  <div className="text-4xl md:text-[18rem] text-[#740101] font-black text-center">{`Original`}</div>
-                  <div className="flex mt-10">
+              <div className="relative flex flex-col px-10 md:px-30 mt-12 md:mt-25">
+                  <Image src={innovativeBiscuitLogo} alt='innovative-logo' className="w-[10%] mx-auto mb-5"/>
+                  <Image src={digestiveText} alt='digestive-copy' className="w-[60%] mx-auto"/>
+                  <Image src={biscuit} alt='biscuit' className="absolute w-[35%] top-0 right-[-50px] md:right-[-200px]"/>
+                  <Image src={wheat} alt='wheat-image' className="absolute w-[50%] top-[110px] md:top-0 md:bottom-0 md:my-auto left-[-70px] md:left-[-330px]"/>
+                  <Image src={singleWheat} alt='wheat-image' className="absolute w-[40%] top-[160px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"/>
+                  <div className="text-7xl md:text-[18rem] text-[#740101] font-black text-center">{`Original`}</div>
+                  <div className="flex mt-20 md:mt-40">
                     <div className="md:pl-28">
-                        <div className="text-base md:text-5xl text-center md:text-left">{`Innovative Digestive Original is crafted with high-fiber whole wheat and naturally sourced brown sugar, offering a perfect balance of health and flavor. With no artificial colors or preservatives, it's a smart, satisfying snack for those who value both wellness and great taste.`}</div>
+                        <div className="text-lg md:text-5xl text-center md:text-left font-medium">{`Simple Goodness, Perfectly Baked`}</div>
+                        <div className="text-base md:text-3xl text-center md:text-left">{`A Wholesome Digestive Biscuit Crafted With Whole Wheat, Natural Sweetness, and Satisfying Subtle Crunch.`}</div>
                         <div className="mt-5">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-4xl border-b-1">
-                                <td className="px-2 md:px-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
@@ -52,28 +50,16 @@ export default function DigestivePremiumPage() {
                             </thead>
                             <tbody className="text-base md:text-4xl">
                               <tr className="border-b-1">
-                                <td className="px-4 py-3 text-left font-semibold border-r-1">Munch Pack</td>
-                                <td className="px-4 py-3 border-r-1">36.0</td>
-                                <td className="px-4 py-3 border-r-1">6</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
+                                <td className="px-4 py-3 border-r-1">270</td>
+                                <td className="px-4 py-3 border-r-1">-</td>
                                 <td className="px-4 py-3">24</td>
                               </tr>
                               <tr className="border-b-1">
-                                <td className="px-4 py-3 text-left font-semibold border-r-1">Mini Half Roll</td>
-                                <td className="px-4 py-3 border-r-1">54.0</td>
-                                <td className="px-4 py-3 border-r-1">6</td>
-                                <td className="px-4 py-3">24</td>
-                              </tr>
-                              <tr className="border-b-1">
-                                <td className="px-4 py-3 text-left font-semibold border-r-1">Half Roll</td>
-                                <td className="px-4 py-3 border-r-1">72.0</td>
-                                <td className="px-4 py-3 border-r-1">6</td>
-                                <td className="px-4 py-3">24</td>
-                              </tr>
-                              <tr>
-                                <td className="px-4 py-3 text-left font-semibold border-r-1">Family Pack</td>
-                                <td className="px-4 py-3 border-r-1">84.0</td>
-                                <td className="px-4 py-3 border-r-1">1</td>
-                                <td className="px-4 py-3">96</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
+                                <td className="px-4 py-3 border-r-1">30</td>
+                                <td className="px-4 py-3 border-r-1">10+1</td>
+                                <td className="px-4 py-3">18</td>
                               </tr>
                             </tbody>
                           </table>
@@ -87,19 +73,22 @@ export default function DigestivePremiumPage() {
         </div>
         <div className="w-full bg-[#c8eff8] pb-50 md:pb-100">
               <div className="relative flex flex-col px-10 md:px-30">
+                <Image src={innovativeBiscuitLogo} alt='innovative-logo' className="w-[10%] mx-auto mb-5 mt-15"/>
+                <Image src={digestiveText} alt='digestive-copy' className="w-[60%] mx-auto"/>
                 <Image src={biscuit} alt='original-image' className="absolute w-[20%] top-[1rem] md:top-[2rem] right-[-1.5rem] md:right-[-7rem]"/>
-                <Image src={biscuit} alt='original-image' className="absolute w-[20%] top-[7rem] md:top-[25rem] left-[-2.5rem] md:left-[-13rem]"/>
-                <Image src={sugarFree} alt='original-image' className="absolute w-[20%] md:w-[15%] top-5 left-19 md:top-5 md:left-113"/>
-                  <div className="text-5xl md:text-[14rem] text-[#162850] font-black mt-12 md:mt-25 text-center">{`Digestive`}</div>
+                <Image src={biscuit} alt='original-image' className="absolute w-[20%] top-[7rem] md:top-[40rem] left-[-2.5rem] md:left-[-13rem]"/>
+                <Image src={wheat} alt='wheat-image' className="absolute w-[30%] top-[1rem] md:top-[2rem] left-[-3.5rem] md:left-[-12rem]"/>
+                <Image src={singleWheat} alt='wheat-image' className="absolute w-[40%] top-[180px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"/>
                   <div className="text-5xl md:text-[14rem] text-[#162850] font-black text-center">{`Sugar Free`}</div>
                   <div className="flex mt-10">
                     <div className="md:pl-28">
-                        <div className="text-base md:text-5xl text-center md:text-left">{`Innovative Digestive Original is crafted with high-fiber whole wheat and naturally sourced brown sugar, offering a perfect balance of health and flavor. With no artificial colors or preservatives, it's a smart, satisfying snack for those who value both wellness and great taste.`}</div>
+                        <div className="text-lg md:text-5xl text-center md:text-left font-medium">{`Healthy Snacking, Elevated`}</div>
+                        <div className="text-base md:text-3xl text-center md:text-left">{`Whole Wheat Digestives Without Sugar, Designed for Taste and Wellness in Every Bite.`}</div>
                         <div className="mt-5">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-4xl border-b-1">
-                                <td className="px-2 md:px-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
@@ -107,28 +96,16 @@ export default function DigestivePremiumPage() {
                             </thead>
                             <tbody className="text-base md:text-4xl">
                               <tr className="border-b-1">
-                                <td className="px-4 py-3 text-left font-semibold border-r-1">Munch Pack</td>
-                                <td className="px-4 py-3 border-r-1">36.0</td>
-                                <td className="px-4 py-3 border-r-1">6</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
+                                <td className="px-4 py-3 border-r-1">270</td>
+                                <td className="px-4 py-3 border-r-1">-</td>
                                 <td className="px-4 py-3">24</td>
                               </tr>
                               <tr className="border-b-1">
-                                <td className="px-4 py-3 text-left font-semibold border-r-1">Mini Half Roll</td>
-                                <td className="px-4 py-3 border-r-1">54.0</td>
-                                <td className="px-4 py-3 border-r-1">6</td>
-                                <td className="px-4 py-3">24</td>
-                              </tr>
-                              <tr className="border-b-1">
-                                <td className="px-4 py-3 text-left font-semibold border-r-1">Half Roll</td>
-                                <td className="px-4 py-3 border-r-1">72.0</td>
-                                <td className="px-4 py-3 border-r-1">6</td>
-                                <td className="px-4 py-3">24</td>
-                              </tr>
-                              <tr>
-                                <td className="px-4 py-3 text-left font-semibold border-r-1">Family Pack</td>
-                                <td className="px-4 py-3 border-r-1">84.0</td>
-                                <td className="px-4 py-3 border-r-1">1</td>
-                                <td className="px-4 py-3">96</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
+                                <td className="px-4 py-3 border-r-1">30</td>
+                                <td className="px-4 py-3 border-r-1">10+1</td>
+                                <td className="px-4 py-3">18</td>
                               </tr>
                             </tbody>
                           </table>

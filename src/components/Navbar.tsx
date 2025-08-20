@@ -10,12 +10,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
   const router = useRouter();
   return (
     <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${isPremium || isTransparentBg ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'}`}>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between pt-[15px]">
         <div className="flex items-center gap-10">
           <Image
             src={isPremium ? premiumLogo : logo}
             alt="Logo"
-            className="h-20 w-auto object-contain"
+            className="h-20 w-auto object-contain mt-[-25px]"
           />
 
           <ul className={`hidden md:flex items-center gap-8 text-sm font-medium`}>
