@@ -21,24 +21,24 @@ export default function GoldenLotusPage() {
         <div
           className="relative w-full bg-[#f4978f] pb-10">
               <Navbar />
-              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute rotate-[55deg] w-[25%] left-[-3rem] md:left-[-16rem] top-0 bottom-[40rem] md:bottom-[60rem] my-auto"/>
-              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-4rem] md:right-[-18rem] top-0 bottom-0 my-auto"/>
+              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute rotate-[55deg] w-[25%] left-[-3rem] md:left-[-10rem] top-0 bottom-[40rem] md:bottom-[60rem] my-auto"/>
+              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-4rem] md:right-[-10rem] top-0 bottom-0 my-auto"/>
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={goldenLotusText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={goldenLotusText} alt='digestive-copy' className="w-[85%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
-                        <div className="text-lg md:text-5xl text-center md:text-left font-semibold">Steeped in tradition, perfected for today <span className="text-base md:text-3xl font-medium">-  premium Lotus biscuits that honor classic caramelized taste</span></div>
+                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Steeped in tradition, perfected for today <span className="text-base md:text-2xl font-medium">-  premium Lotus biscuits that honor classic caramelized taste</span></div>
                         <div className="mt-5">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
-                              <tr className="text-base md:text-4xl border-b-1">
+                              <tr className="text-base md:text-3xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
                               </tr>
                             </thead>
-                            <tbody className="text-base md:text-4xl">
+                            <tbody className="text-base md:text-3xl">
                               <tr className="border-b-1">
                                 <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
                                 <td className="px-4 py-3 border-r-1">96</td>
