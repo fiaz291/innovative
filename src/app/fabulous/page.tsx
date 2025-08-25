@@ -2,9 +2,8 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import goldenLotusText from '../../assets/golden-lotus-copy.webp';
-import goldenLotus from '../../assets/golden-lotus.webp'
-import goldenLotusBiscuit from '../../assets/golden-lotus-biscuit.webp'
+import fabulousText from '../../assets/fabulous-copy.webp';
+import fabulous from '../../assets/fabulous.webp'
 import {
   Search,
   Mic,
@@ -15,19 +14,17 @@ import {
   MessageSquare,
 } from "lucide-react";
 
-export default function GoldenLotusPage() {
+export default function FabulousPage() {
     return (
     <div className="overflow-hidden">
         <div
-          className="relative w-full bg-[#f4978f] pb-10">
+          className="relative w-full bg-[#f8b145] pb-10">
               <Navbar />
-              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute rotate-[55deg] w-[25%] left-[-3rem] md:left-[-16rem] top-0 bottom-[40rem] md:bottom-[60rem] my-auto"/>
-              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-4rem] md:right-[-18rem] top-0 bottom-0 my-auto"/>
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={goldenLotusText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={fabulousText} alt='digestive-copy' className="w-[75%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
-                        <div className="text-lg md:text-5xl text-center md:text-left font-semibold">Steeped in tradition, perfected for today <span className="text-base md:text-3xl font-medium">-  premium Lotus biscuits that honor classic caramelized taste</span></div>
+                        <div className="text-lg md:text-5xl text-center md:text-left font-semibold">Golden, chewy and loaded with gooey chocolate chips <span className="text-base md:text-3xl font-medium">{`-  these cookies are pure joy in every bite. Baked to perfection with just the right balance of crunch and softness, they're a classic made truly fabulous.`}</span></div>
                         <div className="mt-5">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
@@ -51,7 +48,7 @@ export default function GoldenLotusPage() {
 
                     </div>
                   </div>
-                  <Image src={goldenLotus} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={fabulous} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
               </div>
               <div className="mx-5 md:mx-70 p-4">
                   <div className="flex items-center justify-between border-b-3 border-white pb-2 mb-4">

@@ -49,6 +49,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                         >
                           Golden Lotus
                         </li>
+                        <li
+                          onClick={() => router.push('/fabulous')}
+                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          Fabulous
+                        </li>
                       </ul>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
