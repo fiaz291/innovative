@@ -90,8 +90,10 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                     <li className="flex items-center gap-1 cursor-pointer">
                       Our Products <ChevronDown className="w-4 h-4" />
                     </li>
-                    <li className="flex items-center gap-1 cursor-pointer">
-                      Innovation Lab<ChevronDown className="w-4 h-4" />
+                    <li 
+                      onClick={() => router.push('/innovation-lab')}
+                      className="flex items-center gap-1 cursor-pointer">
+                        Innovation Lab<ChevronDown className="w-4 h-4" />
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
                       Recipes<ChevronDown className="w-4 h-4" />

@@ -1,15 +1,25 @@
+'use client';
 import { Facebook, Instagram, Twitter, Youtube, Linkedin, CircleArrowRight } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default function Footer() {
+  const router = useRouter();
   return (
     <footer className="bg-[#1A1717] text-white py-15 px-6 md:px-30 text-sm">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Links Section */}
         <div className="space-y-3">
-          {['How We Are', 'Our Products', 'Innovation Lab', 'Recipes', 'Our Impact', 'Resources'].map((item) => (
-            <div key={item} className="flex items-center gap-2">
+          {[
+            {label:'How We Are', link: '#'}, 
+            {label: 'Our Products', link: '#'}, 
+            {label: 'Innovation Lab', link: '/innovation-lab'},
+            {label: 'Recipes', link: '#'},
+            {label: 'Our Impact', link: '#'},
+            {label: 'Resources', link: '#'}
+          ].map((item, index) => (
+            <div key={index} className="flex items-center gap-2 cursor-pointer" onClick={() => item.link !== '#' && router.push(item.link)}>
               <CircleArrowRight className='w-[35px] h-[35px]' />
-              <span>{item}</span>
+              <span>{item.label}</span>
             </div>
           ))}
         </div>
