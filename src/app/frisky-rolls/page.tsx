@@ -28,18 +28,18 @@ export default function FriskyRollsPage() {
                   <Image src={friskyChocolateRollsText} alt='digestive-copy' className="w-[75%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
-                        <div className="text-lg md:text-5xl text-center md:text-left font-semibold">Rolled for the Crunch, Filled for the Crave<span className="text-base md:text-3xl font-medium">-  Chocolate That Twists Into Pure Bliss.</span></div>
+                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Rolled for the Crunch, Filled for the Crave<span className="text-base md:text-2xl font-medium">-  Chocolate That Twists Into Pure Bliss.</span></div>
                         <div className="mt-5">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
-                              <tr className="text-base md:text-4xl border-b-1">
+                              <tr className="text-base md:text-3xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
                               </tr>
                             </thead>
-                            <tbody className="text-base md:text-4xl">
+                            <tbody className="text-base md:text-3xl">
                               <tr className="border-b-1">
                                 <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
                                 <td className="px-4 py-3 border-r-1">86.4</td>
@@ -65,20 +65,20 @@ export default function FriskyRollsPage() {
           className="relative w-full bg-[#ffaa93] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
                   <Image src={friskyHazelnutRollsText} alt='digestive-copy' className="w-[75%] mx-auto"/>
-                  <div className="flex">
+                  <div className="flex float-left">
                     <div className="px-28">
-                        <div className="text-lg md:text-5xl text-center md:text-left font-semibold">A Swirl of Crisp Delight, a Heart of Hazelnut Gold</div>
+                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">A Swirl of Crisp Delight, a Heart of Hazelnut Gold</div>
                         <div className="mt-5">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
-                              <tr className="text-base md:text-4xl border-b-1">
+                              <tr className="text-base md:text-3xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
                               </tr>
                             </thead>
-                            <tbody className="text-base md:text-4xl">
+                            <tbody className="text-base md:text-3xl">
                               <tr className="border-b-1">
                                 <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
                                 <td className="px-4 py-3 border-r-1">86.4</td>
@@ -100,18 +100,18 @@ export default function FriskyRollsPage() {
                   <Image src={friskyMilkyRollsText} alt='digestive-copy' className="w-[75%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
-                        <div className="text-lg md:text-5xl text-center md:text-left font-semibold">Soft Creaminess in a Crisp Embrace <span className="text-base md:text-3xl font-medium">-  Milk Wafer Rolls Made to Soothe and Satisfy.</span></div>
+                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Soft Creaminess in a Crisp Embrace <span className="text-base md:text-2xl font-medium">-  Milk Wafer Rolls Made to Soothe and Satisfy.</span></div>
                         <div className="mt-5">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
-                              <tr className="text-base md:text-4xl border-b-1">
+                              <tr className="text-base md:text-3xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
                               </tr>
                             </thead>
-                            <tbody className="text-base md:text-4xl">
+                            <tbody className="text-base md:text-3xl">
                               <tr className="border-b-1">
                                 <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
                                 <td className="px-4 py-3 border-r-1">84.4</td>
