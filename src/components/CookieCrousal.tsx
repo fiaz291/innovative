@@ -71,7 +71,7 @@ export default function CookieCarousel() {
             <img
               src={img.src}
               alt={`cookie-${i}`}
-              className="w-[180px] md:w-[605px] h-auto md:h-[264px] rounded-lg shadow"
+              className="w-[180px] md:w-[605px] h-auto md:h-[264px] rounded-lg"
             />
           </SwiperSlide>
         ))}
