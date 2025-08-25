@@ -16,10 +16,10 @@ export default function CareerPage() {
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="text-white w-full bg-no-repeat bg-center md:bg-cover pb-25 md:pb-100">
+          className="text-white w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30">
-                  <div className="text-2xl md:text-6xl mt-25 md:mt-50 whitespace-pre-line text-center">{`Stay In. Stand Out.\nStay Ahead`}</div>
+              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-100">
+                  <div className="text-2xl md:text-6xl whitespace-pre-line text-center">{`Stay In. Stand Out.\nStay Ahead`}</div>
               </div>
         </div>
 
