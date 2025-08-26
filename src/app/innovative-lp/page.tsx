@@ -21,7 +21,7 @@ export default function LandingPage() {
           }}
           className="text-white w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-100">
+              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-75">
                   <div className="text-2xl md:text-6xl text-center">One Bite is never enough.</div>
               </div>
         </div>
@@ -37,9 +37,9 @@ export default function LandingPage() {
                     Our Products
                     <CircleArrowRight className='w-[25px] h-[25px]' />
                 </div>
-                <div className="font-black text-xl md:text-5xl mt-6">Satisfy your cravings the</div>
-                <div className="font-black text-xl md:text-5xl mt-6">smart way.</div>
-                <div className='text-xl md:text-3xl'>
+                <div className="font-black text-xl md:text-4xl mt-6">Satisfy your cravings the</div>
+                <div className="font-black text-xl md:text-4xl">smart way.</div>
+                <div className='text-base md:text-2xl'>
                     Innovative Digestive Biscuits are crafted with whole wheat and natural brown sugar, offering a wholesome, guilt-free snack that’s as delicious as it is nourishing.
                 </div>
                 <div className='flex items-center gap-10 text-xl md:text-3xl font-black mt-6'>

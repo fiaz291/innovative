@@ -21,7 +21,7 @@ export default function CareerPage() {
           }}
           className="text-white w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-100">
+              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-75">
                   <div className="text-2xl md:text-6xl whitespace-pre-line text-center">{`Good for You.\nBetter for the Planet.`}</div>
               </div>
         </div>

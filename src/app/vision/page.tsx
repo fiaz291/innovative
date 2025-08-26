@@ -11,7 +11,7 @@ export default function LandingPage() {
           }}
           className="text-white w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center text-center font-black mx-5 md:mx-30  py-25 md:py-100">
+              <div className="flex flex-col gap-4 items-center text-center font-black mx-5 md:mx-30  py-25 md:py-75">
                   <div className="text-2xl md:text-6xl whitespace-pre-line">{`Where Every Bite\nBrings a Smile`}</div>
               </div>
         </div>
