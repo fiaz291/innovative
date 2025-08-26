@@ -60,10 +60,10 @@ export default function LandingPage() {
 
         <div className="mt-15 mb-25 text-white">
           <div className="flex">
-            <div className="w-full md:w-[40%] bg-[#123a5e] p-25">
+            <div className="w-full md:w-[40%] bg-[#123a5e] p-12">
               <p className="text-xl md:text-4xl font-black">{`Agile Thinking`}</p>
             </div>
-            <div className="hidden md:block md:w-[60%] bg-[#5899af] p-25">
+            <div className="hidden md:block md:w-[60%] bg-[#5899af] p-12">
               <p className="text-lg md:text-2xl">
                 We move with purpose and precision — anticipating trends, accelerating
                 production, and staying ahead of the curve to serve our consumers with
@@ -73,13 +73,13 @@ export default function LandingPage() {
           </div>
                 
           <div className="flex">
-            <div className="w-full md:w-[40%] bg-[#123a5e] p-25">
-              <div className="border-t border-white pt-6">
+            <div className="w-full md:w-[40%] bg-[#123a5e] p-12 pt-0">
+              <div className="border-t border-white pt-12">
                 <p className="text-xl md:text-4xl font-black">{`Resilient Foundations`}</p>
               </div>
             </div>
-            <div className="hidden md:block md:w-[60%] bg-[#5899af] p-25">
-              <div className="border-t border-white pt-6">
+            <div className="hidden md:block md:w-[60%] bg-[#5899af] p-12 pt-0">
+              <div className="border-t border-white pt-12">
                 <p className="text-lg md:text-2xl">
                   Built on trust, quality, and responsibility, we strengthen every link
                   in our value chain — from our ingredients and teams to the communities
@@ -90,13 +90,13 @@ export default function LandingPage() {
           </div>
                 
           <div className="flex">
-            <div className="w-full md:w-[40%] bg-[#123a5e] p-25">
-              <div className="border-t border-white pt-6">
+            <div className="w-full md:w-[40%] bg-[#123a5e] p-12 pt-0">
+              <div className="border-t border-white pt-12">
                 <p className="text-xl md:text-4xl font-black">{`Elevated Experiences`}</p>
               </div>
             </div>
-            <div className="hidden md:block md:w-[60%] bg-[#5899af] p-25">
-              <div className="border-t border-white pt-6">
+            <div className="hidden md:block md:w-[60%] bg-[#5899af] p-12 pt-0">
+              <div className="border-t border-white pt-12">
                 <p className="text-lg md:text-2xl">
                   We strive for excellence in every detail. With world-class ingredients
                   and forward-looking processes, we deliver not just products — but joy,
