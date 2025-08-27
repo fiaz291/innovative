@@ -85,6 +85,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                         >
                           Vision
                         </li>
+                        <li
+                          onClick={() => router.push('/about-us')}
+                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          About Us
+                        </li>
                       </ul>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
@@ -121,6 +127,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                           className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
                         >
                           Careers
+                        </li>
+                        <li
+                          onClick={() => router.push('/export')}
+                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          Export
                         </li>
                       </ul>
                     </li>
