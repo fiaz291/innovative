@@ -24,7 +24,7 @@ export default function FabulousPage() {
                   <Image src={fabulousText} alt='digestive-copy' className="w-[75%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
-                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Golden, chewy and loaded with gooey chocolate chips <span className="text-base md:text-2xl font-medium">{`-  these cookies are pure joy in every bite. Baked to perfection with just the right balance of crunch and softness, they're a classic made truly fabulous.`}</span></div>
+                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Golden, chewy and loaded with gooey chocolate chips <span className="text-base md:text-2xl font-medium">{` - these cookies are pure joy in every bite. Baked to perfection with just the right balance of crunch and softness, they're a classic made truly fabulous.`}</span></div>
                         <div className="mt-5">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>

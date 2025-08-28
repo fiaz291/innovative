@@ -61,6 +61,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                         >
                           Frisky Rolls
                         </li>
+                        <li
+                          onClick={() => router.push('/frisky-wafer')}
+                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          Frisky Wafer
+                        </li>
                       </ul>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">

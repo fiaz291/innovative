@@ -27,7 +27,7 @@ export default function GoldenLotusPage() {
                   <Image src={goldenLotusText} alt='digestive-copy' className="w-[85%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
-                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Steeped in tradition, perfected for today <span className="text-base md:text-2xl font-medium">-  premium Lotus biscuits that honor classic caramelized taste</span></div>
+                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Steeped in tradition, perfected for today <span className="text-base md:text-2xl font-medium"> - premium Lotus biscuits that honor classic caramelized taste</span></div>
                         <div className="mt-5">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
