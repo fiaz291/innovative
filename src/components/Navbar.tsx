@@ -67,6 +67,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                         >
                           Frisky Wafer
                         </li>
+                        <li
+                          onClick={() => router.push('/haven')}
+                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          Haven
+                        </li>
                       </ul>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
