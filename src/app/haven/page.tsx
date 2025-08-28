@@ -50,7 +50,7 @@ export default function HavenPage() {
                                 <td className="px-4 py-3">30</td>
                               </tr>
                               <tr className="border-b-1">
-                                <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Pouch Pack</td>
                                 <td className="px-4 py-3 border-r-1">44</td>
                                 <td className="px-4 py-3 border-r-1">10</td>
                                 <td className="px-4 py-3">12</td>
@@ -91,7 +91,7 @@ export default function HavenPage() {
                                 <td className="px-4 py-3">30</td>
                               </tr>
                               <tr className="border-b-1">
-                                <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Pouch Pack</td>
                                 <td className="px-4 py-3 border-r-1">44</td>
                                 <td className="px-4 py-3 border-r-1">10</td>
                                 <td className="px-4 py-3">12</td>

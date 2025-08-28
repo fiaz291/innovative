@@ -41,7 +41,7 @@ export default function BiscoffiPage() {
                             </thead>
                             <tbody className="text-base md:text-xl">
                               <tr className="border-b-1">
-                                <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Munch Pack</td>
                                 <td className="px-4 py-3 border-r-1">35</td>
                                 <td className="px-4 py-3 border-r-1">6</td>
                                 <td className="px-4 py-3">18</td>
