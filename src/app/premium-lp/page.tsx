@@ -16,8 +16,8 @@ export default function LandingPage() {
             <Navbar />
             <div className="flex flex-col gap-4 items-center font-black my-15 mx-5 md:mx-30">
                 <div className="text-xl md:text-4xl font-bold">Innovative Premium</div>
-                <div className="text-2xl md:text-6xl">Crafted for the</div>
-                <div className="text-2xl md:text-6xl mb-8">Exceptional.</div>
+                <div className="text-2xl md:text-8xl leading-[40px] md:leading-[80px]">Crafted for the</div>
+                <div className="text-2xl md:text-8xl mb-8 leading-[40px] md:leading-[80px]">Exceptional.</div>
                 <div className="md:px-80 text-center font-medium text-base md:text-2xl">The premium range is a celebration of craftsmanship and excellence — thoughtfully created with superior ingredients and precision, offering an elevated experience in every product.</div>
             </div>
 

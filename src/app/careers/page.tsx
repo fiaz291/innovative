@@ -18,8 +18,8 @@ export default function CareerPage() {
           }}
           className="text-white w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-75">
-                  <div className="text-2xl md:text-6xl whitespace-pre-line text-center">{`Stay In. Stand Out.\nStay Ahead`}</div>
+              <div className="flex flex-col gap-4 items-center justify-center font-black h-[85vh]">
+                  <div className="text-2xl md:text-6xl whitespace-pre-line text-center mt-[-80px]">{`Stay In. Stand Out.\nStay Ahead`}</div>
               </div>
         </div>
 
@@ -33,8 +33,8 @@ export default function CareerPage() {
         </div>
 
         <div className='flex text-white mb-15'>
-            <div className='flex flex-col md:w-[60%] bg-[#5899af] p-15'>
-                <div className='font-black flex items-center gap-10 text-2xl md:text-5xl mb-12'>
+            <div className='flex flex-col md:w-[60%] bg-[#5899af] p-15 pl-25 justify-center'>
+                <div className='font-black flex items-center gap-10 text-2xl md:text-5xl mb-4'>
                     Rise with Innovation
                 </div>
                 <div className='font-semibold text-xl md:text-3xl'>
@@ -48,7 +48,7 @@ export default function CareerPage() {
 
         <div className='flex flex-col md:flex-row gap-2 md:gap-8 md:px-30 text-white'>
             <div className='bg-[#94673d] px-10 py-15 flex flex-col w-default md:w-[50%]'>
-                <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-12'>
+                <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-4'>
                     Your Journey Begins Here
                 </div>
                 <div className='font-semibold text-xl md:text-2xl'>
@@ -61,7 +61,7 @@ export default function CareerPage() {
                 </div>
             </div>
             <div className='bg-[#8e2e19] px-10 py-15 flex flex-col w-default md:w-[50%]'>
-                <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-12'>
+                <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-4'>
                     Internships & Programs
                 </div>
                 <div className='font-semibold text-xl md:text-2xl'>
@@ -80,7 +80,7 @@ export default function CareerPage() {
         <div className='flex text-white my-15'>
             <Image src={culture} alt='out-products-image' className='hidden md:block w-[40%]'/>
             <div className='flex flex-col md:w-[60%] bg-[#fd9b6c] p-15'>
-                <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-12'>
+                <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-4'>
                     Our Culture
                 </div>
                 <div className='font-semibold text-xl md:text-3xl'>

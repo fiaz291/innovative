@@ -6,22 +6,23 @@ export default function ExportPage() {
     return (
     <div>
         <div
+        
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="text-black w-full bg-no-repeat bg-center md:bg-cover">
+          className="pb-45 text-black w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-50 h-300 py-15">
+              <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-50 h-300 pt-45">
                   <div className="text-2xl md:text-6xl text-center">{`Innovative Export`}</div>
-                  <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line">{`Produly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
+                  <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line mb-[-80px]">{`Produly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
               </div>
         </div>
 
         <div className="p-10 max-w-7xl mx-auto">
-          <h1 className="text-xl md:text-4xl font-black mb-6 decoration-blue-600">
+          <h1 className="text-xl md:text-4xl font-black mb-6 decoration-blue-600 mt-20">
             For Export Queries
           </h1>
-          <form onSubmit={() => {}} className="space-y-4">
+          <form onSubmit={() => {}} className="space-y-4 pb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="mb-4 block">{`Your Name*`}</label>

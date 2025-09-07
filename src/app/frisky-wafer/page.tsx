@@ -27,11 +27,11 @@ export default function FriskyWaferPage() {
           className="relative w-full bg-[#f7c791] pb-10">
               <Navbar />
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyWaferChocolateText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={friskyWaferChocolateText} alt='digestive-copy' className="w-[100%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Crisped to the Core, Drenched in Decadence<span className="text-base md:text-2xl font-medium">- Every Layer Melts into Pure Chocolate Bliss.</span></div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -60,17 +60,17 @@ export default function FriskyWaferPage() {
 
                     </div>
                   </div>
-                  <Image src={friskyWaferChocolate} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={friskyWaferChocolate} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
         </div>
         <div
           className="relative w-full bg-[#ffce54] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyWaferOrangeText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={friskyWaferOrangeText} alt='digestive-copy' className="w-[100%] mx-auto"/>
                   <div className="flex float-left">
                     <div className="px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Crisp Layers, Bursting with Zesty Orange<span className="text-base md:text-2xl font-medium">- A Tangy Twist on Classic Crunch.</span></div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -99,17 +99,17 @@ export default function FriskyWaferPage() {
 
                     </div>
                   </div>
-                  <Image src={friskyWaferOrange} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={friskyWaferOrange} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
         </div>
         <div
           className="relative w-full bg-[#87d9eb] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyWaferVanillaText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={friskyWaferVanillaText} alt='digestive-copy' className="w-[100%] mx-auto"/>
                   <div className="flex float-left">
                     <div className="px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Golden Crunch, Velvety Vanilla<span className="text-base md:text-2xl font-medium">- A Timeless Taste of Sweet Simplicity.</span></div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -132,17 +132,17 @@ export default function FriskyWaferPage() {
 
                     </div>
                   </div>
-                  <Image src={friskyWaferVanilla} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={friskyWaferVanilla} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
         </div>
         <div
           className="relative w-full bg-[#ffb09b] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyWaferStrawberryText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={friskyWaferStrawberryText} alt='digestive-copy' className="w-[100%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Lush Strawberry Cream in Every Crisp Layer<span className="text-base md:text-2xl font-medium"> - A Wafer Worth Savoring.</span></div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -171,9 +171,9 @@ export default function FriskyWaferPage() {
 
                     </div>
                   </div>
-                  <Image src={friskyWaferStrawberry} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={friskyWaferStrawberry} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
-              <div className="mx-5 md:mx-70 p-4">
+              <div className="mx-5 md:mx-70 py-4 px-40">
                   <div className="flex items-center justify-between border-b-3 border-white pb-2 mb-4">
                     <h2 className="text-lg font-semibold text-gray-800">Search for answers</h2>
                     <div className="flex items-center gap-3">

@@ -21,10 +21,10 @@ export default function GoldenLotusPage() {
         <div
           className="relative w-full bg-[#f4978f] pb-10">
               <Navbar />
-              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute rotate-[55deg] w-[25%] left-[-3rem] md:left-[-10rem] top-0 bottom-[40rem] md:bottom-[60rem] my-auto"/>
-              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-4rem] md:right-[-10rem] top-0 bottom-0 my-auto"/>
+              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute rotate-[55deg] w-[18%] left-[-3rem] md:left-[-10rem] top-0 bottom-[40rem] md:bottom-[60rem] my-auto"/>
+              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute w-[18%] right-[-4rem] md:right-[-10rem] top-0 bottom-0 my-auto"/>
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={goldenLotusText} alt='digestive-copy' className="w-[85%] mx-auto"/>
+                  <Image src={goldenLotusText} alt='digestive-copy' className="w-[100%] mt-[-50px]"/>
                   <div className="flex">
                     <div className="px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Steeped in tradition, perfected for today <span className="text-base md:text-2xl font-medium"> - premium Lotus biscuits that honor classic caramelized taste</span></div>
@@ -51,9 +51,9 @@ export default function GoldenLotusPage() {
 
                     </div>
                   </div>
-                  <Image src={goldenLotus} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={goldenLotus} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
-              <div className="mx-5 md:mx-70 p-4">
+              <div className="mx-5 md:mx-70 py-4 px-40">
                   <div className="flex items-center justify-between border-b-3 border-white pb-2 mb-4">
                     <h2 className="text-lg font-semibold text-gray-800">Search for answers</h2>
                     <div className="flex items-center gap-3">

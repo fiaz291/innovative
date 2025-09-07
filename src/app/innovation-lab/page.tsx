@@ -22,8 +22,8 @@ export default function InnovationLabgPage() {
           }}
           className="text-white w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center text-center font-black mx-5 md:mx-30  py-25 md:py-75">
-                  <div className="text-2xl md:text-6xl whitespace-pre-line">{`The Epicenter of\ndelicious disruption`}</div>
+              <div className="flex flex-col gap-4 items-center justify-center text-center font-black h-[85vh]">
+                  <div className="text-2xl md:text-6xl whitespace-pre-line mt-[-80px]">{`The Epicenter of\ndelicious disruption`}</div>
               </div>
         </div>
 

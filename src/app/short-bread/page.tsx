@@ -23,9 +23,9 @@ export default function ShortBreadPage() {
               <Navbar />
               <Image src={shortBreadBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[35%] left-[-4rem] md:left-[-18rem] top-[40rem] bottom-0 my-auto"/>
               <div className="flex flex-col px-10 md:px-30 mt-6 md:mt-12">
-                  <Image src={shortBreadText} alt='digestive-copy' className="w-[75%] mx-auto"/>
-                  <div className="flex mt-10 md:mt-20">
-                    <div className="md:pl-28">
+                  <Image src={shortBreadText} alt='digestive-copy' className="w-[100%] mx-auto"/>
+                  <div className="flex mt-10 md:mt-20 px-34 gap-10">
+                    <div>
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Handcrafted with the finest butter and baked to perfection <span className="text-base md:text-2xl font-medium">- a cookie that speaks the language of luxury.</span></div>
                         <div className="mt-5">
                           <table className="w-full text-center border-spacing-y-2">
@@ -52,7 +52,7 @@ export default function ShortBreadPage() {
                     <Image src={shortBread} alt='boxes-image' className="hidden md:block w-[35%]"/>
                   </div>
               </div>
-              <div className="mt-30 mx-5 md:mx-70 p-4">
+              <div className="mt-30 mx-5 md:mx-70 py-4 px-40">
                   <div className="flex items-center justify-between border-b-3 border-white pb-2 mb-4">
                     <h2 className="text-lg font-semibold text-gray-800">Search for answers</h2>
                     <div className="flex items-center gap-3">

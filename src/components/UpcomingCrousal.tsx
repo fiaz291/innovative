@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import upcoming1 from '../assets/upcoming1.png'
-import upcoming2 from '../assets/upcoming2.png'
-import upcoming3 from '../assets/upcoming3.png'
+import upcoming1 from '../assets/image1.png'
+import upcoming2 from '../assets/image2.png'
+import upcoming3 from '../assets/image3.png'
 
 // Replace with your actual image paths
 const cookieImages = [
@@ -67,7 +67,7 @@ export default function UpcomingCarousel() {
             <img
               src={img.src}
               alt={`cookie-${i}`}
-              className="w-[180px] md:w-[605px] h-[132px] md:h-[264px] rounded-lg shadow"
+              className="w-[180px] h-[180px] md:w-[420px] md:h-[420px] rounded-lg shadow"
             />
           </SwiperSlide>
         ))}

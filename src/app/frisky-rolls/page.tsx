@@ -25,11 +25,11 @@ export default function FriskyRollsPage() {
           className="relative w-full bg-[#ffbe76] pb-10">
               <Navbar />
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyChocolateRollsText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={friskyChocolateRollsText} alt='digestive-copy' className="w-[100%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Rolled for the Crunch, Filled for the Crave<span className="text-base md:text-2xl font-medium"> - Chocolate That Twists Into Pure Bliss.</span></div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -58,17 +58,17 @@ export default function FriskyRollsPage() {
 
                     </div>
                   </div>
-                  <Image src={friskyChocolateRolls} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={friskyChocolateRolls} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
         </div>
         <div
           className="relative w-full bg-[#ffaa93] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyHazelnutRollsText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={friskyHazelnutRollsText} alt='digestive-copy' className="w-[100%] mx-auto"/>
                   <div className="flex float-left">
                     <div className="px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">A Swirl of Crisp Delight, a Heart of Hazelnut Gold</div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -91,17 +91,17 @@ export default function FriskyRollsPage() {
 
                     </div>
                   </div>
-                  <Image src={friskyHazelnuteRolls} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={friskyHazelnuteRolls} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
         </div>
         <div
           className="relative w-full bg-[#96ddf2] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyMilkyRollsText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={friskyMilkyRollsText} alt='digestive-copy' className="w-[100%] mx-auto"/>
                   <div className="flex">
                     <div className="px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Soft Creaminess in a Crisp Embrace <span className="text-base md:text-2xl font-medium"> - Milk Wafer Rolls Made to Soothe and Satisfy.</span></div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -130,9 +130,9 @@ export default function FriskyRollsPage() {
 
                     </div>
                   </div>
-                  <Image src={friskyMilkyRolls} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={friskyMilkyRolls} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
-              <div className="mx-5 md:mx-70 p-4">
+              <div className="mx-5 md:mx-70 py-4 px-40">
                   <div className="flex items-center justify-between border-b-3 border-white pb-2 mb-4">
                     <h2 className="text-lg font-semibold text-gray-800">Search for answers</h2>
                     <div className="flex items-center gap-3">

@@ -12,8 +12,8 @@ export default function AboutUsPage() {
           }}
           className="text-white w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-75">
-                  <div className="text-2xl md:text-6xl text-center whitespace-pre-line">{`Where tradition\nmeets innovation`}</div>
+              <div className="flex flex-col gap-4 items-center justify-center font-black h-[85vh]">
+                  <div className="text-2xl md:text-6xl text-center whitespace-pre-line mt-[-80px]">{`Where tradition\nmeets innovation`}</div>
               </div>
         </div>
 

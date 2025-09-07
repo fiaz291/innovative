@@ -23,13 +23,13 @@ export default function BiscoffiPage() {
           className="relative w-full bg-[#ffce54] pb-10">
               <Navbar />
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={biscoffiSmallBean} alt='small-bean' className="absolute w-[8%] top-30 md:top-50 right-5 md:right-20"/>
-                  <Image src={havenCoffeeBean} alt='bean' className="absolute w-[12%] top-40 md:top-90 left-[-10px] md:left-[-30px]"/>
-                  <Image src={biscoffiText} alt='digestive-copy' className="w-[75%] mx-auto"/>
+                  <Image src={biscoffiSmallBean} alt='small-bean' className="absolute w-[6%] top-30 md:top-50 right-5 md:right-20"/>
+                  <Image src={havenCoffeeBean} alt='bean' className="absolute w-[10%] top-40 md:top-90 left-[-10px] md:left-[-30px]"/>
+                  <Image src={biscoffiText} alt='digestive-copy' className="w-[100%] mx-auto"/>
                   <div className="flex">
-                    <div className="px-28">
+                    <div className="px-40">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Brewed to Be Eaten<span className="text-base md:text-2xl font-medium">{` - Artisan Crackers Infused with Rich Coffee Notes, toasted to a Delicate, Satisfying Crisp.`}</span></div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -52,9 +52,9 @@ export default function BiscoffiPage() {
 
                     </div>
                   </div>
-                  <Image src={biscoffi} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={biscoffi} alt='boxes-image' className="hidden md:block w-[100%] px-20"/>
               </div>
-              <div className="mx-5 md:mx-70 p-4">
+              <div className="mx-5 md:mx-70 py-4 px-40">
                   <div className="flex items-center justify-between border-b-3 border-white pb-2 mb-4">
                     <h2 className="text-lg font-semibold text-gray-800">Search for answers</h2>
                     <div className="flex items-center gap-3">

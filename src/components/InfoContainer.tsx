@@ -17,7 +17,7 @@ export default function InfoContainer({image, title, description, route} : InfoC
             <Image src={image} alt='info-image'/>
             <div className="cursor-pointer" onClick={() => route && router.push(route)}>
                 <div className='mt-10 font-black text-2xl'>{title}</div>
-                <div className="mt-2 text-xl flex gap-30">
+                <div className="mt-2 text-xl flex gap-2 items-center">
                     <div>{description}</div>
                     <MoveRight />
                 </div>

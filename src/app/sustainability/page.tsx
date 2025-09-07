@@ -21,20 +21,20 @@ export default function CareerPage() {
           }}
           className="text-white w-full bg-no-repeat bg-center md:bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-75">
-                  <div className="text-2xl md:text-6xl whitespace-pre-line text-center">{`Good for You.\nBetter for the Planet.`}</div>
+              <div className="flex flex-col gap-4 items-center justify-center font-black h-[85vh]">
+                  <div className="text-2xl md:text-6xl whitespace-pre-line text-center mt-[-80px]">{`Good for You.\nBetter for the Planet.`}</div>
               </div>
         </div>
 
         <div className='flex flex-col items-center relative text-center pb-25'>
             <Image src={sun} alt='sun-image' className='absolute left-0 top-[-58px] md:top-[-242px] w-[60px] md:w-[250px]'/>
-            <div className='w-[100%] h-auto'>
-                <div className='float-right w-[30%]'>
+            <div className='w-[100%] h-auto relative'>
+                <div className='float-right w-[36%] absolute right-[-40px] top-[-40px]'>
                     <Image src={clouds} alt='clouds-image'/>
                 </div>
             </div>
 
-            <div className="font-black text-2xl md:text-6xl mb-15 px-5 md:px-60">{`Sustainability at Our Core`}</div>
+            <div className="font-black text-2xl md:text-6xl mb-15 px-5 md:px-60 mt-[160px]">{`Sustainability at Our Core`}</div>
             <p className='text-base md:text-2xl mb-8 px-5 md:px-60'>
                 At Innovative Biscuits, we believe that progress should never come at the planet’s expense. That’s why we’re committed to building a business that’s not only responsible but regenerative — one that gives back more than it takes.
             </p>
@@ -44,7 +44,7 @@ export default function CareerPage() {
             <p className='text-base md:text-2xl mb-8 px-5 md:px-60'>
                 Our vision for sustainability goes beyond the environment — it includes empowering communities, supporting education, and nurturing a culture of long-term wellbeing.
             </p>
-            <Image src={circleTriangles} alt='circle-triangles-image' className='absolute right-0 bottom-[-3px] w-[155px] md:w-[400px]'/>
+            <Image src={circleTriangles} alt='circle-triangles-image' className='absolute right-0 bottom-[-3px] w-[155px] md:w-[300px]'/>
         </div>
 
         <div className='flex flex-col gap-5 text-white'>
@@ -67,7 +67,7 @@ export default function CareerPage() {
         </div>
 
         <div className='flex flex-col my-15 md:m-30'>
-            <div className='text-2xl md:text-4xl whitespace-pre-line text-center font-black'>{`Meet Jumbo Junior:\nLearning with Every Bite`}</div>
+            <div className='text-2xl md:text-7xl whitespace-pre-line text-center font-black'>{`Meet Jumbo Junior:\nLearning with Every Bite`}</div>
             <div className='flex mt-15 mb-25'>
                 <div className='hidden md:block w-[40%] bg-[#123a5e]'></div>
                 <div className='w-full md:w-[60%] bg-[#fef4af] px-15 py-30'>

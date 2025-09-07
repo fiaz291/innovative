@@ -21,11 +21,11 @@ export default function FabulousPage() {
           className="relative w-full bg-[#f8b145] pb-10">
               <Navbar />
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={fabulousText} alt='digestive-copy' className="w-[75%] mx-auto"/>
-                  <div className="flex">
-                    <div className="px-28">
+                  <Image src={fabulousText} alt='digestive-copy' className="w-[100%]"/>
+                  <div className="flex mt-[-50px]">
+                    <div className="px-42">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Golden, chewy and loaded with gooey chocolate chips <span className="text-base md:text-2xl font-medium">{` - these cookies are pure joy in every bite. Baked to perfection with just the right balance of crunch and softness, they're a classic made truly fabulous.`}</span></div>
-                        <div className="mt-5">
+                        <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -48,9 +48,9 @@ export default function FabulousPage() {
 
                     </div>
                   </div>
-                  <Image src={fabulous} alt='boxes-image' className="hidden md:block w-[80%] px-28"/>
+                  <Image src={fabulous} alt='boxes-image' className="hidden md:block w-[100%]"/>
               </div>
-              <div className="mx-5 md:mx-70 p-4">
+              <div className="mx-5 md:mx-70 py-4 px-40">
                   <div className="flex items-center justify-between border-b-3 border-white pb-2 mb-4">
                     <h2 className="text-lg font-semibold text-gray-800">Search for answers</h2>
                     <div className="flex items-center gap-3">
