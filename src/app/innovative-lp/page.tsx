@@ -19,8 +19,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 
 export default function LandingPage() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [swiperInstance, setSwiperInstance] = useState<any | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [swiperImageInstance, setSwiperImageInstance] = useState<any | null>(
     null
   );
