@@ -214,11 +214,11 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                         Resources <ChevronDown className="w-4 h-4" />
                       </div>
                     </li>
-                    <li className="relative group cursor-pointer">
+{/*                     <li className="relative group cursor-pointer">
                       <div className="flex items-center gap-1">
                         Our Impact
                       </div>
-                    </li>
+                    </li> */}
                     <li className="relative group cursor-pointer">
                       <div className="flex items-center gap-1" onClick={()=>router.push('/careers')}>
                         Careers
