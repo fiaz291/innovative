@@ -5,11 +5,90 @@ import Image from "next/image";
 import premiumLogo from '../assets/innovative-premium-logo.svg';
 import logo from '../assets/innovative-logo.svg';
 import rectangle from '../assets/rectangle-bg.svg'
+import { useState } from 'react';
+
+const whoWeAreItems = [
+  {
+    title: "Leadership",
+    route: "/leadership",
+  },
+  {
+    title: "Vision",
+    route: "/vision",
+  },
+  {
+    title: "About Us",
+    route: "/about-us",
+  },
+];
+
+const impactItems = [
+  {
+    title: "Sustainability",
+    route: "/sustainability",
+  },
+];
+
+const resourcesItems = [
+  {
+    title: "Careers",
+    route: "/careers",
+  },
+  {
+    title: "Export",
+    route: "/export",
+  },
+];
+
+const premiumProducts = [
+  {
+    title: "Digestive Premium",
+    route: "/digestive-premium",
+  },
+  {
+    title: "Short Bread",
+    route: "/short-bread",
+  },
+  {
+    title: "Golden Lotus",
+    route: "/golden-lotus",
+  },
+  {
+    title: "Fabulous",
+    route: "/fabulous",
+  },
+  {
+    title: "Frisky Rolls",
+    route: "/frisky-rolls",
+  },
+  {
+    title: "Frisky Wafer",
+    route: "/frisky-wafer",
+  },
+  {
+    title: "Haven",
+    route: "/haven",
+  },
+  {
+    title: "Biscoffi",
+    route: "/biscoffi",
+  },
+  {
+    title: "Bricklane",
+    route: "/bricklane",
+  },
+];
 
 export default function Navbar({isPremium = true, isTransparentBg = false, isTextWhite}: {isPremium?: boolean, isTransparentBg?: boolean, isTextWhite?: boolean}) {
   const router = useRouter();
+  const [showMegaNav, setShowMegaNav] = useState(false);
+  const [tab, setTab] = useState('Who We Are');
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [megaNavItems, setMegaNavItems] = useState<any>(null);
+
   return (
-    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${isPremium || isTransparentBg ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'}  ${isTextWhite && 'text-white'}`}>
+    <>
+    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${isPremium || isTransparentBg || showMegaNav ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'}  ${isTextWhite && 'text-white'} ${showMegaNav && 'bg-white'}`}>
       <div className="flex items-center justify-between pt-[15px]">
         <div className="flex items-center gap-10">
           <Image
@@ -27,95 +106,31 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                       Home <ChevronDown className="w-4 h-4" />
                     </li>
                     <li className="relative group cursor-pointer">
-                      <div className="flex items-center gap-1" onClick={() => router.push('/premium-products')}>
+                      <div className="flex items-center gap-1" onClick={()=> {
+                        if(tab === 'Our Products')
+                          setShowMegaNav(!showMegaNav);
+                        else setShowMegaNav(true);
+                          setTab('Our Products');
+                          setMegaNavItems(premiumProducts);
+                      }}>
                         Our Products <ChevronDown className="w-4 h-4" />
                       </div>
-                      <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] text-black z-50">
-                        <li
-                          onClick={() => router.push('/digestive-premium')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Digestive Premium
-                        </li>
-                        <li
-                          onClick={() => router.push('/short-bread')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Short Bread
-                        </li>
-                        <li
-                          onClick={() => router.push('/golden-lotus')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Golden Lotus
-                        </li>
-                        <li
-                          onClick={() => router.push('/fabulous')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Fabulous
-                        </li>
-                        <li
-                          onClick={() => router.push('/frisky-rolls')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Frisky Rolls
-                        </li>
-                        <li
-                          onClick={() => router.push('/frisky-wafer')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Frisky Wafer
-                        </li>
-                        <li
-                          onClick={() => router.push('/haven')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Haven
-                        </li>
-                        <li
-                          onClick={() => router.push('/biscoffi')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Biscoffi
-                        </li>
-                        <li
-                          onClick={() => router.push('/bricklane')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Bricklane
-                        </li>
-                      </ul>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
                       Creations <ChevronDown className="w-4 h-4" />
                     </li>
                 </> : 
                 <>
-                    <li className="relative group cursor-pointer">
+                    <li className="relative cursor-pointer" onClick={()=> {
+                      if(tab === 'Who We Are')
+                        setShowMegaNav(!showMegaNav);
+                      else setShowMegaNav(true);
+                        setTab('Who We Are');
+                        setMegaNavItems(whoWeAreItems);
+                      }}>
                       <div className="flex items-center gap-1">
-                        How We Are <ChevronDown className="w-4 h-4" />
+                        Who We Are <ChevronDown className="w-4 h-4" />
                       </div>
-                      <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] text-black z-50">
-                        <li
-                          onClick={() => router.push('/leadership')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Leadership
-                        </li>
-                        <li
-                          onClick={() => router.push('/vision')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Vision
-                        </li>
-                        <li
-                          onClick={() => router.push('/about-us')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          About Us
-                        </li>
-                      </ul>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
                       Our Products <ChevronDown className="w-4 h-4" />
@@ -128,37 +143,27 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                     <li className="flex items-center gap-1 cursor-pointer">
                       Recipes<ChevronDown className="w-4 h-4" />
                     </li>
-                    <li className="relative group cursor-pointer">
+                    <li className="relative group cursor-pointer" onClick={()=> {
+                      if(tab === 'Our Impact')
+                        setShowMegaNav(!showMegaNav);
+                      else setShowMegaNav(true);
+                        setTab('Our Impact');
+                        setMegaNavItems(impactItems);
+                    }}>
                       <div className="flex items-center gap-1">
                         Our Impact <ChevronDown className="w-4 h-4" />
                       </div>
-                      <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] text-black z-50">
-                        <li
-                          onClick={() => router.push('/sustainability')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Sustainbility
-                        </li>
-                      </ul>
                     </li>
-                    <li className="relative group cursor-pointer">
+                    <li className="relative group cursor-pointer" onClick={()=> {
+                      if(tab === 'Resources')
+                        setShowMegaNav(!showMegaNav);
+                      else setShowMegaNav(true);
+                        setTab('Resources');
+                        setMegaNavItems(resourcesItems);
+                      }}>
                       <div className="flex items-center gap-1">
                         Resources <ChevronDown className="w-4 h-4" />
                       </div>
-                      <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] text-black z-50">
-                        <li
-                          onClick={() => router.push('/careers')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Careers
-                        </li>
-                        <li
-                          onClick={() => router.push('/export')}
-                          className="px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          Export
-                        </li>
-                      </ul>
                     </li>
                 </>
                 }
@@ -172,7 +177,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                 Back
             </div> :
             <div className="relative ">
-                <div onClick={()=>router.push('/premium-lp')} className={`flex items-center gap-1 cursor-pointer relative z-1 ${isTransparentBg && 'text-white'}`}>
+                <div onClick={()=>router.push('/premium-lp')} className={`flex items-center gap-1 cursor-pointer relative z-1 ${isTransparentBg || showMegaNav && 'text-white'}`}>
                     Premium
                 </div>
                 <Image
@@ -187,5 +192,32 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
         </div>
       </div>
     </nav>
+    <div
+      className={`absolute top-[82px] bg-white shadow-2xl w-full text-black z-50 border-t border-gray-100
+        transition-all duration-300 ease-out
+        ${showMegaNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"}
+      `}
+    >
+      <div className="p-6 grid grid-cols-[25%_75%]">
+        <div>
+          <h1 className="text-[32px] font-bold text-gray-900">{tab}</h1>
+        </div>
+        <div className="grid grid-cols-3 gap-4">
+          {megaNavItems?.map((item: {title: string, route:string}, index: number) => (
+            <div
+              key={index}
+              onClick={() => {
+                router.push(item.route);
+                setShowMegaNav(false);
+              }}
+              className="p-4 hover:bg-gray-100 rounded cursor-pointer"
+            >
+              <h2 className="text-lg font-semibold">{item.title}</h2>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </>
   );
 }
