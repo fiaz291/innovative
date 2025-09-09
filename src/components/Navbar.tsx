@@ -6,10 +6,10 @@ import premiumLogo from '../assets/innovative-premium-logo.svg';
 import logo from '../assets/innovative-logo.svg';
 import rectangle from '../assets/rectangle-bg.svg'
 
-export default function Navbar({isPremium = true, isTransparentBg = false}: {isPremium?: boolean, isTransparentBg?: boolean}) {
+export default function Navbar({isPremium = true, isTransparentBg = false, isTextWhite}: {isPremium?: boolean, isTransparentBg?: boolean, isTextWhite?: boolean}) {
   const router = useRouter();
   return (
-    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${isPremium || isTransparentBg ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'}`}>
+    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${isPremium || isTransparentBg ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'}  ${isTextWhite && 'text-white'}`}>
       <div className="flex items-center justify-between pt-[15px]">
         <div className="flex items-center gap-10">
           <Image
@@ -27,7 +27,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false}: {isP
                       Home <ChevronDown className="w-4 h-4" />
                     </li>
                     <li className="relative group cursor-pointer">
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center gap-1" onClick={() => router.push('/premium-products')}>
                         Our Products <ChevronDown className="w-4 h-4" />
                       </div>
                       <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] text-black z-50">
