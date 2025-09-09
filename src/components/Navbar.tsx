@@ -146,7 +146,8 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
           <Image
             src={isPremium ? premiumLogo : logo}
             alt="Logo"
-            className="h-20 w-auto object-contain mt-[-25px]"
+            className="h-20 w-auto object-contain mt-[-25px] cursor-pointer"
+            onClick={() => router.push('/innovative-lp')}
           />
 
           <ul className={`hidden md:flex items-center gap-8 text-sm font-medium`}>
