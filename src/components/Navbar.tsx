@@ -72,6 +72,65 @@ const premiumProducts = [
   },
 ];
 
+const prodcuts = [
+  {
+    title: "Digestive",
+    route: "/digestive",
+  },
+  {
+    title: "Butter Crunch",
+    route: "/butter-crunch",
+  },
+  {
+    title: "Choc n Chip",
+    route: "/choc-n-chip",
+  },
+  {
+    title: "Choco Rings",
+    route: "/choco-rings",
+  },
+  {
+    title: "Crust Rolls",
+    route: "/crust-rolls",
+  },
+  {
+    title: "Crust Wafer",
+    route: "/crust-wafer",
+  },
+  {
+    title: "Goodies",
+    route: "/goodies",
+  },
+  {
+    title: "Jumbo Junior",
+    route: "/jumbo-junior",
+  },
+  {
+    title: "TooGud",
+    route: "/toogud",
+  },
+  {
+    title: "Olys",
+    route: "/olys",
+  },
+  {
+    title: "Peanut",
+    route: "/peanut",
+  },
+  {
+    title: "Zeera",
+    route: "/zeera",
+  },
+  {
+    title: "Snapp",
+    route: "/snapp",
+  },
+  {
+    title: "Bittens",
+    route: "/bittens",
+  },
+];
+
 export default function Navbar({isPremium = true, isTransparentBg = false, isTextWhite}: {isPremium?: boolean, isTransparentBg?: boolean, isTextWhite?: boolean}) {
   const router = useRouter();
   const [showMegaNav, setShowMegaNav] = useState(false);
@@ -125,7 +184,14 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                         Who We Are <ChevronDown className="w-4 h-4" />
                       </div>
                     </li>
-                    <li className="flex items-center gap-1 cursor-pointer">
+                    <li className="flex items-center gap-1 cursor-pointer" onClick={() => {
+                      if(tab === 'Products')
+                        setShowMegaNav(!showMegaNav);
+                      else setShowMegaNav(true);
+                      setTab('Products');
+                      setMegaNavItems(prodcuts);
+                    }
+                    }>
                       Our Products <ChevronDown className="w-4 h-4" />
                     </li>
                     <li 
