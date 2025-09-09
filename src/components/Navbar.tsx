@@ -169,7 +169,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                       </div>
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
-                      Creations <ChevronDown className="w-4 h-4" />
+                      Creations
                     </li>
                 </> : 
                 <>
@@ -197,10 +197,10 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                     <li 
                       onClick={() => router.push('/export')}
                       className="flex items-center gap-1 cursor-pointer">
-                        Export<ChevronDown className="w-4 h-4" />
+                        Export
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
-                      Recipes<ChevronDown className="w-4 h-4" />
+                      Recipes
                     </li>
                     <li className="relative group cursor-pointer" onClick={()=> {
                       if(tab === 'Resources')
@@ -215,12 +215,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                     </li>
                     <li className="relative group cursor-pointer">
                       <div className="flex items-center gap-1">
-                        Our Impact <ChevronDown className="w-4 h-4" />
+                        Our Impact
                       </div>
                     </li>
                     <li className="relative group cursor-pointer">
                       <div className="flex items-center gap-1" onClick={()=>router.push('/careers')}>
-                        Careers <ChevronDown className="w-4 h-4" />
+                        Careers
                       </div>
                     </li>
                 </>
