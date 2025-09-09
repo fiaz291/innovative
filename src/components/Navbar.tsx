@@ -22,21 +22,14 @@ const whoWeAreItems = [
   },
 ];
 
-const impactItems = [
+const resourcesItems = [
+  {
+    title: "Innovation Lab",
+    route: "/innovation-lab",
+  },
   {
     title: "Sustainability",
     route: "/sustainability",
-  },
-];
-
-const resourcesItems = [
-  {
-    title: "Careers",
-    route: "/careers",
-  },
-  {
-    title: "Export",
-    route: "/export",
   },
 ];
 
@@ -136,23 +129,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                       Our Products <ChevronDown className="w-4 h-4" />
                     </li>
                     <li 
-                      onClick={() => router.push('/innovation-lab')}
+                      onClick={() => router.push('/export')}
                       className="flex items-center gap-1 cursor-pointer">
-                        Innovation Lab<ChevronDown className="w-4 h-4" />
+                        Export<ChevronDown className="w-4 h-4" />
                     </li>
                     <li className="flex items-center gap-1 cursor-pointer">
                       Recipes<ChevronDown className="w-4 h-4" />
-                    </li>
-                    <li className="relative group cursor-pointer" onClick={()=> {
-                      if(tab === 'Our Impact')
-                        setShowMegaNav(!showMegaNav);
-                      else setShowMegaNav(true);
-                        setTab('Our Impact');
-                        setMegaNavItems(impactItems);
-                    }}>
-                      <div className="flex items-center gap-1">
-                        Our Impact <ChevronDown className="w-4 h-4" />
-                      </div>
                     </li>
                     <li className="relative group cursor-pointer" onClick={()=> {
                       if(tab === 'Resources')
@@ -163,6 +145,16 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                       }}>
                       <div className="flex items-center gap-1">
                         Resources <ChevronDown className="w-4 h-4" />
+                      </div>
+                    </li>
+                    <li className="relative group cursor-pointer">
+                      <div className="flex items-center gap-1">
+                        Our Impact <ChevronDown className="w-4 h-4" />
+                      </div>
+                    </li>
+                    <li className="relative group cursor-pointer">
+                      <div className="flex items-center gap-1" onClick={()=>router.push('/careers')}>
+                        Careers <ChevronDown className="w-4 h-4" />
                       </div>
                     </li>
                 </>
