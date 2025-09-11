@@ -93,7 +93,7 @@ export default function LandingPage() {
                 natural brown sugar, offering a wholesome, guilt-free snack
                 that’s as delicious as it is nourishing.
               </div>
-              <div className="flex items-center gap-10 text-xl md:text-3xl font-black mt-6">
+              <div className="flex items-center gap-2 text-xl md:text-3xl font-black mt-6">
                 Read More
                 <MoveRight className="w-[35px] h-[35px]" />
               </div>
@@ -117,7 +117,7 @@ export default function LandingPage() {
                 delivers superior taste, texture, and indulgence — made for
                 those who appreciate the art of premium snacking.
               </div>
-              <div className="flex items-center gap-10 text-xl md:text-3xl font-black mt-6">
+              <div className="flex items-center gap-2 text-xl md:text-3xl font-black mt-6">
                 Read More
                 <MoveRight className="w-[35px] h-[35px]" />
               </div>
@@ -140,7 +140,7 @@ export default function LandingPage() {
                 — where bold ideas and expert craft come together to create
                 groundbreaking flavors that redefine snacking.
               </div>
-              <div className="flex items-center gap-10 text-xl md:text-3xl font-black mt-6">
+              <div className="flex items-center gap-2 text-xl md:text-3xl font-black mt-6">
                 Read More
                 <MoveRight className="w-[35px] h-[35px]" />
               </div>

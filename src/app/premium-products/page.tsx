@@ -50,7 +50,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl mt-6'>
                         Simple Goodness, Perfectly Backed - A Wholesome Digestive Biscuit
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/digestive-premium')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/digestive-premium')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
@@ -71,7 +71,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl '>
                         Gourmet on the Outside, Decadence on the Inside
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/haven')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/haven')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
@@ -86,7 +86,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl'>
                         Brewed to Be Eaten - Artisan Crackers Infused with Rich Coffee Notes
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/biscoffi')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/biscoffi')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
@@ -107,7 +107,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl'>
                         Swirls of Delight - Delicately Rolls Wafers Filled With Lush Cream
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/frisky-rolls')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/frisky-rolls')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
@@ -122,7 +122,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl'>
                         Crisp Layers of Delight - Light, Flaky Wafers Filled with Smooth Cream
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/frisky-wafer')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/frisky-wafer')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
@@ -143,7 +143,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl'>
                         Handcrafted with the finest butter and baked to perfection
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/short-bread')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/short-bread')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
@@ -158,7 +158,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl'>
                         Steeped in tradition, perfected for today - premium Lotus biscuits
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/golden-lotus')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/golden-lotus')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
@@ -179,7 +179,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl'>
                         Golden, chewy and loaded with gooey chocolate chips - these cookies are oure joy in every bite.
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/fabulous')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/fabulous')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
@@ -194,7 +194,7 @@ export default function PremiumProductsPage() {
                     <div className='text-lg md:text-2xl'>
                         Premium taste with a purpose - ethically sourced, beautifully crafted, truly unforgettable
                     </div>
-                    <div className='cursor-pointer flex items-center gap-10 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/bricklane')}>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/bricklane')}>
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
