@@ -55,13 +55,13 @@ export default function PremiumProductsPage() {
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
                 </div>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#e7ad72_70%,#f5f0f2_70%)]'>
-                    <Image src={digestiveBiscuits} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#e7ad72_70%,#f5f0f2_70%)]'>
+                    <Image src={digestiveBiscuits} alt='out-products-image' className='h-[100%]'/>
                 </div>
             </div>
             <div className='flex'>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#f1c88e_60%,#f5f0f2_60%)]'>
-                    <Image src={havenBiscuits} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#f1c88e_60%,#f5f0f2_60%)]'>
+                    <Image src={havenBiscuits} alt='out-products-image' className='h-[100%]'/>
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#99693a] pt-10 pb-30 justify-center text-white px-15'>
                     <Image src={haven} alt={'digestive'} className='w-[40%] relative left-[-8px]'/>
@@ -91,13 +91,13 @@ export default function PremiumProductsPage() {
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
                 </div>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#ffce54_60%,#f5f0f2_60%)]'>
-                    <Image src={biscoffiBiscuits} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#ffce54_60%,#f5f0f2_60%)]'>
+                    <Image src={biscoffiBiscuits} alt='out-products-image' className='h-[100%]'/>
                 </div>
             </div>
             <div className='flex'>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#ffaa93_50%,#f5f0f2_50%)]'>
-                    <Image src={friskyRollsBiscuits} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#ffaa93_50%,#f5f0f2_50%)]'>
+                    <Image src={friskyRollsBiscuits} alt='out-products-image' className='h-[100%]'/>
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#79498c] pt-10 pb-30 justify-center text-white px-15'>
                     <Image src={frisky} alt={'digestive'} className='w-[40%] relative left-[-8px]'/>
@@ -127,13 +127,13 @@ export default function PremiumProductsPage() {
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
                 </div>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#87d9eb_55%,#f5f0f2_55%)]'>
-                    <Image src={friskyWafersBiscuits} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#87d9eb_55%,#f5f0f2_55%)]'>
+                    <Image src={friskyWafersBiscuits} alt='out-products-image' className='h-[100%]'/>
                 </div>
             </div>
             <div className='flex'>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#ffa372_70%,#f5f0f2_70%)]'>
-                    <Image src={shortBreadBiscuits} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#ffa372_70%,#f5f0f2_70%)]'>
+                    <Image src={shortBreadBiscuits} alt='out-products-image' className='h-[100%]'/>
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#231f20] pt-10 pb-30 justify-center text-white px-15'>
                     <Image src={shortBread} alt={'digestive'} className='w-[50%] relative left-[-10px]'/>
@@ -163,13 +163,13 @@ export default function PremiumProductsPage() {
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
                 </div>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#f4978f_60%,#f5f0f2_60%)]'>
-                    <Image src={goldenLotusBiscuit} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#f4978f_60%,#f5f0f2_60%)]'>
+                    <Image src={goldenLotusBiscuit} alt='out-products-image' className='h-[100%]'/>
                 </div>
             </div>
             <div className='flex'>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#f8b145_60%,#f5f0f2_60%)]'>
-                    <Image src={fabulousBiscuit} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#f8b145_60%,#f5f0f2_60%)]'>
+                    <Image src={fabulousBiscuit} alt='out-products-image' className='h-[100%]'/>
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#79498c] pt-10 pb-30 justify-center text-white px-15'>
                     <Image src={fabulous} alt={'digestive'} className='w-[50%] relative left-[-10px]'/>
@@ -199,8 +199,8 @@ export default function PremiumProductsPage() {
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
                 </div>
-                <div className='items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#e7ad72_60%,#f5f0f2_60%)]'>
-                    <Image src={bricklaneBiscuits} alt='out-products-image' className='h-[80%]'/>
+                <div className='py-10 items-center hidden md:flex w-[50%] bg-[linear-gradient(to_bottom,#e7ad72_60%,#f5f0f2_60%)]'>
+                    <Image src={bricklaneBiscuits} alt='out-products-image' className='h-[100%]'/>
                 </div>
             </div>
         </div>

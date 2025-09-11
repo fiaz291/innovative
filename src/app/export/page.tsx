@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import heroImg from '../../assets/export-hero.webp';
 import Navbar from "@/components/Navbar";
-import certificate1 from '../../assets/Certificate1.webp';
-import certificate2 from '../../assets/Certificate2.webp';
-import certificate3 from '../../assets/Certificate3.webp';
-import certificate4 from '../../assets/Certificate4.webp';
-import certificate5 from '../../assets/Certificate5.webp';
+import certificate1 from '../../assets/Certificate1.png';
+import certificate2 from '../../assets/Certificate2.png';
+import certificate3 from '../../assets/Certificate3.png';
+import certificate4 from '../../assets/Certificate4.png';
+import certificate5 from '../../assets/Certificate5.png';
 
 export default function ExportPage() {
     return (
@@ -133,12 +133,22 @@ export default function ExportPage() {
         <div className='flex flex-col items-center mt-25'>
           <p className="text-black font-black text-2xl md:text-6xl">Certified For Excellence</p>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center mx-50 my-15">
-            <Image src={certificate1} alt="Pakistan Standards" className="border-r-1 border-r-black mx-auto" />
-            <Image src={certificate2} alt="Halal Certified" className="border-r-1 border-r-black mx-auto" />
-            <Image src={certificate3} alt="FSSC 22000" className="border-r-1 border-r-black mx-auto" />
-            <Image src={certificate4} alt="ISO 9001:2015" className="border-r-1 border-r-black mx-auto" />
-            <Image src={certificate5} alt="BRCGS Food Safety" className=" mx-auto" />
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mx-50 my-15">
+            <div className="flex justify-center items-center border-r border-r-black pr-8">
+              <Image src={certificate1} alt="Pakistan Standards" className="mx-auto" />
+            </div>
+            <div className="flex justify-center items-center border-r border-r-black pr-8">
+              <Image src={certificate2} alt="Halal Certified" className="mx-auto" />
+            </div>
+            <div className="flex justify-center items-center border-r border-r-black pr-8">
+              <Image src={certificate3} alt="FSSC 22000" className="mx-auto" />
+            </div>
+            <div className="flex justify-center items-center border-r border-r-black pr-8">
+              <Image src={certificate4} alt="ISO 9001:2015" className="mx-auto" />
+            </div>
+            <div className="flex justify-center items-center">
+              <Image src={certificate5} alt="BRCGS Food Safety" className="mx-auto" />
+            </div>
           </div>
         </div>
 
