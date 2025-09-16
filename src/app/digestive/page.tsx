@@ -15,7 +15,7 @@ export default function DigestivePremiumPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#9f2a2a] text-white">
-              <Navbar isTextWhite/>
+              <Navbar isPremium={false} isTextWhite/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={digestiveLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-7rem]"/>
