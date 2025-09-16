@@ -17,6 +17,7 @@ import InfoContainer from "@/components/InfoContainer";
 import UpcomingCarousel from "@/components/UpcomingCrousal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function LandingPage() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -27,6 +28,7 @@ export default function LandingPage() {
     null
   );
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const router = useRouter();
 
   const handleNext = () => {
     if (swiperInstance) {
@@ -212,6 +214,7 @@ export default function LandingPage() {
           image={hr}
           title="Sustainability"
           description="Growth with Responsibility"
+          route="/sustainability"
         />
       </div>
 
@@ -224,7 +227,7 @@ export default function LandingPage() {
           <div className="text-xl md:text-2xl">
             Stay in Touch for Future Opportunities
           </div>
-          <div className="flex items-center gap-2 text-xl md:text-3xl font-black mt-6">
+          <div className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-6" onClick={() => {router.push('/careers')}}>
             Discover
             <MoveRight className="w-[35px] h-[35px]" />
           </div>
