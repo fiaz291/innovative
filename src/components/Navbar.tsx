@@ -107,8 +107,7 @@ const prodcuts = [
   },
   {
     title: "Jumbo Junior",
-    route: '#',
-    // route: "/jumbo-junior",
+    route: "/jumbo-junior",
   },
   {
     title: "Tooo Gud",
