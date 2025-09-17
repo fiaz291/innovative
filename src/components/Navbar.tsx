@@ -106,8 +106,8 @@ const prodcuts = [
     route: "/jumbo-junior",
   },
   {
-    title: "TooGud",
-    route: "/toogud",
+    title: "Tooo Gud",
+    route: "/tooo-gud",
   },
   {
     title: "Olys",
