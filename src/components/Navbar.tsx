@@ -121,8 +121,7 @@ const prodcuts = [
   },
   {
     title: "Peanut",
-    route: '#',
-    // route: "/peanut",
+    route: "/peanut",
   },
   {
     title: "Zeera",
