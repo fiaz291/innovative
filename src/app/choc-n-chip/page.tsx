@@ -23,7 +23,7 @@ export default function ChocChipPage() {
                     {`Chip In.\nChoc Out.`}
                   </div>
                   <div className="text-lg md:text-4xl text-left font-semibold">{`Chocolate Chip Cookies`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Crucnchu edges, gooey chips, and that just-right sweetness - everything you love in a chocolate chip biscuit.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Crucnchy edges, gooey chips, and that just-right sweetness - everything you love in a chocolate chip biscuit.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#b8f2ff]"><Image src={chocChipBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#b8f2ff]"><Image src={chocChipWrapper} alt='digestive-wrapper'/></div>
@@ -47,7 +47,7 @@ export default function ChocChipPage() {
                                 <td className="px-4 py-3">18</td>
                               </tr>
                               <tr className="border-b-1">
-                                <td className="py-3 text-left font-semibold border-r-1">Snack Roll</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">14</td>
                                 <td className="px-4 py-3 border-r-1">24</td>
                                 <td className="px-4 py-3">18</td>

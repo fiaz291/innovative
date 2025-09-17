@@ -135,6 +135,10 @@ const prodcuts = [
     route: '#',
     // route: "/bittens",
   },
+  {
+    title: "Charm",
+    route: "/charm",
+  },
 ];
 
 export default function Navbar({isPremium = true, isTransparentBg = false, isTextWhite}: {isPremium?: boolean, isTransparentBg?: boolean, isTextWhite?: boolean}) {

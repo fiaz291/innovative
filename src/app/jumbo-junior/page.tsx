@@ -47,7 +47,7 @@ export default function JumboJuniorPage() {
                                 <td className="px-4 py-3">18</td>
                               </tr>
                               <tr className="border-b-1">
-                                <td className="py-3 text-left font-semibold border-r-1">Snack Roll</td>
+                                <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">21.4</td>
                                 <td className="px-4 py-3 border-r-1">24</td>
                                 <td className="px-4 py-3">18</td>
