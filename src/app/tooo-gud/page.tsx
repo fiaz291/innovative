@@ -22,7 +22,7 @@ export default function ToooGudPage() {
                   <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
                     {`Too Good\nto Share!s`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold">{`Rick Egg & Milk Cookies`}</div>
+                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Rick Egg & Milk Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Toogud combines the goodness of egg and milk for a melt-in-your-mouth cookie experience.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#ffd8b0]"><Image src={tooGudBox} alt='digestive-box'/></div>

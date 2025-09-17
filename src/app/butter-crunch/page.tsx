@@ -24,7 +24,7 @@ export default function ButterCrunchPage() {
                   <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
                     {`GOlden oats,\npure delight.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold">{`Crunchy Oat Biscuits with Butter`}</div>
+                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Crunchy Oat Biscuits with Butter`}</div>
                   <div className="text-base md:text-2xl text-left">{`Indulge in the perfect balance of crunchy oats and rich creamy butter with Innovative Crunchy Oat Biscuits. Every bite delivers wholesome texture and irresistable flavor - a satisfying treat for any time of day.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#d39130]"><Image src={butterCrunchBox} alt='digestive-box'/></div>

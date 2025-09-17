@@ -23,7 +23,7 @@ export default function GoodiesPage() {
                   <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
                     {`Classic taste,\nfresh goodness.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold">{`Egg & Milk Biscuits`}</div>
+                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Egg & Milk Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`The perfect blend of fresh eggs and creamy milk - a biscuit that's soft, golden, and full of homemade comfort.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#fb8587]"><Image src={goodiesBox} alt='digestive-box'/></div>
