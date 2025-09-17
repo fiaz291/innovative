@@ -83,19 +83,23 @@ const prodcuts = [
   },
   {
     title: "Choc n Chip",
-    route: "/choc-n-chip",
+    route: '#',
+    // route: "/choc-n-chip",
   },
   {
     title: "Choco Rings",
-    route: "/choco-rings",
+    route: '#',
+    // route: "/choco-rings",
   },
   {
     title: "Crust Rolls",
-    route: "/crust-rolls",
+    route: '#',
+    // route: "/crust-rolls",
   },
   {
     title: "Crust Wafer",
-    route: "/crust-wafer",
+    route: '#',
+    // route: "/crust-wafer",
   },
   {
     title: "Goodies",
@@ -103,7 +107,8 @@ const prodcuts = [
   },
   {
     title: "Jumbo Junior",
-    route: "/jumbo-junior",
+    route: '#',
+    // route: "/jumbo-junior",
   },
   {
     title: "Tooo Gud",
@@ -111,11 +116,13 @@ const prodcuts = [
   },
   {
     title: "Olys",
-    route: "/olys",
+    route: '#',
+    // route: "/olys",
   },
   {
     title: "Peanut",
-    route: "/peanut",
+    route: '#',
+    // route: "/peanut",
   },
   {
     title: "Zeera",
@@ -123,11 +130,13 @@ const prodcuts = [
   },
   {
     title: "Snapp",
-    route: "/snapp",
+    route: '#',
+    // route: "/snapp",
   },
   {
     title: "Bittens",
-    route: "/bittens",
+    route: '#',
+    // route: "/bittens",
   },
 ];
 
