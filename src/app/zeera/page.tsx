@@ -14,7 +14,7 @@ export default function ZeeraPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#bdaaa6] text-[#7e3f1e]">
-              <Navbar isPremium={false} isTextWhite/>
+              <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={zeeraLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-7rem]"/>

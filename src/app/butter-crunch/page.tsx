@@ -15,7 +15,7 @@ export default function ButterCrunchPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#febe56] text-[#8b0304]">
-              <Navbar isPremium={false} isTextWhite/>
+              <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={butterCrunchLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] right-[-7rem] top-[-5rem]"/>

@@ -14,7 +14,7 @@ export default function JumboJuniorPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#2090b8] text-white">
-              <Navbar isPremium={false} isTextWhite/>
+              <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={jumboJuniorLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-5rem] top-[-6rem]"/>

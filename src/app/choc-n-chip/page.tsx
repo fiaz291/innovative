@@ -14,7 +14,7 @@ export default function ChocChipPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#87d9eb] text-[#054e9c]">
-              <Navbar isPremium={false} isTextWhite/>
+              <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={chocChipLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-5rem] top-[-6rem]"/>

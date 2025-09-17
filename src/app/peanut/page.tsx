@@ -14,7 +14,7 @@ export default function PeanutPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#59c0be] text-[#064c5e]">
-              <Navbar isPremium={false} isTextWhite/>
+              <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={peanutLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-14rem] top-[8rem]"/>

@@ -141,7 +141,7 @@ const prodcuts = [
   },
 ];
 
-export default function Navbar({isPremium = true, isTransparentBg = false, isTextWhite}: {isPremium?: boolean, isTransparentBg?: boolean, isTextWhite?: boolean}) {
+export default function Navbar({isPremium = true, isTransparentBg = false, isTextWhite = false}: {isPremium?: boolean, isTransparentBg?: boolean, isTextWhite?: boolean}) {
   const router = useRouter();
   const [showMegaNav, setShowMegaNav] = useState(false);
   const [tab, setTab] = useState('Who We Are');
@@ -150,7 +150,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
 
   return (
     <>
-    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${isPremium || isTransparentBg || showMegaNav ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'}  ${isTextWhite && 'text-white'} ${showMegaNav && 'bg-white'}`}>
+    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${(isPremium && !isTextWhite) || isTransparentBg || showMegaNav ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'} ${showMegaNav && 'bg-white'}`}>
       <div className="flex items-center justify-between pt-[15px]">
         <div className="flex items-center gap-10">
           <Image

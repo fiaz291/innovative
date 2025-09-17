@@ -16,7 +16,7 @@ export default function GoodiesPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#9e2e30] text-white pb-12 md:pb-25 ">
-              <Navbar isPremium={false} isTextWhite/>
+              <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-7rem]"/>

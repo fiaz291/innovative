@@ -14,7 +14,7 @@ export default function CharmPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#992c2c] text-[#ffd879]">
-              <Navbar isPremium={false} isTextWhite/>
+              <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={charmLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-3rem] top-[-3rem]"/>

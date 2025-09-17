@@ -14,7 +14,7 @@ export default function ToooGudPage() {
     <div className="overflow-hidden">
         <div
           className="w-full bg-[#e7ad72] text-[#7f1438]">
-              <Navbar isPremium={false} isTextWhite/>
+              <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={tooGudLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[30%] right-[-10rem] top-[-5rem]"/>
