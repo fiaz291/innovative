@@ -9,7 +9,7 @@ import zeeraTestimonial from '../../assets/innovative-zeera-image.webp';
 import zeeraBiscuit from '../../assets/innovative-zeera-biscuit.webp';
 import Faq from "@/components/Faq";
 
-export default function DigestivePremiumPage() {
+export default function ZeeraPage() {
     return (
     <div className="overflow-hidden">
         <div

@@ -10,7 +10,7 @@ import innovativeBiscuit from '../../assets/innovative-biscuit.webp';
 import digestiveWheat from '../../assets/digestive-wheat.webp';
 import Faq from "@/components/Faq";
 
-export default function DigestivePremiumPage() {
+export default function DigestivePage() {
     return (
     <div className="overflow-hidden">
         <div
