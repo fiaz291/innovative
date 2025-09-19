@@ -6,7 +6,7 @@ import hero2 from '../../assets/Innovative-Main-Banners2.webp'
 import hero3 from '../../assets/Innovative-Main-Banners3.webp'
 import hero4 from '../../assets/Innovative-Main-Banners4.webp'
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import prod1 from "../../assets/prod1.png";
 import prod2 from "../../assets/prod2.png";
 import prod3 from "../../assets/prod3.png";
@@ -19,7 +19,7 @@ import { CircleArrowRight, MoveRight } from "lucide-react";
 import InfoContainer from "@/components/InfoContainer";
 import UpcomingCarousel from "@/components/UpcomingCrousal";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const HERO_PAIRS = [
@@ -51,7 +51,12 @@ export default function LandingPage() {
   );
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const router = useRouter();
-  const banner = HERO_PAIRS[Math.floor(Math.random() * 4)];
+  const [banner, setBanner] = useState<{image: StaticImageData | string, line: string}>({image: "", line: ''});
+
+  useEffect(() => {
+    const randomBanner = HERO_PAIRS[Math.floor(Math.random() * HERO_PAIRS.length)];
+    setBanner(randomBanner);
+  }, []);
 
   const handleNext = () => {
     if (swiperInstance) {
@@ -74,14 +79,18 @@ export default function LandingPage() {
     <div>
       <div
         style={{
-          backgroundImage: `url(${banner.image.src})`,
+          backgroundImage: `url(${
+            typeof banner.image === "string"
+              ? banner.image
+              : (banner.image as StaticImageData).src
+          })`,
         }}
         className="text-white w-full bg-no-repeat bg-center md:bg-cover"
       >
         <Navbar isPremium={false} />
         <div className="flex flex-col gap-4 items-center justify-center font-black h-[85vh]">
           <div className="text-2xl md:text-6xl mt-[-80px] text-center">
-            {banner.line}
+            {banner?.line}
           </div>
         </div>
       </div>
