@@ -1,7 +1,10 @@
 "use client";
 
 import CookieCarousel from "@/components/CookieCrousal";
-import heroImg from "../../assets/lp-hero.webp";
+import hero1 from '../../assets/Innovative-Main-Banners1.webp'
+import hero2 from '../../assets/Innovative-Main-Banners2.webp'
+import hero3 from '../../assets/Innovative-Main-Banners3.webp'
+import hero4 from '../../assets/Innovative-Main-Banners4.webp'
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import prod1 from "../../assets/prod1.png";
@@ -19,6 +22,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+const HERO_PAIRS = [
+  {
+    image: hero1,
+    line: "Flavour You Can Feel.",
+  },
+  {
+    image: hero2,
+    line: "Premium You Can Taste.",
+  },
+  {
+    image: hero3,
+    line: "Crispy. Golden. Irresistible.",
+  },
+  {
+    image: hero4,
+    line: "Crispy. Golden. Irresistible.",
+  },
+];
+
 export default function LandingPage() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [swiperInstance, setSwiperInstance] = useState<any | null>(null);
@@ -29,6 +51,7 @@ export default function LandingPage() {
   );
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const router = useRouter();
+  const banner = HERO_PAIRS[Math.floor(Math.random() * 4)];
 
   const handleNext = () => {
     if (swiperInstance) {
@@ -51,14 +74,14 @@ export default function LandingPage() {
     <div>
       <div
         style={{
-          backgroundImage: `url(${heroImg.src})`,
+          backgroundImage: `url(${banner.image.src})`,
         }}
         className="text-white w-full bg-no-repeat bg-center md:bg-cover"
       >
         <Navbar isPremium={false} />
         <div className="flex flex-col gap-4 items-center justify-center font-black h-[85vh]">
           <div className="text-2xl md:text-6xl mt-[-80px] text-center">
-            One Bite is never enough.
+            {banner.line}
           </div>
         </div>
       </div>
