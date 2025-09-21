@@ -246,7 +246,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                 Back
             </div> :
             <div className="relative ">
-                <div onClick={()=>router.push('/premium-lp')} className={`flex items-center gap-1 cursor-pointer relative z-1 ${isTransparentBg || showMegaNav && 'text-white'}`}>
+                <div onClick={()=>router.push('/premium-lp')} className={`flex items-center gap-1 cursor-pointer relative z-1 ${(isTransparentBg || showMegaNav) && 'text-white'}`}>
                     Premium
                 </div>
                 <Image
