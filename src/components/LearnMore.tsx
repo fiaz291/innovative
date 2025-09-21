@@ -12,17 +12,17 @@ export default function LearnMore() {
             </div>
 
             <div className='flex flex-col gap-5 md:gap-10 md:px-30 w-[100%]'>
-                <div className='cursor-pointer font-black flex items-center gap-10 text-base md:text-3xl' onClick={()=>router.push('about-us')}>
+                <div className='cursor-pointer font-black flex items-center gap-2 text-base md:text-3xl' onClick={()=>router.push('about-us')}>
                     About Us
                     <MoveRight className='w-[35px] h-[35px]' />
                 </div>
                 <hr className="border-0 h-[1px] w-full bg-[#000000]" />
-                <div className='cursor-pointer font-black flex items-center gap-10 text-base md:text-3xl' onClick={()=>router.push('leadership')}>
+                <div className='cursor-pointer font-black flex items-center gap-2 text-base md:text-3xl' onClick={()=>router.push('leadership')}>
                     Our Leadership
                     <MoveRight className='w-[35px] h-[35px]' />
                 </div>
                 <hr className="border-0 h-[1px] w-full bg-[#000000]" />
-                <div className='font-black flex items-center gap-10 text-base md:text-3xl'>
+                <div className='font-black flex items-center gap-2 text-base md:text-3xl'>
                     Awards
                     <MoveRight className='w-[35px] h-[35px]' />
                 </div>

@@ -47,7 +47,7 @@ export default function CareerPage() {
         </div>
 
         <div className='flex flex-col md:flex-row gap-2 md:gap-8 md:px-30 text-white'>
-            <div className='bg-[#94673d] px-10 py-15 flex flex-col w-default md:w-[50%]'>
+            <div className='bg-[#94673d] px-10 pr-14 py-15 flex flex-col w-default'>
                 <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-4'>
                     Your Journey Begins Here
                 </div>
@@ -60,20 +60,6 @@ export default function CareerPage() {
                     <MoveRight className='w-[35px] h-[35px]' />
                 </div>
             </div>
-            <div className='bg-[#8e2e19] px-10 py-15 flex flex-col w-default md:w-[50%]'>
-                <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-4'>
-                    Internships & Programs
-                </div>
-                <div className='font-semibold text-xl md:text-2xl'>
-                    Explore. Learn. Grow.
-                </div>
-                <p className='font-normal text-base md:text-2xl mt-8'>{`Our internships and early career programs are designed to give you hands-on experience, real projects, and a front-row seat to innovation. Discover your potential — and make your mark from day one.`}</p>
-                <div className='font-black flex items-center gap-10 text-base md:text-2xl mt-15'>
-                    Learn More
-                    <MoveRight className='w-[35px] h-[35px]' />
-                </div>
-            </div>
-
         </div>
 
 

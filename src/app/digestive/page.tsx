@@ -22,17 +22,17 @@ export default function DigestivePage() {
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] left-[-3rem] top-[-1rem]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-[-24rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] right-[-2rem] bottom-[-5rem] rotate-[150deg]"/>
-                  <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`Taste the\nGoodness.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with whole wheat and brown sugar, delivering natural goodness in every bite for a satisfying, guilt-free treat.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#e8ac5b]"><Image src={digestiveBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#e8ac5b]"><Image src={digestiveWrapper} alt='digestive-wrapper'/></div>
                   </div>
                     <div className="z-10">
-                        <div className="mt-5">
+                        <div className="mt-20 px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

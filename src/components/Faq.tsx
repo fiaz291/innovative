@@ -23,8 +23,6 @@ export default function Faq({isWhite = false}: {isWhite?: boolean}) {
             <div className="bg-white rounded-xl shadow-sm p-15 space-y-3">
               <HelpItem icon={<FileText className="w-5 h-5" />} label="Nutrition Facts" />
               <HelpItem icon={<Ticket className="w-5 h-5" />} label="Question about a promotion" />
-              <HelpItem icon={<Truck className="w-5 h-5" />} label="Question about an online order" />
-              <HelpItem icon={<ShoppingCart className="w-5 h-5" />} label="Find a product" />
               <HelpItem icon={<MessageSquare className="w-5 h-5" />} label="FAQs" />
             </div>
         </div>

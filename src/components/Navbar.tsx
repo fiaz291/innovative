@@ -113,11 +113,6 @@ const prodcuts = [
     route: "/tooo-gud",
   },
   {
-    title: "Olys",
-    route: '#',
-    // route: "/olys",
-  },
-  {
     title: "Peanut",
     route: "/peanut",
   },
@@ -261,6 +256,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
         </div>
       </div>
     </nav>
+    {showMegaNav && (
+      <div
+        className="fixed w-full h-full top-[82px] bg-black opacity-50 z-40"
+        onClick={() => setShowMegaNav(false)}
+      />
+    )}
     <div
       className={`absolute top-[82px] bg-white shadow-2xl w-full text-black z-50 border-t border-gray-100
         transition-all duration-300 ease-out
