@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import LearnMore from "@/components/LearnMore";
 import Navbar from "@/components/Navbar";

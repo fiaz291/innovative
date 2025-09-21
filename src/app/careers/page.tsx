@@ -1,4 +1,4 @@
-'use-client';
+'use client';
 
 import heroImg from '../../assets/career-hero.webp';
 import Navbar from "@/components/Navbar";
