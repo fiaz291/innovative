@@ -18,7 +18,7 @@ export default function LeadershipPage() {
 
         <div className="flex flex-col gap-5 text-white md:text-left">
           <div className="flex">
-            <div className="flex flex-col w-full md:w-[64git remote -v%] bg-[#6b9ebd] p-15">
+            <div className="flex flex-col w-full md:w-[40%] bg-[#6b9ebd] p-15">
               <div className="text-base md:text-xl font-medium">
                 THE HONORABLE CHAIRMAN
               </div>
