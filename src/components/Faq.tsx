@@ -5,8 +5,6 @@ import {
   Mic,
   FileText,
   Ticket,
-  Truck,
-  ShoppingCart,
   MessageSquare,
 } from "lucide-react";
 
