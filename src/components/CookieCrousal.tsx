@@ -4,11 +4,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import biscuit1 from '../assets/biscuit1.png'
-import biscuit2 from '../assets/biscuit2.png'
-import biscuit3 from '../assets/biscuit3.png'
-import biscuit4 from '../assets/biscuit4.png'
-import biscuit5 from '../assets/biscuit5.png'
+import biscuit1 from '../assets/packages/Digestive.png'
+import biscuit2 from '../assets/packages/Zeera.png'
+import biscuit3 from '../assets/packages/TooGud.png'
+import biscuit4 from '../assets/packages/Peanut.png'
+import biscuit5 from '../assets/packages/Snapp.png'
+import biscuit6 from '../assets/packages/Goodies.png'
+import biscuit7 from '../assets/packages/Jumbo-Junior.png'
+import biscuit8 from '../assets/packages/Butter-Crunch.png'
+import biscuit9 from '../assets/packages/Charm.png'
+import biscuit10 from '../assets/packages/Crust-Rolls.png'
+import biscuit11 from '../assets/packages/Choc-n-Chip-1.png'
+import biscuit12 from '../assets/packages/Crust-Wafer.png'
+import biscuit13 from '../assets/packages/Choc-n-Chip-1.png'
+import biscuit14 from '../assets/packages/Bitten.png'
+import biscuit15 from '../assets/packages/Choco-Rings.png'
 
 // Replace with your actual image paths
 const cookieImages = [
@@ -17,6 +27,16 @@ const cookieImages = [
     biscuit3,
     biscuit4,
     biscuit5,
+    biscuit6,
+    biscuit7,
+    biscuit8,
+    biscuit9,
+    biscuit10,
+    biscuit11,
+    biscuit12,
+    biscuit13,
+    biscuit14,
+    biscuit15,
 ];
 
 export default function CookieCarousel() {
