@@ -1,5 +1,6 @@
 'use client';
-import { Facebook, Instagram, Twitter, Youtube, Linkedin, CircleArrowRight } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Linkedin, CircleArrowRight, X } from 'lucide-react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 export default function Footer() {
@@ -27,11 +28,11 @@ export default function Footer() {
         {/* Social Section */}
         <div className="flex justify-center md:justify-start">
           <div className="flex flex-col items-center space-y-5 border-x border-white/30 px-5">
-            <Facebook className="w-[80px] h-[40px]" />
-            <Instagram className="w-[80px] h-[40px]" />
-            <Twitter className="w-[80px] h-[40px]" />
-            <Youtube className="w-[80px] h-[40px]" />
-            <Linkedin className="w-[80px] h-[40px]" />
+            <Link href="https://www.facebook.com/InnovativeBiscuits/"><Facebook className="w-[80px] h-[40px]"/></Link>
+            <Link href="https://www.instagram.com/innovative.biscuits/"><Instagram className="w-[80px] h-[40px]" /></Link>
+            <Link href="https://x.com/innovativebis"><X className="w-[80px] h-[40px]" /></Link>
+            <Link href="https://www.youtube.com/@innovativebiscuits1478"><Youtube className="w-[80px] h-[40px]" /></Link>
+            <Link href="https://www.linkedin.com/company/innovative-biscuits-pvt.-ltd/posts/?feedView=all"><Linkedin className="w-[80px] h-[40px]" /></Link>
           </div>
         </div>
 
