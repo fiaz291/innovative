@@ -96,8 +96,7 @@ const prodcuts = [
   },
   {
     title: "Crust Wafer",
-    route: '#',
-    // route: "/crust-wafer",
+    route: "/crust-wafer",
   },
   {
     title: "Goodies",
