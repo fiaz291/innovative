@@ -127,8 +127,7 @@ const prodcuts = [
   },
   {
     title: "Bittens",
-    route: '#',
-    // route: "/bittens",
+    route: "/bittens",
   },
   {
     title: "Charm",
