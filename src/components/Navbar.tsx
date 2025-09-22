@@ -174,7 +174,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                         Our Products <ChevronDown className="w-4 h-4" />
                       </div>
                     </li>
-                    <li className="flex items-center gap-1 cursor-pointer">
+                    <li onClick={()=> router.push('/coming-soon')} className="flex items-center gap-1 cursor-pointer">
                       Creations
                     </li>
                 </> : 
@@ -205,7 +205,9 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                       className="flex items-center gap-1 cursor-pointer">
                         Export
                     </li>
-                    <li className="flex items-center gap-1 cursor-pointer">
+                    <li
+                     onClick={() => router.push('/coming-soone')}
+                     className="flex items-center gap-1 cursor-pointer">
                       Recipes
                     </li>
                     <li className="relative group cursor-pointer" onClick={()=> {

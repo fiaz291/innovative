@@ -10,14 +10,14 @@ export default function Footer() {
         {/* Links Section */}
         <div className="space-y-3">
           {[
-            {label:'How We Are', link: '#'}, 
-            {label: 'Our Products', link: '#'}, 
+            {label: 'Who We Are', link: '/about-us'}, 
+            {label: 'Export', link: '/export'}, 
             {label: 'Innovation Lab', link: '/innovation-lab'},
-            {label: 'Recipes', link: '#'},
-            {label: 'Our Impact', link: '#'},
-            {label: 'Resources', link: '#'}
+            {label: 'Recipes', link: '/coming-soon'},
+            {label: 'Our Impact', link: '/sustainability'},
+            {label: 'Careers', link: '/careers'}
           ].map((item, index) => (
-            <div key={index} className="flex items-center gap-2 cursor-pointer" onClick={() => item.link !== '#' && router.push(item.link)}>
+            <div key={index} className="flex items-center gap-2 cursor-pointer" onClick={() => router.push(item.link)}>
               <CircleArrowRight className='w-[35px] h-[35px]' />
               <span>{item.label}</span>
             </div>

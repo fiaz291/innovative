@@ -20,17 +20,17 @@ export default function GoodiesPage() {
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-7rem]"/>
-                  <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`Classic taste,\nfresh goodness.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Egg & Milk Biscuits`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Egg & Milk Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`The perfect blend of fresh eggs and creamy milk - a biscuit that's soft, golden, and full of homemade comfort.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#fb8587]"><Image src={goodiesBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#fb8587]"><Image src={goodiesWrapper} alt='digestive-wrapper'/></div>
                   </div>
                     <div className="z-10">
-                        <div className="mt-5">
+                        <div className="mt-20 px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -58,17 +58,17 @@ export default function GoodiesPage() {
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] my-auto left-[-12rem] bottom-0 top-[10rem] rotate-[60deg]"/>
-                  <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`Classic taste,\nfresh goodness.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold">{`Egg & Milk Biscuits`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold">{`Egg & Milk Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crisp elegance with a citrus twist - the luxury of lemon, egg, and milk in every golden bite.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#365a04]"><Image src={goodiesLemonBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#365a04]"><Image src={goodiesLemonWrapper} alt='digestive-wrapper'/></div>
                   </div>
                     <div className="z-10">
-                        <div className="mt-5">
+                        <div className="mt-20 px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

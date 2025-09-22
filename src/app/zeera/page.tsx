@@ -19,17 +19,17 @@ export default function ZeeraPage() {
                   <Image src={zeeraLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-7rem]"/>
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-[-24rem]"/>
-                  <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`Crisp with\na cumin kick.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Tasty Salty Biscuits with Cumin Seeds`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Tasty Salty Biscuits with Cumin Seeds`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crunchy biscuits loaded with the rich flavor of roasted peanuts for a nutty treat in every bite.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#7e3f1e]"><Image src={zeeraBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#7e3f1e]"><Image src={zeeraWrapper} alt='digestive-wrapper'/></div>
                   </div>
                     <div className="z-10">
-                        <div className="mt-5">
+                        <div className="mt-20 px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

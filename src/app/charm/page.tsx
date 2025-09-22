@@ -19,17 +19,17 @@ export default function CharmPage() {
                   <Image src={charmLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-3rem] top-[-3rem]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-11rem] bottom-[-20rem] rorate-[-35deg]"/>
-                  <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`Filled with\npure joy.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Baked with love, filled with joy - chocolate at the heart of every cookie.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#d28382]"><Image src={charmBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#d28382]"><Image src={charmWrapper} alt='digestive-wrapper'/></div>
                   </div>
                     <div className="z-10">
-                        <div className="mt-5">
+                        <div className="mt-20 px-20">
                           <table className="w-full text-center border-spacing-y-2 text-white">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

@@ -111,7 +111,7 @@ export default function LandingPage() {
         >
           <SwiperSlide>
             <div className="flex flex-col w-[100%] bg-[#9e2a2b] p-15 h-[100%]">
-              <div className="flex items-center gap-10 text-base md:text-xl">
+              <div className="flex items-center gap-2 text-base md:text-xl">
                 Our Products
                 <CircleArrowRight
                   className="w-[25px] h-[25px] cursor-pointer"
@@ -127,7 +127,7 @@ export default function LandingPage() {
                 natural brown sugar, offering a wholesome, guilt-free snack
                 that’s as delicious as it is nourishing.
               </div>
-              <div className="flex items-center gap-2 text-xl md:text-3xl font-black mt-6">
+              <div className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-6" onClick={()=> router.push('/digestive')}>
                 Read More
                 <MoveRight className="w-[35px] h-[35px]" />
               </div>
@@ -135,7 +135,7 @@ export default function LandingPage() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col w-[100%] bg-[#000000] p-15 h-[100%]">
-              <div className="flex items-center gap-10 text-base md:text-xl">
+              <div className="flex items-center gap-2 text-base md:text-xl">
                 Innovative Premium
                 <CircleArrowRight
                   className="w-[25px] h-[25px] cursor-pointer"
@@ -151,7 +151,7 @@ export default function LandingPage() {
                 delivers superior taste, texture, and indulgence — made for
                 those who appreciate the art of premium snacking.
               </div>
-              <div className="flex items-center gap-2 text-xl md:text-3xl font-black mt-6">
+              <div className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-6" onClick={()=>router.push('premium-products')}>
                 Read More
                 <MoveRight className="w-[35px] h-[35px]" />
               </div>
@@ -159,7 +159,7 @@ export default function LandingPage() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col w-[100%] bg-[#c78e57] p-15 h-[100%]">
-              <div className="flex items-center gap-10 text-base md:text-xl">
+              <div className="flex items-center gap-2 text-base md:text-xl">
                 Innovative Lab
                 <CircleArrowRight
                   className="w-[25px] h-[25px] cursor-pointer"
@@ -174,7 +174,7 @@ export default function LandingPage() {
                 — where bold ideas and expert craft come together to create
                 groundbreaking flavors that redefine snacking.
               </div>
-              <div className="flex items-center gap-2 text-xl md:text-3xl font-black mt-6">
+              <div className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-6" onClick={()=>router.push('innovation-lab')}>
                 Read More
                 <MoveRight className="w-[35px] h-[35px]" />
               </div>
@@ -217,6 +217,7 @@ export default function LandingPage() {
           image={recipes}
           title="Recipes & Pairings"
           description="It All Starts Inside"
+          route="/coming-soon"
         />
         <InfoContainer
           image={innovationLab}
@@ -241,6 +242,7 @@ export default function LandingPage() {
           image={media}
           title="Media Resources"
           description="For Media & Press Inquiries"
+          route="/coming-soon"
         />
         <InfoContainer
           image={hr}

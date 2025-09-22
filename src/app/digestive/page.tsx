@@ -5,7 +5,7 @@ import Image from "next/image";
 import digestiveLogo from '../../assets/innovative-digestive-logo.png';
 import digestiveBox from '../../assets/innovative-digestive-box.webp';
 import digestiveWrapper from '../../assets/innovative-digestive-wrapper.webp';
-import digestiveTestimonial from '../../assets/innovative-digestive-image.webp';
+import digestiveTestimonial from '../../assets/Innovative-Digestiveimage.webp';
 import innovativeBiscuit from '../../assets/innovative-biscuit.webp';
 import digestiveWheat from '../../assets/digestive-wheat.webp';
 import Faq from "@/components/Faq";

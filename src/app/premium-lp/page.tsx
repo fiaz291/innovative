@@ -23,7 +23,7 @@ export default function LandingPage() {
 
             <div className="flex flex-col md:flex-row gap-10 mx-15">
                 <InfoContainer image={ourProductsImg} title='Our Products' description='It All Starts' route='/premium-products'/>
-                <InfoContainer image={creationsImg} title='Creations' description='Crafted from the Inside Out'/>
+                <InfoContainer image={creationsImg} title='Creations' description='Crafted from the Inside Out' route='/coming-soon'/>
             </div>
 
             <Image src={girlImg} alt='bg-lp'/>

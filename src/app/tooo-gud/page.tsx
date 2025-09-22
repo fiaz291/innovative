@@ -19,17 +19,17 @@ export default function ToooGudPage() {
                   <Image src={tooGudLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[30%] right-[-10rem] top-[-5rem]"/>
                   <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-0 rotate-[113deg]"/>
-                  <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`Too Good\nto Share!s`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Rick Egg & Milk Cookies`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Rick Egg & Milk Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Toogud combines the goodness of egg and milk for a melt-in-your-mouth cookie experience.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#ffd8b0]"><Image src={tooGudBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#ffd8b0]"><Image src={tooGudWrapper} alt='digestive-wrapper'/></div>
                   </div>
                     <div className="z-10">
-                        <div className="mt-5">
+                        <div className="mt-20 px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

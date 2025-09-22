@@ -21,17 +21,17 @@ export default function ButterCrunchPage() {
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] right-[-7rem] top-[-5rem]"/>
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] left-[-10rem] bottom-[-18rem]"/>
                   <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[15%] right-[-2rem] bottom-[5rem]"/>
-                  <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`Golden oats,\npure delight.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Crunchy Oat Biscuits with Butter`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crunchy Oat Biscuits with Butter`}</div>
                   <div className="text-base md:text-2xl text-left">{`Indulge in the perfect balance of crunchy oats and rich creamy butter with Innovative Crunchy Oat Biscuits. Every bite delivers wholesome texture and irresistable flavor - a satisfying treat for any time of day.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#d39130]"><Image src={butterCrunchBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#d39130]"><Image src={butterCrunchWrapper} alt='digestive-wrapper'/></div>
                   </div>
                     <div className="z-10">
-                        <div className="mt-5">
+                        <div className="mt-20 px-20">
                           <table className="w-full text-center border-spacing-y-2 ">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

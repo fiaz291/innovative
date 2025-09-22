@@ -19,17 +19,17 @@ export default function ChocChipPage() {
                   <Image src={chocChipLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-5rem] top-[-6rem]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-[-20rem]"/>
-                  <div className="text-3xl md:text-8xl font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`Chip In.\nChoc Out.`}
                   </div>
-                  <div className="text-lg md:text-4xl text-left font-semibold my-2 md:my-5">{`Chocolate Chip Cookies`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Chip Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crucnchy edges, gooey chips, and that just-right sweetness - everything you love in a chocolate chip biscuit.`}</div>
                   <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
                     <div className="w-[50%] bg-[#b8f2ff]"><Image src={chocChipBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#b8f2ff]"><Image src={chocChipWrapper} alt='digestive-wrapper'/></div>
                   </div>
                     <div className="z-10">
-                        <div className="mt-5">
+                        <div className="mt-20 px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
