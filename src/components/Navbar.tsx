@@ -87,8 +87,7 @@ const prodcuts = [
   },
   {
     title: "Choco Rings",
-    route: '#',
-    // route: "/choco-rings",
+    route: "/choco-rings",
   },
   {
     title: "Crust Rolls",
