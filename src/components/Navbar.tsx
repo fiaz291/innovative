@@ -122,8 +122,7 @@ const prodcuts = [
   },
   {
     title: "Snapp",
-    route: '#',
-    // route: "/snapp",
+    route: "/snapp",
   },
   {
     title: "Bittens",

@@ -31,7 +31,7 @@ export default function BittensPage() {
                   </div>
                     <div className="z-10">
                         <div className="mt-20 px-20">
-                          <table className="w-full text-center border-spacing-y-2">
+                          <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
