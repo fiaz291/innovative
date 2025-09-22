@@ -20,7 +20,7 @@ export default function ToooGudPage() {
                   <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[30%] right-[-10rem] top-[-5rem]"/>
                   <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-0 rotate-[113deg]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Too Good\nto Share!s`}
+                    {`Too Good\nto Shares!`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Rick Egg & Milk Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Toogud combines the goodness of egg and milk for a melt-in-your-mouth cookie experience.`}</div>
