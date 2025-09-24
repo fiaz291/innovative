@@ -2,9 +2,9 @@
 import { useRouter } from 'next/navigation';
 import { ChevronDown, ChevronLeft, Search } from "lucide-react";
 import Image from "next/image";
-import premiumLogo from '../assets/innovative-premium-logo.png';
+import premiumLogo from '../assets/innovative-premium-logo.svg';
+import premiumInnovativeLogo from '../assets/innovative-premium-logo.png';
 import logo from '../assets/innovative-logo.svg';
-import rectangle from '../assets/rectangle-bg.svg'
 import { useState } from 'react';
 
 const whoWeAreItems = [
@@ -238,14 +238,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                 Back
             </div> :
             <div className="relative ">
-                <div onClick={()=>router.push('/premium-lp')} className={`flex items-center gap-1 cursor-pointer relative z-1 ${(isTransparentBg || showMegaNav) && 'text-white'}`}>
-                    Premium
-                </div>
-                <Image
-                  src={rectangle}
-                  alt="Logo"
-                  className="absolute bottom-[0px] left-[-6px] max-w-[80px]"
-                />
+              <Image
+                src={premiumInnovativeLogo}
+                alt="Logo"
+                className="h-20 w-auto object-contain mt-[-25px] cursor-pointer"
+                onClick={() => router.push('premium-lp')}
+              />
             </div>
             }
           <div onClick={()=>router.push('/contact-us')} className="cursor-pointer">Contact</div>

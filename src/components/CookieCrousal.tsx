@@ -16,27 +16,25 @@ import biscuit9 from '../assets/packages/Charm.png'
 import biscuit10 from '../assets/packages/Crust-Rolls.png'
 import biscuit11 from '../assets/packages/Choc-n-Chip-1.png'
 import biscuit12 from '../assets/packages/Crust-Wafer.png'
-import biscuit13 from '../assets/packages/Choc-n-Chip-1.png'
-import biscuit14 from '../assets/packages/Bitten.png'
-import biscuit15 from '../assets/packages/Choco-Rings.png'
+import biscuit13 from '../assets/packages/Bitten.png'
+import biscuit14 from '../assets/packages/Choco-Rings.png'
 
 // Replace with your actual image paths
 const cookieImages = [
     biscuit1,
-    biscuit2,
+    biscuit8,
+    biscuit13,
+    biscuit14,
+    biscuit6,
     biscuit3,
+    biscuit2,
     biscuit4,
     biscuit5,
-    biscuit6,
     biscuit7,
-    biscuit8,
     biscuit9,
     biscuit10,
     biscuit11,
     biscuit12,
-    biscuit13,
-    biscuit14,
-    biscuit15,
 ];
 
 export default function CookieCarousel() {
