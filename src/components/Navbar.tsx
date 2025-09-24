@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { ChevronDown, ChevronLeft, Search } from "lucide-react";
 import Image from "next/image";
-import premiumLogo from '../assets/innovative-premium-logo.svg';
+import premiumLogo from '../assets/innovative-premium-logo.png';
 import logo from '../assets/innovative-logo.svg';
 import rectangle from '../assets/rectangle-bg.svg'
 import { useState } from 'react';
@@ -147,7 +147,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
             src={isPremium ? premiumLogo : logo}
             alt="Logo"
             className="h-20 w-auto object-contain mt-[-25px] cursor-pointer"
-            onClick={() => router.push('/innovative-lp')}
+            onClick={() => router.push(isPremium ? 'premium-lp' : '/innovative-lp')}
           />
 
           <ul className={`hidden md:flex items-center gap-8 text-sm font-medium`}>
