@@ -20,7 +20,7 @@ export default function JumboJuniorPage() {
                   <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-5rem] top-[-6rem]"/>
                   <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[20%] left-[-6rem] bottom-[20rem] rotate-[-55deg]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Strong, smart,\nand super fun!`}
+                    {`Strong, Smart,\nAnd Super Fun!`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Engergy Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Wholesome, crunchy biscuits packed with energy to keep kids active, strong, and smiling all day.`}</div>
@@ -58,7 +58,7 @@ export default function JumboJuniorPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={jumboJuniorTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={jumboJuniorTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

@@ -13,7 +13,7 @@ export default function ShortBreadPage() {
           className="relative w-full bg-[#e7ad72] pb-10">
               <Navbar />
               <div className="flex flex-col px-10 md:px-30">
-                  <Image src={bricklaneText} alt='digestive-copy' className="w-[100%] mx-auto"/>
+                  <Image src={bricklaneText} alt='digestive-copy' className="w-[80%] mx-auto"/>
                   <div className="flex mt-6">
                     <div className="md:pl-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Premium taste with a purpose<span className="text-base md:text-2xl font-medium"> - ethically sourced, beautifully crafted, truly unforgettable</span></div>

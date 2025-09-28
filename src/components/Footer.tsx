@@ -49,7 +49,7 @@ export default function Footer() {
         <div className="text-lg">
           <h3 className="font-bold text-2xl mb-3">Contact us</h3>
           <p>Innovative Biscuits - 153 M, Industrial Area, Kotlakhpat, Lahore, Pakistan-5400</p>
-          <p className="mt-2">Ph: 35215855-77-99</p>
+          <p className="mt-2">Ph: +92-35215855-77-99</p>
           <p>info@innovativebiscuits.com</p>
         </div>
 

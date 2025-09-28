@@ -20,7 +20,7 @@ export default function ZeeraPage() {
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-7rem]"/>
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-[-24rem]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Crisp with\na cumin kick.`}
+                    {`Crisp With\nA Cumin Kick.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Tasty Salty Biscuits with Cumin Seeds`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crunchy biscuits loaded with the rich flavor of roasted peanuts for a nutty treat in every bite.`}</div>
@@ -64,7 +64,7 @@ export default function ZeeraPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={zeeraTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={zeeraTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

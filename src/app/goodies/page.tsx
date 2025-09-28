@@ -21,7 +21,7 @@ export default function GoodiesPage() {
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-7rem]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Classic taste,\nfresh goodness.`}
+                    {`Classic Taste,\nFresh Goodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Egg & Milk Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`The perfect blend of fresh eggs and creamy milk - a biscuit that's soft, golden, and full of homemade comfort.`}</div>
@@ -59,7 +59,7 @@ export default function GoodiesPage() {
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] my-auto left-[-12rem] bottom-0 top-[10rem] rotate-[60deg]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Classic taste,\nfresh goodness.`}
+                    {`Classic Taste,\nFresh Goodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Egg & Milk Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crisp elegance with a citrus twist - the luxury of lemon, egg, and milk in every golden bite.`}</div>
@@ -103,7 +103,7 @@ export default function GoodiesPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={goodiesTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={goodiesTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

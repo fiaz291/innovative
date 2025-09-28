@@ -20,7 +20,7 @@ export default function SnappPage() {
                   <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-5rem]"/>
                   <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-8rem] bottom-[-8rem] scale-x-[-1] rotate-[-15deg]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Indulge in\nevery snapp.`}
+                    {`Indulge In\nEvery Snapp.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Creamy Wafer Coated With Indulging Chocoalte`}</div>
                   <div className="text-base md:text-2xl text-left">{`A light crispy wafer filled with smooth cream and wrapped in rich, indulgent chocolate for the perfect crunchy bite.`}</div>
@@ -58,7 +58,7 @@ export default function SnappPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={snappTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={snappTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

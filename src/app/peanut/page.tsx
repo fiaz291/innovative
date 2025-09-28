@@ -20,7 +20,7 @@ export default function PeanutPage() {
                   <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-14rem] top-[8rem]"/>
                   <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-16rem] bottom-[-24rem]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Taste the\nGoodness.`}
+                    {`Taste The\nGoodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with whole wheat and brown sugar, delivering natural goodness in every bite for a satisfying, guilt-free treat.`}</div>
@@ -64,7 +64,7 @@ export default function PeanutPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={peanutTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={peanutTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

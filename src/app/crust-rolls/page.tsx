@@ -20,7 +20,7 @@ export default function CrustRollsPage() {
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[30%]"/>
                   <div className="text-3xl md:text-[7rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Roll. crunch.\nindulge`}
+                    {`Roll. Crunch.\nIndulge`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Cream Filled Wafer Rolls`}</div>
                   <div className="text-base md:text-2xl text-left">{`Light, crispy wafer rolls filled with smooth, creamy goodness for a crunchy, indulgent treat.`}</div>
@@ -35,7 +35,7 @@ export default function CrustRollsPage() {
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={crustRollsOrgangeLogo} alt='digestive-copy' className="w-[30%]"/>
                   <div className="text-3xl md:text-[7rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Crispy rolls,\ncitrus goals.`}
+                    {`Crispy Rolls,\nCitrus Goals.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Cream Filled Wafer Rolls`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy wafer rolls with smooth, tangy orange cream for a zesty, crunchy treat.`}</div>
@@ -73,7 +73,9 @@ export default function CrustRollsPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={crustRollsTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center">
+                <Image src={crustRollsTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/>
+              </div>
         </div>        
       </div>
     );

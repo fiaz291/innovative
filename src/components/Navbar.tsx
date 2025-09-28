@@ -3,7 +3,6 @@ import { useRouter } from 'next/navigation';
 import { ChevronDown, ChevronLeft, Search } from "lucide-react";
 import Image from "next/image";
 import premiumLogo from '../assets/innovative-premium-logo.svg';
-import premiumInnovativeLogo from '../assets/innovative-premium-logo.png';
 import logo from '../assets/innovative-logo.svg';
 import { useState } from 'react';
 
@@ -155,11 +154,11 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                 <>
                     <li
                      onClick={() => router.push('/premium-lp')}
-                     className="flex items-center gap-1 cursor-pointer">
+                     className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5">
                       Home <ChevronDown className="w-4 h-4" />
                     </li>
-                    <li className="relative group cursor-pointer">
-                      <div className="flex items-center gap-1" onClick={()=> {
+                    <li className="relative group cursor-pointer py-2 hover:border-b-5">
+                      <div className="text-lg flex items-center gap-1" onClick={()=> {
                         if(tab === 'Our Products')
                           setShowMegaNav(!showMegaNav);
                         else setShowMegaNav(true);
@@ -169,23 +168,23 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                         Our Products <ChevronDown className="w-4 h-4" />
                       </div>
                     </li>
-                    <li onClick={()=> router.push('/coming-soon')} className="flex items-center gap-1 cursor-pointer">
+                    <li onClick={()=> router.push('/coming-soon')} className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5">
                       Creations
                     </li>
                 </> : 
                 <>
-                    <li className="relative cursor-pointer" onClick={()=> {
+                    <li className="relative cursor-pointer py-2 hover:border-b-5" onClick={()=> {
                       if(tab === 'Who We Are')
                         setShowMegaNav(!showMegaNav);
                       else setShowMegaNav(true);
                         setTab('Who We Are');
                         setMegaNavItems(whoWeAreItems);
                       }}>
-                      <div className="flex items-center gap-1">
+                      <div className="text-lg flex items-center gap-1">
                         Who We Are <ChevronDown className="w-4 h-4" />
                       </div>
                     </li>
-                    <li className="flex items-center gap-1 cursor-pointer" onClick={() => {
+                    <li className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5" onClick={() => {
                       if(tab === 'Products')
                         setShowMegaNav(!showMegaNav);
                       else setShowMegaNav(true);
@@ -197,32 +196,27 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                     </li>
                     <li 
                       onClick={() => router.push('/export')}
-                      className="flex items-center gap-1 cursor-pointer">
+                      className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5">
                         Export
                     </li>
                     <li
                      onClick={() => router.push('/coming-soone')}
-                     className="flex items-center gap-1 cursor-pointer">
+                     className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5">
                       Recipes
                     </li>
-                    <li className="relative group cursor-pointer" onClick={()=> {
+                    <li className="relative group cursor-pointer py-2 hover:border-b-5" onClick={()=> {
                       if(tab === 'Resources')
                         setShowMegaNav(!showMegaNav);
                       else setShowMegaNav(true);
                         setTab('Resources');
                         setMegaNavItems(resourcesItems);
                       }}>
-                      <div className="flex items-center gap-1">
+                      <div className="text-lg flex items-center gap-1 ">
                         Resources <ChevronDown className="w-4 h-4" />
                       </div>
                     </li>
-{/*                     <li className="relative group cursor-pointer">
-                      <div className="flex items-center gap-1">
-                        Our Impact
-                      </div>
-                    </li> */}
                     <li className="relative group cursor-pointer">
-                      <div className="flex items-center gap-1" onClick={()=>router.push('/careers')}>
+                      <div className="text-lg flex items-center gap-1 py-2 hover:border-b-5" onClick={()=>router.push('/careers')}>
                         Careers
                       </div>
                     </li>
@@ -233,20 +227,20 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
 
         <div className="flex items-center gap-6 text-sm font-medium">
           {isPremium ? 
-            <div onClick={()=>router.push('/innovative-lp')} className="flex items-center gap-1 cursor-pointer">
+            <div onClick={()=>router.push('/innovative-lp')} className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5">
                 <ChevronLeft className="w-4 h-4" />
                 Back
             </div> :
             <div className="relative ">
               <Image
-                src={premiumInnovativeLogo}
+                src={premiumLogo}
                 alt="Logo"
                 className="h-20 w-auto object-contain mt-[-25px] cursor-pointer"
                 onClick={() => router.push('premium-lp')}
               />
             </div>
             }
-          <div onClick={()=>router.push('/contact-us')} className="cursor-pointer">Contact</div>
+          <div onClick={()=>router.push('/contact-us')} className="text-lg cursor-pointer py-2 hover:border-b-5">Contact</div>
           <Search className="w-5 h-5 cursor-pointer" />
         </div>
       </div>

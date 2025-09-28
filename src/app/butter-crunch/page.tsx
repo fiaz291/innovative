@@ -22,7 +22,7 @@ export default function ButterCrunchPage() {
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] left-[-10rem] bottom-[-18rem]"/>
                   <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[15%] right-[-2rem] bottom-[5rem]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Golden oats,\npure delight.`}
+                    {`Golden Oats,\nPure Delight.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crunchy Oat Biscuits with Butter`}</div>
                   <div className="text-base md:text-2xl text-left">{`Indulge in the perfect balance of crunchy oats and rich creamy butter with Innovative Crunchy Oat Biscuits. Every bite delivers wholesome texture and irresistable flavor - a satisfying treat for any time of day.`}</div>
@@ -66,7 +66,7 @@ export default function ButterCrunchPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={butterCrunchTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={butterCrunchTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

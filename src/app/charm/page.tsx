@@ -20,7 +20,7 @@ export default function CharmPage() {
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-3rem] top-[-3rem]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-11rem] bottom-[-20rem] rorate-[-35deg]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Filled with\npure joy.`}
+                    {`Filled With\nPure Joy.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Baked with love, filled with joy - chocolate at the heart of every cookie.`}</div>
@@ -52,7 +52,7 @@ export default function CharmPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={charmTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={charmTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

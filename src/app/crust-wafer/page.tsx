@@ -23,7 +23,7 @@ export default function CrustWaferPage() {
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[30%]"/>
                   <div className="text-3xl md:text-[7rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Crispy wafer,\ncreamy chocolate.`}
+                    {`Crispy Wafer,\nCreamy Chocolate.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy wafer layers filled with smooth, chocolatey cream for a crunchy, delightful treat.`}</div>
@@ -38,7 +38,7 @@ export default function CrustWaferPage() {
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25">
                   <Image src={crustOrgangeLogo} alt='digestive-copy' className="w-[30%]"/>
                   <div className="text-3xl md:text-[7rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Crunch with a\ncitrus kick.`}
+                    {`Crunch With A\nCitrus Kick.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy wafer layers filled with a burst of tangy orange cream for a light, refreshing treat.`}</div>
@@ -53,7 +53,7 @@ export default function CrustWaferPage() {
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={crustStrawberryLogo} alt='digestive-copy' className="w-[30%]"/>
                   <div className="text-3xl md:text-[7rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`Crispy wafer,\nStrawberry flavor.`}
+                    {`Crispy Wafer,\nStrawberry Flavor.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Light, crispy wafers layered with a burst of sweet strawberry flavor for a delightful crunchy treat.`}</div>
@@ -91,7 +91,7 @@ export default function CrustWaferPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={crustTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={crustTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

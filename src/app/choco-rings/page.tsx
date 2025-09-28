@@ -21,7 +21,7 @@ export default function ChocoRingsPage() {
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-[-16rem]"/>
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[15%] left-0 top-[20rem]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
-                    {`A perfect\nchoco circle.`}
+                    {`A Perfect\nChoco Circle.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits Coated with Indulging Chocolate`}</div>
                   <div className="text-base md:text-2xl text-left">{`Delicious biscuits coated in rich, indulgent chocolate for a perfectly sweet crunchy treat.`}</div>
@@ -53,7 +53,7 @@ export default function ChocoRingsPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <Image src={chocoRingsTestimonial} alt='bg-lp' className="mt-12 md:mt-25"/>
+              <div className="w-full flex justify-center"><Image src={chocoRingsTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
         </div>        
       </div>
     );

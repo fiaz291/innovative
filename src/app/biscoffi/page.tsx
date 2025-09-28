@@ -17,7 +17,7 @@ export default function BiscoffiPage() {
               <div className="flex flex-col items-center px-10 md:px-30">
                   <Image src={biscoffiSmallBean} alt='small-bean' className="absolute w-[6%] top-30 md:top-50 right-5 md:right-20"/>
                   <Image src={havenCoffeeBean} alt='bean' className="absolute w-[10%] top-40 md:top-90 left-[-10px] md:left-[-30px]"/>
-                  <Image src={biscoffiText} alt='digestive-copy' className="w-[100%] mx-auto"/>
+                  <Image src={biscoffiText} alt='digestive-copy' className="w-[80%] mx-auto"/>
                   <div className="flex">
                     <div className="px-40">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Brewed to Be Eaten<span className="text-base md:text-2xl font-medium">{` - Artisan Crackers Infused with Rich Coffee Notes, toasted to a Delicate, Satisfying Crisp.`}</span></div>
@@ -44,7 +44,7 @@ export default function BiscoffiPage() {
 
                     </div>
                   </div>
-                  <Image src={biscoffi} alt='boxes-image' className="hidden md:block w-[100%] px-20"/>
+                  <div className="w-full flex justify-center"><Image src={biscoffi} alt='boxes-image' className="hidden md:block w-[70%] px-20"/></div>
               </div>
               <Faq />
         </div>
