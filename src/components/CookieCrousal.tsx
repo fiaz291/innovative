@@ -73,7 +73,7 @@ export default function CookieCarousel() {
       
       <Swiper
         modules={[Navigation]}
-        spaceBetween={20}
+        spaceBetween={0}
         slidesPerView="auto"
         navigation={{
           nextEl: '.swiper-button-next',
