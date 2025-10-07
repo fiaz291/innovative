@@ -2,9 +2,37 @@
 import { Facebook, Instagram, Youtube, Linkedin, CircleArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Footer() {
   const router = useRouter();
+    const [form, setForm] = useState({
+      firstName: '',
+      message: '',
+      email: '',
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setForm({ ...form, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+      await fetch('/api/contact', {
+        method: 'POST',
+        body: JSON.stringify(form),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      alert('MESSAGE SENT!');
+      setForm({
+      firstName: '',
+      message: '',
+      email: '',
+    });
+    };
+  
   return (
     <footer className="bg-[#1A1717] text-white py-15 px-6 md:px-30 text-sm">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -47,27 +75,34 @@ export default function Footer() {
 
         {/* Contact Section */}
         <div className="text-lg">
-          <h3 className="font-bold text-2xl mb-3">Contact us</h3>
-          <p>Innovative Biscuits - 153 M, Industrial Area, Kotlakhpat, Lahore, Pakistan-5400</p>
-          <p className="mt-2">Ph: +92-35215855-77-99</p>
-          <p>info@innovativebiscuits.com</p>
+          <h3 className="font-bold text-2xl mb-5">Contact us</h3>
+          <p className='mb-4'>Innovative Biscuits - 153 M, Industrial Area, Kotlakhpat, Lahore, Pakistan-5400</p>
+          <p className='mb-4'>Ph: +92-35215855-77-99</p>
+          <p className='mb-4'>info@innovativebiscuits.com</p>
+          <a href="https://www.google.com/maps/place/Innovative+biscuits/data=!4m2!3m1!1s0x0:0x3cbc3ccd7def20f1?sa=X&ved=1t:2428&ictx=111" 
+             target="_blank" 
+             className="inline-flex gap-2 cursor-pointer bg-gray-300 text-black px-6 py-2 rounded-xl hover:bg-gray-500 hover:text-white mt-2">
+              <span>📍</span>
+              View on Google Maps
+          </a>
         </div>
 
         {/* Form Section */}
-        <div className="space-y-3">
+        <form onSubmit={handleSubmit} className="space-y-3">
           <div>
             <label className="block text-xs mb-1">Name</label>
-            <input className="bg-white w-full p-2 text-black" type="text" />
+            <input value={form.firstName} onChange={handleChange} name="firstName" className="bg-white w-full p-2 text-black" required type="text" />
           </div>
           <div>
             <label className="block text-xs mb-1">Email</label>
-            <input className="bg-white w-full p-2 text-black" type="email" />
+            <input value={form.email} onChange={handleChange} name="email" className="bg-white w-full p-2 text-black" required type="email" />
           </div>
           <div>
             <label className="block text-xs mb-1">Leave us a message</label>
-            <textarea className="resize-none bg-white w-full p-2 text-black h-24" />
+            <textarea value={form.message} onChange={handleChange} name="message" required className="resize-none bg-white w-full p-2 text-black h-20" />
           </div>
-        </div>
+          <button type="submit" className="cursor-pointer bg-gray-300 text-black px-6 py-2 rounded-xl hover:bg-gray-800 hover:text-white">Submit</button>
+        </form>
       </div>
 
       {/* Footer Bottom */}
