@@ -3,7 +3,9 @@ import { useRouter } from 'next/navigation';
 import { ChevronDown, ChevronLeft, Search } from "lucide-react";
 import Image from "next/image";
 import premiumLogo from '../assets/innovative-premium-logo.svg';
-import logo from '../assets/innovative-logo.svg';
+import logoLight from '../assets/Innovative-Logo-White.png';
+import logoDark from '../assets/Innovative-Logo-Black.png';
+// import logo from '../assets/innovative-logo.svg';
 import { useState } from 'react';
 
 const whoWeAreItems = [
@@ -140,12 +142,13 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
   return (
     <>
     <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${(isPremium && !isTextWhite) || isTransparentBg || showMegaNav ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'} ${showMegaNav && 'bg-white'}`}>
-      <div className="flex items-center justify-between pt-[15px]">
+      <div className="flex items-center justify-between">
         <div className="flex items-center gap-10">
           <Image
-            src={isPremium ? premiumLogo : logo}
+            src={isPremium ? premiumLogo : (isTransparentBg || showMegaNav) ? logoDark : logoLight}
             alt="Logo"
-            className="h-20 w-auto object-contain mt-[-25px] cursor-pointer"
+            className={`h-15 w-auto object-contain ${!isPremium && 'mt-[20px]'} cursor-pointer`}
+            // className={`h-20 w-auto object-contain mt-[20px] cursor-pointer`}
             onClick={() => router.push(isPremium ? 'premium-lp' : '/innovative-lp')}
           />
 
