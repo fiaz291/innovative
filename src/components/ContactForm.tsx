@@ -66,7 +66,7 @@ export default function ContactForm() {
                 <input type="text" name="city" onChange={handleChange} required className="w-full border p-2 rounded" />
             </div>
         </div>
-        <button type="submit" className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">Submit</button>
+        <button type="submit" className="cursor-pointer bg-black text-white px-6 py-2 rounded-[24px] hover:bg-gray-800">Submit</button>
       </form>
     </div>
   );

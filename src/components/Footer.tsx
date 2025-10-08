@@ -3,6 +3,8 @@ import { Facebook, Instagram, Youtube, Linkedin, CircleArrowRight } from 'lucide
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import map from '../assets/map.jpeg';
+import Image from 'next/image';
 
 export default function Footer() {
   const router = useRouter();
@@ -74,16 +76,15 @@ export default function Footer() {
         </div>
 
         {/* Contact Section */}
-        <div className="text-lg">
-          <h3 className="font-bold text-2xl mb-5">Contact us</h3>
-          <p className='mb-4'>Innovative Biscuits - 153 M, Industrial Area, Kotlakhpat, Lahore, Pakistan-5400</p>
-          <p className='mb-4'>Ph: +92-35215855-77-99</p>
-          <p className='mb-4'>info@innovativebiscuits.com</p>
+        <div className="text-base">
+          <h3 className="font-bold text-2xl mb-1">Contact us</h3>
+          <p className='mb-1'>Innovative Biscuits - 153 M, Industrial Area, Kotlakhpat, Lahore, Pakistan-5400</p>
+          <p className='mb-1'>Ph: +92-35215855-77-99</p>
+          <p className='mb-1'>info@innovativebiscuits.com</p>
           <a href="https://www.google.com/maps/place/Innovative+biscuits/data=!4m2!3m1!1s0x0:0x3cbc3ccd7def20f1?sa=X&ved=1t:2428&ictx=111" 
              target="_blank" 
-             className="inline-flex gap-2 cursor-pointer bg-gray-300 text-black px-6 py-2 rounded-xl hover:bg-gray-500 hover:text-white mt-2">
-              <span>📍</span>
-              View on Google Maps
+             className="inline-flex mt-2 hover:opacity-70">
+              <Image src={map} alt="map" className="w-full h-full"/>
           </a>
         </div>
 
@@ -101,7 +102,7 @@ export default function Footer() {
             <label className="block text-xs mb-1">Leave us a message</label>
             <textarea value={form.message} onChange={handleChange} name="message" required className="resize-none bg-white w-full p-2 text-black h-20" />
           </div>
-          <button type="submit" className="cursor-pointer bg-gray-300 text-black px-6 py-2 rounded-xl hover:bg-gray-800 hover:text-white">Submit</button>
+          <button type="submit" className="cursor-pointer bg-gray-300 text-black px-6 py-2 rounded-[24px] hover:bg-gray-800 hover:text-white">Submit</button>
         </form>
       </div>
 
