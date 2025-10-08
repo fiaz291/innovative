@@ -19,24 +19,20 @@ export default function DigestivePage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={digestiveLogo} alt='digestive-copy' className="w-[30%]"/>
-                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-7rem]"/>
+                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-6rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] left-[-3rem] top-[-1rem]"/>
-                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-[-24rem]"/>
+                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[20%] left-[-10rem] bottom-[-24rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] right-[-2rem] bottom-[-5rem] rotate-[150deg]"/>
                   <div className="text-3xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Taste the\nGoodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with whole wheat and brown sugar, delivering natural goodness in every bite for a satisfying, guilt-free treat.`}</div>
-                  {/* <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#e8ac5b]"><Image src={digestiveBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#e8ac5b]"><Image src={digestiveWrapper} alt='digestive-wrapper'/></div>
-                  </div> */}
-                  <div className="flex mt-5 md:mt-10 bg-[#e8ac5b]">
-                    <Image src={digestiveBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px] py-10"/>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={digestiveBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 md:px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
