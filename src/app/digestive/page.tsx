@@ -3,9 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import digestiveLogo from '../../assets/innovative-digestive-logo.png';
-// import digestiveBox from '../../assets/innovative-digestive-box.webp';
-// import digestiveWrapper from '../../assets/innovative-digestive-wrapper.webp';
-import digestiveBoxWrapper from '../../assets/digestive-box-wrapper.png';
+import digestiveBoxWrapper from '../../assets/boxWrapper.png';
 import digestiveTestimonial from '../../assets/Innovative-Digestiveimage.png';
 import innovativeBiscuit from '../../assets/innovative-biscuit.webp';
 import digestiveWheat from '../../assets/digestive-wheat.webp';
