@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import peanutLogo from '../../assets/Innovative-Peanut.webp';
-import peanutBox from '../../assets/Innovative-Peanut-Box.webp';
-import peanutWrapper from '../../assets/Innovative-Peanut-Wrapper.webp';
+import peanutBoxWrapper from '../../assets/Peanut-Product.png';
 import peanutTestimonial from '../../assets/Innovative-Peanut-iamge.webp';
 import peanutBiscuit from '../../assets/Innovative-Peanut-Biscuit.webp';
 import Faq from "@/components/Faq";
@@ -13,7 +12,7 @@ export default function PeanutPage() {
     return (
     <div className="overflow-hidden">
         <div
-          className="w-full bg-[#59c0be] text-[#064c5e]">
+          className="w-full bg-[#66c9c7] text-[#064c5e]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={peanutLogo} alt='digestive-copy' className="w-[30%]"/>
@@ -24,12 +23,11 @@ export default function PeanutPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with whole wheat and brown sugar, delivering natural goodness in every bite for a satisfying, guilt-free treat.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#064c5e]"><Image src={peanutBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#064c5e]"><Image src={peanutWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={peanutBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

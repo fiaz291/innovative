@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import butterCrunchLogo from '../../assets/Innovative-Butter-Crunch-logo.webp';
-import butterCrunchBox from '../../assets/Innovative-Butter-Crunch-box.webp';
-import butterCrunchWrapper from '../../assets/Innovative-Butter-Crunch-wrpper.webp';
+import butterCrunchBoxWrapper from '../../assets/Butter-Crunch-Product.png';
 import butterCrunchTestimonial from '../../assets/Innovative-Butter-Crunch-Image.webp';
 import butterCrunchButter from '../../assets/butter-crunch-butter.webp';
 import butterCrunchBiscuits from '../../assets/innovative-butter-crunch-biscuits.webp';
@@ -26,12 +25,11 @@ export default function ButterCrunchPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crunchy Oat Biscuits with Butter`}</div>
                   <div className="text-base md:text-2xl text-left">{`Indulge in the perfect balance of crunchy oats and rich creamy butter with Innovative Crunchy Oat Biscuits. Every bite delivers wholesome texture and irresistable flavor - a satisfying treat for any time of day.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#d39130]"><Image src={butterCrunchBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#d39130]"><Image src={butterCrunchWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={butterCrunchBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 ">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

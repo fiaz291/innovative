@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import zeeraLogo from '../../assets/Innovative-Zeera.png';
-import zeeraBox from '../../assets/innovative-zeera-box.webp';
-import zeeraWrapper from '../../assets/innovative-zeera-wrapper.webp';
+import zeeraBoxWrapper from '../../assets/Zeera-Product.png';
 import zeeraTestimonial from '../../assets/innovative-zeera-image.webp';
 import zeeraBiscuit from '../../assets/innovative-zeera-biscuit.webp';
 import Faq from "@/components/Faq";
@@ -24,12 +23,11 @@ export default function ZeeraPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Tasty Salty Biscuits with Cumin Seeds`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crunchy biscuits loaded with the rich flavor of roasted peanuts for a nutty treat in every bite.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#7e3f1e]"><Image src={zeeraBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#7e3f1e]"><Image src={zeeraWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={zeeraBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

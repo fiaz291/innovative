@@ -3,10 +3,8 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import goodiesLogo from '../../assets/Innovative-Goodies.webp';
-import goodiesBox from '../../assets/Innovative-Goodies-box.webp';
-import goodiesWrapper from '../../assets/Innovative-Goodies-wrapper.webp';
-import goodiesLemonBox from '../../assets/Innovative-Goodies-box-lemon.webp';
-import goodiesLemonWrapper from '../../assets/Innovative-Goodies-wrapper-lemon.webp';
+import goodiesBoxWrapper from '../../assets/Goodies-Plain-Product.png';
+import goodiesLemonBoxWrapper from '../../assets/Goodies-Lemon-Product.png';
 import goodiesTestimonial from '../../assets/Innovative-Goodies-Image.webp';
 import goodiesBiscuit from '../../assets/goodies-biscuit.webp';
 import Faq from "@/components/Faq";
@@ -25,12 +23,11 @@ export default function GoodiesPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Egg & Milk Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`The perfect blend of fresh eggs and creamy milk - a biscuit that's soft, golden, and full of homemade comfort.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#fb8587]"><Image src={goodiesBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#fb8587]"><Image src={goodiesWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={goodiesBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -41,7 +38,7 @@ export default function GoodiesPage() {
                               </tr>
                             </thead>
                             <tbody className="text-base md:text-xl">
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Munch Pack</td>
                                 <td className="px-4 py-3 border-r-1">35.2</td>
                                 <td className="px-4 py-3 border-r-1">12</td>
@@ -54,7 +51,7 @@ export default function GoodiesPage() {
               </div>
         </div>        
         <div
-          className="w-full bg-[#b2d235] text-[#365a04]">
+          className="w-full bg-[#84a117] text-[#365a04]">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] my-auto left-[-12rem] bottom-0 top-[10rem] rotate-[60deg]"/>
@@ -63,12 +60,11 @@ export default function GoodiesPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Egg & Milk Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crisp elegance with a citrus twist - the luxury of lemon, egg, and milk in every golden bite.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#365a04]"><Image src={goodiesLemonBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#365a04]"><Image src={goodiesLemonWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={goodiesLemonBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">

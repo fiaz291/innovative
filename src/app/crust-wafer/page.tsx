@@ -3,15 +3,12 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import crustChocolateLogo from '../../assets/Innovative-Crust.webp';
-import crustChocolateBox from '../../assets/Innovative-Crust-box3.webp';
-import crustChocolateWrapper from '../../assets/Innovative-Crust-wrapper-3.webp';
 import crustOrgangeLogo from '../../assets/Innovative-Crust3.webp';
-import crustOrgangeBox from '../../assets/Innovative-Crust-box2.webp';
-import crustOrgangeWrapper from '../../assets/Innovative-Crust-wrapper-2.webp';
 import crustStrawberryLogo from '../../assets/Innovative-Crust2.webp';
-import crustStrawberryBox from '../../assets/Innovative-Crust-box1.webp';
-import crustStrawberryWrapper from '../../assets/Innovative-Crust-wrapper-1.webp';
 import crustTestimonial from '../../assets/Innovative-Crust-image.webp';
+import crustChocolateBoxWrapper from '../../assets/Crust-Chocolate-Product.png';
+import crustOrangeBoxWrapper from '../../assets/Crust-Orange-Product.png';
+import crustStrawberryBoxWrapper from '../../assets/Crust-Strawberry-Product.png';
 import Faq from "@/components/Faq";
 
 export default function CrustWaferPage() {
@@ -27,9 +24,8 @@ export default function CrustWaferPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy wafer layers filled with smooth, chocolatey cream for a crunchy, delightful treat.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#d3a46e]"><Image src={crustChocolateBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#d3a46e]"><Image src={crustChocolateWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={crustChocolateBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
               </div>
         </div>        
@@ -42,9 +38,8 @@ export default function CrustWaferPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy wafer layers filled with a burst of tangy orange cream for a light, refreshing treat.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#ffbc93]"><Image src={crustOrgangeBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#ffbc93]"><Image src={crustOrgangeWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={crustOrangeBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
               </div>
         </div>        
@@ -57,12 +52,11 @@ export default function CrustWaferPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Light, crispy wafers layered with a burst of sweet strawberry flavor for a delightful crunchy treat.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#ffa4ce]"><Image src={crustStrawberryBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#ffa4ce]"><Image src={crustStrawberryWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={crustStrawberryBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -79,7 +73,7 @@ export default function CrustWaferPage() {
                                 <td className="px-4 py-3 border-r-1">24</td>
                                 <td className="px-4 py-3">18</td>
                               </tr>
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Munch Pack</td>
                                 <td className="px-4 py-3 border-r-1">25</td>
                                 <td className="px-4 py-3 border-r-1">12</td>

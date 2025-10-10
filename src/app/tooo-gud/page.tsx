@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import tooGudLogo from '../../assets/Innovative-TooGud.webp';
-import tooGudBox from '../../assets/innovative-toogud-box.webp';
-import tooGudWrapper from '../../assets/innovative-toogud-wrapper.webp';
+import toooGudBoxWrapper from '../../assets/ToooGud-Product.png';
 import tooGudTestimonial from '../../assets/innovative-toogud-image.webp';
 import tooGudBiscuit from '../../assets/toogud-cookie.webp';
 import Faq from "@/components/Faq";
@@ -24,12 +23,11 @@ export default function ToooGudPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Rick Egg & Milk Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Toogud combines the goodness of egg and milk for a melt-in-your-mouth cookie experience.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#ffd8b0]"><Image src={tooGudBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#ffd8b0]"><Image src={tooGudWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={toooGudBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
