@@ -51,7 +51,7 @@ export default function GoodiesPage() {
               </div>
         </div>        
         <div
-          className="w-full bg-[#84a117] text-[#365a04]">
+          className="w-full bg-[#84a117] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] my-auto left-[-12rem] bottom-0 top-[10rem] rotate-[60deg]"/>
@@ -65,7 +65,7 @@ export default function GoodiesPage() {
                   </div>
                     <div className="flex justify-center z-10">
                         <div className="w-[80%] mt-20 md:px-20">
-                          <table className="w-full text-center border-spacing-y-2 text-black">
+                          <table className="w-full text-center border-spacing-y-2 text-white">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

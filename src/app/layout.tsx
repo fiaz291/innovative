@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
       >
         <div className="min-h-screen flex flex-col font-[family-name:var(--font-montserrat)]">
           <main className="flex-grow">{children}</main>
+          <ScrollToTop />
 
           <Footer />
         </div>
