@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import bricklaneText from '../../assets/bricklane-copy.webp';
-import bricklane from '../../assets/bricklane.webp'
+import bricklane from '../../assets/Bricklane-Product.png'
 import Faq from "@/components/Faq";
 
 export default function ShortBreadPage() {

@@ -141,7 +141,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
 
   return (
     <>
-    <nav className={`bg-transparent px-2 md:px-15 pb-3 w-full ${(isPremium && !isTextWhite) || isTransparentBg || showMegaNav ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'} ${showMegaNav && 'bg-white'}`}>
+    <nav className={`relative z-41 bg-transparent px-2 md:px-15 pb-3 w-full ${(isPremium && !isTextWhite) || isTransparentBg || showMegaNav ? 'text-black' : 'text-white'} ${isTransparentBg && 'border-b'} ${showMegaNav && 'bg-white'}`}>
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-10">
           <Image
@@ -250,12 +250,12 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
     </nav>
     {showMegaNav && (
       <div
-        className="fixed w-full h-full top-[82px] bg-black opacity-50 z-40"
+        className={`fixed w-full h-full top-0 bg-black opacity-50 z-40`}
         onClick={() => setShowMegaNav(false)}
       />
     )}
     <div
-      className={`absolute top-[82px] bg-white shadow-2xl w-full text-black z-50 border-t border-gray-100
+      className={`absolute top-[${isPremium ? '72' : '82'}px] bg-white shadow-2xl w-full text-black z-50 border-t border-gray-100
         transition-all duration-300 ease-out
         ${showMegaNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"}
       `}

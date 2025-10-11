@@ -7,10 +7,10 @@ import digestiveText from '../../assets/digestive-original.png';
 import sugarFreeText from '../../assets/sugar-free-text.png';
 import wheat from '../../assets/wheat.webp';
 import singleWheat from '../../assets/single-wheat.webp';
-import digestiveBigBox from '../../assets/Digestive-Original-big-box.webp'
-import digestiveSmallPack from '../../assets/Digestive-Original-small-pack.webp';
-import digestiveSugerFreeBigBox from '../../assets/Digestive-SUGAR-big-box.webp';
-import digestiveSugerFreeSmallPack from '../../assets/Digestive-Sugar-Free-small-pack.webp';
+import digestiveBigBox from '../../assets/Digestive-Original-Product.png'
+// import digestiveSmallPack from '../../assets/Digestive-Original-small-pack.webp';
+import digestiveSugerFreeBigBox from '../../assets/Digestive-Sugar-Free-Product.png';
+// import digestiveSugerFreeSmallPack from '../../assets/Digestive-Sugar-Free-small-pack.webp';
 import Faq from "@/components/Faq";
 
 export default function DigestivePremiumPage() {
@@ -57,7 +57,7 @@ export default function DigestivePremiumPage() {
 
                     </div>
                     <Image src={digestiveBigBox} alt='boxes-image' className="hidden md:block w-[40%]"/>
-                    <Image src={digestiveSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/>
+                    {/* <Image src={digestiveSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/> */}
                   </div>
               </div>
         </div>
@@ -101,7 +101,7 @@ export default function DigestivePremiumPage() {
 
                     </div>
                     <Image src={digestiveSugerFreeBigBox} alt='boxes-image' className="hidden md:block w-[40%]"/>
-                    <Image src={digestiveSugerFreeSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/>
+                    {/* <Image src={digestiveSugerFreeSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/> */}
                   </div>
               </div>
               <Faq  />
