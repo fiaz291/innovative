@@ -8,9 +8,9 @@ import sugarFreeText from '../../assets/sugar-free-text.png';
 import wheat from '../../assets/wheat.webp';
 import singleWheat from '../../assets/single-wheat.webp';
 import digestiveBigBox from '../../assets/Digestive-Original-Product.png'
-// import digestiveSmallPack from '../../assets/Digestive-Original-small-pack.webp';
+import digestiveSmallPack from '../../assets/Digestive-Original-small-pack.webp';
 import digestiveSugerFreeBigBox from '../../assets/Digestive-Sugar-Free-Product.png';
-// import digestiveSugerFreeSmallPack from '../../assets/Digestive-Sugar-Free-small-pack.webp';
+import digestiveSugerFreeSmallPack from '../../assets/Digestive-Sugar-Free-small-pack.webp';
 import Faq from "@/components/Faq";
 
 export default function DigestivePremiumPage() {
@@ -21,7 +21,7 @@ export default function DigestivePremiumPage() {
               <Navbar />
               <div className="relative flex flex-col px-10 md:px-30 mt-12 md:mt-25">
                   <Image src={digestiveText} alt='digestive-copy' className="w-[60%] mx-auto"/>
-                  <Image src={biscuit} alt='biscuit' className="absolute w-[30%] top-0 right-[-50px] md:right-[-200px]"/>
+                  <Image src={biscuit} alt='biscuit' className="absolute w-[22%] top-0 right-[-50px] md:right-[-140px]"/>
                   <Image src={wheat} alt='wheat-image' className="absolute w-[45%] top-[110px] md:top-[-50px] md:bottom-0 md:my-auto left-[-70px] md:left-[-400px]"/>
                   <Image src={singleWheat} alt='wheat-image' className="absolute w-[40%] top-[160px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"/>
                   <div className="relative flex mt-10 md:mt-20">
@@ -57,7 +57,7 @@ export default function DigestivePremiumPage() {
 
                     </div>
                     <Image src={digestiveBigBox} alt='boxes-image' className="hidden md:block w-[40%]"/>
-                    {/* <Image src={digestiveSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/> */}
+                    <Image src={digestiveSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/>
                   </div>
               </div>
         </div>
@@ -101,7 +101,7 @@ export default function DigestivePremiumPage() {
 
                     </div>
                     <Image src={digestiveSugerFreeBigBox} alt='boxes-image' className="hidden md:block w-[40%]"/>
-                    {/* <Image src={digestiveSugerFreeSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/> */}
+                    <Image src={digestiveSugerFreeSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/>
                   </div>
               </div>
               <Faq  />

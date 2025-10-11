@@ -18,7 +18,7 @@ export default function ChocoRingsPage() {
                   <Image src={chocoRingsLogo} alt='digestive-copy' className="w-[30%]"/>
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[4rem] top-[-6rem]"/>
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-[-16rem]"/>
-                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[15%] left-0 top-[20rem]"/>
+                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[15%] left-[-2rem] top-[20rem]"/>
                   <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
                     {`A Perfect\nChoco Circle.`}
                   </div>
