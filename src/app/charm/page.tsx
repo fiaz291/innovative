@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import charmLogo from '../../assets/Innovative-Charm.webp';
-import charmBox from '../../assets/Innovative-Charm-Box.webp';
-import charmWrapper from '../../assets/Innovative-Charm-Wrapper.webp';
+import charmBoxWrapper from '../../assets/Charm-Product.png';
 import charmTestimonial from '../../assets/Innovative-Charm-Image.webp';
 import charmBiscuit from '../../assets/Innovative-Charm-Biscuit.webp';
 import Faq from "@/components/Faq";
@@ -24,12 +23,11 @@ export default function CharmPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Baked with love, filled with joy - chocolate at the heart of every cookie.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#d28382]"><Image src={charmBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#d28382]"><Image src={charmWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={charmBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-white">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -40,7 +38,7 @@ export default function CharmPage() {
                               </tr>
                             </thead>
                             <tbody className="text-base md:text-xl">
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">11.5</td>
                                 <td className="px-4 py-3 border-r-1">24</td>

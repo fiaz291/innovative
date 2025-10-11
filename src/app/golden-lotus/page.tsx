@@ -31,7 +31,7 @@ export default function GoldenLotusPage() {
                               </tr>
                             </thead>
                             <tbody className="text-base md:text-xl">
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
                                 <td className="px-4 py-3 border-r-1">96</td>
                                 <td className="px-4 py-3 border-r-1">-</td>

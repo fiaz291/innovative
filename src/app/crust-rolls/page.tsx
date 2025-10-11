@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import crustRollsChocolateLogo from '../../assets/Innovative-Crust-Rolls-Chocolate-logo.webp';
-import crustRollsChocolateBox from '../../assets/Innovative-Crust-Rolls-chocolate-box.webp';
-import crustRollsChocolateWrapper from '../../assets/Innovative-Crust-Rolls-chocolate-wraper.webp';
+import crustRollsChocolateBoxWrapper from '../../assets/Crust-Rolls-Chocolate-Product.png';
 import crustRollsOrgangeLogo from '../../assets/Innovative-Crust-Rolls-Orange-logo.webp';
 import crustRollsOrgangeBox from '../../assets/Innovative-Crust-Rolls-Orange-box.webp';
 import crustRollsOrgangeWrapper from '../../assets/Innovative-Crust-Rolls-Orange-wraper.webp';
@@ -15,7 +14,7 @@ export default function CrustRollsPage() {
     return (
     <div className="overflow-hidden">
         <div
-          className="w-full bg-[#fabe2b] text-[#683410] pb-12 md:pb-25 ">
+          className="w-full bg-[#faa92a] text-[#683410] pb-12 md:pb-25 ">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[30%]"/>
@@ -24,9 +23,8 @@ export default function CrustRollsPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Cream Filled Wafer Rolls`}</div>
                   <div className="text-base md:text-2xl text-left">{`Light, crispy wafer rolls filled with smooth, creamy goodness for a crunchy, indulgent treat.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#d3a46e]"><Image src={crustRollsChocolateBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#d3a46e]"><Image src={crustRollsChocolateWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={crustRollsChocolateBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
               </div>
         </div>     
@@ -43,8 +41,8 @@ export default function CrustRollsPage() {
                     <div className="w-[50%] bg-[#ffdd75]"><Image src={crustRollsOrgangeBox} alt='digestive-box'/></div>
                     <div className="flex items-center w-[50%] bg-[#ffdd75]"><Image src={crustRollsOrgangeWrapper} alt='digestive-wrapper'/></div>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -61,7 +59,7 @@ export default function CrustRollsPage() {
                                 <td className="px-4 py-3 border-r-1">24</td>
                                 <td className="px-4 py-3">18</td>
                               </tr>
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Munch Pack</td>
                                 <td className="px-4 py-3 border-r-1">25</td>
                                 <td className="px-4 py-3 border-r-1">12</td>

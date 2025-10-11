@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import chocoRingsLogo from '../../assets/Innovative-Choco-Rings-logo.webp';
-import chocoRingsBox from '../../assets/Innovative-Choco-Rings-box.webp';
-import chocoRingsWrapper from '../../assets/Innovative-Choco-Rings-wrapper.webp';
+import chocoRingsBoxWrapper from '../../assets/Choco-Rings-Product.png';
 import chocoRingsTestimonial from '../../assets/Innovative-Choco-Rings.webp';
 import chocoRingsBiscuit from '../../assets/Innovative-Choco-Rings-Product.webp';
 import Faq from "@/components/Faq";
@@ -25,12 +24,11 @@ export default function ChocoRingsPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits Coated with Indulging Chocolate`}</div>
                   <div className="text-base md:text-2xl text-left">{`Delicious biscuits coated in rich, indulgent chocolate for a perfectly sweet crunchy treat.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="flex items-center justify-center w-[50%] bg-[#c7a28c]"><Image src={chocoRingsBox} alt='digestive-box'/></div>
-                    <div className="flex items-center justify-center w-[50%] bg-[#c7a28c]"><Image src={chocoRingsWrapper} alt='digestive-wrapper' className="w-[70%]"/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={chocoRingsBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-white">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -41,7 +39,7 @@ export default function ChocoRingsPage() {
                               </tr>
                             </thead>
                             <tbody className="text-base md:text-xl">
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">17.5</td>
                                 <td className="px-4 py-3 border-r-1">12</td>

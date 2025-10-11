@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import bittensLogo from '../../assets/Innovative-Bitten.png';
-import bittensBox from '../../assets/Innovative-Bitten-box.webp';
-import bittensWrapper from '../../assets/Innovative-Bitten-wrapper.webp';
+import bittensBoxWrapper from '../../assets/Bitten-Product.png';
 import bittensTestimonial from '../../assets/Innovative-Bitten-image.webp';
 import bittensChocolate1 from '../../assets/Innovative-Bitten-Chocolate1.webp';
 import bittensChocolate2 from '../../assets/Innovative-Bitten-Chocolate2.webp';
@@ -25,12 +24,11 @@ export default function BittensPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Smooth, rich and perfectly sweet`}</div>
                   <div className="text-base md:text-2xl text-left">{`The chocolate bar that brings joy in every bite.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="flex items-center w-[50%] bg-[#c0f4ff]"><Image src={bittensBox} alt='digestive-box'/></div>
-                    <div className="flex items-center justify-center w-[50%] bg-[#c0f4ff]"><Image src={bittensWrapper} alt='digestive-wrapper' className="w-[70%]"/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={bittensBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -41,7 +39,7 @@ export default function BittensPage() {
                               </tr>
                             </thead>
                             <tbody className="text-base md:text-xl">
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
                                 <td className="px-4 py-3 border-r-1">35</td>
                                 <td className="px-4 py-3 border-r-1">12</td>

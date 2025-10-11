@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import jumboJuniorLogo from '../../assets/Innovative-Jumbo-Junior.webp';
-import jumboJuniorBox from '../../assets/Innovative-Jumbo-Junior-Box.webp';
-import jumboJuniorWrapper from '../../assets/Innovative-Jumbo-Junior-Wrapper.webp';
+import jumboJuniorBoxWrapper from '../../assets/Jumbo-Junior-Product.png';
 import jumboJuniorTestimonial from '../../assets/Innovative-Jumbo-Junior-imagr.webp';
 import jumboJuniorBiscuit from '../../assets/Innovative-Jumbo-Junior-Biscuits.webp';
 import Faq from "@/components/Faq";
@@ -24,12 +23,11 @@ export default function JumboJuniorPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Engergy Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Wholesome, crunchy biscuits packed with energy to keep kids active, strong, and smiling all day.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#8dc1ff]"><Image src={jumboJuniorBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#8dc1ff]"><Image src={jumboJuniorWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={jumboJuniorBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -46,7 +44,7 @@ export default function JumboJuniorPage() {
                                 <td className="px-4 py-3 border-r-1">48</td>
                                 <td className="px-4 py-3">18</td>
                               </tr>
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">21.4</td>
                                 <td className="px-4 py-3 border-r-1">24</td>

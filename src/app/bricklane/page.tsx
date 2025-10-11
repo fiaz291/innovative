@@ -28,7 +28,7 @@ export default function ShortBreadPage() {
                               </tr>
                             </thead>
                             <tbody className="text-base md:text-xl">
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Munch Pack</td>
                                 <td className="px-4 py-3 border-r-1">50</td>
                                 <td className="px-4 py-3 border-r-1">12</td>

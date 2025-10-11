@@ -45,7 +45,7 @@ export default function DigestivePremiumPage() {
                                 <td className="px-4 py-3 border-r-1">-</td>
                                 <td className="px-4 py-3">24</td>
                               </tr>
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">30</td>
                                 <td className="px-4 py-3 border-r-1">10+1</td>
@@ -89,7 +89,7 @@ export default function DigestivePremiumPage() {
                                 <td className="px-4 py-3 border-r-1">-</td>
                                 <td className="px-4 py-3">24</td>
                               </tr>
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">30</td>
                                 <td className="px-4 py-3 border-r-1">10+1</td>

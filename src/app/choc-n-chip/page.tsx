@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import chocChipLogo from '../../assets/Innovative-Choc-n-Chip.webp';
-import chocChipBox from '../../assets/Innovative-Choc-n-Chip-Box.webp';
-import chocChipWrapper from '../../assets/Innovative-Choc-n-Chip-Wrapper.webp';
+import chocChipBoxWrapper from '../../assets/ChocnChip-Product.png';
 import chocChipTestimonial from '../../assets/Innovative-Choc-n-Chip-Image.webp';
 import chocChipBiscuit from '../../assets/Innovative-Choc-n-Chip-Biscuits.webp';
 import Faq from "@/components/Faq";
@@ -24,12 +23,11 @@ export default function ChocChipPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Chip Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crucnchy edges, gooey chips, and that just-right sweetness - everything you love in a chocolate chip biscuit.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#b8f2ff]"><Image src={chocChipBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#b8f2ff]"><Image src={chocChipWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={chocChipBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -46,7 +44,7 @@ export default function ChocChipPage() {
                                 <td className="px-4 py-3 border-r-1">48</td>
                                 <td className="px-4 py-3">18</td>
                               </tr>
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">14</td>
                                 <td className="px-4 py-3 border-r-1">24</td>

@@ -3,8 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import snappLogo from '../../assets/Innovative-Snapp.webp';
-import snappBox from '../../assets/Innovative-Snapp-Box.webp';
-import snappWrapper from '../../assets/Innovative-Snapp-Wrapper.webp';
+import snappBoxWrapper from '../../assets/Snapp-Product.png';
 import snappTestimonial from '../../assets/Innovative-Snapp-image.webp';
 import snappBiscuit from '../../assets/Innovative-Snapp-Biscuit.webp';
 import Faq from "@/components/Faq";
@@ -24,12 +23,11 @@ export default function SnappPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Creamy Wafer Coated With Indulging Chocoalte`}</div>
                   <div className="text-base md:text-2xl text-left">{`A light crispy wafer filled with smooth cream and wrapped in rich, indulgent chocolate for the perfect crunchy bite.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#8dc1ff]"><Image src={snappBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#8dc1ff]"><Image src={snappWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={snappBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
-                    <div className="z-10">
-                        <div className="mt-20 px-20">
+                    <div className="flex justify-center z-10">
+                        <div className="w-[80%] mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-base md:text-xl border-b-1">
@@ -46,7 +44,7 @@ export default function SnappPage() {
                                 <td className="px-4 py-3 border-r-1">48</td>
                                 <td className="px-4 py-3">18</td>
                               </tr>
-                              <tr className="border-b-1">
+                              <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Snack Roll</td>
                                 <td className="px-4 py-3 border-r-1">8.5</td>
                                 <td className="px-4 py-3 border-r-1">24</td>
