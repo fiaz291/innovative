@@ -57,7 +57,7 @@ export default function DigestivePremiumPage() {
 
                     </div>
                     <Image src={digestiveBigBox} alt='boxes-image' className="hidden md:block w-[40%]"/>
-                    <Image src={digestiveSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/>
+                    <Image src={digestiveSmallPack} alt='boxes-image' className="absolute hidden md:block w-[30%] bottom-[-50px] right-[11rem]"/>
                   </div>
               </div>
         </div>
@@ -101,7 +101,7 @@ export default function DigestivePremiumPage() {
 
                     </div>
                     <Image src={digestiveSugerFreeBigBox} alt='boxes-image' className="hidden md:block w-[40%]"/>
-                    <Image src={digestiveSugerFreeSmallPack} alt='boxes-image' className="absolute hidden md:block w-[40%] bottom-[-50px] right-[11rem]"/>
+                    <Image src={digestiveSugerFreeSmallPack} alt='boxes-image' className="absolute hidden md:block w-[30%] bottom-[-50px] right-[11rem]"/>
                   </div>
               </div>
               <Faq  />
