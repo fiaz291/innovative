@@ -49,6 +49,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ success: true, message: "Email sent successfully!" });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     console.error("Error sending email:", error);
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
