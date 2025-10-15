@@ -5,8 +5,7 @@ import Image from "next/image";
 import crustRollsChocolateLogo from '../../assets/Innovative-Crust-Rolls-Chocolate-logo.webp';
 import crustRollsChocolateBoxWrapper from '../../assets/Crust-Rolls-Chocolate-Product.png';
 import crustRollsOrgangeLogo from '../../assets/Innovative-Crust-Rolls-Orange-logo.webp';
-import crustRollsOrgangeBox from '../../assets/Innovative-Crust-Rolls-Orange-box.webp';
-import crustRollsOrgangeWrapper from '../../assets/Innovative-Crust-Rolls-Orange-wraper.webp';
+import crustRollsOrgangeBoxWrapper from '../../assets/Crust-Rolls-Orange-Product.png';
 import crustRollsTestimonial from '../../assets/Innovative-Crust-Rolls.webp';
 import Faq from "@/components/Faq";
 
@@ -29,7 +28,7 @@ export default function CrustRollsPage() {
               </div>
         </div>     
         <div
-          className="w-full bg-[#ed7024] text-white">
+          className="w-full bg-[#f87500] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={crustRollsOrgangeLogo} alt='digestive-copy' className="w-[30%]"/>
                   <div className="text-3xl md:text-[7rem] leading-[8rem] font-black whitespace-pre-line">
@@ -37,9 +36,8 @@ export default function CrustRollsPage() {
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Cream Filled Wafer Rolls`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy wafer rolls with smooth, tangy orange cream for a zesty, crunchy treat.`}</div>
-                  <div className="flex gap-5 md:gap-10 mt-5 md:mt-10">
-                    <div className="w-[50%] bg-[#ffdd75]"><Image src={crustRollsOrgangeBox} alt='digestive-box'/></div>
-                    <div className="flex items-center w-[50%] bg-[#ffdd75]"><Image src={crustRollsOrgangeWrapper} alt='digestive-wrapper'/></div>
+                  <div className="flex mt-5 md:mt-10">
+                    <Image src={crustRollsOrgangeBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
                     <div className="flex justify-center z-10">
                         <div className="w-[80%] mt-20 md:px-20">
