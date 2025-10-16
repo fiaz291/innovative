@@ -203,7 +203,7 @@ export default function Navbar({isPremium = true, isTransparentBg = false, isTex
                         Export
                     </li>
                     <li
-                     onClick={() => router.push('/coming-soone')}
+                     onClick={() => router.push('/coming-soon')}
                      className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5">
                       Recipes
                     </li>

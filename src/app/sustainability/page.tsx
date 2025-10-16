@@ -14,7 +14,7 @@ import LearnMore from '@/components/LearnMore';
 
 export default function CareerPage() {
     return (
-    <div>
+    <div className='overflow-hidden'>
         <div
           style={{
             backgroundImage: `url(${heroImg.src})`,
@@ -48,28 +48,28 @@ export default function CareerPage() {
         </div>
 
         <div className='flex flex-col gap-5 text-white'>
-          <div className='flex'>
+          <div className='flex flex-col md:flex-row'>
             <div className='w-full md:w-[40%] bg-[#8e2e19] p-15 text-xl md:text-4xl font-black'>Smarter Production</div>
-            <div className='hidden md:flex justify-center items-center w-[60%] bg-[#fd9b6c] text-lg md:text-2xl'>Reducing energy and water usage with efficient systems</div>
+            <div className='p-15 flex justify-center items-center md:w-[60%] bg-[#fd9b6c] text-lg md:text-2xl'>Reducing energy and water usage with efficient systems</div>
           </div>
-          <div className='flex'>
-            <div className='hidden md:flex justify-center items-center w-[60%] bg-[#5899AF] text-lg md:text-2xl'>Minimizing food and packaging waste through innovation</div>
+          <div className='flex flex-col md:flex-row'>
+            <div className='p-15 flex justify-center items-center md:w-[60%] bg-[#5899AF] text-lg md:text-2xl'>Minimizing food and packaging waste through innovation</div>
             <div className='w-full md:w-[40%] bg-[#123A5E] p-15 text-xl md:text-4xl font-black'>Less Waste</div>
           </div>
-          <div className='flex'>
+          <div className='flex flex-col md:flex-row'>
             <div className='w-full md:w-[40%] bg-[#94673D] p-15 text-xl md:text-4xl font-black'>Clean Packaging</div>
-            <div className='hidden md:flex justify-center items-center w-[60%] bg-[#DF9F3E] text-lg md:text-2xl'>Shifting to recyclable, eco-conscious materials</div>
+            <div className='p-15 flex justify-center items-center md:w-[60%] bg-[#DF9F3E] text-lg md:text-2xl'>Shifting to recyclable, eco-conscious materials</div>
           </div>
-          <div className='flex'>
-            <div className='hidden md:flex justify-center items-center w-[60%] bg-[#85acab] text-lg md:text-2xl'>Supporting local causes and uplifting future generations</div>
+          <div className='flex flex-col md:flex-row'>
+            <div className='p-15 flex justify-center items-center md:w-[60%] bg-[#85acab] text-lg md:text-2xl'>Supporting local causes and uplifting future generations</div>
             <div className='w-full md:w-[40%] bg-[#036a89] p-15 text-xl md:text-4xl font-black'>Communityt Impact</div>
           </div>
         </div>
 
         <div className='flex flex-col my-15 md:m-30'>
             <div className='text-2xl md:text-7xl whitespace-pre-line text-center font-black'>{`Meet Jumbo Junior:\nLearning with Every Bite`}</div>
-            <div className='flex mt-15 mb-25'>
-                <div className='hidden md:block w-[40%] bg-[#123a5e]'></div>
+            <div className='flex flex-col md:flex-row mt-15 mb-25'>
+                <div className='md:w-[40%] bg-[#123a5e] p-30'></div>
                 <div className='w-full md:w-[60%] bg-[#fef4af] px-15 py-30'>
                     <p className='text-base md:text-2xl mb-10'>
                         One of our proudest initiatives is <strong>Jumbo Junior</strong> - a biscuit designed not just to nourish, but to nurture young minds. Behind every pack is a purpose: to inspire the next generation to care for the world they live in.

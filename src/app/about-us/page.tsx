@@ -30,7 +30,7 @@ export default function AboutUsPage() {
             </p>
         </div>
 
-        <div className='flex text-white mb-15'>
+        <div className='flex flex-col md:flex-row text-white mb-15'>
             <div className='flex flex-col md:w-[50%] bg-[#123a5e] p-15'>
                 <div className='font-bold flex items-center gap-10 text-2xl md:text-4xl'>
                     Upholding Excellence in  Quality, Halal Standards & Food Safety
@@ -38,7 +38,7 @@ export default function AboutUsPage() {
                 <p className='font-normal text-base md:text-2xl mt-8'>{`At INNOVATIVE BISCUITS (Pvt. Ltd.), we are dedicated to meeting customer expectations and legal requirements through the continual improvement of our Halal, Food Safety, and Quality `}</p>
                 <p className='font-normal text-base md:text-2xl mt-8'>{`We ensure the provision of necessary resources and clear communication at all levels to support our strategic goals and promote active participation. Our aim is to uphold a strong culture of Quality, Halal compliance, and Food Safety across the organization.`}</p>
             </div>
-            <Image src={aboutUs} alt='out-products-image' className='hidden md:block w-[50%]'/>
+            <Image src={aboutUs} alt='out-products-image' className='md:w-[50%]'/>
         </div>  
       </div>
     );

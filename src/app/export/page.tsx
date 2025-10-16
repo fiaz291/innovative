@@ -16,11 +16,11 @@ export default function ExportPage() {
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="pb-45 text-black w-full bg-no-repeat bg-center md:bg-cover">
+          className="pb-20 md:pb-45 text-black w-full bg-no-repeat bg-center bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-50 h-300 pt-35">
+              <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-120 md:h-300 pt-15 md:pt-35">
                   <div className="text-2xl md:text-7xl text-center">{`Innovative Export`}</div>
-                  <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line mb-[-80px]">{`Produly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
+                  <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line mb-[-80px]">{`Proudqly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
               </div>
         </div>
 
@@ -144,17 +144,17 @@ export default function ExportPage() {
         <div className='flex flex-col items-center mt-25'>
           <p className="text-black font-black text-2xl md:text-6xl">Certified For Excellence</p>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mx-50 my-15">
-            <div className="flex justify-center items-center border-r border-r-black pr-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mx-30 md:mx-50 my-15">
+            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black pr-8">
               <Image src={certificate1} alt="Pakistan Standards" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-r border-r-black pr-8">
+            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black pr-8">
               <Image src={certificate2} alt="Halal Certified" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-r border-r-black pr-8">
+            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black pr-8">
               <Image src={certificate3} alt="FSSC 22000" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-r border-r-black pr-8">
+            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black pr-8">
               <Image src={certificate4} alt="ISO 9001:2015" className="mx-auto" />
             </div>
             <div className="flex justify-center items-center">

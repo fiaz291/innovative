@@ -17,7 +17,7 @@ export default function LeadershipPage() {
         </div>
 
         <div className="flex flex-col gap-5 text-white md:text-left">
-          <div className="flex">
+          <div className="flex flex-col md:flex-row">
             <div className="flex flex-col w-full md:w-[40%] bg-[#6b9ebd] p-15">
               <div className="text-base md:text-xl font-medium">
                 THE HONORABLE CHAIRMAN
@@ -26,15 +26,15 @@ export default function LeadershipPage() {
                 SHEIKH MUNIR HUSSAIN
               </div>
             </div>
-            <div className="min-h-[25rem] hidden md:block p-15 w-[60%] bg-[#123a5e]">
+            <div className="min-h-[25rem] p-15 md:w-[60%] bg-[#123a5e]">
               <p className='font-normal text-base md:text-xl'>
                 At Innovative Biscuits, we are founded on the principles of trust, integrity, and hard work. Our mission extends far beyond the manufacture of biscuits. We are committed to enriching our society and providing opportunities for growth and prosperity, while steadfastly upholding our values and traditions. I firmly believe that we all have a profound responsibility to contribute to the community, and it is our individual duty to add value wherever possible. At Innovative Biscuits, we take immense pride in fulfilling this responsibility and making a positive impact.
               </p>
             </div>
           </div>
 
-          <div className="flex">
-            <div className="min-h-[25rem] hidden md:block p-15 w-[60%] bg-[#123a5e]">
+          <div className="flex flex-col md:flex-row">
+            <div className="min-h-[25rem] p-15 md:w-[60%] bg-[#123a5e]">
               <p className='font-normal text-base md:text-xl'>
                 {`Innovative Biscuits is on a mission to revolutionize the market with our innovative approach, unwavering commitment to quality, and dedication to making a difference. We believe that food has the power to uplift and inspire, and we're passionate about creating products that deliver on that promise. With a team of like-minded innovators, we're driven to exceed expectations and set new benchmarks for the industry. We know that innovation alone is not enough. That's why we're equally committed to operational excellence - streamlining our processes, reducing waste, and investing in our people. By combining innovation with operational excellence, we're able to deliver high-quality products efficiently and sustainably, making a positive impact on our customers, our community, and the environment.`}
               </p>

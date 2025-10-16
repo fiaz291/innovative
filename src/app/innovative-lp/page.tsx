@@ -72,115 +72,131 @@ export default function LandingPage() {
         <CookieCarousel />
       </div>
 
-      <div className="flex text-white">
+    <div className="flex flex-col md:flex-row text-white w-full min-h-[400px]">
+      <div className="w-full md:w-1/2 flex">
         <Swiper
           onSwiper={setSwiperInstance}
-          spaceBetween={50}
+          spaceBetween={30}
           slidesPerView={1}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          className="w-full h-full"
         >
           <SwiperSlide>
-            <div className="flex flex-col w-[100%] bg-[#9e2a2b] p-15 h-[100%]">
+            <div className="flex flex-col justify-center w-full bg-[#9e2a2b] p-6 md:p-12 h-full">
               <div className="flex items-center gap-2 text-base md:text-xl">
                 Our Products
                 <CircleArrowRight
-                  className="w-[25px] h-[25px] cursor-pointer"
+                  className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
                   onClick={handleNext}
                 />
               </div>
-              <div className="font-black text-xl md:text-4xl mt-6">
+              <div className="font-black text-2xl md:text-4xl mt-4">
                 Satisfy your cravings the
               </div>
-              <div className="font-black text-xl md:text-4xl">smart way.</div>
-              <div className="text-base md:text-2xl mt-5">
+              <div className="font-black text-2xl md:text-4xl">smart way.</div>
+              <div className="text-sm md:text-xl mt-4">
                 Innovative Digestive Biscuits are crafted with whole wheat and
                 natural brown sugar, offering a wholesome, guilt-free snack
                 that’s as delicious as it is nourishing.
               </div>
-              <div className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-6" onClick={()=> router.push('/digestive')}>
+              <div
+                className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
+                onClick={() => router.push('/digestive')}
+              >
                 Read More
-                <MoveRight className="w-[35px] h-[35px]" />
+                <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col w-[100%] bg-[#000000] p-15 h-[100%]">
+            <div className="flex flex-col justify-center w-full bg-[#000000] p-6 md:p-12 h-full">
               <div className="flex items-center gap-2 text-base md:text-xl">
                 Innovative Premium
                 <CircleArrowRight
-                  className="w-[25px] h-[25px] cursor-pointer"
+                  className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
                   onClick={handleNext}
                 />
               </div>
-              <div className="font-black text-xl md:text-4xl mt-6">
+              <div className="font-black text-2xl md:text-4xl mt-4">
                 The Art of Premium Snacking.
               </div>
-              <div className="text-base md:text-2xl mt-5">
+              <div className="text-sm md:text-xl mt-4">
                 Innovative Premium offers a refined biscuit experience, crafted
                 with the finest ingredients and exceptional care. Each bite
                 delivers superior taste, texture, and indulgence — made for
                 those who appreciate the art of premium snacking.
               </div>
-              <div className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-6" onClick={()=>router.push('premium-products')}>
+              <div
+                className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
+                onClick={() => router.push('premium-products')}
+              >
                 Read More
-                <MoveRight className="w-[35px] h-[35px]" />
+                <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col w-[100%] bg-[#c78e57] p-15 h-[100%]">
+            <div className="flex flex-col justify-center w-full bg-[#c78e57] p-6 md:p-12 h-full">
               <div className="flex items-center gap-2 text-base md:text-xl">
                 Innovative Lab
                 <CircleArrowRight
-                  className="w-[25px] h-[25px] cursor-pointer"
+                  className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
                   onClick={handleNext}
                 />
               </div>
-              <div className="font-black text-xl md:text-4xl mt-6">
+              <div className="font-black text-2xl md:text-4xl mt-4">
                 From Concept to Creation.
               </div>
-              <div className="text-base md:text-2xl mt-5">
-                The Innovation Lab is the creative heart of Innovative Biscuits
-                — where bold ideas and expert craft come together to create
+              <div className="text-sm md:text-xl mt-4">
+                The Innovation Lab is the creative heart of Innovative Biscuits —
+                where bold ideas and expert craft come together to create
                 groundbreaking flavors that redefine snacking.
               </div>
-              <div className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-6" onClick={()=>router.push('innovation-lab')}>
+              <div
+                className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
+                onClick={() => router.push('innovation-lab')}
+              >
                 Read More
-                <MoveRight className="w-[35px] h-[35px]" />
+                <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
-
+      </div>
+      
+      {/* IMAGE SWIPER */}
+      <div className="w-full md:w-1/2 flex mt-4 md:mt-0">
         <Swiper
           onSwiper={setSwiperImageInstance}
-          spaceBetween={50}
+          spaceBetween={30}
           slidesPerView={1}
           onSlideChange={(swiper) => setActiveImageIndex(swiper.activeIndex)}
+          className="w-full h-full"
         >
           <SwiperSlide>
             <Image
               src={prod3}
-              alt="out-products-image"
-              className="hidden md:block w-[100%]"
+              alt="our-products-image"
+              className="w-full h-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src={prod1}
-              alt="out-products-image"
-              className="hidden md:block w-[100%]"
+              alt="our-products-image"
+              className="w-full h-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src={prod2}
-              alt="out-products-image"
-              className="hidden md:block w-[100%]"
+              alt="our-products-image"
+              className="w-full h-full object-cover"
             />
           </SwiperSlide>
         </Swiper>
       </div>
+    </div>
 
       <div className="flex flex-col md:flex-row gap-10 p-15 my-15">
         <InfoContainer
@@ -201,8 +217,8 @@ export default function LandingPage() {
         <div className="pl-15 text-xl md:text-4xl mb-15 font-black">
           Stay Connected
         </div>
-        <div className="flex py-15 bg-[#123a5e] items-center text-white">
-          <div className="hidden md:block px-15 w-[35%] font-black text-2xl md:text-5xl">{`Discover\n what's new`}</div>
+        <div className="flex flex-col md:flex-row py-15 bg-[#123a5e] md:items-center text-white">
+          <div className="px-15 md:w-[35%] font-black text-2xl md:text-5xl">{`Discover\n what's new`}</div>
           <UpcomingCarousel />
         </div>
       </div>
@@ -222,7 +238,7 @@ export default function LandingPage() {
         />
       </div>
 
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <div className="flex flex-col gap-4 md:w-[50%] bg-[#fef4af] p-15 py-30">
           <div className="flex items-center gap-10 text-base md:text-xl">
             Team up for success
@@ -239,7 +255,7 @@ export default function LandingPage() {
         <Image
           src={careers}
           alt="out-products-image"
-          className="hidden md:block w-[50%]"
+          className="w-full md:w-[50%]"
         />
       </div>
     </div>

@@ -32,7 +32,7 @@ export default function CareerPage() {
 
         </div>
 
-        <div className='flex text-white mb-15'>
+        <div className='flex flex-col md:flex-row text-white mb-15'>
             <div className='flex flex-col md:w-[60%] bg-[#5899af] p-15 pl-25 justify-center'>
                 <div className='font-black flex items-center gap-10 text-2xl md:text-5xl mb-4'>
                     Rise with Innovation
@@ -43,7 +43,7 @@ export default function CareerPage() {
                 <p className='font-normal text-base md:text-2xl mt-8'>{`At Innovative Biscuits, we’re more than a workplace - we’re a launchpad for bold beginnings. Whether you're exploring internships or stepping into your first role, this is where fresh perspectives are welcomed, ideas are celebrated, and your individuality is your greatest asset.`}</p>
                 <p className='font-normal text-base md:text-2xl mt-8'>{`We believe growth should never mean losing who you are. Bring your energy, curiosity, and unique story - and we’ll help you build skills, gain real-world experience, and rise with purpose.`}</p>
             </div>
-            <Image src={innovationLady} alt='out-products-image' className='hidden md:block w-[40%]'/>
+            <Image src={innovationLady} alt='out-products-image' className='md:w-[40%]'/>
         </div>
 
         <div className='flex flex-col md:flex-row gap-2 md:gap-8 md:px-30 text-white'>
@@ -63,8 +63,8 @@ export default function CareerPage() {
         </div>
 
 
-        <div className='flex text-white my-15'>
-            <Image src={culture} alt='out-products-image' className='hidden md:block w-[40%]'/>
+        <div className='flex flex-col md:flex-row text-white my-15'>
+            <Image src={culture} alt='out-products-image' className='md:w-[40%]'/>
             <div className='flex flex-col md:w-[60%] bg-[#fd9b6c] p-15'>
                 <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-4'>
                     Our Culture

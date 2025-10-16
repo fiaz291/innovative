@@ -33,10 +33,10 @@ export default function LandingPage() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-5 text-white text-center md:text-left">
-        <div className="flex">
+      <div className="flex flex-col gap-5 text-white text-center text-left">
+        <div className="flex flex-col md:flex-row">
           <div className="flex items-center w-full md:w-[40%] bg-[#8e2e19] p-15 text-xl md:text-4xl font-black whitespace-pre-line">{`Responsibility\nTowards Ingredients`}</div>
-          <div className="hidden md:flex p-15 items-center w-[60%] bg-[#fd9b6c] text-lg md:text-2xl text-[#8e2e19]">
+          <div className="p-15 items-center md:w-[60%] bg-[#fd9b6c] text-lg md:text-2xl text-[#8e2e19]">
             <ul className="list-disc">
               <li>Ethical sourcing </li>
               <li>
@@ -46,8 +46,8 @@ export default function LandingPage() {
             </ul>
           </div>
         </div>
-        <div className="flex">
-          <div className="hidden md:flex p-15 items-center w-[60%] bg-[#5899af] text-lg md:text-2xl">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex p-15 items-center md:w-[60%] bg-[#5899af] text-lg md:text-2xl">
             <ul className="list-disc">
               <li>Responsibility towards local suppliers</li>
               <li>
@@ -58,9 +58,9 @@ export default function LandingPage() {
           </div>
           <div className="flex items-center w-full md:w-[40%] bg-[#123A5E] p-15 text-xl md:text-4xl font-black whitespace-pre-line">{`Responsibility\nTowards Community`}</div>
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <div className="flex items-center w-full md:w-[40%] bg-[#94673D] p-15 text-xl md:text-4xl font-black whitespace-pre-line">{`Responsibility\nTowards Regulations`}</div>
-          <div className="hidden md:flex p-15 items-center w-[60%] bg-[#df9f3e] text-lg md:text-2xl">
+          <div className="md:flex p-15 items-center md:w-[60%] bg-[#df9f3e] text-lg md:text-2xl">
             <ul className="list-disc">
               <li>Good manufacturing practices to abide by</li>
               <li>Food safety and quality systems to uphold</li>
@@ -88,11 +88,11 @@ export default function LandingPage() {
       </div>
 
       <div className="mt-15 mb-25 text-white">
-        <div className="flex">
-          <div className="w-full md:w-[40%] bg-[#123a5e] p-12 pl-24 flex items-center">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-[40%] bg-[#123a5e] p-12 flex items-center">
             <p className="text-xl md:text-4xl font-black">{`Agile Thinking`}</p>
           </div>
-          <div className="hidden md:block md:w-[60%] bg-[#5899af] p-12 pr-24">
+          <div className="md:w-[60%] bg-[#5899af] p-12">
             <p className="text-lg md:text-2xl">
               We move with purpose and precision — anticipating trends,
               accelerating production, and staying ahead of the curve to serve
@@ -101,14 +101,14 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <div className="flex">
-          <div className="w-full md:w-[40%] bg-[#123a5e] p-12  pl-24 pt-0">
-            <div className="border-t border-white pt-12 flex items-center h-full">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-[40%] bg-[#123a5e] p-12 pt-0">
+            <div className="md:border-t border-white pt-12 flex items-center h-full">
               <p className="text-xl md:text-4xl font-black">{`Resilient Foundations`}</p>
             </div>
           </div>
-          <div className="hidden md:block md:w-[60%] bg-[#5899af] p-12  pr-24 pt-0">
-            <div className="border-t border-white pt-12">
+          <div className="md:w-[60%] bg-[#5899af] p-12 pt-0">
+            <div className="md:border-t border-white pt-12">
               <p className="text-lg md:text-2xl">
                 Built on trust, quality, and responsibility, we strengthen every
                 link in our value chain — from our ingredients and teams to the
@@ -118,14 +118,14 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <div className="flex">
-          <div className="w-full md:w-[40%] bg-[#123a5e] p-12  pl-24 pt-0">
-            <div className="border-t border-white pt-12 flex items-center  h-full">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-[40%] bg-[#123a5e] p-12 pt-0">
+            <div className="md:border-t border-white pt-12 flex items-center  h-full">
               <p className="text-xl md:text-4xl font-black">{`Elevated Experiences`}</p>
             </div>
           </div>
-          <div className="hidden md:block md:w-[60%] bg-[#5899af] p-12  pr-24 pt-0">
-            <div className="border-t border-white pt-12">
+          <div className="md:w-[60%] bg-[#5899af] p-12 pt-0">
+            <div className="md:border-t border-white pt-12">
               <p className="text-lg md:text-2xl">
                 We strive for excellence in every detail. With world-class
                 ingredients and forward-looking processes, we deliver not just
