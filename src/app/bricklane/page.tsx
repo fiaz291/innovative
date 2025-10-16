@@ -14,7 +14,7 @@ export default function ShortBreadPage() {
               <Navbar />
               <div className="flex flex-col px-10 md:px-30">
                   <Image src={bricklaneText} alt='digestive-copy' className="w-[80%] mx-auto"/>
-                  <div className="flex mt-6">
+                  <div className="flex flex-col md:flex-row mt-6">
                     <div className="md:pl-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Premium taste with a purpose<span className="text-base md:text-2xl font-medium"> - ethically sourced, beautifully crafted, truly unforgettable</span></div>
                         <div className="mt-15">
@@ -39,7 +39,7 @@ export default function ShortBreadPage() {
                         </div>
 
                     </div>
-                    <Image src={bricklane} alt='boxes-image' className="hidden md:block w-[50%]"/>
+                    <Image src={bricklane} alt='boxes-image' className="md:w-[50%]"/>
                   </div>
               </div>
              <Faq />

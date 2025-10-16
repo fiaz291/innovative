@@ -22,9 +22,9 @@ export default function DigestivePremiumPage() {
               <div className="relative flex flex-col px-10 md:px-30 mt-12 md:mt-25">
                   <Image src={digestiveText} alt='digestive-copy' className="w-[60%] mx-auto"/>
                   <Image src={biscuit} alt='biscuit' className="absolute w-[22%] top-0 right-[-50px] md:right-[-140px]"/>
-                  <Image src={wheat} alt='wheat-image' className="absolute w-[45%] top-[110px] md:top-[-50px] md:bottom-0 md:my-auto left-[-70px] md:left-[-400px]"/>
-                  <Image src={singleWheat} alt='wheat-image' className="absolute w-[40%] top-[160px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"/>
-                  <div className="relative flex mt-10 md:mt-20">
+                  <Image src={wheat} alt='wheat-image' className="absolute w-[45%] top-[50px] md:top-[-50px] md:bottom-0 md:my-auto left-[-70px] md:left-[-400px]"/>
+                  <Image src={singleWheat} alt='wheat-image' className="absolute w-[40%] top-[80px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"/>
+                  <div className="relative flex flex-col md:flex-row mt-10 md:mt-20">
                     <div className="md:pl-28 z-10">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">{`Simple Goodness, Perfectly Baked`}</div>
                         <div className="text-base md:text-2xl text-center md:text-left">{`A Wholesome Digestive Biscuit Crafted With Whole Wheat, Natural Sweetness, and Satisfying Subtle Crunch.`}</div>
@@ -56,8 +56,8 @@ export default function DigestivePremiumPage() {
                         </div>
 
                     </div>
-                    <Image src={digestiveBigBox} alt='boxes-image' className="hidden md:block w-[40%]"/>
-                    <Image src={digestiveSmallPack} alt='boxes-image' className="absolute hidden md:block w-[30%] bottom-[-50px] right-[11rem]"/>
+                    <Image src={digestiveBigBox} alt='boxes-image' className="md:w-[40%]"/>
+                    <Image src={digestiveSmallPack} alt='boxes-image' className="absolute md:w-[30%] bottom-[-50px] right-[4rem] md:right-[11rem]"/>
                   </div>
               </div>
         </div>
@@ -68,7 +68,7 @@ export default function DigestivePremiumPage() {
                 <Image src={biscuit} alt='original-image' className="absolute w-[20%] top-[7rem] md:top-[40rem] left-[-2.5rem] md:left-[-13rem]"/>
                 <Image src={wheat} alt='wheat-image' className="absolute w-[30%] top-[1rem] md:top-[2rem] left-[-3.5rem] md:left-[-12rem]"/>
                 <Image src={singleWheat} alt='wheat-image' className="absolute w-[40%] top-[180px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"/>
-                  <div className="relative flex mt-10">
+                  <div className="relative flex flex-col md:flex-row mt-10 mb-10 md:mt-0">
                     <div className="md:pl-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">{`Healthy Snacking, Elevated`}</div>
                         <div className="text-base md:text-2xl text-center md:text-left">{`Whole Wheat Digestives Without Sugar, Designed for Taste and Wellness in Every Bite.`}</div>
@@ -100,8 +100,8 @@ export default function DigestivePremiumPage() {
                         </div>
 
                     </div>
-                    <Image src={digestiveSugerFreeBigBox} alt='boxes-image' className="hidden md:block w-[40%]"/>
-                    <Image src={digestiveSugerFreeSmallPack} alt='boxes-image' className="absolute hidden md:block w-[30%] bottom-[-50px] right-[11rem]"/>
+                    <Image src={digestiveSugerFreeBigBox} alt='boxes-image' className="md:w-[40%]"/>
+                    <Image src={digestiveSugerFreeSmallPack} alt='boxes-image' className="absolute md:w-[30%] bottom-[-50px] right-[4rem] md:right-[11rem]"/>
                   </div>
               </div>
               <Faq  />

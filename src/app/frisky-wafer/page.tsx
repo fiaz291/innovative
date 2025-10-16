@@ -52,7 +52,7 @@ export default function FriskyWaferPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={friskyWaferChocolate} alt='boxes-image' className="hidden md:block w-[70%]"/></div>
+                  <div className="w-full flex justify-center"><Image src={friskyWaferChocolate} alt='boxes-image' className="w-[70%]"/></div>
               </div>
         </div>
         <div
@@ -91,7 +91,7 @@ export default function FriskyWaferPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={friskyWaferOrange} alt='boxes-image' className="hidden md:block w-[70%]"/></div>
+                  <div className="w-full flex justify-center"><Image src={friskyWaferOrange} alt='boxes-image' className="w-[70%]"/></div>
               </div>
         </div>
         <div
@@ -124,7 +124,7 @@ export default function FriskyWaferPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={friskyWaferVanilla} alt='boxes-image' className="hidden md:block w-[70%]"/></div>
+                  <div className="w-full flex justify-center"><Image src={friskyWaferVanilla} alt='boxes-image' className="w-[70%]"/></div>
               </div>
         </div>
         <div
@@ -163,7 +163,7 @@ export default function FriskyWaferPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={friskyWaferStrawberry} alt='boxes-image' className="hidden md:block w-[70%]"/></div>
+                  <div className="w-full flex justify-center"><Image src={friskyWaferStrawberry} alt='boxes-image' className="w-[70%]"/></div>
               </div>
               <Faq />
         </div>

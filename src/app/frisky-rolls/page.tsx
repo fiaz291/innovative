@@ -51,7 +51,7 @@ export default function FriskyRollsPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                  <Image src={friskyChocolateRolls} alt='boxes-image' className="hidden md:block w-[70%]"/>
+                  <Image src={friskyChocolateRolls} alt='boxes-image' className="w-[70%]"/>
                   </div>
               </div>
         </div>
@@ -86,7 +86,7 @@ export default function FriskyRollsPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                  <Image src={friskyHazelnuteRolls} alt='boxes-image' className="hidden md:block w-[70%]"/>
+                  <Image src={friskyHazelnuteRolls} alt='boxes-image' className="w-[70%]"/>
                   </div>
               </div>
         </div>
@@ -127,7 +127,7 @@ export default function FriskyRollsPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                  <Image src={friskyMilkyRolls} alt='boxes-image' className="hidden md:block w-[70%]"/>
+                  <Image src={friskyMilkyRolls} alt='boxes-image' className="w-[70%]"/>
                   </div>
               </div>
               <Faq />

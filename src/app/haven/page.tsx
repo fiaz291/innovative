@@ -53,14 +53,14 @@ export default function HavenPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={havenCoffee} alt='boxes-image' className="hidden md:block w-[70%] px-20"/></div>
+                  <div className="w-full flex justify-center"><Image src={havenCoffee} alt='boxes-image' className="w-[70%] md:px-20"/></div>
               </div>
         </div>
         <div
           className="relative w-full bg-[#ffce54] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
                   <Image src={havenChocolateBiscuit} alt='biscuit' className="absolute w-[23%] top-0 bottom-0 my-auto right-[-50px] md:right-[-90px]"/>
-                  <Image src={havenChocolateBiscuit} alt='biscuit' className="absolute rotate-[-70deg] w-[20%] top-0 bottom-220 my-auto left-[-50px] md:left-[-100px]"/>
+                  <Image src={havenChocolateBiscuit} alt='biscuit' className="absolute rotate-[-70deg] w-[20%] top-10 md:top-0 bottom-220 my-auto left-[-50px] md:left-[-100px]"/>
                   <Image src={havenChocolateText} alt='digestive-copy' className="w-[70%] mx-auto"/>
                   <div className="flex">
                     <div className="px-40">
@@ -94,7 +94,7 @@ export default function HavenPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={havenChocolate} alt='boxes-image' className="hidden md:block w-[70%] px-20"/></div>
+                  <div className="w-full flex justify-center"><Image src={havenChocolate} alt='boxes-image' className="w-[70%] md:px-20"/></div>
               </div>
               <Faq />
         </div>

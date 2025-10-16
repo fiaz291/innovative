@@ -13,8 +13,8 @@ export default function GoldenLotusPage() {
         <div
           className="relative w-full bg-[#f4978f] pb-10">
               <Navbar />
-              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute rotate-[55deg] w-[18%] left-[-3rem] md:left-[-10rem] top-0 bottom-[40rem] md:bottom-[60rem] my-auto"/>
-              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute w-[18%] right-[-4rem] md:right-[-10rem] top-0 bottom-0 my-auto"/>
+              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute rotate-[55deg] w-[25%] md:w-[18%] left-[-3rem] md:left-[-10rem] top-10 md:top-0 bottom-[40rem] md:bottom-[60rem] my-auto"/>
+              <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[18%] right-[-4rem] md:right-[-10rem] top-0 bottom-0 my-auto"/>
               <div className="flex flex-col items-center px-10 md:px-30">
                   <Image src={goldenLotusText} alt='digestive-copy' className="w-[80%] mt-[-50px]"/>
                   <div className="flex">
@@ -44,7 +44,7 @@ export default function GoldenLotusPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                  <Image src={goldenLotus} alt='boxes-image' className="hidden md:block w-[70%]"/>
+                    <Image src={goldenLotus} alt='boxes-image' className="w-[70%]"/>
                   </div>
               </div>
               <Faq />

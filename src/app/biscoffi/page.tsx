@@ -44,7 +44,7 @@ export default function BiscoffiPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={biscoffi} alt='boxes-image' className="hidden md:block w-[70%] px-20"/></div>
+                  <div className="w-full flex justify-center"><Image src={biscoffi} alt='boxes-image' className="w-[70%] md:px-20"/></div>
               </div>
               <Faq />
         </div>
