@@ -17,10 +17,10 @@ export default function ButterCrunchPage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={butterCrunchLogo} alt='digestive-copy' className="w-[30%]"/>
-                  <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] right-[-7rem] top-[-5rem]"/>
-                  <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] left-[-10rem] bottom-[-18rem]"/>
-                  <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[15%] right-[-2rem] bottom-[5rem]"/>
-                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] right-[-2rem] md:right-[-7rem] top-[-5rem]"/>
+                  <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] left-[-2rem] md:left-[-10rem] bottom-[-3.5rem] md:bottom-[-18rem]"/>
+                  <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[15%] right-[-1rem] md:right-[-2rem] bottom-[5rem]"/>
+                  <div className="text-3xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Golden Oats,\nPure Delight.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crunchy Oat Biscuits with Butter`}</div>
@@ -64,7 +64,7 @@ export default function ButterCrunchPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <div className="w-full flex justify-center"><Image src={butterCrunchTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
+              <div className="w-full flex justify-center"><Image src={butterCrunchTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[80%] md:w-[50%]"/></div>
         </div>        
       </div>
     );

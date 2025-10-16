@@ -16,9 +16,9 @@ export default function ToooGudPage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={tooGudLogo} alt='digestive-copy' className="w-[30%]"/>
-                  <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-5rem] top-[-5rem]"/>
-                  <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-0 rotate-[113deg]"/>
-                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-2rem] md:right-[-5rem] top-[-2rem] md:top-[-5rem]"/>
+                  <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-2rem] md:left-[-12rem] bottom-[15rem] md:bottom-0 rotate-[113deg]"/>
+                  <div className="text-3xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Tooo Good\nTo Shares!`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Rick Egg & Milk Cookies`}</div>
@@ -62,7 +62,7 @@ export default function ToooGudPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <div className="w-full flex justify-center"><Image src={tooGudTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
+              <div className="w-full flex justify-center"><Image src={tooGudTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[80%] md:w-[50%]"/></div>
         </div>        
       </div>
     );

@@ -16,10 +16,10 @@ export default function ChocoRingsPage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={chocoRingsLogo} alt='digestive-copy' className="w-[30%]"/>
-                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[4rem] top-[-6rem]"/>
-                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-12rem] bottom-[-16rem]"/>
-                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[15%] left-[-2rem] top-[20rem]"/>
-                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[4rem] top-[-2rem] md:top-[-6rem]"/>
+                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-3rem] md:left-[-12rem] bottom-[-2rem] md:bottom-[-16rem]"/>
+                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-2rem] top-[20rem]"/>
+                  <div className="text-3xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`A Perfect\nChoco Circle.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits Coated with Indulging Chocolate`}</div>
@@ -51,7 +51,7 @@ export default function ChocoRingsPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <div className="w-full flex justify-center"><Image src={chocoRingsTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
+              <div className="w-full flex justify-center"><Image src={chocoRingsTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[80%] md:w-[50%]"/></div>
         </div>        
       </div>
     );

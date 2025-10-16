@@ -16,9 +16,9 @@ export default function CharmPage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={charmLogo} alt='digestive-copy' className="w-[30%]"/>
-                  <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-3rem] top-[-3rem]"/>
-                  <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-11rem] bottom-[-20rem] rorate-[-35deg]"/>
-                  <div className="text-3xl md:text-[8rem] leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-1rem] md:right-[-3rem] top-[-1rem] md:top-[-3rem]"/>
+                  <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-4rem] md:left-[-11rem] bottom-[8rem] md:bottom-[-20rem] rorate-[-35deg]"/>
+                  <div className="text-3xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Filled With\nPure Joy.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>
@@ -50,7 +50,7 @@ export default function CharmPage() {
                   </div>
               </div>
               <Faq isWhite/>
-              <div className="w-full flex justify-center"><Image src={charmTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/></div>
+              <div className="w-full flex justify-center"><Image src={charmTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[80%] md:w-[50%]"/></div>
         </div>        
       </div>
     );

@@ -17,7 +17,7 @@ export default function CrustRollsPage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[30%]"/>
-                  <div className="text-3xl md:text-[7rem] leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[7rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Roll. Crunch.\nIndulge`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Cream Filled Wafer Rolls`}</div>
@@ -31,7 +31,7 @@ export default function CrustRollsPage() {
           className="w-full bg-[#f87500] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={crustRollsOrgangeLogo} alt='digestive-copy' className="w-[30%]"/>
-                  <div className="text-3xl md:text-[7rem] leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[7rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Rolls,\nCitrus Goals.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Cream Filled Wafer Rolls`}</div>
@@ -70,7 +70,7 @@ export default function CrustRollsPage() {
               </div>
               <Faq isWhite/>
               <div className="w-full flex justify-center">
-                <Image src={crustRollsTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[50%]"/>
+                <Image src={crustRollsTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[80%] md:w-[50%]"/>
               </div>
         </div>        
       </div>
