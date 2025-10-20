@@ -20,15 +20,15 @@ export default function InnovationLabgPage() {
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="text-white w-full bg-no-repeat bg-center md:bg-cover">
+          className="text-white w-full bg-no-repeat bg-center bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center justify-center text-center font-black h-[85vh]">
-                  <div className="text-2xl md:text-6xl whitespace-pre-line mt-[-80px]">{`The Epicenter of\ndelicious disruption`}</div>
+              <div className="flex flex-col gap-4 items-center justify-center text-center font-black h-[50vh] md:h-[85vh]">
+                  <div className="text-3xl md:text-6xl whitespace-pre-line mt-[-80px]">{`The Epicenter of\ndelicious disruption`}</div>
               </div>
         </div>
 
-        <div className='flex flex-col items-center p-25'>
-            <p className="text-black font-black text-2xl md:text-6xl mb-25">Innovation Lab</p>
+        <div className='flex flex-col items-center p-6 md:p-25'>
+            <p className="text-black font-black text-2xl md:text-6xl mb-6 md:mb-25">Innovation Lab</p>
             <div className='flex flex-col gap-8'>
               <div className='flex gap-8'>
                 <div className='w-[50%]'>

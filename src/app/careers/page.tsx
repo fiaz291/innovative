@@ -16,24 +16,24 @@ export default function CareerPage() {
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="text-white w-full bg-no-repeat bg-center md:bg-cover">
+          className="text-white w-full bg-no-repeat bg-center bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center justify-center font-black h-[85vh]">
-                  <div className="text-2xl md:text-6xl whitespace-pre-line text-center mt-[-80px]">{`Stay In. Stand Out.\nStay Ahead`}</div>
+              <div className="flex flex-col gap-4 items-center justify-center font-black h-[50vh] md:h-[85vh]">
+                  <div className="text-3xl md:text-6xl whitespace-pre-line text-center mt-[-80px]">{`Stay In. Stand Out.\nStay Ahead`}</div>
               </div>
         </div>
 
-        <div className='flex flex-col p-12 md:p-45 text-black relative'>
+        <div className='flex flex-col p-6 md:p-12 md:p-45 text-black relative'>
             <div className='absolute mx-auto left-0 right-0 top-[-30px] w-[80%]'>
                 <SearchBar />
             </div>
-            <div className='font-black text-xl md:text-5xl mt-12'>Career Areas</div>
+            <div className='font-black text-xl md:text-5xl mt-15 md:mt-12'>Career Areas</div>
             <div className='md:font-semibold text-base md:text-2xl md:leading-15 whitespace-pre-line'>{`Human Resources & Administration  Finance & Legal\n Research & Development  Technology  Marketing & Sales\nProduction & Operations  Supply Chain`}</div>
 
         </div>
 
-        <div className='flex flex-col md:flex-row text-white mb-15'>
-            <div className='flex flex-col md:w-[60%] bg-[#5899af] p-15 pl-25 justify-center'>
+        <div className='flex flex-col-reverse md:flex-row text-white md:mb-15'>
+            <div className='flex flex-col md:w-[60%] bg-[#5899af] p-6 pl-6 md:p-15 md:pl-25 justify-center'>
                 <div className='font-black flex items-center gap-10 text-2xl md:text-5xl mb-4'>
                     Rise with Innovation
                 </div>
@@ -63,9 +63,9 @@ export default function CareerPage() {
         </div>
 
 
-        <div className='flex flex-col md:flex-row text-white my-15'>
+        <div className='flex flex-col md:flex-row text-white md:my-15'>
             <Image src={culture} alt='out-products-image' className='md:w-[40%]'/>
-            <div className='flex flex-col md:w-[60%] bg-[#fd9b6c] p-15'>
+            <div className='flex flex-col md:w-[60%] bg-[#fd9b6c] p-6 md:p-15'>
                 <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-4'>
                     Our Culture
                 </div>

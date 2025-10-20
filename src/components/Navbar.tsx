@@ -1,11 +1,11 @@
-'use client';
-import { useRouter } from 'next/navigation';
+"use client";
+import { useRouter } from "next/navigation";
 import { ChevronDown, ChevronLeft, Search, Menu, X } from "lucide-react";
 import Image from "next/image";
-import premiumLogo from '../assets/innovative-premium-logo.svg';
-import logoLight from '../assets/Innovative-Logo-White.png';
-import logoDark from '../assets/Innovative-Logo-Black.png';
-import { useState } from 'react';
+import premiumLogo from "../assets/innovative-premium-logo.svg";
+import logoLight from "../assets/Innovative-Logo-White.png";
+import logoDark from "../assets/Innovative-Logo-Black.png";
+import { useState } from "react";
 
 const whoWeAreItems = [
   { title: "Leadership", route: "/leadership" },
@@ -58,7 +58,7 @@ export default function Navbar({
 }) {
   const router = useRouter();
   const [showMegaNav, setShowMegaNav] = useState(false);
-  const [tab, setTab] = useState('Who We Are');
+  const [tab, setTab] = useState("Who We Are");
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [megaNavItems, setMegaNavItems] = useState<any>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,19 +75,30 @@ export default function Navbar({
   return (
     <>
       <nav
-        className={`relative z-50 bg-transparent px-2 md:px-15 pb-3 w-full ${(isPremium && !isTextWhite) || isTransparentBg || showMegaNav
-          ? 'text-black'
-          : 'text-white'
-          } ${isTransparentBg && 'border-b'} ${showMegaNav && 'bg-white'}`}
+        className={`relative z-50 bg-transparent px-2 md:px-15 pb-3 w-full ${
+          (isPremium && !isTextWhite) || isTransparentBg || showMegaNav
+            ? "text-black"
+            : "text-white"
+        } ${isTransparentBg && "border-b"} ${showMegaNav && "bg-white"}`}
       >
         <div className="flex items-center justify-between">
           {/* Logo and menu */}
           <div className="flex items-center gap-10">
             <Image
-              src={isPremium ? premiumLogo : (isTransparentBg || showMegaNav) ? logoDark : logoLight}
+              src={
+                isPremium
+                  ? premiumLogo
+                  : isTransparentBg || showMegaNav
+                  ? logoDark
+                  : logoLight
+              }
               alt="Logo"
-              className={`h-15 w-auto object-contain ${!isPremium && 'mt-[20px]'} cursor-pointer`}
-              onClick={() => router.push(isPremium ? 'premium-lp' : '/innovative-lp')}
+              className={`h-12 md:h-15 w-auto object-contain ${
+                !isPremium && "mt-[12px] md:mt-[20px]"
+              } cursor-pointer`}
+              onClick={() =>
+                router.push(isPremium ? "premium-lp" : "/innovative-lp")
+              }
             />
 
             {/* Desktop menu */}
@@ -95,21 +106,23 @@ export default function Navbar({
               {isPremium ? (
                 <>
                   <li
-                    onClick={() => router.push('/premium-lp')}
+                    onClick={() => router.push("/premium-lp")}
                     className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5"
                   >
                     Home <ChevronDown className="w-4 h-4" />
                   </li>
                   <li
                     className="relative cursor-pointer py-2 hover:border-b-5"
-                    onClick={() => handleMegaNav('Our Products', premiumProducts)}
+                    onClick={() =>
+                      handleMegaNav("Our Products", premiumProducts)
+                    }
                   >
                     <div className="text-lg flex items-center gap-1">
                       Our Products <ChevronDown className="w-4 h-4" />
                     </div>
                   </li>
                   <li
-                    onClick={() => router.push('/coming-soon')}
+                    onClick={() => router.push("/coming-soon")}
                     className="text-lg cursor-pointer py-2 hover:border-b-5"
                   >
                     Creations
@@ -118,30 +131,39 @@ export default function Navbar({
               ) : (
                 <>
                   <li
-                    onClick={() => handleMegaNav('Who We Are', whoWeAreItems)}
+                    onClick={() => handleMegaNav("Who We Are", whoWeAreItems)}
                     className="text-lg cursor-pointer py-2 hover:border-b-5 flex items-center gap-1"
                   >
                     Who We Are <ChevronDown className="w-4 h-4" />
                   </li>
                   <li
-                    onClick={() => handleMegaNav('Products', products)}
+                    onClick={() => handleMegaNav("Products", products)}
                     className="text-lg cursor-pointer py-2 hover:border-b-5 flex items-center gap-1"
                   >
                     Our Products <ChevronDown className="w-4 h-4" />
                   </li>
-                  <li onClick={() => router.push('/export')} className="text-lg cursor-pointer py-2 hover:border-b-5">
+                  <li
+                    onClick={() => router.push("/export")}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5"
+                  >
                     Export
                   </li>
-                  <li onClick={() => router.push('/coming-soon')} className="text-lg cursor-pointer py-2 hover:border-b-5">
+                  <li
+                    onClick={() => router.push("/coming-soon")}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5"
+                  >
                     Recipes
                   </li>
                   <li
-                    onClick={() => handleMegaNav('Resources', resourcesItems)}
+                    onClick={() => handleMegaNav("Resources", resourcesItems)}
                     className="text-lg cursor-pointer py-2 hover:border-b-5 flex items-center gap-1"
                   >
                     Resources <ChevronDown className="w-4 h-4" />
                   </li>
-                  <li onClick={() => router.push('/careers')} className="text-lg cursor-pointer py-2 hover:border-b-5">
+                  <li
+                    onClick={() => router.push("/careers")}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5"
+                  >
                     Careers
                   </li>
                 </>
@@ -152,15 +174,30 @@ export default function Navbar({
           {/* Right side */}
           <div className="flex items-center gap-6 text-sm font-medium">
             {/* Hamburger on mobile */}
-            <div className="md:hidden cursor-pointer" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-              {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+            <div
+              className="md:hidden cursor-pointer"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <X className="w-7 h-7" />
+              ) : (
+                <Menu className="w-7 h-7" />
+              )}
+            </div>
+            <div className="relative md:hidden">
+              <Image
+                src={premiumLogo}
+                alt="Logo"
+                className="h-15 w-auto object-contain mt-[0px] cursor-pointer"
+                onClick={() => router.push("premium-lp")}
+              />
             </div>
 
             {/* Desktop right section */}
             <div className="hidden md:flex items-center gap-6">
               {isPremium ? (
                 <div
-                  onClick={() => router.push('/innovative-lp')}
+                  onClick={() => router.push("/innovative-lp")}
                   className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5"
                 >
                   <ChevronLeft className="w-4 h-4" /> Back
@@ -170,13 +207,13 @@ export default function Navbar({
                   <Image
                     src={premiumLogo}
                     alt="Logo"
-                    className="h-20 w-auto object-contain mt-[-25px] cursor-pointer"
-                    onClick={() => router.push('premium-lp')}
+                    className="h-20 w-auto object-contain mt-[0px] cursor-pointer"
+                    onClick={() => router.push("premium-lp")}
                   />
                 </div>
               )}
               <div
-                onClick={() => router.push('/contact-us')}
+                onClick={() => router.push("/contact-us")}
                 className="text-lg cursor-pointer py-2 hover:border-b-5"
               >
                 Contact
@@ -196,38 +233,161 @@ export default function Navbar({
                 alt="Logo"
                 className="h-12 w-auto cursor-pointer"
                 onClick={() => {
-                  router.push(isPremium ? '/premium-lp' : '/innovative-lp');
+                  router.push(isPremium ? "/premium-lp" : "/innovative-lp");
                   setMobileMenuOpen(false);
                 }}
               />
-              <X className="w-7 h-7 cursor-pointer" onClick={() => setMobileMenuOpen(false)} />
+              <X
+                className="w-7 h-7 cursor-pointer"
+                onClick={() => setMobileMenuOpen(false)}
+              />
             </div>
 
             <ul className="space-y-4 text-lg">
               {isPremium ? (
                 <>
-                  <li onClick={() => { router.push('/premium-lp'); setMobileMenuOpen(false); }}>Home</li>
-                  <li onClick={() => handleMegaNav('Our Products', premiumProducts)} className="flex items-center gap-2">
+                  <li
+                    onClick={() => {
+                      router.push("/premium-lp");
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Home
+                  </li>
+                  <li
+                    onClick={() =>
+                      handleMegaNav("Our Products", premiumProducts)
+                    }
+                    className="flex items-center gap-2"
+                  >
                     Our Products <ChevronDown className="w-4 h-4" />
                   </li>
-                  <li onClick={() => { router.push('/coming-soon'); setMobileMenuOpen(false); }}>Creations</li>
-                  <li onClick={() => { router.push('/contact-us'); setMobileMenuOpen(false); }}>Contact</li>
+                  <li
+                    onClick={() => {
+                      router.push("/coming-soon");
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Creations
+                  </li>
+                  <li
+                    onClick={() => {
+                      router.push("/contact-us");
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Contact
+                  </li>
                 </>
               ) : (
                 <>
-                  <li onClick={() => handleMegaNav('Who We Are', whoWeAreItems)} className="flex items-center gap-2">
+                  <li
+                    onClick={() => handleMegaNav("Who We Are", whoWeAreItems)}
+                    className="flex items-center gap-2"
+                  >
                     Who We Are <ChevronDown className="w-4 h-4" />
                   </li>
-                  <li onClick={() => handleMegaNav('Products', products)} className="flex items-center gap-2">
+                  {tab === "Who We Are" &&
+                    megaNavItems?.map(
+                      (
+                        item: { title: string; route: string },
+                        index: number
+                      ) => (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            router.push(item.route);
+                            setShowMegaNav(false);
+                            setMobileMenuOpen(false);
+                          }}
+                          className="p-1 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          {item.title}
+                        </li>
+                      )
+                    )}
+                  <li
+                    onClick={() => handleMegaNav("Products", products)}
+                    className="flex items-center gap-2"
+                  >
                     Our Products <ChevronDown className="w-4 h-4" />
                   </li>
-                  <li onClick={() => { router.push('/export'); setMobileMenuOpen(false); }}>Export</li>
-                  <li onClick={() => { router.push('/coming-soon'); setMobileMenuOpen(false); }}>Recipes</li>
-                  <li onClick={() => handleMegaNav('Resources', resourcesItems)} className="flex items-center gap-2">
+                  {tab === "Products" &&
+                    megaNavItems?.map(
+                      (
+                        item: { title: string; route: string },
+                        index: number
+                      ) => (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            router.push(item.route);
+                            setShowMegaNav(false);
+                            setMobileMenuOpen(false);
+                          }}
+                          className="p-1 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          {item.title}
+                        </li>
+                      )
+                    )}
+                  <li
+                    onClick={() => {
+                      router.push("/export");
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Export
+                  </li>
+                  <li
+                    onClick={() => {
+                      router.push("/coming-soon");
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Recipes
+                  </li>
+                  <li
+                    onClick={() => handleMegaNav("Resources", resourcesItems)}
+                    className="flex items-center gap-2"
+                  >
                     Resources <ChevronDown className="w-4 h-4" />
                   </li>
-                  <li onClick={() => { router.push('/careers'); setMobileMenuOpen(false); }}>Careers</li>
-                  <li onClick={() => { router.push('/contact-us'); setMobileMenuOpen(false); }}>Contact</li>
+                  {tab === "Resources" &&
+                    megaNavItems?.map(
+                      (
+                        item: { title: string; route: string },
+                        index: number
+                      ) => (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            router.push(item.route);
+                            setShowMegaNav(false);
+                            setMobileMenuOpen(false);
+                          }}
+                          className="p-1 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          {item.title}
+                        </li>
+                      )
+                    )}
+                  <li
+                    onClick={() => {
+                      router.push("/careers");
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Careers
+                  </li>
+                  <li
+                    onClick={() => {
+                      router.push("/contact-us");
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Contact
+                  </li>
                 </>
               )}
             </ul>
@@ -245,29 +405,36 @@ export default function Navbar({
 
       {/* Mega Nav */}
       <div
-        className={`absolute top-[${isPremium ? '72' : '82'}px] bg-white shadow-2xl w-full text-black z-50 border-t border-gray-100 transition-all duration-300 ease-out ${showMegaNav
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 -translate-y-5 pointer-events-none'
-          }`}
+        className={`hidden md:block absolute top-[${
+          isPremium ? "72" : "82"
+        }px] bg-white shadow-2xl w-full text-black z-50 border-t border-gray-100 transition-all duration-300 ease-out ${
+          showMegaNav
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-5 pointer-events-none"
+        }`}
       >
         <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%]">
           <div>
-            <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0">{tab}</h1>
+            <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0">
+              {tab}
+            </h1>
           </div>
           <div className="grid grid-cols-3 gap-4">
-            {megaNavItems?.map((item: { title: string; route: string }, index: number) => (
-              <div
-                key={index}
-                onClick={() => {
-                  router.push(item.route);
-                  setShowMegaNav(false);
-                  setMobileMenuOpen(false);
-                }}
-                className="p-4 hover:bg-gray-100 rounded cursor-pointer"
-              >
-                <h2 className="text-lg font-semibold">{item.title}</h2>
-              </div>
-            ))}
+            {megaNavItems?.map(
+              (item: { title: string; route: string }, index: number) => (
+                <div
+                  key={index}
+                  onClick={() => {
+                    router.push(item.route);
+                    setShowMegaNav(false);
+                    setMobileMenuOpen(false);
+                  }}
+                  className="p-4 hover:bg-gray-100 rounded cursor-pointer"
+                >
+                  <h2 className="text-lg font-semibold">{item.title}</h2>
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>

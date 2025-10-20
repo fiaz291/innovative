@@ -10,15 +10,15 @@ export default function AboutUsPage() {
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="text-white w-full bg-no-repeat bg-center md:bg-cover">
+          className="text-white w-full bg-no-repeat bg-center bg-cover">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center justify-center font-black h-[85vh]">
+              <div className="flex flex-col gap-4 items-center justify-center font-black h-[50vh] md:h-[85vh]">
                   <div className="text-2xl md:text-6xl text-center whitespace-pre-line mt-[-80px]">{`Where tradition\nmeets innovation`}</div>
               </div>
         </div>
 
-        <div className='flex flex-col items-center relative text-center p-15 md:px-50 md:py-20'>
-            <div className="font-black text-2xl md:text-6xl mb-15">{`Step into the world of quality, taste, and innovation.`}</div>
+        <div className='flex flex-col items-center relative text-center p-6 md:p-15 md:px-50 md:py-20'>
+            <div className="font-black text-3xl md:text-6xl mb-15">{`Step into the world of quality, taste, and innovation.`}</div>
             <p className='text-base md:text-2xl mb-8'>
                 At Innovative Biscuits, our passionate team of forward-thinkers is driven to revolutionize the market—one delicious bite at a time. As a responsible organization, we stay committed to all our stakeholders, with a strong focus on our consumers.
             </p>
@@ -30,8 +30,8 @@ export default function AboutUsPage() {
             </p>
         </div>
 
-        <div className='flex flex-col md:flex-row text-white mb-15'>
-            <div className='flex flex-col md:w-[50%] bg-[#123a5e] p-15'>
+        <div className='flex flex-col md:flex-row text-white mb-0 md:mb-15'>
+            <div className='flex flex-col md:w-[50%] bg-[#123a5e] p-6 md:p-15'>
                 <div className='font-bold flex items-center gap-10 text-2xl md:text-4xl'>
                     Upholding Excellence in  Quality, Halal Standards & Food Safety
                 </div>

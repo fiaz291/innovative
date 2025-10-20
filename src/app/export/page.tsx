@@ -141,23 +141,23 @@ export default function ExportPage() {
           </form>
         </div>
 
-        <div className='flex flex-col items-center mt-25'>
+        <div className='flex flex-col items-center mt-0 md:mt-25'>
           <p className="text-black font-black text-2xl md:text-6xl">Certified For Excellence</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mx-30 md:mx-50 my-15">
-            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black pr-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mx-10 md:mx-30 md:mx-50 my-15 place-items-center">
+            <div className="flex justify-center items-center border-b md:border-b-0 max-w-[150px] md:border-r border-black">
               <Image src={certificate1} alt="Pakistan Standards" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black pr-8">
+            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black max-w-[250px]">
               <Image src={certificate2} alt="Halal Certified" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black pr-8">
+            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 max-w-[150px] border-black">
               <Image src={certificate3} alt="FSSC 22000" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black pr-8">
+            <div className="flex justify-center items-center border-b md:border-r max-w-[150px] md:border-b-0 border-black border-offset-[30px] ">
               <Image src={certificate4} alt="ISO 9001:2015" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center max-w-[150px] ">
               <Image src={certificate5} alt="BRCGS Food Safety" className="mx-auto" />
             </div>
           </div>

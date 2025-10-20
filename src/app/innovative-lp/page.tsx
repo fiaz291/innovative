@@ -54,151 +54,163 @@ export default function LandingPage() {
           loop
           muted
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-full object-cover hidden md:block"
         >
           <source src="/assets/banner.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
-        
+
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover block md:hidden"
+        >
+          <source src="/assets/banner-mobile.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+
         <div className="relative z-10">
           <Navbar isPremium={false} />
         </div>
       </div>
 
-      <div className="my-15">
-        <div className="pl-15 text-xl md:text-4xl mb-15 font-black">
+      <div className="my-5 md:my-15">
+        <div className="pl-6 md:pl-15 text-3xl md:text-4xl mb-5 md:mb-15 font-black">
           Our Brands
         </div>
         <CookieCarousel />
       </div>
 
-    <div className="flex flex-col md:flex-row text-white w-full min-h-[400px]">
-      <div className="w-full md:w-1/2 flex">
-        <Swiper
-          onSwiper={setSwiperInstance}
-          spaceBetween={30}
-          slidesPerView={1}
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          className="w-full h-full"
-        >
-          <SwiperSlide>
-            <div className="flex flex-col justify-center w-full bg-[#9e2a2b] p-6 md:p-12 h-full">
-              <div className="flex items-center gap-2 text-base md:text-xl">
-                Our Products
-                <CircleArrowRight
-                  className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
-                  onClick={handleNext}
-                />
+      <div className="flex flex-col md:flex-row-reverse text-white w-full min-h-[400px]">
+        {/* IMAGE SWIPER */}
+        <div className="w-full md:w-1/2 flex mt-4 md:mt-0">
+          <Swiper
+            onSwiper={setSwiperImageInstance}
+            spaceBetween={30}
+            slidesPerView={1}
+            onSlideChange={(swiper) => setActiveImageIndex(swiper.activeIndex)}
+            className="w-full h-full"
+          >
+            <SwiperSlide>
+              <Image
+                src={prod3}
+                alt="our-products-image"
+                className="w-full h-full object-cover"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={prod1}
+                alt="our-products-image"
+                className="w-full h-full object-cover"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={prod2}
+                alt="our-products-image"
+                className="w-full h-full object-cover"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="w-full md:w-1/2 flex">
+          <Swiper
+            onSwiper={setSwiperInstance}
+            spaceBetween={30}
+            slidesPerView={1}
+            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            className="w-full h-full"
+          >
+            <SwiperSlide>
+              <div className="flex flex-col justify-center w-full bg-[#9e2a2b] p-6 md:p-12 h-full">
+                <div className="flex items-center gap-2 text-base md:text-xl">
+                  Our Products
+                  <CircleArrowRight
+                    className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
+                    onClick={handleNext}
+                  />
+                </div>
+                <div className="font-black text-2xl md:text-4xl mt-4">
+                  Satisfy your cravings the
+                </div>
+                <div className="font-black text-2xl md:text-4xl">
+                  smart way.
+                </div>
+                <div className="text-sm md:text-xl mt-4">
+                  Innovative Digestive Biscuits are crafted with whole wheat and
+                  natural brown sugar, offering a wholesome, guilt-free snack
+                  that’s as delicious as it is nourishing.
+                </div>
+                <div
+                  className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
+                  onClick={() => router.push("/digestive")}
+                >
+                  Read More
+                  <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
+                </div>
               </div>
-              <div className="font-black text-2xl md:text-4xl mt-4">
-                Satisfy your cravings the
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex flex-col justify-center w-full bg-[#000000] p-6 md:p-12 h-full">
+                <div className="flex items-center gap-2 text-base md:text-xl">
+                  Innovative Premium
+                  <CircleArrowRight
+                    className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
+                    onClick={handleNext}
+                  />
+                </div>
+                <div className="font-black text-2xl md:text-4xl mt-4">
+                  The Art of Premium Snacking.
+                </div>
+                <div className="text-sm md:text-xl mt-4">
+                  Innovative Premium offers a refined biscuit experience,
+                  crafted with the finest ingredients and exceptional care. Each
+                  bite delivers superior taste, texture, and indulgence — made
+                  for those who appreciate the art of premium snacking.
+                </div>
+                <div
+                  className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
+                  onClick={() => router.push("premium-products")}
+                >
+                  Read More
+                  <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
+                </div>
               </div>
-              <div className="font-black text-2xl md:text-4xl">smart way.</div>
-              <div className="text-sm md:text-xl mt-4">
-                Innovative Digestive Biscuits are crafted with whole wheat and
-                natural brown sugar, offering a wholesome, guilt-free snack
-                that’s as delicious as it is nourishing.
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex flex-col justify-center w-full bg-[#c78e57] p-6 md:p-12 h-full">
+                <div className="flex items-center gap-2 text-base md:text-xl">
+                  Innovative Lab
+                  <CircleArrowRight
+                    className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
+                    onClick={handleNext}
+                  />
+                </div>
+                <div className="font-black text-2xl md:text-4xl mt-4">
+                  From Concept to Creation.
+                </div>
+                <div className="text-sm md:text-xl mt-4">
+                  The Innovation Lab is the creative heart of Innovative
+                  Biscuits — where bold ideas and expert craft come together to
+                  create groundbreaking flavors that redefine snacking.
+                </div>
+                <div
+                  className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
+                  onClick={() => router.push("innovation-lab")}
+                >
+                  Read More
+                  <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
+                </div>
               </div>
-              <div
-                className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
-                onClick={() => router.push('/digestive')}
-              >
-                Read More
-                <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col justify-center w-full bg-[#000000] p-6 md:p-12 h-full">
-              <div className="flex items-center gap-2 text-base md:text-xl">
-                Innovative Premium
-                <CircleArrowRight
-                  className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
-                  onClick={handleNext}
-                />
-              </div>
-              <div className="font-black text-2xl md:text-4xl mt-4">
-                The Art of Premium Snacking.
-              </div>
-              <div className="text-sm md:text-xl mt-4">
-                Innovative Premium offers a refined biscuit experience, crafted
-                with the finest ingredients and exceptional care. Each bite
-                delivers superior taste, texture, and indulgence — made for
-                those who appreciate the art of premium snacking.
-              </div>
-              <div
-                className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
-                onClick={() => router.push('premium-products')}
-              >
-                Read More
-                <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col justify-center w-full bg-[#c78e57] p-6 md:p-12 h-full">
-              <div className="flex items-center gap-2 text-base md:text-xl">
-                Innovative Lab
-                <CircleArrowRight
-                  className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
-                  onClick={handleNext}
-                />
-              </div>
-              <div className="font-black text-2xl md:text-4xl mt-4">
-                From Concept to Creation.
-              </div>
-              <div className="text-sm md:text-xl mt-4">
-                The Innovation Lab is the creative heart of Innovative Biscuits —
-                where bold ideas and expert craft come together to create
-                groundbreaking flavors that redefine snacking.
-              </div>
-              <div
-                className="cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-5"
-                onClick={() => router.push('innovation-lab')}
-              >
-                Read More
-                <MoveRight className="w-6 h-6 md:w-8 md:h-8" />
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
-      
-      {/* IMAGE SWIPER */}
-      <div className="w-full md:w-1/2 flex mt-4 md:mt-0">
-        <Swiper
-          onSwiper={setSwiperImageInstance}
-          spaceBetween={30}
-          slidesPerView={1}
-          onSlideChange={(swiper) => setActiveImageIndex(swiper.activeIndex)}
-          className="w-full h-full"
-        >
-          <SwiperSlide>
-            <Image
-              src={prod3}
-              alt="our-products-image"
-              className="w-full h-full object-cover"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={prod1}
-              alt="our-products-image"
-              className="w-full h-full object-cover"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={prod2}
-              alt="our-products-image"
-              className="w-full h-full object-cover"
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </div>
 
-      <div className="flex flex-col md:flex-row gap-10 p-15 my-15">
+      <div className="flex flex-col md:flex-row gap-10 p-0 md:p-15 my-15">
         <InfoContainer
           image={recipes}
           title="Recipes & Pairings"
@@ -214,16 +226,17 @@ export default function LandingPage() {
       </div>
 
       <div className="my-15">
-        <div className="pl-15 text-xl md:text-4xl mb-15 font-black">
+        <div className="pl-6 md:pl-15 text-3xl md:text-4xl mb-6 md:mb-15 font-black">
           Stay Connected
         </div>
-        <div className="flex flex-col md:flex-row py-15 bg-[#123a5e] md:items-center text-white">
-          <div className="px-15 md:w-[35%] font-black text-2xl md:text-5xl">{`Discover\n what's new`}</div>
+        <div className="flex flex-col md:flex-row py-6 md:py-15 bg-[#123a5e] md:items-center text-white">
+          <div className="px-6 md:px-15 md:w-[35%] font-black text-2xl md:text-5xl mb-6 md:mb-0
+          ">{`Discover\n what's new`}</div>
           <UpcomingCarousel />
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-10 p-15 my-15">
+      <div className="flex flex-col md:flex-row gap-10 p-0 md:p-15 my-15">
         <InfoContainer
           image={media}
           title="Media Resources"
@@ -238,16 +251,21 @@ export default function LandingPage() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row">
-        <div className="flex flex-col gap-4 md:w-[50%] bg-[#fef4af] p-15 py-30">
+      <div className="flex flex-col-reverse md:flex-row">
+        <div className="flex flex-col gap-4 md:w-[50%] bg-[#fef4af] p-6 md:p-15 py-6 md:py-30">
           <div className="flex items-center gap-10 text-base md:text-xl">
             Team up for success
           </div>
-          <div className="font-black text-xl md:text-5xl">Careers</div>
+          <div className="font-black text-3xl md:text-5xl">Careers</div>
           <div className="text-xl md:text-2xl">
             Stay in Touch for Future Opportunities
           </div>
-          <div className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-6" onClick={() => {router.push('/careers')}}>
+          <div
+            className="cursor-pointer flex items-center gap-2 text-xl md:text-3xl font-black mt-3 md:mt-6"
+            onClick={() => {
+              router.push("/careers");
+            }}
+          >
             Discover
             <MoveRight className="w-[35px] h-[35px]" />
           </div>

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function LearnMore() {
     const router = useRouter();
     return (
-        <div className='flex flex-col md:flex-row p-12 md:p-45 bg-[#efeff0] gap-10 md:gap-0'>
+        <div className='flex flex-col md:flex-row p-6 md:p-12 md:p-45 bg-[#efeff0] gap-10 md:gap-0'>
             <div className='md:w-[50%] font-black text-2xl md:text-5xl my-auto '>
                 {`Learn More About Innovative`}
             </div>
