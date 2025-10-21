@@ -184,14 +184,14 @@ export default function Navbar({
                 <Menu className="w-7 h-7" />
               )}
             </div>
-            <div className="relative md:hidden">
+            {!isPremium && <div className="relative md:hidden">
               <Image
                 src={premiumLogo}
                 alt="Logo"
                 className="h-15 w-auto object-contain mt-[0px] cursor-pointer"
                 onClick={() => router.push("premium-lp")}
               />
-            </div>
+            </div>}
 
             {/* Desktop right section */}
             <div className="hidden md:flex items-center gap-6">
