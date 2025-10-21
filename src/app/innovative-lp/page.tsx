@@ -92,6 +92,8 @@ export default function LandingPage() {
             slidesPerView={1}
             onSlideChange={(swiper) => setActiveImageIndex(swiper.activeIndex)}
             className="w-full h-full"
+            allowTouchMove={false}
+            
           >
             <SwiperSlide>
               <Image
@@ -123,6 +125,7 @@ export default function LandingPage() {
             slidesPerView={1}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             className="w-full h-full"
+            allowTouchMove={false}
           >
             <SwiperSlide>
               <div className="flex flex-col justify-center w-full bg-[#9e2a2b] p-6 md:p-12 h-full">
