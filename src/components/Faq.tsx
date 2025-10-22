@@ -18,7 +18,7 @@ export default function Faq({isWhite = false}: {isWhite?: boolean}) {
                 <Search className={`w-5 h-5 ${ isWhite ? 'text-white' : 'text-gray-700'}`} />
               </div>
             </div>
-            <div className="bg-white rounded-xl shadow-sm p-15 space-y-3">
+            <div className="bg-white rounded-xl shadow-sm p-6 md:p-15 space-y-3">
               <HelpItem icon={<FileText className="w-5 h-5" />} label="Nutrition Facts" />
               <HelpItem icon={<Ticket className="w-5 h-5" />} label="Question about a promotion" />
               <HelpItem icon={<MessageSquare className="w-5 h-5" />} label="FAQs" />
