@@ -19,7 +19,7 @@ export default function DigestivePage() {
                   <Image src={digestiveLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] right-[-3rem] md:right-[-6rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-3rem] top-[-5rem] md:top-[-1rem]"/>
-                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[20%] left-[-3rem] md:left-[-10rem] bottom-[12rem] md:bottom-[-24rem]"/>
+                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] left-[-5rem] md:left-[-10rem] bottom-[12rem] md:bottom-[-24rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] right-[-1rem] md:right-[-2rem] bottom-[-5rem] rotate-[150deg]"/>
                   <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Taste the\nGoodness.`}
