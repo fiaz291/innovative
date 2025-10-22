@@ -14,11 +14,11 @@ export default function ShortBreadPage() {
           className="relative w-full bg-[#ffa372] pb-10">
               <Navbar />
               <Image src={shortBreadBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[35%] left-[-4rem] md:left-[-18rem] top-[40rem] bottom-0 my-auto"/>
-              <div className="flex flex-col px-10 md:px-30 mt-6 md:mt-12">
+              <div className="flex flex-col px-10 md:px-30 mt-0 md:mt-12">
                   <Image src={shortBreadText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
-                  <div className="flex flex-col md:flex-row items-center mt-10 md:mt-20 md:px-34 gap-10">
+                  <div className="flex flex-col md:flex-row items-center mt-5 md:mt-20 md:px-34 gap-10">
                     <div>
-                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Handcrafted with the finest butter and baked to perfection <span className="text-base md:text-2xl font-medium">- a cookie that speaks the language of luxury.</span></div>
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Handcrafted with the finest butter and baked to perfection <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">- a cookie that speaks the language of luxury.</span></div>
                         <div className="mt-5">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>

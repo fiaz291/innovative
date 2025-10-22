@@ -16,7 +16,7 @@ export default function ShortBreadPage() {
                   <Image src={bricklaneText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex flex-col md:flex-row mt-6">
                     <div className="md:pl-28 mb-5 md:mb-0">
-                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Premium taste with a purpose<span className="text-base md:text-2xl font-medium"> - ethically sourced, beautifully crafted, truly unforgettable</span></div>
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Premium taste with a purpose<span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium"> - ethically sourced, beautifully crafted, truly unforgettable</span></div>
                         <div className="mt-5 md:mt-15">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>

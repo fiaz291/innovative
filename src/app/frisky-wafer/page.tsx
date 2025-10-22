@@ -22,7 +22,7 @@ export default function FriskyWaferPage() {
                   <Image src={friskyWaferChocolateText} alt='digestive-copy' className="md:w-[80%] mx-auto mb-5 md:mb-0"/>
                   <div className="flex">
                     <div className="md:px-28">
-                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Crisped to the Core, Drenched in Decadence<span className="text-base md:text-2xl font-medium">- Every Layer Melts into Pure Chocolate Bliss.</span></div>
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Crisped to the Core, Drenched in Decadence<span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">- Every Layer Melts into Pure Chocolate Bliss.</span></div>
                         <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
@@ -61,7 +61,7 @@ export default function FriskyWaferPage() {
                   <Image src={friskyWaferOrangeText} alt='digestive-copy' className="md:w-[80%] mx-auto mb-5 md:mb-0"/>
                   <div className="flex float-left">
                     <div className="md:px-28">
-                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Crisp Layers, Bursting with Zesty Orange<span className="text-base md:text-2xl font-medium">- A Tangy Twist on Classic Crunch.</span></div>
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Crisp Layers, Bursting with Zesty Orange<span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">- A Tangy Twist on Classic Crunch.</span></div>
                         <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
@@ -100,7 +100,7 @@ export default function FriskyWaferPage() {
                   <Image src={friskyWaferVanillaText} alt='digestive-copy' className="md:w-[80%] mx-auto mb-5 md:mb-0"/>
                   <div className="flex float-left">
                     <div className="md:px-28">
-                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Golden Crunch, Velvety Vanilla<span className="text-base md:text-2xl font-medium">- A Timeless Taste of Sweet Simplicity.</span></div>
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Golden Crunch, Velvety Vanilla<span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">- A Timeless Taste of Sweet Simplicity.</span></div>
                         <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
@@ -133,7 +133,7 @@ export default function FriskyWaferPage() {
                   <Image src={friskyWaferStrawberryText} alt='digestive-copy' className="md:w-[80%] mx-auto mb-5 md:mb-0"/>
                   <div className="flex">
                     <div className="md:px-28">
-                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Lush Strawberry Cream in Every Crisp Layer<span className="text-base md:text-2xl font-medium"> - A Wafer Worth Savoring.</span></div>
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Lush Strawberry Cream in Every Crisp Layer<span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium"> - A Wafer Worth Savoring.</span></div>
                         <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
