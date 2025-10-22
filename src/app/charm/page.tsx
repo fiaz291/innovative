@@ -15,10 +15,10 @@ export default function CharmPage() {
           className="w-full bg-[#992c2c] text-[#ffd879]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={charmLogo} alt='digestive-copy' className="w-[30%]"/>
+                  <Image src={charmLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-1rem] md:right-[-3rem] top-[-1rem] md:top-[-3rem]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-4rem] md:left-[-11rem] bottom-[8rem] md:bottom-[-20rem] rorate-[-35deg]"/>
-                  <div className="text-3xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Filled With\nPure Joy.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>
@@ -27,17 +27,17 @@ export default function CharmPage() {
                     <Image src={charmBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
                     <div className="flex justify-center z-10">
-                        <div className="w-[80%] mt-20 md:px-20">
+                        <div className="md:w-[80%] mt-5 md:mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2 text-white">
                             <thead>
-                              <tr className="text-base md:text-xl border-b-1">
+                              <tr className="text-[10px] md:text-xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
                               </tr>
                             </thead>
-                            <tbody className="text-base md:text-xl">
+                            <tbody className="text-[10px] md:text-xl">
                               <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Snack Pack</td>
                                 <td className="px-4 py-3 border-r-1">11.5</td>

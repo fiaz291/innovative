@@ -20,14 +20,14 @@ export default function FabulousPage() {
                         <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
-                              <tr className="text-base md:text-xl border-b-1">
+                              <tr className="text-[10px] md:text-xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
                               </tr>
                             </thead>
-                            <tbody className="text-base md:text-xl">
+                            <tbody className="text-[10px] md:text-xl">
                               <tr>
                                 <td className="py-3 text-left font-semibold border-r-1">Standard Pack</td>
                                 <td className="px-4 py-3 border-r-1">96</td>
