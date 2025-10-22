@@ -18,7 +18,7 @@ export default function ChocChipPage() {
                   <Image src={chocChipLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-2rem] md:right-[-5rem] top-[-2rem] md:top-[-6rem]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-3rem] md:left-[-10rem] bottom-[-2rem] md:bottom-[-20rem]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Chip In.\nChoc Out.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Chip Cookies`}</div>

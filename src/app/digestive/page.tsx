@@ -21,7 +21,7 @@ export default function DigestivePage() {
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-3rem] top-[-5rem] md:top-[-1rem]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] left-[-5rem] md:left-[-10rem] bottom-[12rem] md:bottom-[-24rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] right-[-1rem] md:right-[-2rem] bottom-[-5rem] rotate-[150deg]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Taste the\nGoodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>

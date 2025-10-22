@@ -19,7 +19,7 @@ export default function BittensPage() {
                   <Image src={bittensLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={bittensChocolate2} alt='digestive-copy' className="absolute w-[25%] right-[-2rem]"/>
                   <Image src={bittensChocolate1} alt='digestive-copy' className="absolute w-[20%] left-[-2rem] bottom-[8rem] md:bottom-[-7rem]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Smooth Milk\nChocolate`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Smooth, rich and perfectly sweet`}</div>

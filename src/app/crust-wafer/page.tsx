@@ -19,7 +19,7 @@ export default function CrustWaferPage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <div className="text-3xl md:text-[7rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Wafer,\nCreamy Chocolate.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
@@ -33,7 +33,7 @@ export default function CrustWaferPage() {
           className="w-full bg-[#ea7832] text-white pb-12 md:pb-25 ">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25">
                   <Image src={crustOrgangeLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <div className="text-3xl md:text-[7rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crunch With A\nCitrus Kick.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
@@ -47,7 +47,7 @@ export default function CrustWaferPage() {
           className="w-full bg-[#d26999] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={crustStrawberryLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <div className="text-3xl md:text-[7rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Wafer,\nStrawberry Flavor.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Crispy Creamy Wafers`}</div>

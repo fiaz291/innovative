@@ -18,7 +18,7 @@ export default function CharmPage() {
                   <Image src={charmLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-1rem] md:right-[-3rem] top-[-1rem] md:top-[-3rem]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-4rem] md:left-[-11rem] bottom-[8rem] md:bottom-[-20rem] rorate-[-35deg]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Filled With\nPure Joy.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>

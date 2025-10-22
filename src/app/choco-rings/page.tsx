@@ -19,7 +19,7 @@ export default function ChocoRingsPage() {
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[4rem] top-[-2rem] md:top-[-6rem]"/>
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-3rem] md:left-[-12rem] bottom-[-2rem] md:bottom-[-16rem]"/>
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-2rem] top-[20rem]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`A Perfect\nChoco Circle.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits Coated with Indulging Chocolate`}</div>
