@@ -24,7 +24,7 @@ export default function HavenPage() {
                   <div className="flex">
                     <div className="md:px-40">
                         <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold"><span className="text-base md:text-2xl font-medium">Where the bold aroma of coffee meets a melting chocolate center — every bite a journey of rich, layered flavor.</span></div>
-                        <div className="mt-15 mb-15">
+                        <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
@@ -65,7 +65,7 @@ export default function HavenPage() {
                   <div className="flex">
                     <div className="md:px-40">
                         <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold"><span className="text-base md:text-2xl font-medium">Gourmet on the Outside, Decadence on the Inside — Chocolate-Filled Cookies that Redefine Luxury Snacking.</span></div>
-                        <div className="mt-15 mb-15">
+                        <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
