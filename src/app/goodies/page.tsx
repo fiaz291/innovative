@@ -18,7 +18,7 @@ export default function GoodiesPage() {
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-2rem] md:right-[-7rem]"/>
-                  <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Classic Taste,\nFresh Goodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Egg & Milk Biscuits`}</div>
@@ -55,7 +55,7 @@ export default function GoodiesPage() {
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={goodiesLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={goodiesBiscuit} alt='digestive-copy' className="absolute w-[25%] my-auto left-[-2rem] md:left-[-12rem] bottom-0 top-[10rem] rotate-[60deg]"/>
-                  <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Classic Taste,\nFresh Goodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Egg & Milk Biscuits`}</div>

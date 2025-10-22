@@ -20,7 +20,7 @@ export default function ButterCrunchPage() {
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] right-[-2rem] md:right-[-7rem] top-[-5rem]"/>
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] left-[-2rem] md:left-[-10rem] bottom-[-3.5rem] md:bottom-[-18rem]"/>
                   <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[15%] right-[-1rem] md:right-[-2rem] bottom-[5rem]"/>
-                  <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Golden Oats,\nPure Delight.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crunchy Oat Biscuits with Butter`}</div>

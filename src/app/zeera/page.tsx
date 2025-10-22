@@ -18,7 +18,7 @@ export default function ZeeraPage() {
                   <Image src={zeeraLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[18%] right-[-2rem] md:right-[-4rem]"/>
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-4rem] md:left-[-12rem] bottom-[12rem] md:bottom-[-24rem]"/>
-                  <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crisp With\nA Cumin Kick.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Tasty Salty Biscuits with Cumin Seeds`}</div>

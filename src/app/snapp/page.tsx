@@ -18,7 +18,7 @@ export default function SnappPage() {
                   <Image src={snappLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-2rem] md:right-[-5rem]"/>
                   <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-3rem] md:left-[-8rem] bottom-[8rem] md:bottom-[-8rem] scale-x-[-1] rotate-[-15deg]"/>
-                  <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Indulge In\nEvery Snapp.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Creamy Wafer Coated With Indulging Chocoalte`}</div>

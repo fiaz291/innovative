@@ -18,7 +18,7 @@ export default function JumboJuniorPage() {
                   <Image src={jumboJuniorLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-2rem] md:right-[-5rem] top-[-2rem] md:top-[-6rem]"/>
                   <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[20%] left-[-2rem] md:left-[-6rem] bottom-[10rem] md:bottom-[20rem] rotate-[-55deg]"/>
-                  <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-[2.5rem] md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Strong, Smart,\nAnd Super Fun!`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Engergy Biscuits`}</div>
