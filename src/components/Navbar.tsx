@@ -237,7 +237,7 @@ export default function Navbar({
               <Image
                 src={isPremium ? premiumLogo : logoDark}
                 alt="Logo"
-                className={`${isPremium ? 'mt-[-28px]' : 'mt-0'} h-12 w-auto cursor-pointer`}
+                className={`${isPremium ? 'mt-[-28px] ml-[-16px]' : 'mt-0 ml-0'} h-12 w-auto cursor-pointer`}
                 onClick={() => {
                   router.push(isPremium ? "/premium-lp" : "/innovative-lp");
                   setMobileMenuOpen(false);
