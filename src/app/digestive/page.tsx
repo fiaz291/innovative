@@ -33,14 +33,14 @@ export default function DigestivePage() {
                         <div className="md:w-[80%] md:mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
-                              <tr className="text-xs md:text-xl border-b-1">
+                              <tr className="text-[10px] md:text-xl border-b-1">
                                 <td className="pr-2 md:pr-0 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
                               </tr>
                             </thead>
-                            <tbody className="text-xs md:text-xl">
+                            <tbody className="text-[10px] md:text-xl">
                               <tr className="border-b-1">
                                 <td className="py-3 text-left font-semibold border-r-1">Munch Pack</td>
                                 <td className="px-4 py-3 border-r-1">36</td>
