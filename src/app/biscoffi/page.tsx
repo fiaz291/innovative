@@ -20,7 +20,7 @@ export default function BiscoffiPage() {
                   <Image src={biscoffiText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex">
                     <div className="md:px-40">
-                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Brewed to Be Eaten<span className="text-base md:text-2xl font-medium">{` - Artisan Crackers Infused with Rich Coffee Notes, toasted to a Delicate, Satisfying Crisp.`}</span></div>
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Brewed to Be Eaten<span className="text-base md:text-2xl font-medium">{` - Artisan Crackers Infused with Rich Coffee Notes, toasted to a Delicate, Satisfying Crisp.`}</span></div>
                         <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>

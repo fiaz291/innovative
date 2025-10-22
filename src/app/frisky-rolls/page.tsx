@@ -20,8 +20,8 @@ export default function FriskyRollsPage() {
                   <Image src={friskyChocolateRollsText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex">
                     <div className="md:px-28">
-                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Rolled for the Crunch, Filled for the Crave<span className="text-base md:text-2xl font-medium"> - Chocolate That Twists Into Pure Bliss.</span></div>
-                        <div className="mt-15 mb-15">
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Rolled for the Crunch, Filled for the Crave<span className="text-base md:text-2xl font-medium"> - Chocolate That Twists Into Pure Bliss.</span></div>
+                        <div className="mt-5 mb-5 md:mt-15 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
@@ -61,8 +61,8 @@ export default function FriskyRollsPage() {
                   <Image src={friskyHazelnutRollsText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex float-left">
                     <div className="md:px-28">
-                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">A Swirl of Crisp Delight, a Heart of Hazelnut Gold</div>
-                        <div className="mt-15 mb-15">
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">A Swirl of Crisp Delight, a Heart of Hazelnut Gold</div>
+                        <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
@@ -96,8 +96,8 @@ export default function FriskyRollsPage() {
                   <Image src={friskyMilkyRollsText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex">
                     <div className="md:px-28">
-                        <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Soft Creaminess in a Crisp Embrace <span className="text-base md:text-2xl font-medium"> - Milk Wafer Rolls Made to Soothe and Satisfy.</span></div>
-                        <div className="mt-15 mb-15">
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Soft Creaminess in a Crisp Embrace <span className="text-base md:text-2xl font-medium"> - Milk Wafer Rolls Made to Soothe and Satisfy.</span></div>
+                        <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
