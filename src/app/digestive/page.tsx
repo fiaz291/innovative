@@ -30,7 +30,7 @@ export default function DigestivePage() {
                     <Image src={digestiveBoxWrapper} alt='digestive-box' className="w-full relative left-[-25px] md:left-[-65px]"/>
                   </div>
                     <div className="flex justify-center z-10">
-                        <div className="md:w-[80%] md:mt-20 md:px-20">
+                        <div className="md:w-[80%] mt-5 md:mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
