@@ -16,31 +16,31 @@ export default function DigestivePage() {
           className="w-full bg-[#7d1124] text-white">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={digestiveLogo} alt='digestive-copy' className="w-[30%]"/>
+                  <Image src={digestiveLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] right-[-3rem] md:right-[-6rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-3rem] top-[-5rem] md:top-[-1rem]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[20%] left-[-2rem] md:left-[-10rem] bottom-24 md:bottom-[-24rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] right-[-1rem] md:right-[-2rem] bottom-[-5rem] rotate-[150deg]"/>
-                  <div className="text-3xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="text-5xl md:text-[8rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Taste the\nGoodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with whole wheat and brown sugar, delivering natural goodness in every bite for a satisfying, guilt-free treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
-                    <Image src={digestiveBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
+                    <Image src={digestiveBoxWrapper} alt='digestive-box' className="w-full relative left-[-25px] md:left-[-65px]"/>
                   </div>
                     <div className="flex justify-center z-10">
-                        <div className="w-[80%] mt-20 md:px-20">
+                        <div className="w-[80%] md:mt-20 md:px-20">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
-                              <tr className="text-base md:text-xl border-b-1">
+                              <tr className="text-xs md:text-xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
                               </tr>
                             </thead>
-                            <tbody className="text-base md:text-xl">
+                            <tbody className="text-xs md:text-xl">
                               <tr className="border-b-1">
                                 <td className="py-3 text-left font-semibold border-r-1">Munch Pack</td>
                                 <td className="px-4 py-3 border-r-1">36</td>
