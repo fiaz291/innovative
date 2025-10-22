@@ -46,7 +46,7 @@ export default function LandingPage() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col-reverse md:flex-row">
           <div className="flex p-10 md:p-15 items-center md:w-[60%] bg-[#5899af] text-lg md:text-2xl">
             <ul className="list-disc">
               <li>Responsibility towards local suppliers</li>
