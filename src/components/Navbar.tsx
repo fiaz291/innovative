@@ -190,14 +190,20 @@ export default function Navbar({
                 <Menu className="w-7 h-7" />
               )}
             </div>
-            {!isPremium && <div className="relative md:hidden">
+            {!isPremium ? <div className="relative md:hidden">
               <Image
                 src={premiumLogo}
                 alt="Logo"
                 className="h-15 w-auto object-contain mt-[0px] cursor-pointer"
                 onClick={() => router.push("premium-lp")}
               />
-            </div>}
+            </div> : 
+            <div
+                  onClick={() => router.push("/innovative-lp")}
+                  className="relative md:hidden text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5"
+                >
+                  <ChevronLeft className="w-4 h-4" /> Back
+                </div>} 
 
             {/* Desktop right section */}
             <div className="hidden md:flex items-center gap-6">
