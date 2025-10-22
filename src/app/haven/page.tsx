@@ -20,9 +20,9 @@ export default function HavenPage() {
               <div className="flex flex-col items-center px-10 md:px-30">
                   <Image src={havenCoffeeBiscuit} alt='biscuit' className="absolute w-[23%] top-0 bottom-70 md:bottom-170 my-auto right-[-50px] md:right-[-130px]"/>
                   <Image src={havenCoffeeBean} alt='bean' className="absolute w-[8%] top-[150px] md:top-[-250px] md:bottom-0 md:my-auto left-0"/>
-                  <Image src={havenCoffeeText} alt='digestive-copy' className="w-[80%] mx-auto"/>
+                  <Image src={havenCoffeeText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex">
-                    <div className="px-40">
+                    <div className="md:px-40">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold"><span className="text-base md:text-2xl font-medium">Where the bold aroma of coffee meets a melting chocolate center — every bite a journey of rich, layered flavor.</span></div>
                         <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
@@ -53,7 +53,7 @@ export default function HavenPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={havenCoffee} alt='boxes-image' className="w-[70%] md:px-20"/></div>
+                  <div className="w-full flex justify-center"><Image src={havenCoffee} alt='boxes-image' className="md:w-[70%] md:px-20"/></div>
               </div>
         </div>
         <div
@@ -61,9 +61,9 @@ export default function HavenPage() {
               <div className="flex flex-col items-center px-10 md:px-30">
                   <Image src={havenChocolateBiscuit} alt='biscuit' className="absolute w-[23%] top-0 bottom-0 my-auto right-[-50px] md:right-[-90px]"/>
                   <Image src={havenChocolateBiscuit} alt='biscuit' className="absolute rotate-[-70deg] w-[20%] top-10 md:top-0 bottom-220 my-auto left-[-50px] md:left-[-100px]"/>
-                  <Image src={havenChocolateText} alt='digestive-copy' className="w-[70%] mx-auto"/>
+                  <Image src={havenChocolateText} alt='digestive-copy' className="md:w-[70%] mx-auto"/>
                   <div className="flex">
-                    <div className="px-40">
+                    <div className="md:px-40">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold"><span className="text-base md:text-2xl font-medium">Gourmet on the Outside, Decadence on the Inside — Chocolate-Filled Cookies that Redefine Luxury Snacking.</span></div>
                         <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
@@ -94,7 +94,7 @@ export default function HavenPage() {
 
                     </div>
                   </div>
-                  <div className="w-full flex justify-center"><Image src={havenChocolate} alt='boxes-image' className="w-[70%] md:px-20"/></div>
+                  <div className="w-full flex justify-center"><Image src={havenChocolate} alt='boxes-image' className="md:w-[70%] md:px-20"/></div>
               </div>
               <Faq />
         </div>

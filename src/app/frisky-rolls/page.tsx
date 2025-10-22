@@ -17,9 +17,9 @@ export default function FriskyRollsPage() {
           className="relative w-full bg-[#ffbe76] pb-10">
               <Navbar />
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyChocolateRollsText} alt='digestive-copy' className="w-[80%] mx-auto"/>
+                  <Image src={friskyChocolateRollsText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex">
-                    <div className="px-28">
+                    <div className="md:px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Rolled for the Crunch, Filled for the Crave<span className="text-base md:text-2xl font-medium"> - Chocolate That Twists Into Pure Bliss.</span></div>
                         <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
@@ -51,16 +51,16 @@ export default function FriskyRollsPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                  <Image src={friskyChocolateRolls} alt='boxes-image' className="w-[70%]"/>
+                  <Image src={friskyChocolateRolls} alt='boxes-image' className="md:w-[70%]"/>
                   </div>
               </div>
         </div>
         <div
           className="relative w-full bg-[#ffaa93] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyHazelnutRollsText} alt='digestive-copy' className="w-[80%] mx-auto"/>
+                  <Image src={friskyHazelnutRollsText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex float-left">
-                    <div className="px-28">
+                    <div className="md:px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">A Swirl of Crisp Delight, a Heart of Hazelnut Gold</div>
                         <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
@@ -86,16 +86,16 @@ export default function FriskyRollsPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                  <Image src={friskyHazelnuteRolls} alt='boxes-image' className="w-[70%]"/>
+                  <Image src={friskyHazelnuteRolls} alt='boxes-image' className="md:w-[70%]"/>
                   </div>
               </div>
         </div>
         <div
           className="relative w-full bg-[#96ddf2] pb-10">
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={friskyMilkyRollsText} alt='digestive-copy' className="w-[80%] mx-auto"/>
+                  <Image src={friskyMilkyRollsText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex">
-                    <div className="px-28">
+                    <div className="md:px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Soft Creaminess in a Crisp Embrace <span className="text-base md:text-2xl font-medium"> - Milk Wafer Rolls Made to Soothe and Satisfy.</span></div>
                         <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
@@ -127,7 +127,7 @@ export default function FriskyRollsPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                  <Image src={friskyMilkyRolls} alt='boxes-image' className="w-[70%]"/>
+                  <Image src={friskyMilkyRolls} alt='boxes-image' className="md:w-[70%]"/>
                   </div>
               </div>
               <Faq />

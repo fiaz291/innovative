@@ -13,9 +13,9 @@ export default function FabulousPage() {
           className="relative w-full bg-[#f8b145] pb-10">
               <Navbar />
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={fabulousText} alt='digestive-copy' className="w-[80%]"/>
+                  <Image src={fabulousText} alt='digestive-copy' className="md:w-[80%]"/>
                   <div className="flex md:mt-[-50px]">
-                    <div className="px-42">
+                    <div className="md:px-42">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Golden, chewy and loaded with gooey chocolate chips <span className="text-base md:text-2xl font-medium">{` - these cookies are pure joy in every bite. Baked to perfection with just the right balance of crunch and softness, they're a classic made truly fabulous.`}</span></div>
                         <div className="mt-15 mb-15">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
@@ -41,7 +41,7 @@ export default function FabulousPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                    <Image src={fabulous} alt='boxes-image' className="w-[70%]"/>
+                    <Image src={fabulous} alt='boxes-image' className="md:w-[70%]"/>
                   </div>
               </div>
               <Faq />

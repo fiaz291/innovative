@@ -16,9 +16,9 @@ export default function GoldenLotusPage() {
               <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute rotate-[55deg] w-[25%] md:w-[18%] left-[-3rem] md:left-[-10rem] top-10 md:top-0 bottom-[40rem] md:bottom-[60rem] my-auto"/>
               <Image src={goldenLotusBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[18%] right-[-4rem] md:right-[-10rem] top-0 bottom-0 my-auto"/>
               <div className="flex flex-col items-center px-10 md:px-30">
-                  <Image src={goldenLotusText} alt='digestive-copy' className="w-[80%] mt-[-50px]"/>
+                  <Image src={goldenLotusText} alt='digestive-copy' className="w-full md:w-[80%] mt-[-50px]"/>
                   <div className="flex">
-                    <div className="px-28">
+                    <div className="md:px-28">
                         <div className="text-lg md:text-4xl text-center md:text-left font-semibold">Steeped in tradition, perfected for today <span className="text-base md:text-2xl font-medium"> - premium Lotus biscuits that honor classic caramelized taste</span></div>
                         <div className="mt-5">
                           <table className="w-full md:w-[70%] text-center border-spacing-y-2">
@@ -44,7 +44,7 @@ export default function GoldenLotusPage() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                    <Image src={goldenLotus} alt='boxes-image' className="w-[70%]"/>
+                    <Image src={goldenLotus} alt='boxes-image' className="md:w-[70%]"/>
                   </div>
               </div>
               <Faq />
