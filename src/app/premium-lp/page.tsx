@@ -21,7 +21,7 @@ export default function LandingPage() {
         backgroundImage: `url(${premiumBg.src})`,
       }}
     >
-      <Navbar />
+      <Navbar isTextWhite />
       <div className="flex flex-col gap-4 items-center font-black py-15 mx-5 md:mx-30">
         <div className="text-xl md:text-4xl font-bold">Innovative Premium</div>
         <div className="flex flex-col gap-2 md:gap-4 items-center">
