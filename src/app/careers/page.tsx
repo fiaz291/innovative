@@ -8,6 +8,7 @@ import culture from '../../assets/hr.png';
 import { MoveRight } from 'lucide-react';
 import SearchBar from '@/components/SearchBar';
 import LearnMore from '@/components/LearnMore';
+import RequestForm from '@/components/RequestForm';
 
 export default function CareerPage() {
     return (
@@ -22,6 +23,8 @@ export default function CareerPage() {
                   <div className="text-3xl md:text-6xl whitespace-pre-line text-center mt-[-80px]">{`Stay In. Stand Out.\nStay Ahead`}</div>
               </div>
         </div>
+
+        <RequestForm/>
 
         <div className='flex flex-col p-6 md:p-12 md:p-45 text-black relative'>
             <div className='absolute mx-auto left-0 right-0 top-[-30px] w-[80%]'>
