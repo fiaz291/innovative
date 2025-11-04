@@ -8,13 +8,14 @@ type InfoContainerProps = {
     title: string;
     description: string;
     route?: string;
+    fullWidth?: boolean;
 }
 
-export default function InfoContainer({image, title, description, route} : InfoContainerProps) {
+export default function InfoContainer({image, title, description, route, fullWidth=false} : InfoContainerProps) {
     const router = useRouter();
     return (
-        <div className="w-[100%] md:w-[50%] flex flex-col">
-            <Image src={image} alt='info-image'/>
+        <div className={`w-[100%] ${fullWidth ? 'md:w-[100%] h-[468px]' : 'md:w-[50%]'} flex flex-col`}>
+            <Image src={image} className={`${fullWidth ? 'md:w-[100%] h-[468px]' : 'md:w-[100%]'}`} alt='info-image'/>
             <div className="cursor-pointer" onClick={() => route && router.push(route)}>
                 <div className='mt-5 md:mt-10 font-black text-2xl px-6'>{title}</div>
                 <div className="mt-2 text-xl flex gap-2 items-center px-6">
