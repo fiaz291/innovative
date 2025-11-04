@@ -1,10 +1,11 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { ChevronDown, ChevronLeft, Search, Menu, X } from "lucide-react";
+import { ChevronDown, Search, Menu, X } from "lucide-react";
 import Image from "next/image";
 import premiumLogo from "../assets/innovative-premium-logo.svg";
 import logoLight from "../assets/Innovative-Logo-White.png";
 import logoDark from "../assets/Innovative-Logo-Black.png";
+import logo from "../assets/Innovative-Logo-lp.png";
 import { useState } from "react";
 
 const whoWeAreItems = [
@@ -18,20 +19,8 @@ const resourcesItems = [
   { title: "Sustainability", route: "/sustainability" },
 ];
 
-const premiumProducts = [
-  { title: "Digestive Premium", route: "/digestive-premium" },
-  { title: "Short Bread", route: "/short-bread" },
-  { title: "Golden Lotus", route: "/golden-lotus" },
-  { title: "Fabulous", route: "/fabulous" },
-  { title: "Frisky Rolls", route: "/frisky-rolls" },
-  { title: "Frisky Wafer", route: "/frisky-wafer" },
-  { title: "Haven", route: "/haven" },
-  { title: "Biscoffi", route: "/biscoffi" },
-  { title: "Bricklane", route: "/bricklane" },
-];
-
-const products = [
-  { title: "Digestive", route: "/digestive" },
+const products = {
+  regularProducts: [{ title: "Digestive", route: "/digestive" },
   { title: "Butter Crunch", route: "/butter-crunch" },
   { title: "Choc n Chip", route: "/choc-n-chip" },
   { title: "Choco Rings", route: "/choco-rings" },
@@ -44,8 +33,19 @@ const products = [
   { title: "Zeera", route: "/zeera" },
   { title: "Snapp", route: "/snapp" },
   { title: "Bittens", route: "/bittens" },
-  { title: "Charm", route: "/charm" },
-];
+  { title: "Charm", route: "/charm" },],
+  premiumProducts : [
+  { title: "Digestive Premium", route: "/digestive-premium" },
+  { title: "Short Bread", route: "/short-bread" },
+  { title: "Golden Lotus", route: "/golden-lotus" },
+  { title: "Fabulous", route: "/fabulous" },
+  { title: "Frisky Rolls", route: "/frisky-rolls" },
+  { title: "Frisky Wafer", route: "/frisky-wafer" },
+  { title: "Haven", route: "/haven" },
+  { title: "Biscoffi", route: "/biscoffi" },
+  { title: "Bricklane", route: "/bricklane" },
+]
+  };
 
 export default function Navbar({
   isPremium = true,
@@ -120,7 +120,7 @@ export default function Navbar({
                   <li
                     className="relative cursor-pointer py-2 hover:border-b-5"
                     onClick={() =>
-                      handleMegaNav("Our Products", premiumProducts)
+                      handleMegaNav("Our Products", products)
                     }
                   >
                     <div className="text-lg flex items-center gap-1">
@@ -198,21 +198,26 @@ export default function Navbar({
                 onClick={() => router.push("premium-lp")}
               />
             </div> : 
-            <div
-                  onClick={() => router.push("/innovative-lp")}
-                  className="relative md:hidden text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5"
-                >
-                  <ChevronLeft className="w-4 h-4" /> Back
-                </div>} 
+            <div className="md:hidden relative">
+                  <Image
+                    src={logo}
+                    alt="Logo"
+                    className="h-10 w-auto object-contain mt-[5px] cursor-pointer"
+                    onClick={() => router.push("/innovative-lp")}
+                  />
+                </div>
+                } 
 
             {/* Desktop right section */}
             <div className="hidden md:flex items-center gap-6">
               {isPremium ? (
-                <div
-                  onClick={() => router.push("/innovative-lp")}
-                  className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5"
-                >
-                  <ChevronLeft className="w-4 h-4" /> Back
+                <div className="relative">
+                  <Image
+                    src={logo}
+                    alt="Logo"
+                    className="h-10 w-auto object-contain mt-[5px] cursor-pointer"
+                    onClick={() => router.push("/innovative-lp")}
+                  />
                 </div>
               ) : (
                 <div className="relative">
@@ -220,7 +225,7 @@ export default function Navbar({
                     src={premiumLogo}
                     alt="Logo"
                     className="h-20 w-auto object-contain mt-[0px] cursor-pointer"
-                    onClick={() => router.push("premium-lp")}
+                    onClick={() => router.push("/premium-lp")}
                   />
                 </div>
               )}
@@ -275,15 +280,15 @@ export default function Navbar({
                   <li
                     onClick={() => {
                       if(tab === "Our Products") closeTab();
-                      else handleMegaNav("Our Products", premiumProducts);
+                      else handleMegaNav("Our Products", products);
                       }
                     }
                     className="flex items-center gap-2 font-medium"
                   >
-                    Our Products <ChevronDown className="w-4 h-4" />
+                    Premium Products <ChevronDown className="w-4 h-4" />
                   </li>
                   {tab === "Our Products" &&
-                    megaNavItems?.map(
+                    megaNavItems?.premiumProducts?.map(
                       (
                         item: { title: string; route: string },
                         index: number
@@ -301,6 +306,34 @@ export default function Navbar({
                         </li>
                       )
                     )}
+                  <li
+                    onClick={() => {
+                      if(tab === "Products") closeTab();
+                      else handleMegaNav("Products", products)
+                    }}
+                    className="flex items-center gap-2 font-medium"
+                  >
+                    Products <ChevronDown className="w-4 h-4" />
+                  </li>
+                  {tab === "Products" &&
+                    megaNavItems?.regularProducts?.map(
+                      (
+                        item: { title: string; route: string },
+                        index: number
+                      ) => (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            router.push(item.route);
+                            setShowMegaNav(false);
+                            setMobileMenuOpen(false);
+                          }}
+                          className="text-base pl-4 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          {item.title}
+                        </li>
+                      )
+                  )}
                   <li
                     onClick={() => {
                       router.push("/coming-soon");
@@ -357,10 +390,10 @@ export default function Navbar({
                     }}
                     className="flex items-center gap-2 font-medium"
                   >
-                    Our Products <ChevronDown className="w-4 h-4" />
+                    Products <ChevronDown className="w-4 h-4" />
                   </li>
                   {tab === "Products" &&
-                    megaNavItems?.map(
+                    megaNavItems?.regularProducts?.map(
                       (
                         item: { title: string; route: string },
                         index: number
@@ -378,6 +411,35 @@ export default function Navbar({
                         </li>
                       )
                     )}
+                    <li
+                      onClick={() => {
+                        if(tab === "Our Products") closeTab();
+                        else handleMegaNav("Our Products", products);
+                        }
+                      }
+                      className="flex items-center gap-2 font-medium"
+                   >
+                      Premium Products <ChevronDown className="w-4 h-4" />
+                    </li>
+                    {tab === "Our Products" &&
+                      megaNavItems?.premiumProducts?.map(
+                        (
+                          item: { title: string; route: string },
+                          index: number
+                        ) => (
+                          <li
+                            key={index}
+                            onClick={() => {
+                              router.push(item.route);
+                              setShowMegaNav(false);
+                              setMobileMenuOpen(false);
+                            }}
+                            className="text-base pl-4 hover:bg-gray-100 rounded cursor-pointer"
+                          >
+                            {item.title}
+                          </li>
+                        )
+                      )}
                   <li
                     onClick={() => {
                       router.push("/export");
@@ -466,30 +528,84 @@ export default function Navbar({
             : "opacity-0 -translate-y-5 pointer-events-none"
         }`}
       >
-        <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%]">
-          <div>
-            <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0">
-              {tab}
-            </h1>
-          </div>
-          <div className="grid grid-cols-3 gap-4">
-            {megaNavItems?.map(
-              (item: { title: string; route: string }, index: number) => (
-                <div
-                  key={index}
-                  onClick={() => {
-                    router.push(item.route);
-                    setShowMegaNav(false);
-                    setMobileMenuOpen(false);
-                  }}
-                  className="p-4 hover:bg-gray-100 rounded cursor-pointer"
-                >
-                  <h2 className="text-lg font-semibold">{item.title}</h2>
+          {tab === 'Our Products' || tab === 'Products' ? (
+            <>
+            <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%]">
+              <div>
+                <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0">
+                  {tab === 'Our Products' ? 'Premium Products' : 'Products'}
+                </h1>
+              </div>
+              <div className="grid grid-cols-3">
+                {(tab === 'Our Products' ? megaNavItems?.premiumProducts : megaNavItems?.regularProducts).map(
+                  (item: { title: string; route: string }, index: number) => (
+                    <div
+                      key={index}
+                      onClick={() => {
+                        router.push(item.route);
+                        setShowMegaNav(false);
+                        setMobileMenuOpen(false);
+                      }}
+                      className="p-2 hover:bg-gray-100 rounded cursor-pointer"
+                    >
+                      <h2 className="text-lg font-semibold">{item.title}</h2>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+              <hr className="my-4" />
+            <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%]">
+              <div>
+                <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0">
+                  {tab === 'Our Products' ? 'Products' : 'Premium Products'}
+                </h1>
+              </div>
+              <div className="grid grid-cols-3">
+                {(tab === 'Our Products' ? megaNavItems?.regularProducts : megaNavItems?.premiumProducts)?.map(
+                  (item: { title: string; route: string }, index: number) => (
+                    <div
+                      key={index}
+                      onClick={() => {
+                        router.push(item.route);
+                        setShowMegaNav(false);
+                        setMobileMenuOpen(false);
+                      }}
+                      className="p-2 hover:bg-gray-100 rounded cursor-pointer"
+                    >
+                      <h2 className="text-lg font-semibold">{item.title}</h2>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+            </>
+            ): (
+              <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%]">
+                <div>
+                  <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0">
+                    {tab}
+                  </h1>
                 </div>
-              )
+                <div className="grid grid-cols-3 gap-4">
+                  {megaNavItems?.map(
+                    (item: { title: string; route: string }, index: number) => (
+                      <div
+                        key={index}
+                        onClick={() => {
+                          router.push(item.route);
+                          setShowMegaNav(false);
+                          setMobileMenuOpen(false);
+                        }}
+                        className="p-2 hover:bg-gray-100 rounded cursor-pointer"
+                      >
+                        <h2 className="text-lg font-semibold">{item.title}</h2>
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
             )}
-          </div>
-        </div>
       </div>
     </>
   );

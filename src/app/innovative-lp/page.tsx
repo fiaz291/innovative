@@ -19,7 +19,7 @@ export default function LandingPage() {
 
   return (
     <div>
-      <div className="relative text-white w-full h-[85vh] overflow-hidden">
+      <div className="relative text-white w-full h-[85vh]">
         <video
           autoPlay
           loop
