@@ -56,11 +56,11 @@ export default function LandingPage() {
 
     <div className="grid grid-cols-1 md:grid-cols-2">
       {/* Signature Products Section */}
-      <div className="bg-[#0050a3] flex flex-col justify-center items-center text-white py-20 px-8">
+      <div className="bg-[#0050a3] flex flex-col justify-center items-center text-white py-40 px-8">
         <Image
           src={innovativeLogo}
           alt="Innovative Logo"
-          className="relative left-[-50px] w-56 mb-6"
+          className="relative left-[-50px] w-80 mb-6"
         />
         <p className="text-lg md:text-xl font-medium tracking-wide">
           Discover our Signature Products →
@@ -68,11 +68,11 @@ export default function LandingPage() {
       </div>
 
       {/* Premium Products Section */}
-      <div className="bg-[#f5f5f5] flex flex-col justify-center items-center text-black py-20 px-8">
+      <div className="bg-[#f5f5f5] flex flex-col justify-center items-center text-black py-40 px-8">
         <Image
           src={premiumLogo}
           alt="Premium Logo"
-          className="w-40 mb-6"
+          className="w-50 mb-6"
         />
         <p className="text-lg md:text-xl font-medium tracking-wide">
           Discover our Premium Products →

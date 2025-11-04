@@ -37,12 +37,12 @@ export default function LandingPage() {
           thoughtfully created with superior ingredients and precision, offering
           an elevated experience in every product.
         </div>
-        <div>
+        <div className="my-10">
           <div className="text-xl md:text-2xl font-black">Our Products</div>
           <div onClick={()=>router.push("/premium-products")} className="cursor-pointer flex items-center gap-1 text-md md:text-lg font-normal">It All Starts Inside <MoveRight /></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-100">
           <Image src={wafer} alt="bg-lp" />
           <Image src={digestive} alt="bg-lp" />
           <Image src={chocNChip} alt="bg-lp" />
