@@ -9,8 +9,10 @@ import { MoveRight } from 'lucide-react';
 import SearchBar from '@/components/SearchBar';
 import LearnMore from '@/components/LearnMore';
 import RequestForm from '@/components/RequestForm';
+import { useState } from 'react';
 
 export default function CareerPage() {
+    const [open, setOpen] = useState(false);
     return (
     <div>
         <div
@@ -23,8 +25,6 @@ export default function CareerPage() {
                   <div className="text-3xl md:text-6xl whitespace-pre-line text-center mt-[-80px]">{`Stay In. Stand Out.\nStay Ahead`}</div>
               </div>
         </div>
-
-        <RequestForm/>
 
         <div className='flex flex-col p-6 md:p-12 md:p-45 text-black relative'>
             <div className='absolute mx-auto left-0 right-0 top-[-30px] w-[80%]'>
@@ -58,7 +58,7 @@ export default function CareerPage() {
                     Just graduated? Step into a world of real impact.
                 </div>
                 <p className='font-normal text-base md:text-2xl mt-8'>{`At Innovative Biscuits, we give you more than a first job — we give you a launchpad. Work alongside passionate teams, tackle real challenges, and grow faster than you imagined — all while staying true to who you are.`}</p>
-                <div className='font-black flex items-center gap-10 text-base md:text-2xl mt-15'>
+                <div onClick={()=>setOpen(true)} className='cursor-pointer font-black flex items-center gap-10 text-base md:text-2xl mt-15'>
                     Search Jobs
                     <MoveRight className='w-[35px] h-[35px]' />
                 </div>
@@ -80,6 +80,7 @@ export default function CareerPage() {
         </div>
 
         <LearnMore />
+        <RequestForm open={open} setOpen={setOpen}/>
       </div>
     );
   }
