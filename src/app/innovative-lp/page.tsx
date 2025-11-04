@@ -11,8 +11,8 @@ import {  MoveRight } from "lucide-react";
 import InfoContainer from "@/components/InfoContainer";
 import UpcomingCarousel from "@/components/UpcomingCrousal";
 import { useRouter } from "next/navigation";
-import innovativeLogo from '../../assets/innovative-logo.svg';
-import premiumLogo from '../../assets/innovative-premium-logo.svg';
+import innovativeLogo from '../../assets/Innovative-Logo-lp.png';
+import premiumLogo from '../../assets/Innovative-Premium-Logo-lp.png';
 
 export default function LandingPage() {
   const router = useRouter();
@@ -60,7 +60,7 @@ export default function LandingPage() {
         <Image
           src={innovativeLogo}
           alt="Innovative Logo"
-          className="relative left-[-50px] w-80 mb-6"
+          className="w-100 mb-6"
         />
         <p className="text-lg md:text-xl font-medium tracking-wide">
           Discover our Signature Products →
