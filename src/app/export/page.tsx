@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import heroImg from '../../assets/export-hero.webp';
+import heroImg from '../../assets/World-Map.webp';
 import Navbar from "@/components/Navbar";
 import certificate1 from '../../assets/Certificate1.png';
 import certificate2 from '../../assets/Certificate2.png';
@@ -16,10 +16,10 @@ export default function ExportPage() {
           style={{
             backgroundImage: `url(${heroImg.src})`,
           }}
-          className="pb-20 md:pb-45 text-black w-full bg-no-repeat bg-center bg-cover">
+          className="bg-[#b4d7eb] pb-20 md:pb-45 text-black w-full bg-no-repeat bg-center bg-contain">
               <Navbar isPremium={false} />
               <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-120 md:h-300 pt-15 md:pt-35">
-                  <div className="text-2xl md:text-7xl text-center">{`Innovative Export`}</div>
+                  <div className="text-2xl md:text-7xl text-center">{`Global Foot Print`}</div>
                   <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line mb-[-80px]">{`Proudqly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
               </div>
         </div>
@@ -144,21 +144,25 @@ export default function ExportPage() {
         <div className='flex flex-col items-center mt-0 md:mt-25'>
           <p className="text-black font-black text-2xl md:text-6xl">Certified For Excellence</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mx-10 md:mx-30 md:mx-50 my-15 place-items-center">
-            <div className="flex justify-center items-center border-b md:border-b-0 max-w-[150px] md:border-r border-black">
-              <Image src={certificate1} alt="Pakistan Standards" className="mx-auto" />
+          <div className="grid grid-cols-1 md:grid-cols-5 mx-10 md:mx-30 md:mx-50 my-15 place-items-center">
+            <div className="h-full flex justify-center items-center max-w-[150px] md:border-r border-black md:pr-8 md:py-0 py-8">
+              <Image src={certificate5} alt="BRCGS Food Safety" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 border-black max-w-[250px]">
+            <hr className='md:hidden w-full border-black' />
+            <div className="h-full flex justify-center items-center md:border-r border-black max-w-[250px] md:pr-8 md:py-0 py-8">
               <Image src={certificate2} alt="Halal Certified" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-b md:border-r md:border-b-0 max-w-[150px] border-black">
+            <hr className='md:hidden w-full border-black' />
+            <div className="h-full flex justify-center items-center md:border-r max-w-[150px] border-black md:pr-8 md:py-0 py-8">
               <Image src={certificate3} alt="FSSC 22000" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center border-b md:border-r max-w-[150px] md:border-b-0 border-black border-offset-[30px] ">
+            <hr className='md:hidden w-full border-black' />
+            <div className="h-full flex justify-center items-center md:border-r max-w-[150px] border-black border-offset-[30px] md:pr-8 md:py-0 py-8">
               <Image src={certificate4} alt="ISO 9001:2015" className="mx-auto" />
             </div>
-            <div className="flex justify-center items-center max-w-[150px] ">
-              <Image src={certificate5} alt="BRCGS Food Safety" className="mx-auto" />
+            <hr className='md:hidden w-full border-black' />
+            <div className="h-full flex justify-center items-center max-w-[150px] md:py-0 py-8">
+              <Image src={certificate1} alt="Pakistan Standards" className="mx-auto" />
             </div>
           </div>
         </div>
