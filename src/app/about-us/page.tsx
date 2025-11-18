@@ -1,13 +1,12 @@
 import heroImg from "../../assets/about-hero.webp";
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import aboutUs from "../../assets/about-us.webp";
-
-import certificate1 from "../../assets/Certificate1.png";
-import certificate2 from "../../assets/Certificate2.png";
-import certificate3 from "../../assets/Certificate3.png";
-import certificate4 from "../../assets/Certificate4.png";
-import certificate5 from "../../assets/Certificate5.png";
+import Image from 'next/image';
+import aboutUs from '../../assets/about-us.webp';
+import certificate1 from '../../assets/Certificate1.png';
+import certificate2 from '../../assets/Certificate2.png';
+import certificate3 from '../../assets/Certificate3.png';
+import certificate4 from '../../assets/Certificate4.png';
+import certificate5 from '../../assets/Certificate5.png';
 
 export default function AboutUsPage() {
   return (
