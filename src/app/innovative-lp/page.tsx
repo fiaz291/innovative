@@ -3,16 +3,17 @@
 import CookieCarousel from "@/components/CookieCrousal";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import innovationLab from "../../assets/innovation-lab.png";
+import innovationLab from "../../assets/innovation-lab.webp";
 import media from "../../assets/media.png";
 import hr from "../../assets/sustainbility.png";
 import careers from "../../assets/careers.png";
-import {  MoveRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import InfoContainer from "@/components/InfoContainer";
 import UpcomingCarousel from "@/components/UpcomingCrousal";
 import { useRouter } from "next/navigation";
-import innovativeLogo from '../../assets/Innovative-Logo-lp.png';
-import premiumLogo from '../../assets/Innovative-Premium-Logo-lp.png';
+import innovativeLogo from "../../assets/Innovative-Logo-lp.png";
+import premiumLogo from "../../assets/Innovative-Premium-Logo-lp.png";
+import Link from "next/link";
 
 export default function LandingPage() {
   const router = useRouter();
@@ -54,39 +55,39 @@ export default function LandingPage() {
         <CookieCarousel />
       </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2">
-      {/* Signature Products Section */}
-      <div className="bg-[#0050a3] flex flex-col justify-center items-center text-white py-40 px-8">
-        <Image
-          src={innovativeLogo}
-          alt="Innovative Logo"
-          className="w-100 mb-6"
-        />
-        <p className="text-lg md:text-xl font-medium tracking-wide">
-          Discover our Signature Products →
-        </p>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {/* Signature Products Section */}
+        <div className="bg-[#0050a3] flex flex-col justify-center items-center text-white py-40 px-8">
+          <Image
+            src={innovativeLogo}
+            alt="Innovative Logo"
+            className="w-100 mb-6"
+          />
+          <p className="text-lg md:text-xl font-medium tracking-wide">
+            Discover our Signature Products →
+          </p>
+        </div>
 
-      {/* Premium Products Section */}
-      <div className="bg-[#f5f5f5] flex flex-col justify-center items-center text-black py-40 px-8">
-        <Image
-          src={premiumLogo}
-          alt="Premium Logo"
-          className="w-50 mb-6"
-        />
-        <p className="text-lg md:text-xl font-medium tracking-wide">
-          Discover our Premium Products →
-        </p>
+        {/* Premium Products Section */}
+        <div className="bg-[#f5f5f5] flex flex-col justify-center items-center text-black py-40 px-8">
+          <Image src={premiumLogo} alt="Premium Logo" className="w-50 mb-6" />
+          <Link href="/premium-products">
+            <p className="text-lg md:text-xl font-medium tracking-wide">
+              Discover our Premium Products →
+            </p>
+          </Link>
+        </div>
       </div>
-    </div>
 
       <div className="my-15">
         <div className="pl-6 md:pl-15 text-3xl md:text-4xl mb-6 md:mb-15 font-black">
           Stay Connected
         </div>
         <div className="flex flex-col md:flex-row py-6 md:py-15 bg-[#123a5e] md:items-center text-white">
-          <div className="px-6 md:px-15 md:w-[35%] font-black text-2xl md:text-5xl mb-6 md:mb-0
-          ">{`Discover\n what's new`}</div>
+          <div
+            className="px-6 md:px-15 md:w-[35%] font-black text-2xl md:text-5xl mb-6 md:mb-0
+          "
+          >{`Discover\n what's new`}</div>
           <UpcomingCarousel />
         </div>
       </div>
@@ -98,6 +99,7 @@ export default function LandingPage() {
           description="Crafted from the Inside Out"
           route="/innovation-lab"
           fullWidth
+          isCover
         />
       </div>
 
