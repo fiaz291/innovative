@@ -84,7 +84,7 @@ export default function CrustWaferPage() {
                         </div>
                   </div>
               </div>
-              <Faq isWhite/>
+              <Faq isWhite productKey="crust-wafer"/>
               <div className="w-full flex justify-center"><Image src={crustTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[80%] md:w-[50%]"/></div>
         </div>        
       </div>

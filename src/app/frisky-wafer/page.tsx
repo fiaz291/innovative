@@ -165,7 +165,7 @@ export default function FriskyWaferPage() {
                   </div>
                   <div className="w-full flex justify-center"><Image src={friskyWaferStrawberry} alt='boxes-image' className="md:w-[70%]"/></div>
               </div>
-              <Faq />
+              <Faq productKey="frisky-wafer" />
         </div>
       </div>
     );

@@ -44,7 +44,7 @@ export default function FabulousPage() {
                     <Image src={fabulous} alt='boxes-image' className="md:w-[70%]"/>
                   </div>
               </div>
-              <Faq />
+              <Faq productKey="fabulous" />
         </div>
       </div>
     );

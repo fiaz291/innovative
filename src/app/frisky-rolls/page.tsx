@@ -130,7 +130,7 @@ export default function FriskyRollsPage() {
                   <Image src={friskyMilkyRolls} alt='boxes-image' className="md:w-[70%]"/>
                   </div>
               </div>
-              <Faq />
+              <Faq productKey="frisky-rolls" />
         </div>
       </div>
     );

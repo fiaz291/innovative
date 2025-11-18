@@ -96,7 +96,7 @@ export default function HavenPage() {
                   </div>
                   <div className="w-full flex justify-center"><Image src={havenChocolate} alt='boxes-image' className="md:w-[70%] md:px-20"/></div>
               </div>
-              <Faq />
+              <Faq productKey="haven" />
         </div>
       </div>
     );

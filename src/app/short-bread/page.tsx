@@ -44,7 +44,7 @@ export default function ShortBreadPage() {
                     <Image src={shortBread} alt='boxes-image' className="w-[60%] md:w-[35%] mb-5 md:mb-0"/>
                   </div>
               </div>
-              <Faq />
+              <Faq productKey="short-bread" />
         </div>
       </div>
     );

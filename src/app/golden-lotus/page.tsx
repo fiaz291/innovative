@@ -47,7 +47,7 @@ export default function GoldenLotusPage() {
                     <Image src={goldenLotus} alt='boxes-image' className="md:w-[70%]"/>
                   </div>
               </div>
-              <Faq />
+              <Faq productKey="golden-lotus" />
         </div>
       </div>
     );

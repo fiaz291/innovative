@@ -42,7 +42,7 @@ export default function ShortBreadPage() {
                     <Image src={bricklane} alt='boxes-image' className="md:w-[50%]"/>
                   </div>
               </div>
-             <Faq />
+             <Faq productKey="bricklane" />
         </div>
       </div>
     );

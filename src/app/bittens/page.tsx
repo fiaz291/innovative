@@ -50,7 +50,7 @@ export default function BittensPage() {
                         </div>
                   </div>
               </div>
-              <Faq isWhite/>
+              <Faq isWhite productKey="bittens"/>
               <div className="w-full flex justify-center"><Image src={bittensTestimonial} alt='bg-lp' className="mt-12 md:mt-25 w-[80%] md:w-[50%]"/></div>
         </div>        
       </div>
