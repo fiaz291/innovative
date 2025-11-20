@@ -1,5 +1,4 @@
 'use client';
-import heroImg from '../../assets/premium-products-hero.webp';
 import Navbar from "@/components/Navbar";
 import Image from 'next/image';
 import { MoveRight } from 'lucide-react';
@@ -38,15 +37,8 @@ export default function ProductsPage() {
     const router = useRouter();
     return (
     <div>
-        <div
-          style={{
-            backgroundImage: `url(${heroImg.src})`,
-          }}
-          className="text-white w-full bg-no-repeat bg-center md:bg-cover">
-              <Navbar isPremium={false} isTextWhite/>
-              <div className="flex flex-col gap-4 items-center font-black mx-5 md:mx-30 py-25 md:py-75">
-                  <div className="text-2xl md:text-6xl text-center">Elevate Every Bite.</div>
-              </div>
+        <div className="text-white w-full bg-no-repeat bg-center md:bg-cover">
+              <Navbar isPremium={false} isTransparentBg />
         </div>
 
         <div className='flex flex-col m-15 md:m-30'>
