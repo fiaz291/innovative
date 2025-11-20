@@ -63,9 +63,11 @@ export default function LandingPage() {
             alt="Innovative Logo"
             className="w-100 mb-6"
           />
+          <Link href="/products">
           <p className="text-lg md:text-xl font-medium tracking-wide">
             Discover our Signature Products →
           </p>
+          </Link>
         </div>
 
         {/* Premium Products Section */}
