@@ -1511,3 +1511,14 @@ export const nutrations = {
 } as const;
 
 export type NutritionKey = keyof typeof nutrations;
+
+export const youtubeVideos = [
+  "3nxTt7HKJcs",
+  "6qCo5ib1_AI",
+  "FRGX00otCVo",
+  "4dN8DFzsRX4",
+  "PAVRsZrZLlE",
+  "5H2sL8e_DLE",
+  "SnQN_EUB3N8",
+  "6QcVDKddwag",
+];
