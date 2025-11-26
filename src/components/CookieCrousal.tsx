@@ -25,7 +25,7 @@ import digestiveRegular from '../assets/packages/Digestive.png';
 import butterCrunch from '../assets/packages/Butter-Crunch.png';
 import tooGud from '../assets/packages/TooGud.png';
 import jumboJunior from '../assets/packages/Jumbo-Junior.png';
-import goodies from '../assets/packages/Goodies.png';
+import goodies from '../assets/packages/Goodies-Lemon.png';
 import charm from '../assets/packages/Charm.png';
 import chocNChip from '../assets/packages/Choc-n-Chip-1.png';
 import chocoRings from '../assets/packages/Choco-Rings.png';

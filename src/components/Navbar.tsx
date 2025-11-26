@@ -7,6 +7,7 @@ import logoLight from "../assets/Innovative-Logo-White.png";
 import logoDark from "../assets/Innovative-Logo-Black.png";
 import logo from "../assets/Innovative-Logo-lp.png";
 import { useState } from "react";
+import IconToSearch from "./IconToSearchComponent";
 
 const whoWeAreItems = [
   { title: "Leadership", route: "/leadership" },
@@ -238,7 +239,8 @@ export default function Navbar({
               >
                 Contact
               </div>
-              <Search className="w-5 h-5 cursor-pointer" />
+              {/* <Search className="w-5 h-5 cursor-pointer" /> */}
+              <IconToSearch />
             </div>
           </div>
         </div>
