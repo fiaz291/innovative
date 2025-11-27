@@ -3,7 +3,6 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import goodiesLogo from "../../assets/Innovative-Goodies.webp";
-import goodiesBoxWrapper from "../../assets/Goodies-Plain-Product.png";
 import goodiesLemonBoxWrapper from "../../assets/Goodies-Lemon-Product.png";
 import goodiesTestimonial from "../../assets/Innovative-Goodies-Image.webp";
 import goodiesBiscuit from "../../assets/goodies-biscuit.webp";

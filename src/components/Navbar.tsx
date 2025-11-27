@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { ChevronDown, Search, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
 import premiumLogo from "../assets/innovative-premium-logo.svg";
 import logoLight from "../assets/Innovative-Logo-White.png";
