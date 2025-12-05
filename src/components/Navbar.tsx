@@ -129,12 +129,12 @@ export default function Navbar({
                       Our Products <ChevronDown className="w-4 h-4" />
                     </div>
                   </li>
-                  <li
+                  {/* <li
                     onClick={() => router.push("/coming-soon")}
                     className="text-lg cursor-pointer py-2 hover:border-b-5"
                   >
                     Creations
-                  </li>
+                  </li> */}
                 </>
               ) : (
                 <>
@@ -156,12 +156,12 @@ export default function Navbar({
                   >
                     Export
                   </li>
-                  <li
+                  {/* <li
                     onClick={() => router.push("/coming-soon")}
                     className="text-lg cursor-pointer py-2 hover:border-b-5"
                   >
                     Recipes
-                  </li>
+                  </li> */}
                   <li
                     onClick={() => handleMegaNav("Resources", resourcesItems)}
                     className="text-lg cursor-pointer py-2 hover:border-b-5 flex items-center gap-1"
@@ -340,7 +340,7 @@ export default function Navbar({
                         </li>
                       )
                     )}
-                  <li
+                  {/* <li
                     onClick={() => {
                       router.push("/coming-soon");
                       setMobileMenuOpen(false);
@@ -348,7 +348,7 @@ export default function Navbar({
                     className="font-medium"
                   >
                     Creations
-                  </li>
+                  </li> */}
                   <li
                     onClick={() => {
                       router.push("/contact-us");
@@ -454,7 +454,7 @@ export default function Navbar({
                   >
                     Export
                   </li>
-                  <li
+                  {/* <li
                     onClick={() => {
                       router.push("/coming-soon");
                       setMobileMenuOpen(false);
@@ -462,7 +462,7 @@ export default function Navbar({
                     className="font-medium"
                   >
                     Recipes
-                  </li>
+                  </li> */}
                   <li
                     onClick={() => {
                       if (tab === "Resources") closeTab();
