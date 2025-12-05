@@ -12,6 +12,11 @@ import lab7 from '../../assets/lab-img-7.webp';
 import lab8 from '../../assets/lab-img-8.webp';
 import lab9 from '../../assets/lab-img-9.webp';
 import lab10 from '../../assets/lab-img-10.webp';
+import certificate1 from '../../assets/Certificate1.png';
+import certificate2 from '../../assets/Certificate2.png';
+import certificate3 from '../../assets/Certificate3.png';
+import certificate4 from '../../assets/Certificate4.png';
+import certificate5 from '../../assets/Certificate5.png';
 
 export default function InnovationLabgPage() {
     return (
@@ -75,6 +80,45 @@ export default function InnovationLabgPage() {
 
 
         <LearnMore />
+        <div className="flex flex-col items-center my-10 md:my-25">
+          <p className="text-black font-black text-2xl md:text-6xl">
+            Certified For Excellence
+          </p>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-8 mx-10 md:mx-30 md:mx-50 my-5">
+            <div className="flex justify-center items-center max-w-[100px] md:max-w-[150px]">
+              <Image
+                src={certificate1}
+                alt="Pakistan Standards"
+                className="mx-auto"
+              />
+            </div>
+            <div className="min-w-[100%] md:min-w-[1px] min-h-[1px] md:min-h-[100px] bg-black" />
+            <div className="flex justify-center items-center max-w-[100px] md:max-w-[250px]">
+              <Image
+                src={certificate2}
+                alt="Halal Certified"
+                className="mx-auto"
+              />
+            </div>
+            <div className="min-w-[100%] md:min-w-[1px] min-h-[1px] md:min-h-[100px] bg-black" />
+            <div className="flex justify-center items-center max-w-[100px] md:max-w-[150px]">
+              <Image src={certificate3} alt="FSSC 22000" className="mx-auto" />
+            </div>
+            <div className="min-w-[100%] md:min-w-[1px] min-h-[1px] md:min-h-[100px] bg-black" />
+            <div className="flex justify-center items-center max-w-[100px] md:max-w-[200px] min-w-[100px] md:min-w-[200px]">
+              <Image src={certificate4} alt="ISO 9001:2015" className="mx-auto" />
+            </div>
+            <div className="min-w-[100%] md:min-w-[1px] min-h-[1px] md:min-h-[100px] bg-black" />
+  
+            <div className="flex justify-center items-center max-w-[100px] md:max-w-[150px] ">
+              <Image
+                src={certificate5}
+                alt="BRCGS Food Safety"
+                className="mx-auto"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
