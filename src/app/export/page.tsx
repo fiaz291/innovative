@@ -10,6 +10,22 @@ import certificate5 from "../../assets/Certificate5.png";
 import qrCode from "../../assets/qr.png";
 
 export default function ExportPage() {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const handleSubmit = async (e: any) => {
+      e.preventDefault();
+      
+      const formData = new FormData(e.target);
+      
+      const res = await fetch("/api/export", {
+        method: "POST",
+        body: formData,
+      });
+    
+      const result = await res.json();
+      console.log(result);
+      alert(result.message || result.error);
+    };
+
     return (
     <div className='bg-[#efeff0]'>
         <div
@@ -20,7 +36,7 @@ export default function ExportPage() {
               <Navbar isPremium={false} />
               <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-120 md:h-300 pt-15 md:pt-35">
                   <div className="text-2xl md:text-7xl text-center">{`Global Foot Print`}</div>
-                  <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line mb-[-80px]">{`Proudqly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
+                  <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line mb-[-80px]">{`Proudly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
               </div>
         </div>
 
@@ -38,7 +54,7 @@ export default function ExportPage() {
           <h1 className="text-xl md:text-4xl font-black mb-6 decoration-blue-600">
             For Export Queries
           </h1>
-          <form onSubmit={() => {}} className="space-y-4 pb-20">
+          <form onSubmit={handleSubmit} className="space-y-4 pb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="mb-4 block">{`Your Name*`}</label>
@@ -124,6 +140,7 @@ export default function ExportPage() {
               </div>
               <div>
                 <input
+                  name="files"
                   type="file"
                   multiple
                   className="w-full border p-2 rounded bg-gray-700 text-white file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-white file:bg-gray-600 hover:file:bg-gray-500"
