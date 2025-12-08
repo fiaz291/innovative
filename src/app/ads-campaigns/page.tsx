@@ -16,7 +16,7 @@ export default function ProductsPage() {
         <div className='flex flex-col m-15 md:m-30'>
             <div className='text-2xl md:text-6xl text-center font-black'>{`Ads and Campaign`}</div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-15 md:mb-30 mx-80">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-15 md:mb-30 mx-10 md:mx-80">
             {youtubeVideos.map((id, i) => (
               <div
                 key={i}
