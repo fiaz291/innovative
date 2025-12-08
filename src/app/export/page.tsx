@@ -34,7 +34,7 @@ export default function ExportPage() {
           }}
           className="bg-[#b4d7eb] pb-20 md:pb-45 text-black w-full bg-no-repeat bg-center bg-contain">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-120 md:h-300 pt-15 md:pt-35">
+              <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-80 md:h-300 pt-5 md:pt-35">
                   <div className="text-2xl md:text-7xl text-center">{`Global Foot Print`}</div>
                   <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line mb-[-80px]">{`Proudly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
               </div>
