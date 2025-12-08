@@ -16,11 +16,11 @@ export default function ProductsPage() {
         <div className='flex flex-col m-15 md:m-30'>
             <div className='text-2xl md:text-6xl text-center font-black'>{`Ads and Campaign`}</div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-15 md:mb-30">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-15 md:mb-30 mx-80">
             {youtubeVideos.map((id, i) => (
               <div
                 key={i}
-                className="!w-auto flex justify-center items-center"
+                // className="flex justify-center items-center"
               >
                 <YouTubeThumbnail videoId={id} setVideoId={setVideoId} />
               </div>

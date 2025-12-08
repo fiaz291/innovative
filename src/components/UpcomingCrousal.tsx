@@ -58,7 +58,7 @@ export default function UpcomingCarousel() {
             key={i}
             className="!w-auto flex justify-center items-center"
           >
-            <YouTubeThumbnail videoId={videoId} setVideoId={setVideoId} />
+            <YouTubeThumbnail videoId={videoId} setVideoId={setVideoId} isStyles/>
           </SwiperSlide>
         ))}
 
