@@ -23,7 +23,7 @@ export default function LandingPage() {
         </div>
         <p className="text-base md:text-2xl my-2 md:my-10 px-5 md:px-25 text-center">
           At <strong>Innovative Biscuits,</strong> we believe that{" "}
-          <strong>revery biscuit is a moment of joy</strong> - a reason to
+          <strong>every biscuit is a moment of joy</strong> - a reason to
           smile, share, and savour. With every bite, we carry a promise of
           excellence, crafted with care and baked with purpose.
         </p>
