@@ -64,7 +64,7 @@ export default function LandingPage() {
             className="w-100 mb-6"
           />
           <Link href="/products">
-          <p className="text-lg md:text-xl font-medium tracking-wide">
+          <p className="text-base md:text-xl font-medium tracking-wide">
             Discover our Signature Products →
           </p>
           </Link>
@@ -74,7 +74,7 @@ export default function LandingPage() {
         <div className="bg-[#f5f5f5] flex flex-col justify-center items-center text-black py-40 px-8">
           <Image src={premiumLogo} alt="Premium Logo" className="w-50 mb-6" />
           <Link href="/premium-products">
-            <p className="text-lg md:text-xl font-medium tracking-wide">
+            <p className="text-base md:text-xl font-medium tracking-wide">
               Discover our Premium Products →
             </p>
           </Link>
