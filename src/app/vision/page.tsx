@@ -79,7 +79,7 @@ export default function LandingPage() {
         </div>
         <p className="text-base md:text-2xl my-2 md:my-10 px-5 md:px-25 text-center">
           At <strong>Innovative Biscuits,</strong> we are more than biscuit
-          manufacturers - we are tastemakers, trailblazers, and change-makers.
+          manufacturers - we are trendsetters, trailblazers, and change-makers.
           Rooted in a deep love for food and a passion for national progress, we
           believe in creating not just great products, but a greater purpose.
           Innovation is our compass - guiding us to reimagine the ordinary
