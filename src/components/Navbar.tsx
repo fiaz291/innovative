@@ -174,6 +174,15 @@ export default function Navbar({
                   >
                     Careers
                   </li>
+                  <li
+                    onClick={() => {
+                      router.push("/ads-campaigns");
+                      setMobileMenuOpen(false);
+                    }}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5"
+                  >
+                    Ads & Campaigns
+                  </li>
                 </>
               )}
             </ul>
@@ -499,6 +508,15 @@ export default function Navbar({
                     className="font-medium"
                   >
                     Careers
+                  </li>
+                  <li
+                    onClick={() => {
+                      router.push("/ads-campaigns");
+                      setMobileMenuOpen(false);
+                    }}
+                    className="font-medium"
+                  >
+                    Ads & Campaigns
                   </li>
                   <li
                     onClick={() => {
