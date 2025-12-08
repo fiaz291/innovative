@@ -27,7 +27,7 @@ export default function LandingPage() {
           smile, share, and savour. With every bite, we carry a promise of
           excellence, crafted with care and baked with purpose.
         </p>
-        <p className="text-base md:text-2xl my-2 md:my-10 px-5 md:px-25 text-center">
+        <p className="text-base md:text-2xl my-2 px-5 md:px-25 text-center">
           We take this joy seriously — and that means{" "}
           <strong>responsibility at every step:</strong>
         </p>
