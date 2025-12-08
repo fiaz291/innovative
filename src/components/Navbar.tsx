@@ -312,7 +312,7 @@ export default function Navbar({
                         </li>
                       )
                     )}
-                  <li
+                  {!isPremium && <li
                     onClick={() => {
                       if (tab === "Products") closeTab();
                       else handleMegaNav("Products", products);
@@ -320,7 +320,7 @@ export default function Navbar({
                     className="flex items-center gap-2 font-medium"
                   >
                     Products <ChevronDown className="w-4 h-4" />
-                  </li>
+                  </li>}
                   {tab === "Products" &&
                     megaNavItems?.regularProducts?.map(
                       (
