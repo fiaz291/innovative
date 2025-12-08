@@ -107,7 +107,7 @@ export default function Navbar({
                 !isPremium && "mt-[12px] md:mt-[20px]"
               } cursor-pointer`}
               onClick={() =>
-                router.push(isPremium ? "premium-lp" : "/innovative-lp")
+                router.push(isPremium ? "premium-lp" : "/")
               }
             />
 
@@ -207,7 +207,7 @@ export default function Navbar({
                   src={logo}
                   alt="Logo"
                   className="h-10 w-auto object-contain mt-[5px] cursor-pointer"
-                  onClick={() => router.push("/innovative-lp")}
+                  onClick={() => router.push("/")}
                 />
               </div>
             )}
@@ -220,7 +220,7 @@ export default function Navbar({
                     src={logo}
                     alt="Logo"
                     className="h-10 w-auto object-contain mt-[5px] cursor-pointer"
-                    onClick={() => router.push("/innovative-lp")}
+                    onClick={() => router.push("/")}
                   />
                 </div>
               ) : (
@@ -257,7 +257,7 @@ export default function Navbar({
                   isPremium ? "mt-[-28px] ml-[-16px]" : "mt-0 ml-0"
                 } h-12 w-auto cursor-pointer`}
                 onClick={() => {
-                  router.push(isPremium ? "/premium-lp" : "/innovative-lp");
+                  router.push(isPremium ? "/premium-lp" : "/");
                   setMobileMenuOpen(false);
                 }}
               />

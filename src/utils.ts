@@ -1526,7 +1526,7 @@ export const youtubeVideos = [
 // src/app/pagesList.ts
 export const pages = [
   { name: "Home", url: "/" },
-  { name: "Innovative LP", url: "/innovative-lp" },
+  { name: "Innovative LP", url: "/" },
   { name: "Home Page", url: "/premium-lp" },
   { name: "Premium Products", url: "/premium-products" },
   { name: "Products", url: "/products" },
