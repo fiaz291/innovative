@@ -18,7 +18,7 @@ const whoWeAreItems = [
 const resourcesItems = [
   { title: "Innovation Lab", route: "/innovation-lab" },
   { title: "Sustainability", route: "/sustainability" },
-  { title: "Ads and Campaigns", route: "#" },
+  { title: "Ads and Campaigns", route: "/ads-campaigns" },
 ];
 
 const products = {
@@ -173,15 +173,6 @@ export default function Navbar({
                     className="text-lg cursor-pointer py-2 hover:border-b-5"
                   >
                     Careers
-                  </li>
-                  <li
-                    onClick={() => {
-                      router.push("/ads-campaigns");
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-lg cursor-pointer py-2 hover:border-b-5"
-                  >
-                    Ads & Campaigns
                   </li>
                 </>
               )}
@@ -508,15 +499,6 @@ export default function Navbar({
                     className="font-medium"
                   >
                     Careers
-                  </li>
-                  <li
-                    onClick={() => {
-                      router.push("/ads-campaigns");
-                      setMobileMenuOpen(false);
-                    }}
-                    className="font-medium"
-                  >
-                    Ads & Campaigns
                   </li>
                   <li
                     onClick={() => {

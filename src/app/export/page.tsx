@@ -47,7 +47,7 @@ export default function ExportPage() {
             </h1>
             <a className='underline text-blue-600 md:text-xl' href="https://www.exportbrochure-innovativebiscuits.com/">Brochure</a>
           </div>
-          <Image src={qrCode} alt='qr-code' className='w-[20%] relative top-[-20px]' />
+          <Image src={qrCode} alt='qr-code' className='w-[30%] md:w-[20%] relative md:top-[-20px]' />
         </div>
 
         <div className="p-10 max-w-7xl mx-auto">
