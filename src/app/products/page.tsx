@@ -55,12 +55,12 @@ export default function ProductsPage() {
                     </div>
                 </div>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#e7ad72_60%,#f5f0f2_60%)]'>
-                    <Image src={digestiveBox} alt='digestive-image' className='md:h-[340px]'/>
+                    <Image src={digestiveBox} alt='digestive-image' />
                 </div>
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#f1c88e_70%,#f5f0f2_70%)]'>
-                    <Image src={butterCrunchBox} alt='butter-crunch-image' className='md:h-[340px]'/>
+                    <Image src={butterCrunchBox} alt='butter-crunch-image' />
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#febe56] items-center justify-center text-white py-10 px-5'>
                     <Image src={butterCrunchLogo} alt={'logo'} className='w-[50%]'/>
@@ -80,7 +80,7 @@ export default function ProductsPage() {
                     </div>
                 </div>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#e7ad72_60%,#f5f0f2_60%)]'>
-                    <Image src={toooGudBox} alt='digestive-image' className='md:h-[340px]'/>
+                    <Image src={toooGudBox} alt='digestive-image' />
                 </div>
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
@@ -105,12 +105,12 @@ export default function ProductsPage() {
                     </div>
                 </div>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#ffdf91_60%,#f5f0f2_60%)]'>
-                    <Image src={crustRollsChocolateBox} alt='crust-rolls-image' className='md:h-[340px]'/>
+                    <Image src={crustRollsChocolateBox} alt='crust-rolls-image' />
                 </div>
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#f6d0b4_70%,#f5f0f2_70%)]'>
-                    <Image src={crustChocolateBox} alt='goodies-image' className='md:h-[340px]'/>
+                    <Image src={crustChocolateBox} alt='goodies-image' />
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#5a2918] items-center justify-center text-white py-10 px-5'>
                     <Image src={crustChocolateLogo} alt={'logo'} className='w-[50%]'/>
@@ -135,7 +135,7 @@ export default function ProductsPage() {
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#ffd87a_70%,#f5f0f2_70%)]'>
-                    <Image src={charmBox} alt='goodies-image' className='md:h-[340px]'/>
+                    <Image src={charmBox} alt='goodies-image' />
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#a63131] items-center justify-center text-white py-10 px-5'>
                     <Image src={charmLogo} alt={'logo'} className='w-[50%]'/>
@@ -160,7 +160,7 @@ export default function ProductsPage() {
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#f6d0b4_70%,#f5f0f2_70%)]'>
-                    <Image src={zeeraBox} alt='zeera-image' className='md:h-[340px]'/>
+                    <Image src={zeeraBox} alt='zeera-image' />
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#7e3f1e] items-center justify-center text-white py-10 px-5'>
                     <Image src={zeeraLogo} alt={'logo'} className='w-[50%]'/>
@@ -180,12 +180,12 @@ export default function ProductsPage() {
                     </div>
                 </div>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#d1f7ff_70%,#f5f0f2_70%)]'>
-                    <Image src={peanutBox} alt='peanut-image' className='md:h-[340px]'/>
+                    <Image src={peanutBox} alt='peanut-image' />
                 </div>
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#e7e0a7_70%,#f5f0f2_70%)]'>
-                    <Image src={chocoRingsBox} alt='choco-rings-image' className='md:h-[340px]'/>
+                    <Image src={chocoRingsBox} alt='choco-rings-image' />
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#8d664f] items-center justify-center text-white py-10 px-5'>
                     <Image src={chocoRingsLogo} alt={'logo'} className='w-[50%]'/>
@@ -205,12 +205,12 @@ export default function ProductsPage() {
                     </div>
                 </div>
                 <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#85c9ef_70%,#f5f0f2_70%)]'>
-                    <Image src={snappBox} alt='snapp-image' className='md:h-[340px]'/>
+                    <Image src={snappBox} alt='snapp-image' />
                 </div>
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
                 <div className='flex justify-center py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#cbf3fc_70%,#f5f0f2_70%)]'>
-                    <Image src={bittensBox} alt='choco-rings-image' className='md:md:h-[340px] w-[259px]'/>
+                    <Image src={bittensBox} alt='choco-rings-image' />
                 </div>
                 <div className='flex flex-col md:w-[50%] bg-[#87d9eb] items-center justify-center text-white py-10 px-5'>
                     <Image src={bittensLogo} alt={'logo'} className='w-[50%]'/>
