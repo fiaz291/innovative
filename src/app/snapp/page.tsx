@@ -21,7 +21,7 @@ export default function SnappPage() {
                   <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Indulge In\nEvery Snapp.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Creamy Wafer Coated With Indulging Chocoalte`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Creamy Wafer Coated With Indulging Chocolate`}</div>
                   <div className="text-base md:text-2xl text-left">{`A light crispy wafer filled with smooth cream and wrapped in rich, indulgent chocolate for the perfect crunchy bite.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={snappBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
