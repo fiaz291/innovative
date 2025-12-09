@@ -22,7 +22,7 @@ export default function ZeeraPage() {
                     {`Crisp With\nA Cumin Kick.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Tasty Salty Biscuits with Cumin Seeds`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Crunchy biscuits loaded with the rich flavor of roasted peanuts for a nutty treat in every bite.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Crafted with hand-roasted cumin seeds and golden-baked to perfection — a biscuit where flavor meets finesse.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={zeeraBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

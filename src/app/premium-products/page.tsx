@@ -40,7 +40,7 @@ export default function PremiumProductsPage() {
         <div className='flex flex-col m-10 md:m-20'>
             <div className='text-xl md:text-4xl underline underline-offset-20 decoration-1 text-center font-black mb-5 md:mb-10'>{`Our premium Products`}</div>
             <div className='text-2xl md:text-6xl whitespace-pre-line text-center font-black'>{`Not just Biscuits. An Experience.`}</div>
-            <p className='text-base md:text-2xl my-10 px-5 md:px-25 text-center'>Discover the premium side of snacking with Innovative Biscuits. Made from carefully selected ingredients, out premium range combines wholesome goodness with refined taste - perfect for those who crave quality in every bite.</p>
+            <p className='text-base md:text-2xl my-10 px-5 md:px-25 text-center'>Discover the premium side of snacking with Innovative Biscuits. Made from carefully selected ingredients, our premium range combines wholesome goodness with refined taste - perfect for those who crave quality in every bite.</p>
         </div>
 
         <div className='flex flex-col m-10 md:m-20'>
@@ -105,7 +105,7 @@ export default function PremiumProductsPage() {
                         Crispy Wafer Rolls Filled With Bursting Cream
                     </div>
                     <div className='text-lg md:text-2xl'>
-                        Swirls of Delight - Delicately Rolls Wafers Filled With Lush Cream
+                        Swirls of Delight - Delicate Rolls Wafers Filled With Lush Cream
                     </div>
                     <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/frisky-rolls')}>
                         Read More
@@ -177,7 +177,7 @@ export default function PremiumProductsPage() {
                         Chocolate Chip Cookies
                     </div>
                     <div className='text-lg md:text-2xl'>
-                        Golden, chewy and loaded with gooey chocolate chips - these cookies are oure joy in every bite.
+                        Golden, chewy and loaded with gooey chocolate chips - these cookies are our joy in every bite.
                     </div>
                     <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/fabulous')}>
                         Read More

@@ -19,10 +19,10 @@ export default function ToooGudPage() {
                   <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-2rem] md:right-[-5rem] top-[-2rem] md:top-[-5rem]"/>
                   <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-2rem] md:left-[-12rem] bottom-[15rem] md:bottom-0 rotate-[113deg]"/>
                   <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
-                    {`Tooo Good\nTo Shares!`}
+                    {`Tooo Good\nTo Share!`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Rick Egg & Milk Cookies`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Toogud combines the goodness of egg and milk for a melt-in-your-mouth cookie experience.`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Rich Egg & Milk Cookies`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Tooo gud combines the goodness of egg and milk for a melt-in-your-mouth cookie experience.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={toooGudBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

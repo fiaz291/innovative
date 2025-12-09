@@ -21,8 +21,8 @@ export default function PeanutPage() {
                   <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Taste The\nGoodness.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with whole wheat and brown sugar, delivering natural goodness in every bite for a satisfying, guilt-free treat.`}</div>
+                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits With Roasted Peanuts`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Crunchy biscuits loaded with the rich flavor of roasted peanuts for a nutty treat in every bite.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={peanutBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
