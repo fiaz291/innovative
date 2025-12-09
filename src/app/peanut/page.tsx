@@ -19,7 +19,7 @@ export default function PeanutPage() {
                   <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-2rem] md:right-[-14rem] top-0 md:top-[8rem]"/>
                   <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-4rem] md:left-[-16rem] bottom-[12rem] md:bottom-[-24rem]"/>
                   <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
-                    {`Taste The\nGoodness.`}
+                    {`Crunchy Peanut\nBliss.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits With Roasted Peanuts`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crunchy biscuits loaded with the rich flavor of roasted peanuts for a nutty treat in every bite.`}</div>
