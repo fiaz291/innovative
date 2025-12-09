@@ -84,10 +84,10 @@ export default function ProductsPage() {
                 </div>
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
-                <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#ffaa93_70%,#f5f0f2_70%)]'>
-                    <Image src={goodiesBox} alt='goodies-image' className='md:h-[340px]'/>
+                <div className='py-10 px-5 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#d6ecbc_70%,#f5f0f2_70%)]'>
+                    <Image src={goodiesBox} alt='goodies-image' className='relative left-[-30px] md:h-[340px]'/>
                 </div>
-                <div className='flex flex-col md:w-[50%] bg-[#9e2e30] items-center justify-center text-white py-10 px-5'>
+                <div className='flex flex-col md:w-[50%] bg-[#84a117] items-center justify-center text-white py-10 px-5'>
                     <Image src={goodiesLogo} alt={'logo'} className='w-[50%]'/>
                     <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/goodies')}>
                         Read More

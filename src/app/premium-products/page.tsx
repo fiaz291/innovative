@@ -92,7 +92,7 @@ export default function PremiumProductsPage() {
                     </div>
                 </div>
                 <div className='py-10 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#ffce54_60%,#f5f0f2_60%)]'>
-                    <Image src={biscoffiBiscuits} alt='out-products-image' className='h-[100%]'/>
+                    <Image src={biscoffiBiscuits} alt='out-products-image' />
                 </div>
             </div>
             <div className='flex flex-col-reverse md:flex-row'>
@@ -200,7 +200,7 @@ export default function PremiumProductsPage() {
                     </div>
                 </div>
                 <div className='py-10 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#e7ad72_60%,#f5f0f2_60%)]'>
-                    <Image src={bricklaneBiscuits} alt='out-products-image' className='h-[100%]'/>
+                    <Image src={bricklaneBiscuits} alt='out-products-image' />
                 </div>
             </div>
         </div>
