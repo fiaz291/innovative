@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
 import premiumLogo from "../assets/innovative-premium-logo.svg";
-import logoLight from "../assets/Innovative-Logo-White.png";
+// import logoLight from "../assets/Innovative-Logo-White.png";
 import logoDark from "../assets/Innovative-Logo-Black.png";
 import logo from "../assets/Innovative-Logo-lp.png";
 import { useState } from "react";
@@ -100,7 +100,7 @@ export default function Navbar({
                   ? premiumLogo
                   : isTransparentBg || showMegaNav
                   ? logoDark
-                  : logoLight
+                  : logo
               }
               alt="Logo"
               className={`h-12 md:h-15 w-auto object-contain ${
