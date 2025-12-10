@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import {
   Search,
   FileText,
-  Ticket,
-  MessageSquare,
+  // Ticket,
+  // MessageSquare,
   ChevronDown,
 } from "lucide-react";
 import { nutrations, NutritionKey } from "@/utils";
@@ -17,18 +17,18 @@ const FAQ_ITEMS = [
     answer:
       "You can find detailed nutrition facts on the back of every product or on our website's product details page.",
   },
-  {
-    icon: <Ticket className="w-5 h-5" />,
-    label: "Question about a promotion",
-    answer:
-      "Promotional details are available in our newsletter or promotions section. Contact support if you didn’t receive your discount.",
-  },
-  {
-    icon: <MessageSquare className="w-5 h-5" />,
-    label: "FAQs",
-    answer:
-      "Browse our FAQ section to find quick answers to common questions about orders, returns, and shipping.",
-  },
+  // {
+  //   icon: <Ticket className="w-5 h-5" />,
+  //   label: "Question about a promotion",
+  //   answer:
+  //     "Promotional details are available in our newsletter or promotions section. Contact support if you didn’t receive your discount.",
+  // },
+  // {
+  //   icon: <MessageSquare className="w-5 h-5" />,
+  //   label: "FAQs",
+  //   answer:
+  //     "Browse our FAQ section to find quick answers to common questions about orders, returns, and shipping.",
+  // },
 ];
 export default function Faq({
   items,
