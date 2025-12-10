@@ -21,7 +21,7 @@ export default function CrustRollsPage() {
                     {`Roll. Crunch.\nIndulge`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Cream Filled Wafer Rolls`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Light, crispy wafer rolls filled with smooth, creamy goodness for a crunchy, indulgent treat.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Light, Crispy Wafer Rolls filled with Smooth, Creamy Goodness for a Crunchy, Indulgent Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustRollsChocolateBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
@@ -35,7 +35,7 @@ export default function CrustRollsPage() {
                     {`Crispy Rolls,\nCitrus Goals.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Cream Filled Wafer Rolls`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Crispy wafer rolls with smooth, tangy orange cream for a zesty, crunchy treat.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Crispy Wafer Rolls with Smooth, Tangy Orange Cream for a Zesty, Crunchy Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustRollsOrgangeBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

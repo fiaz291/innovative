@@ -18,7 +18,7 @@ export default function ShortBreadPage() {
                   <Image src={shortBreadText} alt='digestive-copy' className="md:w-[80%] mx-auto"/>
                   <div className="flex flex-col md:flex-row items-center mt-5 md:mt-20 md:px-34 gap-10">
                     <div>
-                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Handcrafted with the finest butter and baked to perfection <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">- a cookie that speaks the language of luxury.</span></div>
+                        <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">Handcrafted with the Finest Butter and baked to perfection <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">- A Cookie that speaks the Language of Luxury.</span></div>
                         <div className="mt-5">
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>

@@ -22,7 +22,7 @@ export default function CharmPage() {
                     {`Filled With\nPure Joy.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Baked with love, filled with joy - chocolate at the heart of every cookie.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Baked with Love, filled with Joy - Chocolate at the heart of every cookie.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={charmBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

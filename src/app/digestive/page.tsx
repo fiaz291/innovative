@@ -25,7 +25,7 @@ export default function DigestivePage() {
                     {`Taste the\nGoodness.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with whole wheat and brown sugar, delivering natural goodness in every bite for a satisfying, guilt-free treat.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with Whole Wheat and Brown Sugar, delivering Natural Goodness in every bite for a Satisfying, Guilt-Free Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={digestiveBoxWrapper} alt='digestive-box' className="w-full relative left-[-25px] md:left-[-65px]"/>
                   </div>

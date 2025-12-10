@@ -23,7 +23,7 @@ export default function BittensPage() {
                     {`Smooth Milk\nChocolate`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Smooth, rich and perfectly sweet`}</div>
-                  <div className="text-base md:text-2xl text-left">{`The chocolate bar that brings joy in every bite.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`The Chocolate Bar that brings Joy in every bite.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={bittensBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

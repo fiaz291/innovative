@@ -42,7 +42,7 @@ export default function DigestivePremiumPage() {
           <div className="relative flex flex-col md:flex-row mt-5 md:mt-20">
             <div className="md:pl-28 z-10 mb-5 md:mb-0">
               <div className="text-lg md:text-4xl leading-5 md:leading-[2.5rem] text-center md:text-left font-semibold">{`Simple Goodness, Perfectly Baked`}</div>
-              <div className="text-base md:text-2xl leading-5 md:leading-[2.5rem] text-center md:text-left">{`A Wholesome Digestive Biscuit Crafted With Whole Wheat, Natural Sweetness, and Satisfying Subtle Crunch.`}</div>
+              <div className="text-base md:text-2xl leading-5 md:leading-[2.5rem] text-center md:text-left">{`A Wholesome Digestive Biscuit Crafted with Whole Wheat, Natural Sweetness, and Satisfying Subtle Crunch.`}</div>
               <div className="mt-5">
                 <table className="w-full text-center border-spacing-y-2">
                   <thead>
@@ -117,7 +117,7 @@ export default function DigestivePremiumPage() {
           <div className="relative flex flex-col md:flex-row mt-5 mb-10 md:mt-0">
             <div className="md:pl-28 mb-5 md:mb-0">
               <div className="text-lg md:text-4xl leading-5 md:leading-[2.5rem] text-center md:text-left font-semibold">{`Healthy Snacking, Elevated`}</div>
-              <div className="text-base md:text-2xl leading-5 md:leading-[2.5rem] text-center md:text-left">{`Whole Wheat Digestives Without Sugar, Designed for Taste and Wellness in Every Bite.`}</div>
+              <div className="text-base md:text-2xl leading-5 md:leading-[2.5rem] text-center md:text-left">{`Whole Wheat Digestives without Sugar, Designed for Taste and Wellness in every bite.`}</div>
               <div className="mt-5">
                 <table className="w-full text-center border-spacing-y-2">
                   <thead>

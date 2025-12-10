@@ -28,7 +28,7 @@ export default function GoodiesPage() {
             {`Classic Taste,\nFresh Goodness.`}
           </div>
           <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Egg & Milk Biscuits`}</div>
-          <div className="text-base md:text-2xl text-left">{`Crisp elegance with a citrus twist - the luxury of lemon, egg, and milk in every golden bite.`}</div>
+          <div className="text-base md:text-2xl text-left">{`Crisp Elegance with a Citrus Twist - the Luxury of Lemon, Egg, and Milk in every Golden Bite.`}</div>
           <div className="flex mt-5 md:mt-10">
             <Image
               src={goodiesLemonBoxWrapper}

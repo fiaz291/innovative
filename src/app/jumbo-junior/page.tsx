@@ -22,7 +22,7 @@ export default function JumboJuniorPage() {
                     {`Strong, Smart,\nAnd Super Fun!`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Energy Biscuits`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Wholesome, crunchy biscuits packed with energy to keep kids active, strong, and smiling all day.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Wholesome, Crunchy Biscuits packed with energy to keep kids Active, Strong, and Smiling all day.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={jumboJuniorBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

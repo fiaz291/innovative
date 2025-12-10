@@ -22,7 +22,7 @@ export default function ToooGudPage() {
                     {`Tooo Good\nTo Share!`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Rich Egg & Milk Cookies`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Tooo Gud combines the goodness of egg and milk for a melt-in-your-mouth cookie experience.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Tooo Gud combines the Goodness of Eggs and Milk for a Melt-In-Your-Mouth Cookie Experience.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={toooGudBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

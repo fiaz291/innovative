@@ -23,7 +23,7 @@ export default function CrustWaferPage() {
                     {`Crispy Wafer,\nCreamy Chocolate.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Crispy wafer layers filled with smooth, chocolatey cream for a crunchy, delightful treat.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Crispy Wafer layers filled with Smooth, Chocolatey Cream for a Crunchy, Delightful Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustChocolateBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
@@ -37,7 +37,7 @@ export default function CrustWaferPage() {
                     {`Crunch With A\nCitrus Kick.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Crispy wafer layers filled with a burst of tangy orange cream for a light, refreshing treat.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Crispy Wafer layers filled with a burst of Tangy Orange Cream for a Light, Refreshing Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustOrangeBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
@@ -51,7 +51,7 @@ export default function CrustWaferPage() {
                     {`Crispy Wafer,\nStrawberry Flavor.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold">{`Crispy Creamy Wafers`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Light, crispy wafers layered with a burst of sweet strawberry flavor for a delightful crunchy treat.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Light, Crispy Wafers layered with a burst of Sweet Strawberry flavor for a Delightful Crunchy Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustStrawberryBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

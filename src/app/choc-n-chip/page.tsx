@@ -22,7 +22,7 @@ export default function ChocChipPage() {
                     {`Chip In.\nChoc Out.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Chip Cookies`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Crunchy edges, gooey chips, and that just-right sweetness - everything you love in a chocolate chip biscuit.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Crunchy Edges, Gooey Chips, and that just-right Sweetness - everything you love in a chocolate chip biscuit.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={chocChipBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>

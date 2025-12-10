@@ -23,7 +23,7 @@ export default function ChocoRingsPage() {
                     {`A Perfect\nChoco Circle.`}
                   </div>
                   <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits Coated with Indulging Chocolate`}</div>
-                  <div className="text-base md:text-2xl text-left">{`Delicious biscuits coated in rich, indulgent chocolate for a perfectly sweet crunchy treat.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Delicious Biscuits coated in Rich, Indulgent Chocolate for a Perfectly Sweet Crunchy Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={chocoRingsBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
