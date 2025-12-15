@@ -9,7 +9,7 @@ import Faq from "@/components/Faq";
 export default function ShortBreadPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#e7ad72] pb-10">
+      <div className="relative w-full bg-[#e7ad72] pb-30">
         <Navbar />
         <div className="flex flex-col px-10 md:px-30">
           <Image
@@ -18,9 +18,9 @@ export default function ShortBreadPage() {
             className="md:w-[80%] mx-auto"
           />
           <div className="flex flex-col items-center mt-[0rem] md:mt-[-1rem]">
-            <div className="md:pl-28 mb-5 md:mb-0">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+            <div className="mb-5 md:mb-0">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
                   {" "}
                   Premium Taste with a Purpose - Beautifully Crafted, Truly
                   Unforgettable
@@ -30,11 +30,11 @@ export default function ShortBreadPage() {
                 <Image
                   src={bricklane}
                   alt="boxes-image"
-                  className="md:w-[50%] mt-5"
+                  className="md:w-[90%] mt-5"
                 />
               </div>
-              <div className="mt-5 mb-6">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 mb-6 flex justify-center w-full">
+                <table className="w-full max-w-[900px] text-center border-spacing-y-2 mb-6">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

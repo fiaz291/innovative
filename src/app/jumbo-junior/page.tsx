@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import jumboJuniorLogo from '../../../public/Logos/Junbo-Junior.png';
 import jumboJuniorBoxWrapper from '../../assets/Jumbo-Junior-Product.png';
-import jumboJuniorTestimonial from '../../assets/Innovative-Jumbo-Junior-imagr.webp';
+import jumboJuniorTestimonial from '../../assets/Jumbo Junior Image.webp';
 import jumboJuniorBiscuit from '../../assets/Innovative-Jumbo-Junior-Biscuits.webp';
 import Faq from "@/components/Faq";
 
@@ -26,8 +26,8 @@ export default function JumboJuniorPage() {
                     <Image src={jumboJuniorBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
                     <div className="flex justify-center z-10">
-                        <div className="md:w-[80%] mt-5 md:mt-20 md:px-20">
-                          <table className="w-full text-center border-spacing-y-2">
+                        <div className="w-full mt-5 md:mt-20 md:px-20 flex justify-center">
+                          <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
                                 <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

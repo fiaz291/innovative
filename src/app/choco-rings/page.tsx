@@ -27,8 +27,8 @@ export default function ChocoRingsPage() {
                     <Image src={chocoRingsBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
                     <div className="flex justify-center z-10">
-                        <div className="md:w-[80%] mt-5 md:mt-20 md:px-20">
-                          <table className="w-full text-center border-spacing-y-2 text-white">
+                        <div className="w-full mt-5 md:mt-20 md:px-20 justify-center">
+                          <table className="w-full max-w-[900px] text-center border-spacing-y-2 text-white">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
                                 <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

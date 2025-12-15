@@ -2,35 +2,35 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import fabulousText from "../../assets/fabulous-copy.webp";
+import fabulousText from "../../../public/PremiumLogos/Fabulous.webp";
 import fabulous from "../../assets/fabulous.webp";
 import Faq from "@/components/Faq";
 
 export default function FabulousPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#f8b145] pb-10">
+      <div className="relative w-full bg-[#f8b145] pb-30">
         <Navbar />
         <div className="flex flex-col items-center items-center px-10 md:px-30">
           <Image
             src={fabulousText}
             alt="digestive-copy"
-            className="md:w-[80%]"
+            className="w-[80%] md:w-[60%]"
           />
-          <div className="flex md:mt-[-50px]">
+          <div className="flex mt-6">
             <div className="md:px-42">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">{`Chocolatey, delicious and loaded with irresistible chocolate chips - these cookies are Pure Joy in every bite. Baked to Perfection with just the right balance of Crunch and Softness, they're a classic made truly Fabulous.`}</span>
+              <div className="text-base md:text-2xl leading-5 md:leading-[2rem] text-center">
+                <span className="">{`Chocolatey, delicious and loaded with irresistible chocolate chips - these cookies are Pure Joy in every bite. Baked to Perfection with just the right balance of Crunch and Softness, they're a classic made truly Fabulous.`}</span>
               </div>
               <div className="w-full flex justify-center">
                 <Image
                   src={fabulous}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%] mt-6"
                 />
               </div>
               <div className="mt-5 mb-5 md:mt-5 md:mb-15 w-full flex justify-center">
-                <table className="w-full text-center border-spacing-y-2">
+                <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

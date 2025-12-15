@@ -2,9 +2,9 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import havenCoffeeText from "../../assets/haven-coffee-copy.webp";
+import havenCoffeeText from "../../../public/PremiumLogos/Haven Coffee.webp";
 import havenCoffee from "../../assets/haven-coffee.webp";
-import havenChocolateText from "../../assets/haven-chocolate-copy.webp";
+import havenChocolateText from "../../../public/PremiumLogos/Haven.webp";
 import havenChocolate from "../../assets/haven-chocolate.webp";
 import havenCoffeeBiscuit from "../../assets/haven-coffee-bisuit.webp";
 import havenCoffeeBean from "../../assets/haven-coffee-bean.webp";
@@ -14,7 +14,7 @@ import Faq from "@/components/Faq";
 export default function HavenPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#ffce54] pb-10">
+      <div className="relative w-full bg-[#ffce54] pb-30">
         <Navbar />
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
@@ -25,17 +25,17 @@ export default function HavenPage() {
           <Image
             src={havenChocolateBiscuit}
             alt="biscuit"
-            className="hidden md:block absolute rotate-[-70deg] w-[15%] top-25 md:top-10 my-auto left-[0px] md:left-[0px]"
+            className="hidden md:block absolute rotate-[-70deg] w-[15%] top-25 md:top-30 my-auto left-[0px] md:left-[0px]"
           />
           <Image
             src={havenChocolateText}
             alt="digestive-copy"
             className="md:w-[60%] mx-auto"
           />
-          <div className="flex">
+          <div className="flex mt-6">
             <div className="md:px-40">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-base md:text-2xl leading-5 md:leading-[2rem] text-center mb-6">
+                <span className="">
                   Gourmet on the Outside, Decadence on the Inside —
                   Chocolate-Filled Cookies that Redefine Luxury Snacking.
                 </span>
@@ -44,12 +44,12 @@ export default function HavenPage() {
                 <Image
                   src={havenChocolate}
                   alt="boxes-image"
-                  className="md:w-[80%] mx-auto"
+                  className="md:w-[100%] mx-auto"
                 />
               </div>
 
-              <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 mb-5 md:mt-5 md:mb-15 flex justify-center">
+                <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -82,7 +82,7 @@ export default function HavenPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#f1c88e] pb-10">
+      <div className="relative w-full bg-[#f1c88e] pb-30 pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={havenCoffeeBiscuit}
@@ -97,12 +97,12 @@ export default function HavenPage() {
           <Image
             src={havenCoffeeText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto"
+            className="md:w-[45%] mx-auto"
           />
-          <div className="flex">
+          <div className="flex mt-6">
             <div className="md:px-40">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-base md:text-2xl leading-5 md:leading-[2rem] text-center mb-6">
+                <span className="">
                   Where the Bold Aroma of Coffee meets a Melting Chocolate
                   Center — every bite a journey of Rich, Layered Flavor.
                 </span>
@@ -111,11 +111,11 @@ export default function HavenPage() {
                 <Image
                   src={havenCoffee}
                   alt="boxes-image"
-                  className="md:w-[90%] mx-auto"
+                  className="md:w-[100%] mx-auto"
                 />
               </div>
-              <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 mb-5 md:mt-5 md:mb-15 flex justify-center">
+                <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

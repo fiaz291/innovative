@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import goldenLotusText from "../../assets/golden-lotus-copy.webp";
+import goldenLotusText from "../../../public/PremiumLogos/Golden Lotus.png";
 import goldenLotus from "../../assets/golden-lotus.webp";
 import goldenLotusBiscuit from "../../assets/golden-lotus-biscuit.webp";
 import Faq from "@/components/Faq";
@@ -10,28 +10,28 @@ import Faq from "@/components/Faq";
 export default function GoldenLotusPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#f4978f] pb-10">
+      <div className="relative w-full bg-[#f4978f] pb-30">
         <Navbar />
         <Image
           src={goldenLotusBiscuit}
           alt="digestive-copy"
-          className="absolute rotate-[55deg] w-[25%] md:w-[18%] left-[-3rem] md:left-[-10rem] top-10 md:top-0 bottom-[40rem] md:bottom-[60rem] my-auto"
+          className="absolute rotate-[55deg] w-[15%] md:w-[18%] left-[0rem] md:left-[0rem] top-10 md:top-0 bottom-[40rem] md:bottom-[60rem] my-auto"
         />
         <Image
           src={goldenLotusBiscuit}
           alt="digestive-copy"
-          className="absolute w-[25%] md:w-[18%] right-[-4rem] md:right-[-10rem] top-0 bottom-0 my-auto"
+          className="hidden md:block absolute md:w-[15%] right-[0rem] md:right-[0rem] top-0 bottom-0 my-auto"
         />
-        <div className="flex flex-col items-center px-10 md:px-30">
+        <div className="flex flex-col items-center px-10 md:px-30 mb-6">
           <Image
             src={goldenLotusText}
             alt="digestive-copy"
-            className="w-full md:w-[80%] mt-[-20px] md:mt-[-50px]"
+            className="w-full md:w-[60%] mt-10"
           />
-          <div className="flex mt-[-20px] md:mt-[-50px]">
+          <div className="flex">
             <div className="md:px-28">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mt-6">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
                   Steeped in Tradition, Perfected for today - Premium Caramel
                   Biscuits that honor Classic Caramelized taste
                 </span>
@@ -40,11 +40,11 @@ export default function GoldenLotusPage() {
                 <Image
                   src={goldenLotus}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%]"
                 />
               </div>
-              <div className="mt-5 mb-6">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mb-6 flex justify-center">
+                <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

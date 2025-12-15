@@ -2,29 +2,29 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import friskyChocolateRollsText from "../../assets/frisky-chocolate-rolls-copy.webp";
+import friskyChocolateRollsText from "../../../public/PremiumLogos/Frisky Roll Chocolate.webp";
 import friskyChocolateRolls from "../../assets/frisky-chocolate-rolls.webp";
-import friskyHazelnutRollsText from "../../assets/frisky-hazelnut-rolls-copy.webp";
+import friskyHazelnutRollsText from "../../../public/PremiumLogos/Frisky Roll Hazelnut.webp";
 import friskyHazelnuteRolls from "../../assets/frisky-hazelnut-rolls.webp";
-import friskyMilkyRollsText from "../../assets/frisky-milky-rolls-copy.webp";
+import friskyMilkyRollsText from "../../../public/PremiumLogos/Frisky Roll Milk.webp";
 import friskyMilkyRolls from "../../assets/frisky-milky-rolls.webp";
 import Faq from "@/components/Faq";
 
 export default function FriskyRollsPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#ffbe76] pb-10">
+      <div className="relative w-full bg-[#ffbe76] pb-30">
         <Navbar />
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyChocolateRollsText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto mb-5 md:mb-0"
+            className="md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mt-6 mb-6">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
                   Rolled for the Crunch, Filled for the Crave – Chocolate That
                   Flows out like a Pure Bliss.
                 </span>
@@ -33,11 +33,11 @@ export default function FriskyRollsPage() {
                 <Image
                   src={friskyChocolateRolls}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%]"
                 />
               </div>
-              <div className="mt-5 mb-5 md:mt-15 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 mb-5 md:mt-15 md:mb-15 flex justify-center">
+                <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -71,17 +71,17 @@ export default function FriskyRollsPage() {
         </div>
       </div>
 
-      <div className="relative w-full bg-[#96ddf2] pb-10">
+      <div className="relative w-full bg-[#96ddf2] pb-30 pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyMilkyRollsText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto mb-5 md:mb-0"
+              className="md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mt-6 mb-6">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
                   Soft Creaminess in a Crisp Embrace - Milk Wafer Rolls made to
                   Soothe and Satisfy.
                 </span>
@@ -90,11 +90,11 @@ export default function FriskyRollsPage() {
                 <Image
                   src={friskyMilkyRolls}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%]"
                 />
               </div>
-              <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 mb-5 md:mt-5 md:mb-15 flex justify-center">
+                <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -126,19 +126,18 @@ export default function FriskyRollsPage() {
             </div>
           </div>
         </div>
-        <Faq productKey="frisky-rolls" />
       </div>
-      <div className="relative w-full bg-[#ffaa93] pb-10">
+      <div className="relative w-full bg-[#ffaa93] pb-30 pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyHazelnutRollsText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto mb-5 md:mb-0"
+              className="md:w-[50%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mb-6 mt-6">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
                   A Swirl of Crisp Delight, A Heart of Chocolate Hazelnut Cream
                 </span>
               </div>
@@ -146,11 +145,11 @@ export default function FriskyRollsPage() {
                 <Image
                   src={friskyHazelnuteRolls}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%]"
                 />
               </div>
-              <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 mb-5 md:mt-5 md:mb-15 flex justify-center">
+                <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -174,7 +173,9 @@ export default function FriskyRollsPage() {
             </div>
           </div>
         </div>
+        <Faq productKey="frisky-rolls" />
       </div>
+
     </div>
   );
 }

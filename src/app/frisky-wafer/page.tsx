@@ -2,31 +2,31 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import friskyWaferChocolateText from "../../assets/frisky-wafer-chocolate-copy.webp";
+import friskyWaferChocolateText from "../../../public/PremiumLogos/Frisky Wafer Chocolate.webp";
 import friskyWaferChocolate from "../../assets/frisky-wafer-chocolate.webp";
-import friskyWaferOrangeText from "../../assets/frisky-wafer-orange-copy.webp";
+import friskyWaferOrangeText from "../../../public/PremiumLogos/Frisky Wafer Orange.webp";
 import friskyWaferOrange from "../../assets/frisky-wafer-orange.webp";
-import friskyWaferVanillaText from "../../assets/frisky-wafer-vanilla-copy.webp";
+import friskyWaferVanillaText from "../../../public/PremiumLogos/Frisky Wafer Vanilla.webp";
 import friskyWaferVanilla from "../../assets/frisky-wafer-vanilla.webp";
-import friskyWaferStrawberryText from "../../assets/frisky-wafer-strawberry-copy.webp";
+import friskyWaferStrawberryText from "../../../public/PremiumLogos/Frisky Wafer Strawberry.webp";
 import friskyWaferStrawberry from "../../assets/frisky-wafer-strawberry.webp";
 import Faq from "@/components/Faq";
 
 export default function FriskyWaferPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#f7c791] pb-10">
+      <div className="relative w-full bg-[#f7c791] pb-30">
         <Navbar />
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyWaferChocolateText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto mb-5 md:mb-0"
+            className="md:w-[55%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mb-6 mt-6">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
                   Crisped to the Core, Drenched in Decadence - Every Layer Melts
                   into Pure Chocolate Bliss.
                 </span>
@@ -35,11 +35,11 @@ export default function FriskyWaferPage() {
                 <Image
                   src={friskyWaferChocolate}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%]"
                 />
               </div>
-              <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 md:mt-5 flex justify-center">
+                <table className="w-full text-center border-spacing-y-2 max-w-[900px]">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -72,17 +72,17 @@ export default function FriskyWaferPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#ffce54] pb-10">
+      <div className="relative w-full bg-[#ffce54] pb-30 pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyWaferOrangeText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto mb-5 md:mb-0"
+            className="md:w-[55%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mb-10 mt-10">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
                   Crisp Layers, Bursting with Zesty Orange - A Tangy Twist on
                   Classic Crunch.
                 </span>
@@ -91,11 +91,11 @@ export default function FriskyWaferPage() {
                 <Image
                   src={friskyWaferOrange}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%]"
                 />
               </div>
-              <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 md:mt-5 flex justify-center">
+                <table className="max-w-[900px] w-full text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -128,17 +128,17 @@ export default function FriskyWaferPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#87d9eb] pb-10">
+      <div className="relative w-full bg-[#87d9eb] pb-30 pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyWaferVanillaText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto mb-5 md:mb-0"
+            className="md:w-[55%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mb-6 mt-6">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
                   Golden Crunch, Velvety Vanilla - A Timeless Taste of Sweet
                   Simplicity.
                 </span>
@@ -147,11 +147,11 @@ export default function FriskyWaferPage() {
                 <Image
                   src={friskyWaferVanilla}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%]"
                 />
               </div>
-              <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 md:mt-5 flex justify-center">
+                <table className="w-full max-w-[900px] text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -176,31 +176,30 @@ export default function FriskyWaferPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#ffb09b] pb-10">
+      <div className="relative w-full bg-[#ffb09b] pb-30 pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyWaferStrawberryText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto mb-5 md:mb-0"
+            className="md:w-[55%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                Lush Strawberry Cream in Every Crisp Layer
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
-                  {" "}
-                  - A Wafer Worth Savoring.
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mb-6 mt-6">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem]">
+                  Lush Strawberry Cream in Every Crisp Layer - A Wafer Worth
+                  Savoring.
                 </span>
               </div>
               <div className="w-full flex justify-center">
                 <Image
                   src={friskyWaferStrawberry}
                   alt="boxes-image"
-                  className="md:w-[70%]"
+                  className="md:w-[100%]"
                 />
               </div>
-              <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 md:mt-5 flex justify-center">
+                <table className="w-full text-center border-spacing-y-2 max-w-[900px] mb-6">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

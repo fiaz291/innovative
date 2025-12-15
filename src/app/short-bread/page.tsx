@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import shortBreadText from "../../assets/short-bread-copy.webp";
+import shortBreadText from "../../../public/PremiumLogos/Short Bread.webp";
 import shortBread from "../../assets/short-bread.webp";
 import shortBreadBiscuit from "../../assets/short-bread-biscuit.webp";
 import Faq from "@/components/Faq";
@@ -10,23 +10,23 @@ import Faq from "@/components/Faq";
 export default function ShortBreadPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#ffa372] pb-10">
+      <div className="relative w-full bg-[#ffa372] pb-30">
         <Navbar />
         <Image
           src={shortBreadBiscuit}
           alt="digestive-copy"
           className="hidden md:block absolute w-[20%] left-[-4rem] md:left-[0rem] top-[40rem] bottom-0 my-auto"
         />
-        <div className="flex flex-col px-10 md:px-30 mt-0 md:mt-12">
+        <div className="flex flex-col px-10 md:px-30 mt-0 md:mt-12 mb-6">
           <Image
             src={shortBreadText}
             alt="digestive-copy"
-            className="md:w-[80%] mx-auto"
+            className="md:w-[70%] mx-auto"
           />
           <div className="flex flex-col items-center mt-5 md:mt-0 md:px-34 gap-10">
             <div className="flex flex-col items-center w-full">
-              <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold mb-6">
-                <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
+              <div className="text-lg md:text-4xl leading-4 md:leading-[2rem] text-center mb-6 mt-6">
+                <span className="text-base md:text-2xl leading-4 md:leading-[2rem] text-center">
                   Handcrafted with the Finest Butter and baked to perfection - A
                   Cookie that speaks the Language of Luxury.
                 </span>
@@ -34,10 +34,10 @@ export default function ShortBreadPage() {
               <Image
                 src={shortBread}
                 alt="boxes-image"
-                className="w-[60%] md:w-[35%] mb-5 md:mb-6"
+                className="w-[60%] md:w-[40%] mb-5 md:mb-6"
               />
-              <div className="mt-5 mb-6">
-                <table className="w-full text-center border-spacing-y-2">
+              <div className="mt-5 mb-6 flex justify-center w-full">
+                <table className="max-w-[900px] w-full text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
