@@ -3,7 +3,6 @@
 import heroImg from '../../assets/career-hero.webp';
 import Navbar from "@/components/Navbar";
 import Image from 'next/image';
-import innovationLady from '../../assets/innovation-lady.webp';
 import culture from '../../assets/hr.png';
 import { MoveRight } from 'lucide-react';
 import SearchBar from '@/components/SearchBar';
@@ -26,7 +25,7 @@ export default function CareerPage() {
               </div>
         </div>
 
-        <div className='flex flex-col p-6 md:p-12 md:p-45 text-black relative'>
+        <div className='flex flex-col p-6 md:p-12 md:px-45 text-black relative'>
             <div className='absolute mx-auto left-0 right-0 top-[-30px] w-[80%]'>
                 <SearchBar />
             </div>
@@ -35,7 +34,7 @@ export default function CareerPage() {
 
         </div>
 
-        <div className='flex flex-col-reverse md:flex-row text-white md:mb-15'>
+        {/* <div className='flex flex-col-reverse md:flex-row text-white md:mb-15'>
             <div className='flex flex-col md:w-[60%] bg-[#5899af] p-6 pl-6 md:p-15 md:pl-25 justify-center'>
                 <div className='font-black flex items-center gap-10 text-2xl md:text-5xl mb-4'>
                     Rise with Innovation
@@ -47,7 +46,7 @@ export default function CareerPage() {
                 <p className='font-normal text-base md:text-2xl mt-8'>{`We believe growth should never mean losing who you are. Bring your energy, curiosity, and unique story - and we’ll help you build skills, gain real-world experience, and rise with purpose.`}</p>
             </div>
             <Image src={innovationLady} alt='out-products-image' className='md:w-[40%]'/>
-        </div>
+        </div> */}
 
         <div className='flex flex-col md:flex-row gap-2 md:gap-8 md:px-30 text-white'>
             <div className='bg-[#94673d] px-10 pr-14 py-15 flex flex-col w-default'>

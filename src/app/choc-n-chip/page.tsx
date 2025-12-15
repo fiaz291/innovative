@@ -18,10 +18,10 @@ export default function ChocChipPage() {
                   <Image src={chocChipLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[20%] right-[0rem] md:right-[0rem] top-[-2rem] md:top-[-6rem]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[-2rem] md:bottom-[-20rem]"/>
-                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
-                    {`Chip In.\nChoc Out.`}
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                    {`Chocolatey Paradise`}
                   </div>
-                  <div className="text-base md:text-2xl text-left">{`Crunchy Edges, Gooey Chips, and that just-right Sweetness - everything you love in a chocolate chip biscuit.`}</div>
+                  <div className="text-base md:text-2xl text-left">{`Crunchy Edges, Irresistible Chips, and that just-right Sweetness - everything you love in a chocolate chip biscuit.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={chocChipBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
                   </div>
@@ -30,7 +30,7 @@ export default function ChocChipPage() {
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
-                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

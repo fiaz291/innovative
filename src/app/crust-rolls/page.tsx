@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import crustRollsChocolateLogo from '../../../public/Logos/Crust.png';
 import crustRollsChocolateBoxWrapper from '../../assets/Crust-Rolls-Chocolate-Product.png';
-import crustRollsOrgangeLogo from '../../assets/Innovative-Crust-Rolls-Orange-logo.webp';
 import crustRollsOrgangeBoxWrapper from '../../assets/Crust-Rolls-Orange-Product.png';
 import crustRollsTestimonial from '../../assets/Innovative-Crust-Rolls.webp';
 import Faq from "@/components/Faq";
@@ -17,7 +16,7 @@ export default function CrustRollsPage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
-                  <div className="mb-10 text-[2.5rem] md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Roll. Crunch.\nIndulge`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`Light, Crispy Wafer Rolls filled with Smooth, Creamy Goodness for a Crunchy, Indulgent Treat.`}</div>
@@ -29,11 +28,10 @@ export default function CrustRollsPage() {
         <div
           className="w-full bg-[#f87500] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
-                  <Image src={crustRollsOrgangeLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <div className="text-[2.5rem] md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Rolls,\nCitrus Goals.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold">{`Cream Filled Wafer Rolls`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy Wafer Rolls with Smooth, Tangy Orange Cream for a Zesty, Crunchy Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustRollsOrgangeBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
@@ -43,7 +41,7 @@ export default function CrustRollsPage() {
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
-                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

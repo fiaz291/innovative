@@ -17,7 +17,7 @@ export default function CrustWaferPage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
                   <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
-                  <div className="mb-10 text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Wafer,\nCreamy Chocolate.`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`Crispy Wafer layers filled with Smooth, Chocolatey Cream for a Crunchy, Delightful Treat.`}</div>
@@ -30,7 +30,7 @@ export default function CrustWaferPage() {
           className="w-full bg-[#ea7832] text-white pb-12 md:pb-25 ">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25">
                   <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
-                  <div className="mb-10 text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crunch With A\nCitrus Kick.`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`Crispy Wafer layers filled with a burst of Tangy Orange Cream for a Light, Refreshing Treat.`}</div>
@@ -43,7 +43,7 @@ export default function CrustWaferPage() {
           className="w-full bg-[#d26999] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
                   <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
-                  <div className="mb-10 text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Wafer,\nStrawberry Flavor.`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`Light, Crispy Wafers layered with a burst of Sweet Strawberry flavor for a Delightful Crunchy Treat.`}</div>
@@ -55,7 +55,7 @@ export default function CrustWaferPage() {
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
-                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

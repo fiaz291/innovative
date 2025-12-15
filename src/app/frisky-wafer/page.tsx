@@ -31,11 +31,18 @@ export default function FriskyWaferPage() {
                   into Pure Chocolate Bliss.
                 </span>
               </div>
+              <div className="w-full flex justify-center">
+                <Image
+                  src={friskyWaferChocolate}
+                  alt="boxes-image"
+                  className="md:w-[70%]"
+                />
+              </div>
               <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                 <table className="w-full text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
-                      <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                      <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
@@ -62,13 +69,6 @@ export default function FriskyWaferPage() {
                 </table>
               </div>
             </div>
-          </div>
-          <div className="w-full flex justify-center">
-            <Image
-              src={friskyWaferChocolate}
-              alt="boxes-image"
-              className="md:w-[70%]"
-            />
           </div>
         </div>
       </div>
@@ -87,11 +87,18 @@ export default function FriskyWaferPage() {
                   Classic Crunch.
                 </span>
               </div>
+              <div className="w-full flex justify-center">
+                <Image
+                  src={friskyWaferOrange}
+                  alt="boxes-image"
+                  className="md:w-[70%]"
+                />
+              </div>
               <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                 <table className="w-full text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
-                      <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                      <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
@@ -119,13 +126,6 @@ export default function FriskyWaferPage() {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-center">
-            <Image
-              src={friskyWaferOrange}
-              alt="boxes-image"
-              className="md:w-[70%]"
-            />
-          </div>
         </div>
       </div>
       <div className="relative w-full bg-[#87d9eb] pb-10">
@@ -138,16 +138,23 @@ export default function FriskyWaferPage() {
           <div className="flex float-left">
             <div className="md:px-28">
               <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
-                
                 <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
-                 Golden Crunch, Velvety Vanilla - A Timeless Taste of Sweet Simplicity.
+                  Golden Crunch, Velvety Vanilla - A Timeless Taste of Sweet
+                  Simplicity.
                 </span>
+              </div>
+              <div className="w-full flex justify-center">
+                <Image
+                  src={friskyWaferVanilla}
+                  alt="boxes-image"
+                  className="md:w-[70%]"
+                />
               </div>
               <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                 <table className="w-full text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
-                      <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                      <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
@@ -166,13 +173,6 @@ export default function FriskyWaferPage() {
                 </table>
               </div>
             </div>
-          </div>
-          <div className="w-full flex justify-center">
-            <Image
-              src={friskyWaferVanilla}
-              alt="boxes-image"
-              className="md:w-[70%]"
-            />
           </div>
         </div>
       </div>
@@ -192,11 +192,18 @@ export default function FriskyWaferPage() {
                   - A Wafer Worth Savoring.
                 </span>
               </div>
+              <div className="w-full flex justify-center">
+                <Image
+                  src={friskyWaferStrawberry}
+                  alt="boxes-image"
+                  className="md:w-[70%]"
+                />
+              </div>
               <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                <table className="w-full md:w-[70%] text-center border-spacing-y-2">
+                <table className="w-full text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
-                      <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                      <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
@@ -223,13 +230,6 @@ export default function FriskyWaferPage() {
                 </table>
               </div>
             </div>
-          </div>
-          <div className="w-full flex justify-center">
-            <Image
-              src={friskyWaferStrawberry}
-              alt="boxes-image"
-              className="md:w-[70%]"
-            />
           </div>
         </div>
         <Faq productKey="frisky-wafer" />

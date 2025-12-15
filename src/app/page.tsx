@@ -4,7 +4,6 @@ import CookieCarousel from "@/components/CookieCrousal";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import innovationLab from "../assets/innovation-lab.webp";
-import media from "../assets/media.png";
 import hr from "../assets/sustainbility.png";
 import careers from "../assets/careers.png";
 import { MoveRight } from "lucide-react";
@@ -105,18 +104,20 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-10 p-0 md:p-15 my-15">
-        <InfoContainer
+      <div className="flex flex-col md:flex-row gap-10 p-0 md:p-15 my-15 md:mb-25">
+        {/* <InfoContainer
           image={media}
           title="Media Resources"
           description="For Media & Press Inquiries"
           route="/coming-soon"
-        />
+        /> */}
         <InfoContainer
           image={hr}
           title="Sustainability"
           description="Growth with Responsibility"
           route="/sustainability"
+          fullWidth
+          isCover
         />
       </div>
 

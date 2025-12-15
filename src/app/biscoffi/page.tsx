@@ -34,11 +34,18 @@ export default function BiscoffiPage() {
               <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
                 <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">{`Brewed to be Eaten - Artisan Crackers Infused with Rich Coffee Notes, toasted to a Delicate, Satisfying Crisp.`}</span>
               </div>
+              <div className="w-full flex justify-center">
+                <Image
+                  src={biscoffi}
+                  alt="boxes-image"
+                  className="md:w-[70%] md:px-20"
+                />
+              </div>
               <div className="mt-5 mb-5 md:mt-5 md:mb-15">
                 <table className="w-full text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
-                      <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                      <td className="px-2 md:px-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
@@ -57,13 +64,6 @@ export default function BiscoffiPage() {
                 </table>
               </div>
             </div>
-          </div>
-          <div className="w-full flex justify-center">
-            <Image
-              src={biscoffi}
-              alt="boxes-image"
-              className="md:w-[70%] md:px-20"
-            />
           </div>
         </div>
         <Faq productKey="biscoffi" />

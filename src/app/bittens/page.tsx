@@ -19,7 +19,7 @@ export default function BittensPage() {
                   <Image src={bittensLogo} alt='digestive-copy' className="w-[33%] md:w-[20%]"/>
                   <Image src={bittensChocolate2} alt='digestive-copy' className="absolute w-[25%] md:w-[15%] right-[0rem] top-[-2rem] md:top-[0rem]"/>
                   <Image src={bittensChocolate1} alt='digestive-copy' className="hidden md:block absolute w-[15%] left-[0rem] bottom-[8rem] md:bottom-[-7rem]"/>
-                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Smooth Milk\nChocolate`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`The Chocolate Bar that brings Joy in every bite.`}</div>
@@ -31,7 +31,7 @@ export default function BittensPage() {
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
-                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

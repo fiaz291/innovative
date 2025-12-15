@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import charmLogo from '../../../public/Logos/charm.png';
 import charmBoxWrapper from '../../assets/Charm-Product.png';
-import charmTestimonial from '../../assets/Innovative-Charm-Image.webp';
+import charmTestimonial from '../../assets/Charm-Model.png';
 import charmBiscuit from '../../assets/Innovative-Charm-Biscuit.webp';
 import Faq from "@/components/Faq";
 
@@ -18,7 +18,7 @@ export default function CharmPage() {
                   <Image src={charmLogo} alt='digestive-copy' className="w-[36%] md:w-[20%]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[20%] right-[0rem] md:right-[0rem] top-[-1rem] md:top-[-3rem]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[8rem] md:bottom-[-20rem] rorate-[-35deg]"/>
-                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Filled With\nPure Joy.`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`Baked with Love, filled with Joy - Chocolate at the heart of every cookie.`}</div>
@@ -30,7 +30,7 @@ export default function CharmPage() {
                           <table className="w-full text-center border-spacing-y-2 text-white">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
-                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

@@ -21,7 +21,7 @@ export default function DigestivePage() {
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-3rem] top-[-5rem] md:top-[-1rem]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] md:w-[15%] left-[0rem] md:left-[0rem] bottom-[12rem] md:bottom-[-24rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] right-[-1rem] md:right-[-2rem] bottom-[-5rem] rotate-[150deg]"/>
-                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Taste the\nGoodness.`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with Whole Wheat and Brown Sugar, delivering Natural Goodness in every bite for a Satisfying, Guilt-Free Treat.`}</div>
@@ -33,7 +33,7 @@ export default function DigestivePage() {
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
-                                <td className="pr-2 md:pr-0 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

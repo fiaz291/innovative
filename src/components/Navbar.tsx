@@ -98,8 +98,6 @@ export default function Navbar({
               src={
                 isPremium
                   ? premiumLogo
-                  : isTransparentBg || showMegaNav
-                  ? logoDark
                   : logo
               }
               alt="Logo"

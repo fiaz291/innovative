@@ -73,7 +73,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="flex flex-col my-15 md:m-30">
+      {/* <div className="flex flex-col my-15 md:m-30">
         <div className="text-3xl md:text-6xl whitespace-pre-line text-center font-black">
           Our Mission
         </div>
@@ -85,9 +85,9 @@ export default function LandingPage() {
           Innovation is our compass - guiding us to reimagine the ordinary
           through bold, responsible, and visionary thinking.
         </p>
-      </div>
+      </div> */}
 
-      <div className="mt-15 mb-0 md:mb-25 text-white">
+      {/* <div className="mt-15 mb-0 md:mb-25 text-white">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-[40%] bg-[#123a5e] p-6 md:p-12 flex items-center">
             <p className="text-xl md:text-4xl font-black">{`Agile Thinking`}</p>
@@ -134,7 +134,7 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <LearnMore />
     </div>

@@ -2,7 +2,6 @@
 "use client";
 import React, { useState } from "react";
 import {
-  Search,
   FileText,
   // Ticket,
   // MessageSquare,
@@ -32,7 +31,6 @@ const FAQ_ITEMS = [
 ];
 export default function Faq({
   items,
-  isWhite = false,
   productKey,
 }: {
   items?: { icon: React.ReactNode; label: string; answer: string }[];
@@ -41,8 +39,8 @@ export default function Faq({
 }) {
   return (
     <div className="flex justify-center px-5">
-      <div className="w-full max-w-[500px]">
-        <div className="flex items-center justify-between border-b-2 border-white pb-2 mb-4">
+      <div className="w-full max-w-[700px]">
+        {/* <div className="flex items-center justify-between border-b-2 border-white pb-2 mb-4">
           <h2
             className={`text-lg font-semibold ${
               isWhite ? "text-white" : "text-gray-700"
@@ -51,14 +49,14 @@ export default function Faq({
             Search for answers
           </h2>
           <div className="flex items-center gap-3">
-            {/* <Mic
+            <Mic
             className={`w-5 h-5 ${isWhite ? "text-white" : "text-gray-700"}`}
-          /> */}
+          />
             <Search
               className={`w-5 h-5 ${isWhite ? "text-white" : "text-gray-700"}`}
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="bg-white rounded-xl shadow-sm p-6 md:p-10 space-y-3">
           {(items && items.length ? items : FAQ_ITEMS).map((item, idx) => (

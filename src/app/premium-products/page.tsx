@@ -1,5 +1,5 @@
 'use client';
-import heroImg from '../../assets/premium-products-hero.webp';
+import heroImg from '../../assets/Premium-Products.webp';
 import Navbar from "@/components/Navbar";
 import Image from 'next/image';
 import { MoveRight } from 'lucide-react';

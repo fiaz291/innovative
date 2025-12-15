@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import goodiesLogo from "../../../public/Logos/Goodies.png";
 import goodiesLemonBoxWrapper from "../../assets/Goodies-Lemon-Product.png";
-import goodiesTestimonial from "../../assets/Innovative-Goodies-Image.webp";
+import goodiesTestimonial from "../../assets/Goodies-Model.png";
 import goodiesBiscuit from "../../assets/goodies-biscuit.webp";
 import Faq from "@/components/Faq";
 
@@ -29,10 +29,10 @@ export default function GoodiesPage() {
             alt="digestive-copy"
             className="block md:hidden absolute w-[25%] my-auto right-[0rem] md:right-[0rem] top-[2rem] rotate-[60deg]"
           />
-          <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+          <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
             {`Classic Taste,\nFresh Goodness.`}
           </div>
-          <div className="text-base md:text-2xl text-left">{`Crisp Elegance with a Citrus Twist - the Luxury of Lemon, Egg, and Milk in every Golden Bite.`}</div>
+          <div className="text-base md:text-2xl text-left">{`Crisp Elegance with a Lemon Twist - the Luxury of Lemon, Egg, and Milk in every Golden Bite.`}</div>
           <div className="flex mt-5 md:mt-10">
             <Image
               src={goodiesLemonBoxWrapper}
@@ -45,7 +45,7 @@ export default function GoodiesPage() {
               <table className="w-full text-center border-spacing-y-2 text-white">
                 <thead>
                   <tr className="text-[10px] md:text-xl border-b-1">
-                    <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                    <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                     <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                     <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                     <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

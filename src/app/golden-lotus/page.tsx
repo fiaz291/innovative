@@ -28,19 +28,26 @@ export default function GoldenLotusPage() {
             alt="digestive-copy"
             className="w-full md:w-[80%] mt-[-20px] md:mt-[-50px]"
           />
-          <div className="flex">
+          <div className="flex mt-[-20px] md:mt-[-50px]">
             <div className="md:px-28">
               <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold">
                 <span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">
-                  Steeped in Tradition, Perfected for today - Premium Lotus
+                  Steeped in Tradition, Perfected for today - Premium Caramel
                   Biscuits that honor Classic Caramelized taste
                 </span>
               </div>
-              <div className="mt-5">
+              <div className="w-full flex justify-center">
+                <Image
+                  src={goldenLotus}
+                  alt="boxes-image"
+                  className="md:w-[70%]"
+                />
+              </div>
+              <div className="mt-5 mb-6">
                 <table className="w-full text-center border-spacing-y-2">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
-                      <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                      <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                       <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
@@ -59,9 +66,6 @@ export default function GoldenLotusPage() {
                 </table>
               </div>
             </div>
-          </div>
-          <div className="w-full flex justify-center">
-            <Image src={goldenLotus} alt="boxes-image" className="md:w-[70%]" />
           </div>
         </div>
         <Faq productKey="golden-lotus" />

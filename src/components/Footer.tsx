@@ -52,9 +52,10 @@ export default function Footer() {
             {[
               { label: "Who We Are", link: "/about-us" },
               { label: "Export", link: "/export" },
+              { label: "Ads and Campaigns", link: "/ads-campaigns" },
               { label: "Innovation Lab", link: "/innovation-lab" },
-              { label: "Recipes", link: "/coming-soon" },
-              { label: "Our Impact", link: "/sustainability" },
+              // { label: "Recipes", link: "/coming-soon" },
+              // { label: "Careers", link: "/careers" },
               { label: "Careers", link: "/careers" },
             ].map((item, index) => (
               <div

@@ -18,7 +18,7 @@ export default function SnappPage() {
                   <Image src={snappLogo} alt='digestive-copy' className="w-[43%] md:w-[23%]"/>
                   <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[35%] md:w-[20%] right-[0rem] md:right-[0rem]"/>
                   <Image src={snappBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[8rem] md:bottom-[-8rem] scale-x-[-1] rotate-[-15deg]"/>
-                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Indulge In\nEvery Snapp.`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`A Light Crispy Wafer filled with Smooth Cream and wrapped in Rich, Indulgent Chocolate for the Perfect Crunchy Bite.`}</div>
@@ -30,7 +30,7 @@ export default function SnappPage() {
                           <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
-                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

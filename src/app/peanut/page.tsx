@@ -18,7 +18,7 @@ export default function PeanutPage() {
                   <Image src={peanutLogo} alt='digestive-copy' className="w-[40%] md:w-[22%]"/>
                   <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[15%] right-[0rem] md:right-[0rem] top-0 md:top-[8rem]"/>
                   <Image src={peanutBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[15%] left-[0rem] md:left-[0rem] bottom-[12rem] md:bottom-[-24rem]"/>
-                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crunchy Peanut\nBliss.`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`Crunchy Biscuits loaded with the Rich Flavor of Roasted Peanuts for a Nutty Treat in every bite.`}</div>
@@ -30,7 +30,7 @@ export default function PeanutPage() {
                           <table className="w-full text-center border-spacing-y-2 text-black">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
-                                <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                                <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
                                 <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>

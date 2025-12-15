@@ -79,7 +79,7 @@ export default function InnovationLabgPage() {
         </div>
 
 
-        <LearnMore />
+        
         <div className="flex flex-col items-center my-10 md:my-25">
           <p className="text-black font-black text-2xl md:text-6xl">
             Certified For Excellence
@@ -119,6 +119,7 @@ export default function InnovationLabgPage() {
             </div>
           </div>
         </div>
+        <LearnMore />
       </div>
     );
   }
