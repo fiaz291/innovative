@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import jumboJuniorLogo from '../../assets/Innovative-Jumbo-Junior.webp';
+import jumboJuniorLogo from '../../../public/Logos/Junbo-Junior.png';
 import jumboJuniorBoxWrapper from '../../assets/Jumbo-Junior-Product.png';
 import jumboJuniorTestimonial from '../../assets/Innovative-Jumbo-Junior-imagr.webp';
 import jumboJuniorBiscuit from '../../assets/Innovative-Jumbo-Junior-Biscuits.webp';
@@ -15,13 +15,12 @@ export default function JumboJuniorPage() {
           className="w-full bg-[#2090b8] text-white">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={jumboJuniorLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-2rem] md:right-[-5rem] top-[-2rem] md:top-[-6rem]"/>
-                  <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[20%] left-[-2rem] md:left-[-6rem] bottom-[10rem] md:bottom-[20rem] rotate-[-55deg]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={jumboJuniorLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
+                  <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] right-[0rem] md:right-[0rem] top-[-2rem] md:top-[-6rem]"/>
+                  <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[10rem] md:bottom-[20rem] rotate-[-55deg]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Strong, Smart,\nAnd Super Fun!`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Energy Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Wholesome, Crunchy Biscuits packed with energy to keep kids Active, Strong, and Smiling all day.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={jumboJuniorBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

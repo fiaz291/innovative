@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import goodiesLogo from "../../assets/Innovative-Goodies.webp";
+import goodiesLogo from "../../../public/Logos/Goodies.png";
 import goodiesLemonBoxWrapper from "../../assets/Goodies-Lemon-Product.png";
 import goodiesTestimonial from "../../assets/Innovative-Goodies-Image.webp";
 import goodiesBiscuit from "../../assets/goodies-biscuit.webp";
@@ -17,17 +17,21 @@ export default function GoodiesPage() {
           <Image
             src={goodiesLogo}
             alt="digestive-copy"
-            className="w-[50%] md:w-[30%]"
+            className="w-[45%] md:w-[25%]"
           />
           <Image
             src={goodiesBiscuit}
             alt="digestive-copy"
-            className="absolute w-[25%] my-auto left-[-2rem] md:left-[-12rem] bottom-0 top-[10rem] rotate-[60deg]"
+            className="hidden md:block absolute w-[16%] my-auto left-[0rem] md:left-[0rem] bottom-0 top-[10rem] rotate-[60deg]"
           />
-          <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+           <Image
+            src={goodiesBiscuit}
+            alt="digestive-copy"
+            className="block md:hidden absolute w-[25%] my-auto right-[0rem] md:right-[0rem] top-[2rem] rotate-[60deg]"
+          />
+          <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
             {`Classic Taste,\nFresh Goodness.`}
           </div>
-          <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Egg & Milk Biscuits`}</div>
           <div className="text-base md:text-2xl text-left">{`Crisp Elegance with a Citrus Twist - the Luxury of Lemon, Egg, and Milk in every Golden Bite.`}</div>
           <div className="flex mt-5 md:mt-10">
             <Image

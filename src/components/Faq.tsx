@@ -40,35 +40,37 @@ export default function Faq({
   productKey: string;
 }) {
   return (
-    <div className="mx-5 md:mx-70 md:py-4 md:px-40">
-      <div className="flex items-center justify-between border-b-2 border-white pb-2 mb-4">
-        <h2
-          className={`text-lg font-semibold ${
-            isWhite ? "text-white" : "text-gray-700"
-          }`}
-        >
-          Search for answers
-        </h2>
-        <div className="flex items-center gap-3">
-          {/* <Mic
+    <div className="flex justify-center px-5">
+      <div className="w-full max-w-[500px]">
+        <div className="flex items-center justify-between border-b-2 border-white pb-2 mb-4">
+          <h2
+            className={`text-lg font-semibold ${
+              isWhite ? "text-white" : "text-gray-700"
+            }`}
+          >
+            Search for answers
+          </h2>
+          <div className="flex items-center gap-3">
+            {/* <Mic
             className={`w-5 h-5 ${isWhite ? "text-white" : "text-gray-700"}`}
           /> */}
-          <Search
-            className={`w-5 h-5 ${isWhite ? "text-white" : "text-gray-700"}`}
-          />
+            <Search
+              className={`w-5 h-5 ${isWhite ? "text-white" : "text-gray-700"}`}
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="bg-white rounded-xl shadow-sm p-6 md:p-10 space-y-3">
-        {(items && items.length ? items : FAQ_ITEMS).map((item, idx) => (
-          <HelpItem
-            productKey={productKey}
-            key={idx}
-            icon={item.icon}
-            label={item.label}
-            answer={item.answer}
-          />
-        ))}
+        <div className="bg-white rounded-xl shadow-sm p-6 md:p-10 space-y-3">
+          {(items && items.length ? items : FAQ_ITEMS).map((item, idx) => (
+            <HelpItem
+              productKey={productKey}
+              key={idx}
+              icon={item.icon}
+              label={item.label}
+              answer={item.answer}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -136,7 +138,7 @@ function NutritionTable({ nutrients }: { nutrients: any }) {
       <tbody>
         {Object.entries(nutrients).map(([key, value]: any) => {
           if (key === "name") return null;
-          
+
           return (
             <tr key={key} className="border-b">
               <td className="p-2 border capitalize">{value.name}</td>

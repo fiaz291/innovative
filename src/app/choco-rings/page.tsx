@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import chocoRingsLogo from '../../assets/Innovative-Choco-Rings-logo.webp';
+import chocoRingsLogo from '../../../public/Logos/Choco-Rings.png';
 import chocoRingsBoxWrapper from '../../assets/Choco-Rings-Product.png';
 import chocoRingsTestimonial from '../../assets/Innovative-Choco-Rings.webp';
 import chocoRingsBiscuit from '../../assets/Innovative-Choco-Rings-Product.webp';
@@ -15,14 +15,13 @@ export default function ChocoRingsPage() {
           className="w-full bg-[#8d664f] text-[#dfdab8]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={chocoRingsLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[4rem] top-[-2rem] md:top-[-6rem]"/>
-                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-3rem] md:left-[-12rem] bottom-[-2rem] md:bottom-[-16rem]"/>
-                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-2rem] top-[20rem]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={chocoRingsLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
+                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[15%] right-[0rem] md:right-[4rem] top-[-2rem] md:top-[-6rem]"/>
+                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[15%] left-[0rem] md:left-[0rem] bottom-[-2rem] md:bottom-[-16rem]"/>
+                  <Image src={chocoRingsBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[10%] left-[0rem] md:left-[0rem] top-[20rem]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`A Perfect\nChoco Circle.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits Coated with Indulging Chocolate`}</div>
                   <div className="text-base md:text-2xl text-left">{`Delicious Biscuits coated in Rich, Indulgent Chocolate for a Perfectly Sweet Crunchy Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={chocoRingsBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

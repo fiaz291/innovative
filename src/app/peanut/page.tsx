@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import peanutLogo from '../../assets/Innovative-Peanut.webp';
+import peanutLogo from '../../../public/Logos/Peanut.png';
 import peanutBoxWrapper from '../../assets/Peanut-Product.png';
 import peanutTestimonial from '../../assets/Innovative-Peanut-iamge.webp';
 import peanutBiscuit from '../../assets/Innovative-Peanut-Biscuit.webp';
@@ -15,13 +15,12 @@ export default function PeanutPage() {
           className="w-full bg-[#66c9c7] text-[#064c5e]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={peanutLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-2rem] md:right-[-14rem] top-0 md:top-[8rem]"/>
-                  <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-4rem] md:left-[-16rem] bottom-[12rem] md:bottom-[-24rem]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={peanutLogo} alt='digestive-copy' className="w-[40%] md:w-[22%]"/>
+                  <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[15%] right-[0rem] md:right-[0rem] top-0 md:top-[8rem]"/>
+                  <Image src={peanutBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[15%] left-[0rem] md:left-[0rem] bottom-[12rem] md:bottom-[-24rem]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crunchy Peanut\nBliss.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Biscuits With Roasted Peanuts`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crunchy Biscuits loaded with the Rich Flavor of Roasted Peanuts for a Nutty Treat in every bite.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={peanutBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

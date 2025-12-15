@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import crustChocolateLogo from '../../assets/Innovative-Crust.webp';
+import crustChocolateLogo from '../../../public/Logos/Crust.png';
 import crustOrgangeLogo from '../../assets/Innovative-Crust3.webp';
 import crustStrawberryLogo from '../../assets/Innovative-Crust2.webp';
 import crustTestimonial from '../../assets/Innovative-Crust-image.webp';
@@ -18,11 +18,10 @@ export default function CrustWaferPage() {
           className="w-full bg-[#ab8150] text-white pb-12 md:pb-25 ">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
-                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <div className="text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <div className="mb-10 text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Wafer,\nCreamy Chocolate.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy Wafer layers filled with Smooth, Chocolatey Cream for a Crunchy, Delightful Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustChocolateBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
@@ -32,11 +31,10 @@ export default function CrustWaferPage() {
         <div
           className="w-full bg-[#ea7832] text-white pb-12 md:pb-25 ">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25">
-                  <Image src={crustOrgangeLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <div className="text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <div className="mb-10 text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crunch With A\nCitrus Kick.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crispy Wafer layers filled with a burst of Tangy Orange Cream for a Light, Refreshing Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustOrangeBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
@@ -46,11 +44,10 @@ export default function CrustWaferPage() {
         <div
           className="w-full bg-[#d26999] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
-                  <Image src={crustStrawberryLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <div className="text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <div className="mb-10 text-3xl md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Wafer,\nStrawberry Flavor.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold">{`Crispy Creamy Wafers`}</div>
                   <div className="text-base md:text-2xl text-left">{`Light, Crispy Wafers layered with a burst of Sweet Strawberry flavor for a Delightful Crunchy Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustStrawberryBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

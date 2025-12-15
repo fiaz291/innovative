@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import snappLogo from '../../assets/Innovative-Snapp.webp';
+import snappLogo from '../../../public/Logos/Snapp.png';
 import snappBoxWrapper from '../../assets/Snapp-Product.png';
 import snappTestimonial from '../../assets/Innovative-Snapp-image.webp';
 import snappBiscuit from '../../assets/Innovative-Snapp-Biscuit.webp';
@@ -15,13 +15,12 @@ export default function SnappPage() {
           className="w-full bg-[#2a5b94] text-white">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={snappLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-2rem] md:right-[-5rem]"/>
-                  <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-3rem] md:left-[-8rem] bottom-[8rem] md:bottom-[-8rem] scale-x-[-1] rotate-[-15deg]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={snappLogo} alt='digestive-copy' className="w-[43%] md:w-[23%]"/>
+                  <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[35%] md:w-[20%] right-[0rem] md:right-[0rem]"/>
+                  <Image src={snappBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[8rem] md:bottom-[-8rem] scale-x-[-1] rotate-[-15deg]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Indulge In\nEvery Snapp.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Creamy Wafer Coated With Indulging Chocolate`}</div>
                   <div className="text-base md:text-2xl text-left">{`A Light Crispy Wafer filled with Smooth Cream and wrapped in Rich, Indulgent Chocolate for the Perfect Crunchy Bite.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={snappBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

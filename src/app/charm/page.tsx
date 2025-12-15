@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import charmLogo from '../../assets/Innovative-Charm.webp';
+import charmLogo from '../../../public/Logos/charm.png';
 import charmBoxWrapper from '../../assets/Charm-Product.png';
 import charmTestimonial from '../../assets/Innovative-Charm-Image.webp';
 import charmBiscuit from '../../assets/Innovative-Charm-Biscuit.webp';
@@ -15,13 +15,12 @@ export default function CharmPage() {
           className="w-full bg-[#992c2c] text-[#ffd879]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={charmLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] right-[-1rem] md:right-[-3rem] top-[-1rem] md:top-[-3rem]"/>
-                  <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-4rem] md:left-[-11rem] bottom-[8rem] md:bottom-[-20rem] rorate-[-35deg]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={charmLogo} alt='digestive-copy' className="w-[36%] md:w-[20%]"/>
+                  <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[20%] right-[0rem] md:right-[0rem] top-[-1rem] md:top-[-3rem]"/>
+                  <Image src={charmBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[8rem] md:bottom-[-20rem] rorate-[-35deg]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Filled With\nPure Joy.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Chocolate Filled Delicious Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Baked with Love, filled with Joy - Chocolate at the heart of every cookie.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={charmBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import crustRollsChocolateLogo from '../../assets/Innovative-Crust-Rolls-Chocolate-logo.webp';
+import crustRollsChocolateLogo from '../../../public/Logos/Crust.png';
 import crustRollsChocolateBoxWrapper from '../../assets/Crust-Rolls-Chocolate-Product.png';
 import crustRollsOrgangeLogo from '../../assets/Innovative-Crust-Rolls-Orange-logo.webp';
 import crustRollsOrgangeBoxWrapper from '../../assets/Crust-Rolls-Orange-Product.png';
@@ -16,11 +16,10 @@ export default function CrustRollsPage() {
           className="w-full bg-[#faa92a] text-[#683410] pb-12 md:pb-25 ">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
-                  <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <div className="text-[2.5rem] md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[7rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Roll. Crunch.\nIndulge`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Cream Filled Wafer Rolls`}</div>
                   <div className="text-base md:text-2xl text-left">{`Light, Crispy Wafer Rolls filled with Smooth, Creamy Goodness for a Crunchy, Indulgent Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={crustRollsChocolateBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

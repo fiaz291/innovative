@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import zeeraLogo from '../../assets/Innovative-Zeera.png';
+import zeeraLogo from '../../../public/Logos/Zeera.png';
 import zeeraBoxWrapper from '../../assets/Zeera-Product.png';
 import zeeraTestimonial from '../../assets/innovative-zeera-image.webp';
 import zeeraBiscuit from '../../assets/innovative-zeera-biscuit.webp';
@@ -15,13 +15,12 @@ export default function ZeeraPage() {
           className="w-full bg-[#bdaaa6] text-[#7e3f1e]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={zeeraLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[18%] right-[-2rem] md:right-[-4rem]"/>
-                  <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-4rem] md:left-[-12rem] bottom-[12rem] md:bottom-[-24rem]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={zeeraLogo} alt='digestive-copy' className="w-[43%] md:w-[23%]"/>
+                  <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[18%] right-[0rem] md:right-[0rem]"/>
+                  <Image src={zeeraBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[18%] left-[0rem] md:left-[0rem] bottom-[12rem] md:bottom-[-24rem]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crisp With\nA Cumin Kick.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Tasty Salty Biscuits with Cumin Seeds`}</div>
                   <div className="text-base md:text-2xl text-left">{`Crafted with Hand-Roasted Cumin Seeds and Golden-Baked to Perfection — A Biscuit where Flavor meets Finesse.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={zeeraBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

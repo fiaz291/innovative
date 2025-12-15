@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import tooGudLogo from '../../assets/Innovative-TooGud.webp';
+import tooGudLogo from '../../../public/Logos/TooGud.png';
 import toooGudBoxWrapper from '../../assets/ToooGud-Product.png';
 import tooGudTestimonial from '../../assets/innovative-toogud-image.webp';
 import tooGudBiscuit from '../../assets/toogud-cookie.webp';
@@ -15,13 +15,12 @@ export default function ToooGudPage() {
           className="w-full bg-[#e7ad72] text-[#7f1438]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={tooGudLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[20%] right-[-2rem] md:right-[-5rem] top-[-2rem] md:top-[-5rem]"/>
-                  <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[25%] left-[-2rem] md:left-[-12rem] bottom-[15rem] md:bottom-0 rotate-[113deg]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={tooGudLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
+                  <Image src={tooGudBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] right-[0rem] md:right-[0rem] top-[-2rem] md:top-[-5rem]"/>
+                  <Image src={tooGudBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[15rem] md:bottom-0 rotate-[113deg]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Tooo Good\nTo Share!`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Rich Egg & Milk Cookies`}</div>
                   <div className="text-base md:text-2xl text-left">{`Tooo Gud combines the Goodness of Eggs and Milk for a Melt-In-Your-Mouth Cookie Experience.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={toooGudBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

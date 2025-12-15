@@ -7,10 +7,8 @@ import digestiveText from "../../assets/digestive-original.png";
 import sugarFreeText from "../../assets/sugar-free-text.png";
 import wheat from "../../assets/wheat.webp";
 import singleWheat from "../../assets/single-wheat.webp";
-import digestiveBigBox from "../../assets/Digestive-Original-Product.png";
-import digestiveSmallPack from "../../assets/Digestive-Original-small-pack.webp";
-import digestiveSugerFreeBigBox from "../../assets/Digestive-Sugar-Free-Product.png";
-import digestiveSugerFreeSmallPack from "../../assets/Digestive-Sugar-Free-small-pack.webp";
+import digestiveBigBox from "../../assets/Digestive-Premuim-Combined.png";
+import digestiveSugerFreeBigBox from "../../assets/Digestive-Premium-Sugar-Free-Combined.png";
 import Faq from "@/components/Faq";
 
 export default function DigestivePremiumPage() {
@@ -27,7 +25,7 @@ export default function DigestivePremiumPage() {
           <Image
             src={biscuit}
             alt="biscuit"
-            className="absolute w-[22%] top-0 right-[-50px] md:right-[-140px]"
+            className="absolute w-[20%] top-0 right-[0px] md:right-[0px]"
           />
           <Image
             src={wheat}
@@ -39,8 +37,8 @@ export default function DigestivePremiumPage() {
             alt="wheat-image"
             className="absolute w-[40%] top-[205px] md:top-0 md:bottom-0 md:my-auto right-[-100px] md:right-[-300px]"
           />
-          <div className="relative flex flex-col md:flex-row mt-5 md:mt-20">
-            <div className="md:pl-28 z-10 mb-5 md:mb-0">
+          <div className="relative flex flex-col items-center mt-5 md:mt-20">
+            <div className="md:pl-28 z-10 mb-5 md:mb-0 w-[80%]">
               <div className="text-lg md:text-4xl leading-5 md:leading-[2.5rem] text-center md:text-left font-semibold">{`Simple Goodness, Perfectly Baked`}</div>
               <div className="text-base md:text-2xl leading-5 md:leading-[2.5rem] text-center md:text-left">{`A Wholesome Digestive Biscuit Crafted with Whole Wheat, Natural Sweetness, and Satisfying Subtle Crunch.`}</div>
               <div className="mt-5">
@@ -74,16 +72,13 @@ export default function DigestivePremiumPage() {
                 </table>
               </div>
             </div>
-            <Image
-              src={digestiveBigBox}
-              alt="boxes-image"
-              className="ml-10 md:ml-0 w-[70%] md:w-[40%]"
-            />
-            <Image
-              src={digestiveSmallPack}
-              alt="boxes-image"
-              className="absolute w-[60%] md:w-[30%] bottom-[-20px] md:bottom-[-50px] right-[8rem] md:right-[11rem]"
-            />
+            <div className="relative flex justify-center mt-2 md:mt-5  md:ml-[-0%]">
+              <Image
+                src={digestiveBigBox}
+                alt="boxes-image"
+                className="ml-10 md:ml-0 w-[80%] md:w-[80%]"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -97,7 +92,7 @@ export default function DigestivePremiumPage() {
           <Image
             src={biscuit}
             alt="original-image"
-            className="absolute w-[20%] top-[1rem] md:top-[2rem] right-[-1.5rem] md:right-[-7rem]"
+            className="absolute w-[20%] top-[1rem] md:top-[2rem] right-[0rem] md:right-[0rem]"
           />
           <Image
             src={biscuit}
@@ -114,8 +109,8 @@ export default function DigestivePremiumPage() {
             alt="wheat-image"
             className="absolute w-[40%] top-[270px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"
           />
-          <div className="relative flex flex-col md:flex-row mt-5 mb-10 md:mt-0">
-            <div className="md:pl-28 mb-5 md:mb-0">
+          <div className="relative flex flex-col items-center mt-5 mb-10 md:mt-0">
+            <div className="md:pl-28 mb-5 md:mb-0 w-[80%]">
               <div className="text-lg md:text-4xl leading-5 md:leading-[2.5rem] text-center md:text-left font-semibold">{`Healthy Snacking, Elevated`}</div>
               <div className="text-base md:text-2xl leading-5 md:leading-[2.5rem] text-center md:text-left">{`Whole Wheat Digestives without Sugar, Designed for Taste and Wellness in every bite.`}</div>
               <div className="mt-5">
@@ -149,16 +144,13 @@ export default function DigestivePremiumPage() {
                 </table>
               </div>
             </div>
-            <Image
-              src={digestiveSugerFreeBigBox}
-              alt="boxes-image"
-              className="ml-10 md:ml-0 w-[70%] md:w-[40%]"
-            />
-            <Image
-              src={digestiveSugerFreeSmallPack}
-              alt="boxes-image"
-              className="absolute w-[60%] md:w-[30%] bottom-[-20px] md:bottom-[-50px] right-[8rem] md:right-[11rem]"
-            />
+            <div className="relative flex justify-center mt-2 md:mt-5  md:ml-[-0%]">
+              <Image
+                src={digestiveSugerFreeBigBox}
+                alt="boxes-image"
+                className="ml-10 md:ml-0 w-[80%] md:w-[80%]"
+              />
+            </div>
           </div>
         </div>
         <Faq productKey="digestive-premium" />

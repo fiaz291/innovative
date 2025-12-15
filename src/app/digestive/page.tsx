@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import digestiveLogo from '../../assets/innovative-digestive-logo.png';
+import digestiveLogo from '../../../public/Logos/Digestive.png';
 import digestiveBoxWrapper from '../../assets/boxWrapper.png';
 import digestiveTestimonial from '../../assets/Innovative-Digestiveimage.png';
 import innovativeBiscuit from '../../assets/innovative-biscuit.webp';
@@ -17,14 +17,13 @@ export default function DigestivePage() {
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
                   <Image src={digestiveLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] right-[-3rem] md:right-[-6rem]"/>
+                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[20%] md:w-[15%] right-[0rem] md:right-[0rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-3rem] top-[-5rem] md:top-[-1rem]"/>
-                  <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] left-[-5rem] md:left-[-10rem] bottom-[12rem] md:bottom-[-24rem]"/>
+                  <Image src={innovativeBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] md:w-[15%] left-[0rem] md:left-[0rem] bottom-[12rem] md:bottom-[-24rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] right-[-1rem] md:right-[-2rem] bottom-[-5rem] rotate-[150deg]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Taste the\nGoodness.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Delicious Wheat Biscuits`}</div>
                   <div className="text-base md:text-2xl text-left">{`Experience the art of mindful snacking with Innovative Digestive Biscuits — thoughtfully crafted with Whole Wheat and Brown Sugar, delivering Natural Goodness in every bite for a Satisfying, Guilt-Free Treat.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={digestiveBoxWrapper} alt='digestive-box' className="w-full relative left-[-25px] md:left-[-65px]"/>

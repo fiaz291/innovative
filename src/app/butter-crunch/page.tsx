@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import butterCrunchLogo from '../../assets/Innovative-Butter-Crunch-logo.webp';
+import butterCrunchLogo from '../../../public/Logos/Butter-Crundh.png';
 import butterCrunchBoxWrapper from '../../assets/Butter-Crunch-Product.png';
 import butterCrunchTestimonial from '../../assets/Innovative-Butter-Crunch-Image.webp';
 import butterCrunchButter from '../../assets/butter-crunch-butter.webp';
@@ -16,14 +16,13 @@ export default function ButterCrunchPage() {
           className="w-full bg-[#febe56] text-[#8b0304]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={butterCrunchLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] right-[-2rem] md:right-[-7rem] top-[-5rem]"/>
-                  <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[30%] left-[-2rem] md:left-[-10rem] bottom-[-3.5rem] md:bottom-[-18rem]"/>
-                  <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[15%] right-[-1rem] md:right-[-2rem] bottom-[5rem]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={butterCrunchLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
+                  <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[35%] md:w-[25%] right-[0rem] md:right-[0rem] top-[-2rem] md:top-[-5rem]"/>
+                  <Image src={butterCrunchBiscuits} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[-3.5rem] md:bottom-[-18rem]"/>
+                  <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[10%] right-[0rem] md:right-[0rem] bottom-[5rem]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Golden Oats,\nPure Delight.`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Crunchy Oat Biscuits with Butter`}</div>
                   <div className="text-base md:text-2xl text-left">{`Indulge in the Perfect Balance of Crunchy Oats and Rich Creamy Butter with Innovative Crunchy Oat Biscuits. Every bite delivers Wholesome Texture and Irresistible flavor - a satisfying treat for any time of day.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={butterCrunchBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>

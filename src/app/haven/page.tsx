@@ -25,7 +25,7 @@ export default function HavenPage() {
                     <div className="md:px-40">
                         <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold"><span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">Gourmet on the Outside, Decadence on the Inside — Chocolate-Filled Cookies that Redefine Luxury Snacking.</span></div>
                         <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                          <table className="w-full md:w-[70%] text-center border-spacing-y-2">
+                          <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -66,7 +66,7 @@ export default function HavenPage() {
                     <div className="md:px-40">
                         <div className="text-lg md:text-4xl leading-4 md:leading-[2.5rem] text-center md:text-left font-semibold"><span className="text-base md:text-2xl leading-4 md:leading-[2.5rem] font-medium">Where the Bold Aroma of Coffee meets a Melting Chocolate Center — every bite a journey of Rich, Layered Flavor.</span></div>
                         <div className="mt-5 mb-5 md:mt-5 md:mb-15">
-                          <table className="w-full md:w-[70%] text-center border-spacing-y-2">
+                          <table className="w-full text-center border-spacing-y-2">
                             <thead>
                               <tr className="text-[10px] md:text-xl border-b-1">
                                 <td className="py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>

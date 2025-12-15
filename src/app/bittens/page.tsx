@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import bittensLogo from '../../assets/Innovative-Bitten.png';
+import bittensLogo from '../../../public/Logos/Bittens.png';
 import bittensBoxWrapper from '../../assets/Bitten-Product.png';
 import bittensTestimonial from '../../assets/Innovative-Bitten-image.webp';
 import bittensChocolate1 from '../../assets/Innovative-Bitten-Chocolate1.webp';
@@ -16,13 +16,12 @@ export default function BittensPage() {
           className="w-full bg-[#87d9eb] text-[#282353]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={bittensLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
-                  <Image src={bittensChocolate2} alt='digestive-copy' className="absolute w-[25%] right-[-2rem]"/>
-                  <Image src={bittensChocolate1} alt='digestive-copy' className="absolute w-[20%] left-[-2rem] bottom-[8rem] md:bottom-[-7rem]"/>
-                  <div className="text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <Image src={bittensLogo} alt='digestive-copy' className="w-[33%] md:w-[20%]"/>
+                  <Image src={bittensChocolate2} alt='digestive-copy' className="absolute w-[25%] md:w-[15%] right-[0rem] top-[-2rem] md:top-[0rem]"/>
+                  <Image src={bittensChocolate1} alt='digestive-copy' className="hidden md:block absolute w-[15%] left-[0rem] bottom-[8rem] md:bottom-[-7rem]"/>
+                  <div className="mb-10 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Smooth Milk\nChocolate`}
                   </div>
-                  <div className="text-lg md:text-5xl text-left font-semibold my-2 md:my-5">{`Smooth, rich and perfectly sweet`}</div>
                   <div className="text-base md:text-2xl text-left">{`The Chocolate Bar that brings Joy in every bite.`}</div>
                   <div className="flex mt-5 md:mt-10">
                     <Image src={bittensBoxWrapper} alt='digestive-box' className="relative left-[-25px] md:left-[-65px]"/>
