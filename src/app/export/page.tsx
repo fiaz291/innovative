@@ -34,7 +34,7 @@ export default function ExportPage() {
           }}
           className="bg-[#b4d7eb] pb-20 md:pb-45 text-black w-full bg-no-repeat bg-center bg-contain">
               <Navbar isPremium={false} />
-              <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-80 md:h-300 pt-5 md:pt-35">
+              <div className="flex flex-col gap-4 items-center justify-between font-black mx-5 md:mx-30 h-80 md:h-300 pt-5 md:pt-25">
                   <div className="text-2xl md:text-7xl text-center">{`Global Foot Print`}</div>
                   <div className="font-normal text-base md:text-2xl text-center whitespace-pre-line mb-[-80px]">{`Proudly delivering quality products from Pakistan to markets around the world.\nCommitted to excellence across international borders.`}</div>
               </div>
@@ -42,10 +42,11 @@ export default function ExportPage() {
 
         <div className="p-10 max-w-7xl mx-auto flex gap-10">
           <div>
+            <a className='underline md:text-xl' href="https://www.exportbrochure-innovativebiscuits.com/">
             <h1 className="text-xl md:text-4xl font-black decoration-blue-600 mb-6">
               Export Brochure
             </h1>
-            <a className='underline text-blue-600 md:text-xl' href="https://www.exportbrochure-innovativebiscuits.com/">Brochure</a>
+            </a>
           </div>
           <Image src={qrCode} alt='qr-code' className='w-[30%] md:w-[20%] relative md:top-[-20px]' />
         </div>

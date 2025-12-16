@@ -87,7 +87,7 @@ export default function HavenPage() {
           <Image
             src={havenCoffeeBiscuit}
             alt="biscuit"
-            className="absolute w-[15%] top-0 my-auto right-[0px] md:right-[0px]"
+            className="absolute w-[20%] top-0 my-auto right-[0px] md:right-[0px] top-15"
           />
           <Image
             src={havenCoffeeBean}

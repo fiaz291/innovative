@@ -99,7 +99,7 @@ export default function DigestivePremiumPage() {
           <Image
             src={biscuit}
             alt="original-image"
-            className="absolute w-[20%] top-[7rem] md:top-[40rem] left-[-2.5rem] md:left-[-13rem]"
+            className="hidden md:block absolute w-[20%] top-[7rem] md:top-[40rem] left-[0rem] md:left-[0rem]"
           />
           <Image
             src={wheat}
