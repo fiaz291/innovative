@@ -2,8 +2,6 @@
 
 import heroImg from '../../assets/career-hero.webp';
 import Navbar from "@/components/Navbar";
-import Image from 'next/image';
-import culture from '../../assets/hr.png';
 import { MoveRight } from 'lucide-react';
 import SearchBar from '@/components/SearchBar';
 import LearnMore from '@/components/LearnMore';
