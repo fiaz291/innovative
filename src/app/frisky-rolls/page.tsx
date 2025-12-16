@@ -19,7 +19,7 @@ export default function FriskyRollsPage() {
           <Image
             src={friskyChocolateRollsText}
             alt="digestive-copy"
-            className="md:w-[40%] mx-auto mb-5 md:mb-0"
+            className="w-[70%] md:w-[40%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
@@ -76,7 +76,7 @@ export default function FriskyRollsPage() {
           <Image
             src={friskyMilkyRollsText}
             alt="digestive-copy"
-              className="md:w-[40%] mx-auto mb-5 md:mb-0"
+              className="w-[70%] md:w-[40%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
@@ -132,7 +132,7 @@ export default function FriskyRollsPage() {
           <Image
             src={friskyHazelnutRollsText}
             alt="digestive-copy"
-              className="md:w-[40%] mx-auto mb-5 md:mb-0"
+              className="w-[70%] md:w-[40%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">

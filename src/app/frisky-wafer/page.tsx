@@ -21,7 +21,7 @@ export default function FriskyWaferPage() {
           <Image
             src={friskyWaferChocolateText}
             alt="digestive-copy"
-            className="md:w-[45%] mx-auto mb-5 md:mb-0"
+            className="w-[70%] md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
@@ -77,7 +77,7 @@ export default function FriskyWaferPage() {
           <Image
             src={friskyWaferOrangeText}
             alt="digestive-copy"
-            className="md:w-[45%] mx-auto mb-5 md:mb-0"
+            className="w-[70%] md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">
@@ -133,7 +133,7 @@ export default function FriskyWaferPage() {
           <Image
             src={friskyWaferVanillaText}
             alt="digestive-copy"
-            className="md:w-[45%] mx-auto mb-5 md:mb-0"
+            className="w-[70%] md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">
@@ -181,7 +181,7 @@ export default function FriskyWaferPage() {
           <Image
             src={friskyWaferStrawberryText}
             alt="digestive-copy"
-            className="md:w-[45%] mx-auto mb-5 md:mb-0"
+            className="w-[70%] md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
