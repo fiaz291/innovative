@@ -13,13 +13,13 @@ import Faq from "@/components/Faq";
 export default function FriskyRollsPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#ffbe76] pb-30">
+      <div className="relative w-full bg-[#ffbe76] pb-10 md:pb-30">
         <Navbar />
-        <div className="flex flex-col items-center px-10 md:px-30">
+        <div className="flex flex-col items-center px-10 md:px-30 mt-12 md:mt-25">
           <Image
             src={friskyChocolateRollsText}
             alt="digestive-copy"
-            className="md:w-[45%] mx-auto mb-5 md:mb-0"
+            className="md:w-[40%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
@@ -71,12 +71,12 @@ export default function FriskyRollsPage() {
         </div>
       </div>
 
-      <div className="relative w-full bg-[#96ddf2] pb-30 pt-30">
+      <div className="relative w-full bg-[#96ddf2] pb-10 md:pb-30 pt-10 md:pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyMilkyRollsText}
             alt="digestive-copy"
-              className="md:w-[45%] mx-auto mb-5 md:mb-0"
+              className="md:w-[40%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
@@ -127,12 +127,12 @@ export default function FriskyRollsPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#ffaa93] pb-30 pt-30">
+      <div className="relative w-full bg-[#ffaa93] pb-10 md:pb-30 pt-10 md:pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyHazelnutRollsText}
             alt="digestive-copy"
-              className="md:w-[50%] mx-auto mb-5 md:mb-0"
+              className="md:w-[40%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">

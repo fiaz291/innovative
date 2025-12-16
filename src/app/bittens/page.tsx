@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import bittensLogo from '../../../public/Logos/Bittens.png';
-import bittensBoxWrapper from '../../assets/Bitten-Product.png';
+import bittensBoxWrapper from '../../assets/Innovative Bitten Product.png';
 import bittensTestimonial from '../../assets/Innovative-Bitten-image.webp';
 import bittensChocolate1 from '../../assets/Innovative-Bitten-Chocolate1.webp';
 import bittensChocolate2 from '../../assets/Innovative-Bitten-Chocolate2.webp';

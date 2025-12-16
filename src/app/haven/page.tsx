@@ -14,9 +14,9 @@ import Faq from "@/components/Faq";
 export default function HavenPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#ffce54] pb-30">
+      <div className="relative w-full bg-[#ffce54] pb-10 md:pb-30">
         <Navbar />
-        <div className="flex flex-col items-center px-10 md:px-30">
+        <div className="flex flex-col items-center px-10 px-10 md:px-30 mt-12 md:mt-25">
           <Image
             src={havenChocolateBiscuit}
             alt="biscuit"
@@ -82,7 +82,7 @@ export default function HavenPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#f1c88e] pb-30 pt-30">
+      <div className="relative w-full bg-[#f1c88e] pb-10 md:pb-30 pt-10 md:pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={havenCoffeeBiscuit}

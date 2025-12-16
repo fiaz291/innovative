@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import snappLogo from '../../../public/Logos/Snapp.png';
 import snappBoxWrapper from '../../assets/Snapp-Product.png';
-import snappTestimonial from '../../assets/Innovative-Snapp-image.webp';
+import snappTestimonial from '../../assets/Snapp Image.webp';
 import snappBiscuit from '../../assets/Innovative-Snapp-Biscuit.webp';
 import Faq from "@/components/Faq";
 

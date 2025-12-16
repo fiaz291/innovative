@@ -15,13 +15,13 @@ import Faq from "@/components/Faq";
 export default function FriskyWaferPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#f7c791] pb-30">
+      <div className="relative w-full bg-[#f7c791] pb-10 md:pb-30">
         <Navbar />
-        <div className="flex flex-col items-center px-10 md:px-30">
+        <div className="flex flex-col items-center px-10 px-10 md:px-30 mt-12 md:mt-25">
           <Image
             src={friskyWaferChocolateText}
             alt="digestive-copy"
-            className="md:w-[55%] mx-auto mb-5 md:mb-0"
+            className="md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">
@@ -72,12 +72,12 @@ export default function FriskyWaferPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#ffce54] pb-30 pt-30">
+      <div className="relative w-full bg-[#ffce54] pb-10 md:pb-30 pt-10 md:pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyWaferOrangeText}
             alt="digestive-copy"
-            className="md:w-[55%] mx-auto mb-5 md:mb-0"
+            className="md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">
@@ -128,12 +128,12 @@ export default function FriskyWaferPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#87d9eb] pb-30 pt-30">
+      <div className="relative w-full bg-[#87d9eb] pb-10 md:pb-30 pt-10 md:pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyWaferVanillaText}
             alt="digestive-copy"
-            className="md:w-[55%] mx-auto mb-5 md:mb-0"
+            className="md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex float-left">
             <div className="md:px-28">
@@ -176,12 +176,12 @@ export default function FriskyWaferPage() {
           </div>
         </div>
       </div>
-      <div className="relative w-full bg-[#ffb09b] pb-30 pt-30">
+      <div className="relative w-full bg-[#ffb09b] pb-10 md:pb-30 pt-10 md:pt-30">
         <div className="flex flex-col items-center px-10 md:px-30">
           <Image
             src={friskyWaferStrawberryText}
             alt="digestive-copy"
-            className="md:w-[55%] mx-auto mb-5 md:mb-0"
+            className="md:w-[45%] mx-auto mb-5 md:mb-0"
           />
           <div className="flex">
             <div className="md:px-28">

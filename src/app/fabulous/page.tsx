@@ -11,7 +11,7 @@ export default function FabulousPage() {
     <div className="overflow-hidden">
       <div className="relative w-full bg-[#f8b145] pb-30">
         <Navbar />
-        <div className="flex flex-col items-center items-center px-10 md:px-30">
+        <div className="flex flex-col items-center items-center px-10 md:px-30 mt-12 md:mt-25">
           <Image
             src={fabulousText}
             alt="digestive-copy"

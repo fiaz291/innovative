@@ -4,7 +4,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
 import premiumLogo from "../assets/innovative-premium-logo.svg";
 // import logoLight from "../assets/Innovative-Logo-White.png";
-import logoDark from "../assets/Innovative-Logo-Black.png";
+// import logoDark from "../assets/Innovative-Logo-Black.png";
 import logo from "../assets/Innovative-Logo-lp.png";
 import { useState } from "react";
 import IconToSearch from "./IconToSearchComponent";
@@ -24,29 +24,29 @@ const resourcesItems = [
 const products = {
   regularProducts: [
     { title: "Digestive", route: "/digestive" },
-    { title: "Butter Crunch", route: "/butter-crunch" },
-    { title: "Choc n Chip", route: "/choc-n-chip" },
     { title: "Choco Rings", route: "/choco-rings" },
-    { title: "Crust Rolls", route: "/crust-rolls" },
-    { title: "Crust Wafer", route: "/crust-wafer" },
     { title: "Goodies", route: "/goodies" },
-    { title: "Jumbo Junior", route: "/jumbo-junior" },
-    { title: "Tooo Gud", route: "/tooo-gud" },
     { title: "Peanut", route: "/peanut" },
-    { title: "Zeera", route: "/zeera" },
-    { title: "Snapp", route: "/snapp" },
     { title: "Bittens", route: "/bittens" },
+    { title: "Butter Crunch", route: "/butter-crunch" },
+    { title: "Crust Rolls", route: "/crust-rolls" },
+    { title: "Jumbo Junior", route: "/jumbo-junior" },
+    { title: "Zeera", route: "/zeera" },
     { title: "Charm", route: "/charm" },
+    { title: "Choc n Chip", route: "/choc-n-chip" },
+    { title: "Crust Wafer", route: "/crust-wafer" },
+    { title: "Tooo Gud", route: "/tooo-gud" },
+    { title: "Snapp", route: "/snapp" },
   ],
   premiumProducts: [
     { title: "Digestive Premium", route: "/digestive-premium" },
-    { title: "Short Bread", route: "/short-bread" },
-    { title: "Golden Lotus", route: "/golden-lotus" },
     { title: "Fabulous", route: "/fabulous" },
-    { title: "Frisky Rolls", route: "/frisky-rolls" },
-    { title: "Frisky Wafer", route: "/frisky-wafer" },
     { title: "Haven", route: "/haven" },
+    { title: "Short Bread", route: "/short-bread" },
+    { title: "Frisky Rolls", route: "/frisky-rolls" },
     { title: "Biscoffi", route: "/biscoffi" },
+    { title: "Golden Lotus", route: "/golden-lotus" },
+    { title: "Frisky Wafer", route: "/frisky-wafer" },
     { title: "Bricklane", route: "/bricklane" },
   ],
 };
@@ -249,7 +249,7 @@ export default function Navbar({
             {/* Header inside drawer */}
             <div className="flex justify-between items-center mb-6">
               <Image
-                src={isPremium ? premiumLogo : logoDark}
+                src={isPremium ? premiumLogo : logo}
                 alt="Logo"
                 className={`${
                   isPremium ? "mt-[-28px] ml-[-16px]" : "mt-0 ml-0"

@@ -29,8 +29,8 @@ export default function CareerPage() {
             <div className='absolute mx-auto left-0 right-0 top-[-30px] w-[80%]'>
                 <SearchBar />
             </div>
-            <div className='font-black text-xl md:text-5xl mt-15 md:mt-12'>Career Areas</div>
-            <div className='md:font-semibold text-base md:text-2xl md:leading-15 whitespace-pre-line'>{`Human Resources & Administration  Finance & Legal\n Research & Development  Technology  Marketing & Sales\nProduction & Operations  Supply Chain`}</div>
+            <div className='font-black text-xl md:text-5xl mt-15 md:mt-12 mb-10'>Job Openings</div>
+            {/* <div className='md:font-semibold text-base md:text-2xl md:leading-15 whitespace-pre-line'>{`Human Resources & Administration  Finance & Legal\n Research & Development  Technology  Marketing & Sales\nProduction & Operations  Supply Chain`}</div> */}
 
         </div>
 
@@ -58,7 +58,7 @@ export default function CareerPage() {
                 </div>
                 <p className='font-normal text-base md:text-2xl mt-8'>{`At Innovative Biscuits, we give you more than a first job — we give you a launchpad. Work alongside passionate teams, tackle real challenges, and grow faster than you imagined — all while staying true to who you are.`}</p>
                 <div onClick={()=>setOpen(true)} className='cursor-pointer font-black flex items-center gap-10 text-base md:text-2xl mt-15'>
-                    Search Jobs
+                    Application Form
                     <MoveRight className='w-[35px] h-[35px]' />
                 </div>
             </div>
@@ -66,7 +66,17 @@ export default function CareerPage() {
 
 
         <div className='flex flex-col md:flex-row text-white md:my-15'>
-            <Image src={culture} alt='out-products-image' className='md:w-[40%]'/>
+            {/* <Image src={culture} alt='out-products-image' className='md:w-[40%]'/> */}
+             <video
+          autoPlay
+          loop
+          muted
+          playsInline
+         className='md:w-[40%]'
+        >
+          <source src="/Our Culture.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
             <div className='flex flex-col md:w-[60%] bg-[#fd9b6c] p-6 md:p-15'>
                 <div className='font-black flex items-center gap-10 text-2xl md:text-4xl mb-4'>
                     Our Culture

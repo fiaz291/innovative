@@ -22,7 +22,7 @@ export default function GoldenLotusPage() {
           alt="digestive-copy"
           className="hidden md:block absolute md:w-[15%] right-[0rem] md:right-[0rem] top-0 bottom-0 my-auto"
         />
-        <div className="flex flex-col items-center px-10 md:px-30 mb-6">
+        <div className="flex flex-col items-center px-10 md:px-30 mt-12 md:mt-25">
           <Image
             src={goldenLotusText}
             alt="digestive-copy"

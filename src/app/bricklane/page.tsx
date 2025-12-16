@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import bricklaneText from "../../assets/bricklane-copy.webp";
-import bricklane from "../../assets/Bricklane-Product.png";
+import bricklane from "../../assets/Innovative Bricklane Product.png";
 import Faq from "@/components/Faq";
 
 export default function ShortBreadPage() {
@@ -11,7 +11,7 @@ export default function ShortBreadPage() {
     <div className="overflow-hidden">
       <div className="relative w-full bg-[#e7ad72] pb-30">
         <Navbar />
-        <div className="flex flex-col px-10 md:px-30">
+        <div className="flex flex-col px-10 px-10 md:px-30 mt-12 md:mt-25">
           <Image
             src={bricklaneText}
             alt="digestive-copy"
