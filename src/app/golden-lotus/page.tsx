@@ -26,7 +26,7 @@ export default function GoldenLotusPage() {
           <Image
             src={goldenLotusText}
             alt="digestive-copy"
-            className="w-full md:w-[60%] mt-10"
+            className="w-full md:w-[60%]"
           />
           <div className="flex">
             <div className="md:px-28">

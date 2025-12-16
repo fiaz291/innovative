@@ -38,7 +38,7 @@ export default function DigestivePremiumPage() {
             className="absolute w-[40%] top-[205px] md:top-0 md:bottom-0 md:my-auto right-[-100px] md:right-[-300px]"
           />
           <div className="relative flex flex-col items-center mt-5 md:mt-4">
-            <div className="z-10 mb-5 md:mb-0 w-[80%]">
+            <div className="z-10 mb-5 md:mb-0 w-[100%]">
               <div className="text-base md:text-2xl leading-5 md:leading-[2rem] text-center">
                 A Wholesome Digestive Biscuit Crafted with Whole Wheat, Natural
                 Sweetness, and Satisfying Subtle Crunch.
@@ -51,7 +51,7 @@ export default function DigestivePremiumPage() {
                 />
               </div>
               <div className="mt-5 flex w-full justify-center">
-                <table className="w-full max-w-[900px] text-center border-spacing-y-2 mb-20">
+                <table className="w-full max-w-[900px] text-center border-spacing-y-2 mb-0 md:mb-20">
                   <thead>
                     <tr className="text-[10px] md:text-xl border-b-1">
                       <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
@@ -84,7 +84,7 @@ export default function DigestivePremiumPage() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#88d9eb] pb-30">
+      <div className="w-full bg-[#88d9eb] pb-10 md:pb-30">
         <div className="relative flex flex-col px-10 md:px-30 pt-12 md:pt-25">
           <Image
             src={sugarFreeText}
@@ -112,7 +112,7 @@ export default function DigestivePremiumPage() {
             className="absolute w-[40%] top-[270px] md:top-0 md:bottom-0 md:my-auto right-[-65px] md:right-[-300px]"
           />
           <div className="relative flex flex-col items-center mt-5 mb-10 md:mt-4">
-            <div className="mb-5 md:mb-0 w-[80%]">
+            <div className="mb-5 md:mb-0 w-[100%]">
               <div className="text-base md:text-2xl leading-5 md:leading-[2rem] text-center">
                 Whole Wheat Digestives without Sugar, Designed for Taste and
                 Wellness in every bite.
