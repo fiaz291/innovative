@@ -10,7 +10,7 @@ import Faq from "@/components/Faq";
 export default function ShortBreadPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#ffa372] pb-30">
+      <div className="relative w-full bg-[#ffa372] pb-10 md:pb-30">
         <Navbar />
         <Image
           src={shortBreadBiscuit}

@@ -11,7 +11,7 @@ import Faq from "@/components/Faq";
 export default function BiscoffiPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#ffce54] pb-30">
+      <div className="relative w-full bg-[#ffce54] pb-10 md:pb-30">
         <Navbar />
         <div className="flex flex-col items-center px-10 md:px-30 mt-12 md:mt-25">
           <Image
