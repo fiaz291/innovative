@@ -73,7 +73,7 @@ export default function FabulousPage() {
           <div className="flex mt-6">
             <div className="md:px-42">
               <div className="text-base md:text-2xl leading-5 md:leading-[2rem] text-center">
-                <span className="">{`Chocolatey, delicious and loaded with irresistible chocolate chips - these cookies are Pure Joy in every bite. Baked to Perfection with just the right balance of Crunch and Softness, they're a classic made truly Fabulous.`}</span>
+                <span className="">{`A Little Nutty, A Little Chippy, All Delicious`}</span>
               </div>
               <div className="w-full flex justify-center">
                 <Image
