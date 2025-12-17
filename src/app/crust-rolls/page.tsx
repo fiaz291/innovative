@@ -15,7 +15,7 @@ export default function CrustRollsPage() {
           className="w-full bg-[#faa92a] text-[#683410] pb-12 md:pb-25 ">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
-                  <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[45vw] md:w-[20vw]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Roll. Crunch.\nIndulge`}
                   </div>
@@ -28,7 +28,7 @@ export default function CrustRollsPage() {
         <div
           className="w-full bg-[#f87500] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
-                  <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <Image src={crustRollsChocolateLogo} alt='digestive-copy' className="w-[45vw] md:w-[20vw]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Rolls,\nCitrus Goals.`}
                   </div>

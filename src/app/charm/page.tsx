@@ -15,7 +15,7 @@ export default function CharmPage() {
           className="w-full bg-[#992c2c] text-[#ffd879]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={charmLogo} alt='digestive-copy' className="w-[36%] md:w-[20%]"/>
+                  <Image src={charmLogo} alt='digestive-copy' className="w-[36vw] md:w-[13vw]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[20%] right-[0rem] md:right-[0rem] top-[-1rem] md:top-[-3rem]"/>
                   <Image src={charmBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[8rem] md:bottom-[-20rem] rorate-[-35deg]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">

@@ -16,7 +16,7 @@ export default function CrustWaferPage() {
           className="w-full bg-[#ab8150] text-white pb-12 md:pb-25 ">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25">
-                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45vw] md:w-[17vw]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Wafer,\nCreamy Chocolate.`}
                   </div>
@@ -29,7 +29,7 @@ export default function CrustWaferPage() {
         <div
           className="w-full bg-[#ea7832] text-white pb-12 md:pb-25 ">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25">
-                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45vw] md:w-[17vw]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crunch With A\nCitrus Kick.`}
                   </div>
@@ -42,7 +42,7 @@ export default function CrustWaferPage() {
         <div
           className="w-full bg-[#d26999] text-white">
               <div className="relative flex flex-col px-10 md:px-58 pt-12 md:pt-25 mb-12 md:mb-25">
-                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45%] md:w-[25%]"/>
+                  <Image src={crustChocolateLogo} alt='digestive-copy' className="w-[45vw] md:w-[17vw]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
                     {`Crispy Wafer,\nStrawberry Flavor.`}
                   </div>

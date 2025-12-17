@@ -38,7 +38,7 @@ export default function Faq({
   productKey: string;
 }) {
   return (
-    <div className="flex justify-center px-5">
+    <div className="flex justify-center px-5 w-full">
       <div className="w-full max-w-[700px]">
         {/* <div className="flex items-center justify-between border-b-2 border-white pb-2 mb-4">
           <h2

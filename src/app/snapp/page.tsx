@@ -15,7 +15,7 @@ export default function SnappPage() {
           className="w-full bg-[#2a5b94] text-white">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={snappLogo} alt='digestive-copy' className="w-[43%] md:w-[23%]"/>
+                  <Image src={snappLogo} alt='digestive-copy' className="w-[43vw] md:w-[13vw]"/>
                   <Image src={snappBiscuit} alt='digestive-copy' className="absolute w-[35%] md:w-[20%] right-[0rem] md:right-[0rem]"/>
                   <Image src={snappBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[8rem] md:bottom-[-8rem] scale-x-[-1] rotate-[-15deg]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">

@@ -17,7 +17,7 @@ export default function GoodiesPage() {
           <Image
             src={goodiesLogo}
             alt="digestive-copy"
-            className="w-[45%] md:w-[25%]"
+            className="w-[45vw] md:w-[16vw]"
           />
           <Image
             src={goodiesBiscuit}

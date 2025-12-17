@@ -3,8 +3,9 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import shortBreadText from "../../../public/PremiumLogos/Short Bread.webp";
-import shortBread from "../../assets/short-bread.webp";
+import shortBread from "../../assets/ShortBread Product.webp";
 import shortBreadBiscuit from "../../assets/short-bread-biscuit.webp";
+// ShortBread Product.webp
 import Faq from "@/components/Faq";
 
 export default function ShortBreadPage() {
@@ -34,7 +35,7 @@ export default function ShortBreadPage() {
               <Image
                 src={shortBread}
                 alt="boxes-image"
-                className="w-[60%] md:w-[40%] mb-5 md:mb-6"
+                className="w-[100%] md:w-[90%] mb-5 md:mb-6"
               />
               <div className="mt-5 mb-6 flex justify-center w-full">
                 <table className="max-w-[900px] w-full text-center border-spacing-y-2">

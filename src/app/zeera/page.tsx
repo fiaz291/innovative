@@ -15,7 +15,7 @@ export default function ZeeraPage() {
           className="w-full bg-[#bdaaa6] text-[#7e3f1e]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={zeeraLogo} alt='digestive-copy' className="w-[43%] md:w-[23%]"/>
+                  <Image src={zeeraLogo} alt='digestive-copy' className="w-[43vw] md:w-[16vw]"/>
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[18%] right-[0rem] md:right-[0rem]"/>
                   <Image src={zeeraBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[18%] left-[0rem] md:left-[0rem] bottom-[12rem] md:bottom-[-24rem]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">

@@ -40,7 +40,7 @@ export default function ExportPage() {
               </div>
         </div>
 
-        <div className="p-10 max-w-7xl mx-auto flex gap-10">
+        <div className="p-10 max-w-7xl mx-auto flex justify-center items-center gap-10">
           <div>
             <a className='underline md:text-xl' href="https://www.exportbrochure-innovativebiscuits.com/">
             <h1 className="text-xl md:text-4xl font-black decoration-blue-600 mb-6">

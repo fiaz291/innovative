@@ -15,7 +15,7 @@ export default function ChocChipPage() {
           className="w-full bg-[#87d9eb] text-[#054e9c]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={chocChipLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
+                  <Image src={chocChipLogo} alt='digestive-copy' className="w-[55vw] md:w-[22vw]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[20%] right-[0rem] md:right-[0rem] top-[-2rem] md:top-[-6rem]"/>
                   <Image src={chocChipBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[-2rem] md:bottom-[-20rem]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">

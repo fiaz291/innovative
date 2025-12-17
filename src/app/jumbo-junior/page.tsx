@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import jumboJuniorLogo from '../../../public/Logos/Junbo-Junior.png';
-import jumboJuniorBoxWrapper from '../../assets/Jumbo-Junior-Product.png';
+import jumboJuniorBoxWrapper from '../../assets/Innovative Jumbo Junior Product.webp';
 import jumboJuniorTestimonial from '../../assets/Jumbo Junior Image.webp';
 import jumboJuniorBiscuit from '../../assets/Innovative-Jumbo-Junior-Biscuits.webp';
 import Faq from "@/components/Faq";
@@ -15,7 +15,7 @@ export default function JumboJuniorPage() {
           className="w-full bg-[#2090b8] text-white">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={jumboJuniorLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
+                  <Image src={jumboJuniorLogo} alt='digestive-copy' className="w-[55vw] md:w-[22vw]"/>
                   <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="absolute w-[30%] md:w-[20%] right-[0rem] md:right-[0rem] top-[-2rem] md:top-[-6rem]"/>
                   <Image src={jumboJuniorBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[10rem] md:bottom-[20rem] rotate-[-55deg]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">

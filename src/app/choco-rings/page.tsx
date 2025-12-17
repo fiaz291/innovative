@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import chocoRingsLogo from '../../../public/Logos/Choco-Rings.png';
-import chocoRingsBoxWrapper from '../../assets/Choco-Rings-Product.png';
+import chocoRingsBoxWrapper from '../../assets/Choco Rings Packs.webp';
 import chocoRingsTestimonial from '../../assets/Innovative-Choco-Rings.webp';
 import chocoRingsBiscuit from '../../assets/Innovative-Choco-Rings-Product.webp';
 import Faq from "@/components/Faq";
@@ -15,7 +15,7 @@ export default function ChocoRingsPage() {
           className="w-full bg-[#8d664f] text-[#dfdab8]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={chocoRingsLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
+                  <Image src={chocoRingsLogo} alt='digestive-copy' className="w-[55vw] md:w-[22vw]"/>
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[15%] right-[0rem] md:right-[4rem] top-[-2rem] md:top-[-6rem]"/>
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[15%] left-[0rem] md:left-[0rem] bottom-[-2rem] md:bottom-[-16rem]"/>
                   <Image src={chocoRingsBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[10%] left-[0rem] md:left-[0rem] top-[20rem]"/>

@@ -28,7 +28,7 @@ import jumboJunior from "../assets/packages/Jumbo-Junior.png";
 import goodies from "../assets/packages/Goodies-Lemon.png";
 import charm from "../assets/packages/Charm.png";
 import chocNChip from "../assets/packages/Choc-n-Chip-1.png";
-import chocoRings from "../assets/packages/Choco-Rings.png";
+import chocoRings from "../assets/Choco Rings Wrapper.webp";
 import crustWafer from "../assets/packages/Crust-Wafer.png";
 import crustRolls from "../assets/packages/Crust-Rolls.png";
 import { useRouter } from "next/navigation";

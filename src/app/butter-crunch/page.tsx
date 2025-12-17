@@ -16,7 +16,7 @@ export default function ButterCrunchPage() {
           className="w-full bg-[#febe56] text-[#8b0304]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={butterCrunchLogo} alt='digestive-copy' className="w-[55%] md:w-[35%]"/>
+                  <Image src={butterCrunchLogo} alt='digestive-copy' className="w-[55vw] md:w-[22vw]"/>
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[35%] md:w-[25%] right-[0rem] md:right-[0rem] top-[-2rem] md:top-[-5rem]"/>
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[-3.5rem] md:bottom-[-18rem]"/>
                   <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[10%] right-[0rem] md:right-[0rem] bottom-[5rem]"/>

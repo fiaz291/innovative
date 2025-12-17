@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
-import premiumLogo from "../assets/innovative-premium-logo.svg";
+import premiumLogo from "../assets/innovative-premium-logo-new.png";
 // import logoLight from "../assets/Innovative-Logo-White.png";
 // import logoDark from "../assets/Innovative-Logo-Black.png";
 import logo from "../assets/Innovative-Logo-lp.png";
@@ -105,7 +105,7 @@ export default function Navbar({
                 !isPremium && "mt-[12px] md:mt-[20px]"
               } cursor-pointer`}
               onClick={() =>
-                router.push(isPremium ? "premium-lp" : "/")
+                router.push(isPremium ? "/premium-products" : "/")
               }
             />
 
@@ -114,7 +114,7 @@ export default function Navbar({
               {isPremium ? (
                 <>
                   <li
-                    onClick={() => router.push("/premium-lp")}
+                    onClick={() => router.push("/premium-products")}
                     className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5"
                   >
                     Home <ChevronDown className="w-4 h-4" />
@@ -196,7 +196,7 @@ export default function Navbar({
                   src={premiumLogo}
                   alt="Logo"
                   className="h-15 w-auto object-contain mt-[0px] cursor-pointer"
-                  onClick={() => router.push("premium-lp")}
+                  onClick={() => router.push("/premium-products")}
                 />
               </div>
             ) : (
@@ -227,7 +227,7 @@ export default function Navbar({
                     src={premiumLogo}
                     alt="Logo"
                     className="h-20 w-auto object-contain mt-[0px] cursor-pointer"
-                    onClick={() => router.push("/premium-lp")}
+                    onClick={() => router.push("/premium-products")}
                   />
                 </div>
               )}
@@ -255,7 +255,7 @@ export default function Navbar({
                   isPremium ? "mt-[-28px] ml-[-16px]" : "mt-0 ml-0"
                 } h-12 w-auto cursor-pointer`}
                 onClick={() => {
-                  router.push(isPremium ? "/premium-lp" : "/");
+                  router.push(isPremium ? "/premium-products" : "/");
                   setMobileMenuOpen(false);
                 }}
               />
@@ -275,7 +275,7 @@ export default function Navbar({
                 <>
                   <li
                     onClick={() => {
-                      router.push("/premium-lp");
+                      router.push("/premium-products");
                       setMobileMenuOpen(false);
                     }}
                     className="font-medium"

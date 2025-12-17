@@ -16,7 +16,7 @@ export default function DigestivePage() {
           className="w-full bg-[#7d1124] text-white">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={digestiveLogo} alt='digestive-copy' className="w-[50%] md:w-[30%]"/>
+                  <Image src={digestiveLogo} alt='digestive-copy' className="w-[50vw] md:w-[20vw]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[20%] md:w-[15%] right-[0rem] md:right-[0rem]"/>
                   <Image src={digestiveWheat} alt='digestive-copy' className="absolute w-[15%] left-[-1rem] md:left-[-3rem] top-[-5rem] md:top-[-1rem]"/>
                   <Image src={innovativeBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[20%] md:w-[15%] left-[0rem] md:left-[0rem] bottom-[12rem] md:bottom-[-24rem]"/>

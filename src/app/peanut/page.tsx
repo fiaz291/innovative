@@ -15,7 +15,7 @@ export default function PeanutPage() {
           className="w-full bg-[#66c9c7] text-[#064c5e]">
               <Navbar isPremium={false}/>
               <div className="relative flex flex-col px-10 md:px-58 mt-12 md:mt-25 mb-12 md:mb-25">
-                  <Image src={peanutLogo} alt='digestive-copy' className="w-[40%] md:w-[22%]"/>
+                  <Image src={peanutLogo} alt='digestive-copy' className="w-[40vw] md:w-[15vw]"/>
                   <Image src={peanutBiscuit} alt='digestive-copy' className="absolute w-[25%] md:w-[15%] right-[0rem] md:right-[0rem] top-0 md:top-[8rem]"/>
                   <Image src={peanutBiscuit} alt='digestive-copy' className="hidden md:block absolute w-[15%] left-[0rem] md:left-[0rem] bottom-[12rem] md:bottom-[-24rem]"/>
                   <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">

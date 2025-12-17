@@ -25,7 +25,8 @@ import zeeraBox from '../../assets/products-assets/Zeera-Product.png';
 import peanutLogo from '../../assets/products-assets/Peanut-Logo.png';
 import peanutBox from '../../assets/products-assets/Peanut-Product.png';
 import chocoRingsLogo from '../../assets/products-assets/Choco-Rings.png';
-import chocoRingsBox from '../../assets/products-assets/Choco-Rings-Product.png';
+// Choco Rings Wrapper.webp
+import chocoRingsBox from '../../assets/Choco Rings Packs.webp';
 import snappLogo from '../../assets/products-assets/Snapp-Logo.png';
 import snappBox from '../../assets/products-assets/Snapp-Product.png';
 import bittensLogo from '../../assets/products-assets/Bitten-Logo.png';

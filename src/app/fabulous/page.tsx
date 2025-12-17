@@ -4,14 +4,16 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import fabulousText from "../../../public/PremiumLogos/Fabulous.webp";
 import fabulous from "../../assets/fabulous.webp";
+import fabulousPeanutPack from "../../assets/Fabulous Peanut Chip Cookies.webp";
+import fabulousPeanutLogo from "../../assets/Fabulous Peanut chip Cookies Logo.webp";
 import Faq from "@/components/Faq";
 
 export default function FabulousPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#f8b145] pb-10 md:pb-30">
+      <div className="relative w-full bg-[#f8b145]">
         <Navbar />
-        <div className="flex flex-col items-center items-center px-10 md:px-30 mt-12 md:mt-25">
+        <div className="flex flex-col items-center items-center px-10 md:px-30 mt-12 md:mt-25 pb-10 md:pb-30">
           <Image
             src={fabulousText}
             alt="digestive-copy"
@@ -40,13 +42,21 @@ export default function FabulousPage() {
                     </tr>
                   </thead>
                   <tbody className="text-[10px] md:text-xl">
-                    <tr>
+                    <tr className="border-b-1">
                       <td className="py-3 text-left font-semibold border-r-1">
                         Standard Pack
                       </td>
-                      <td className="px-4 py-3 border-r-1">96</td>
+                      <td className="px-4 py-3 border-r-1">156</td>
                       <td className="px-4 py-3 border-r-1">-</td>
                       <td className="px-4 py-3">30</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 text-left font-semibold border-r-1">
+                        Snack Pack
+                      </td>
+                      <td className="px-4 py-3 border-r-1">30</td>
+                      <td className="px-4 py-3 border-r-1">10</td>
+                      <td className="px-4 py-3">18</td>
                     </tr>
                   </tbody>
                 </table>
@@ -54,7 +64,52 @@ export default function FabulousPage() {
             </div>
           </div>
         </div>
-        <Faq productKey="fabulous" />
+        <div className="w-full flex flex-col items-center items-center px-10 md:px-30 mt-12 md:mt-25 bg-[#ffb09b] pb-10 md:pb-30 pt-10 md:pt-30">
+          <Image
+            src={fabulousPeanutLogo}
+            alt="digestive-copy"
+            className="w-[80%] md:w-[60%]"
+          />
+          <div className="flex mt-6">
+            <div className="md:px-42">
+              <div className="text-base md:text-2xl leading-5 md:leading-[2rem] text-center">
+                <span className="">{`Chocolatey, delicious and loaded with irresistible chocolate chips - these cookies are Pure Joy in every bite. Baked to Perfection with just the right balance of Crunch and Softness, they're a classic made truly Fabulous.`}</span>
+              </div>
+              <div className="w-full flex justify-center">
+                <Image
+                  src={fabulousPeanutPack}
+                  alt="boxes-image"
+                  className="md:w-[100%] mt-6"
+                />
+              </div>
+              <div className="mt-5 mb-5 md:mt-5 md:mb-15 w-full flex justify-center">
+                <table className="w-full text-center border-spacing-y-2  max-w-[900px]">
+                  <thead>
+                    <tr className="text-[10px] md:text-xl border-b-1">
+                      <td className="pr-2 md:pr-4 py-2 text-left font-semibold border-r-1">{`Packaging SKU`}</td>
+                      <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Pack Weight\nGM`}</td>
+                      <td className="px-2 md:px-4 py-2 whitespace-pre-line border-r-1">{`Packs\nPer Box`}</td>
+                      <td className="px-2 md:px-4 py-2 whitespace-pre-line">{`Boxes\nPer Carton`}</td>
+                    </tr>
+                  </thead>
+                  <tbody className="text-[10px] md:text-xl">
+                    <tr>
+                      <td className="py-3 text-left font-semibold border-r-1">
+                        Standard Pack
+                      </td>
+                      <td className="px-4 py-3 border-r-1">26</td>
+                      <td className="px-4 py-3 border-r-1">10</td>
+                      <td className="px-4 py-3">18</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex justify-center">
+            <Faq productKey="fabulous" />
+          </div>
+        </div>
       </div>
     </div>
   );
