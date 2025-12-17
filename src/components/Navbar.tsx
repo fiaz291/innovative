@@ -24,29 +24,34 @@ const resourcesItems = [
 const products = {
   regularProducts: [
     { title: "Digestive", route: "/digestive" },
-    { title: "Choco Rings", route: "/choco-rings" },
-    { title: "Goodies", route: "/goodies" },
     { title: "Peanut", route: "/peanut" },
-    { title: "Bittens", route: "/bittens" },
-    { title: "Butter Crunch", route: "/butter-crunch" },
-    { title: "Crust Rolls", route: "/crust-rolls" },
-    { title: "Jumbo Junior", route: "/jumbo-junior" },
-    { title: "Zeera", route: "/zeera" },
-    { title: "Charm", route: "/charm" },
-    { title: "Choc n Chip", route: "/choc-n-chip" },
     { title: "Crust Wafer", route: "/crust-wafer" },
+    { title: "Butter Crunch", route: "/butter-crunch" },
+    { title: "Zeera", route: "/zeera" },
+    { title: "Crust Roll", route: "/crust-rolls" },
     { title: "Tooo Gud", route: "/tooo-gud" },
+    { title: "Charm", route: "/charm" },
     { title: "Snapp", route: "/snapp" },
+    { title: "Jumbo Junior", route: "/jumbo-junior" },
+    { title: "Choc n Chip", route: "/choc-n-chip" },
+    { title: "Bittens", route: "/bittens" },
+    { title: "Goodies", route: "/goodies" },
+    { title: "Choco Rings", route: "/choco-rings" },
   ],
   premiumProducts: [
-    { title: "Digestive Premium", route: "/digestive-premium" },
-    { title: "Fabulous", route: "/fabulous" },
+    // Column 1
     { title: "Haven", route: "/haven" },
-    { title: "Short Bread", route: "/short-bread" },
-    { title: "Frisky Rolls", route: "/frisky-rolls" },
-    { title: "Biscoffi", route: "/biscoffi" },
-    { title: "Golden Lotus", route: "/golden-lotus" },
+    { title: "Fabulous", route: "/fabulous" },
     { title: "Frisky Wafer", route: "/frisky-wafer" },
+
+    // Column 2
+    { title: "Digestive Premium", route: "/digestive-premium" },
+    { title: "Golden Lotus", route: "/golden-lotus" },
+    { title: "Frisky Rolls", route: "/frisky-rolls" },
+
+    // Column 3
+    { title: "Short Bread", route: "/short-bread" },
+    { title: "Biscoffi", route: "/biscoffi" },
     { title: "Bricklane", route: "/bricklane" },
   ],
 };
@@ -95,18 +100,12 @@ export default function Navbar({
           {/* Logo and menu */}
           <div className="flex items-center gap-10">
             <Image
-              src={
-                isPremium
-                  ? premiumLogo
-                  : logo
-              }
+              src={isPremium ? premiumLogo : logo}
               alt="Logo"
               className={`h-12 md:h-15 w-auto object-contain ${
                 !isPremium && "mt-[12px] md:mt-[20px]"
               } cursor-pointer`}
-              onClick={() =>
-                router.push(isPremium ? "/premium-products" : "/")
-              }
+              onClick={() => router.push(isPremium ? "/premium-products" : "/")}
             />
 
             {/* Desktop menu */}
@@ -310,15 +309,17 @@ export default function Navbar({
                         </li>
                       )
                     )}
-                  {!isPremium && <li
-                    onClick={() => {
-                      if (tab === "Products") closeTab();
-                      else handleMegaNav("Products", products);
-                    }}
-                    className="flex items-center gap-2 font-medium"
-                  >
-                    Products <ChevronDown className="w-4 h-4" />
-                  </li>}
+                  {!isPremium && (
+                    <li
+                      onClick={() => {
+                        if (tab === "Products") closeTab();
+                        else handleMegaNav("Products", products);
+                      }}
+                      className="flex items-center gap-2 font-medium"
+                    >
+                      Products <ChevronDown className="w-4 h-4" />
+                    </li>
+                  )}
                   {tab === "Products" &&
                     megaNavItems?.regularProducts?.map(
                       (
@@ -524,7 +525,9 @@ export default function Navbar({
 
       {/* Mega Nav */}
       <div
-        className={`hidden md:block absolute top-[${
+        className={`hidden md:flex ${
+          tab === "Products" ? "md:flex-col" : "md:flex-col-reverse"
+        } absolute top-[${
           isPremium ? "72" : "82"
         }px] bg-white shadow-2xl w-full text-black z-50 border-t border-gray-100 transition-all duration-300 ease-out ${
           showMegaNav
@@ -537,14 +540,11 @@ export default function Navbar({
             <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%]">
               <div>
                 <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0">
-                  {tab === "Our Products" ? "Premium Products" : "Products"}
+                  Products
                 </h1>
               </div>
-              <div className={`grid grid-cols-3 ${isPremium ? "gap-5" : ""}`}>
-                {(tab === "Our Products"
-                  ? megaNavItems?.premiumProducts
-                  : megaNavItems?.regularProducts
-                ).map(
+              <div className={`grid grid-cols-3`}>
+                {megaNavItems?.regularProducts.map(
                   (item: { title: string; route: string }, index: number) => (
                     <div
                       key={index}
@@ -561,39 +561,32 @@ export default function Navbar({
                 )}
               </div>
             </div>
-            {tab === "Products" && (
-              <>
-                <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%] bg-black">
-                  <div>
-                    <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0 text-white">
-                      Premium Products
-                    </h1>
-                  </div>
-                  <div className="grid grid-cols-3">
-                    {megaNavItems?.premiumProducts.map(
-                      (
-                        item: { title: string; route: string },
-                        index: number
-                      ) => (
-                        <div
-                          key={index}
-                          onClick={() => {
-                            router.push(item.route);
-                            setShowMegaNav(false);
-                            setMobileMenuOpen(false);
-                          }}
-                          className="p-2 hover:bg-gray-800 rounded cursor-pointer"
-                        >
-                          <h2 className="text-lg font-semibold text-white">
-                            {item.title}
-                          </h2>
-                        </div>
-                      )
-                    )}
-                  </div>
-                </div>
-              </>
-            )}
+            <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%] bg-black">
+              <div>
+                <h1 className="text-[32px] font-bold text-gray-900 pl-4 md:pl-0 text-white">
+                  Premium Products
+                </h1>
+              </div>
+              <div className="grid grid-cols-3">
+                {megaNavItems?.premiumProducts.map(
+                  (item: { title: string; route: string }, index: number) => (
+                    <div
+                      key={index}
+                      onClick={() => {
+                        router.push(item.route);
+                        setShowMegaNav(false);
+                        setMobileMenuOpen(false);
+                      }}
+                      className="p-2 hover:bg-gray-800 rounded cursor-pointer"
+                    >
+                      <h2 className="text-lg font-semibold text-white">
+                        {item.title}
+                      </h2>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
           </>
         ) : (
           <div className="p-6 grid grid-cols-1 md:grid-cols-[25%_75%]">
