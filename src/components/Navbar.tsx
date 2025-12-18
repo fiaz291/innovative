@@ -39,20 +39,46 @@ const products = {
     { title: "Choco Rings", route: "/choco-rings" },
   ],
   premiumProducts: [
-    // Column 1
     { title: "Haven", route: "/haven" },
     { title: "Fabulous", route: "/fabulous" },
     { title: "Frisky Wafer", route: "/frisky-wafer" },
-
-    // Column 2
     { title: "Digestive Premium", route: "/digestive-premium" },
     { title: "Golden Lotus", route: "/golden-lotus" },
     { title: "Frisky Rolls", route: "/frisky-rolls" },
-
-    // Column 3
     { title: "Short Bread", route: "/short-bread" },
     { title: "Biscoffi", route: "/biscoffi" },
     { title: "Bricklane", route: "/bricklane" },
+  ],
+};
+
+const mobileProducts = {
+  regularProducts: [
+    { title: "Digestive", route: "/digestive" }, // 1
+    { title: "Butter Crunch", route: "/butter-crunch" }, // 2
+    { title: "Tooo Gud", route: "/tooo-gud" }, // 3
+    { title: "Jumbo Junior", route: "/jumbo-junior" }, // 4
+    { title: "Goodies", route: "/goodies" }, // 5
+    { title: "Peanut", route: "/peanut" }, // 6
+    { title: "Zeera", route: "/zeera" }, // 7
+    { title: "Charm", route: "/charm" }, // 8
+    { title: "Choc n Chip", route: "/choc-n-chip" }, // 9
+    { title: "Choco Rings", route: "/choco-rings" }, // 10
+    { title: "Crust Wafer", route: "/crust-wafer" }, // 11
+    { title: "Crust Roll", route: "/crust-rolls" }, // 12
+    { title: "Snapp", route: "/snapp" }, // 13
+    { title: "Bittens", route: "/bittens" }, // 14
+  ],
+
+  premiumProducts: [
+    { title: "Haven", route: "/haven" }, // 1
+    { title: "Digestive Premium", route: "/digestive-premium" }, // 2
+    { title: "Short Bread", route: "/short-bread" }, // 3
+    { title: "Fabulous", route: "/fabulous" }, // 4
+    { title: "Golden Lotus", route: "/golden-lotus" }, // 5
+    { title: "Biscoffi", route: "/biscoffi" }, // 6
+    { title: "Frisky Wafer", route: "/frisky-wafer" }, // 7
+    { title: "Frisky Rolls", route: "/frisky-rolls" }, // 8
+    { title: "Bricklane", route: "/bricklane" }, // 9
   ],
 };
 
@@ -281,7 +307,7 @@ export default function Navbar({
                   >
                     Home
                   </li>
-                  <li
+                  {/* <li
                     onClick={() => {
                       if (tab === "Our Products") closeTab();
                       else handleMegaNav("Our Products", products);
@@ -291,7 +317,36 @@ export default function Navbar({
                     Premium Products <ChevronDown className="w-4 h-4" />
                   </li>
                   {tab === "Our Products" &&
-                    megaNavItems?.premiumProducts?.map(
+                    mobileProducts?.premiumProducts?.map(
+                      (
+                        item: { title: string; route: string },
+                        index: number
+                      ) => (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            router.push(item.route);
+                            setShowMegaNav(false);
+                            setMobileMenuOpen(false);
+                          }}
+                          className="text-base pl-4 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          {item.title}
+                        </li>
+                      )
+                    )} */}
+
+                  <li
+                    onClick={() => {
+                      if (tab === "Products") closeTab();
+                      else handleMegaNav("Products", products);
+                    }}
+                    className="flex items-center gap-2 font-medium"
+                  >
+                    Products <ChevronDown className="w-4 h-4" />
+                  </li>
+                  {tab === "Products" &&
+                    mobileProducts?.regularProducts?.map(
                       (
                         item: { title: string; route: string },
                         index: number
@@ -309,6 +364,35 @@ export default function Navbar({
                         </li>
                       )
                     )}
+                  <li
+                    onClick={() => {
+                      if (tab === "Our Products") closeTab();
+                      else handleMegaNav("Our Products", products);
+                    }}
+                    className="flex items-center gap-2 font-medium"
+                  >
+                    Premium Products <ChevronDown className="w-4 h-4" />
+                  </li>
+                  {tab === "Our Products" &&
+                    mobileProducts?.premiumProducts?.map(
+                      (
+                        item: { title: string; route: string },
+                        index: number
+                      ) => (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            router.push(item.route);
+                            setShowMegaNav(false);
+                            setMobileMenuOpen(false);
+                          }}
+                          className="text-base pl-4 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          {item.title}
+                        </li>
+                      )
+                    )}
+
                   {!isPremium && (
                     <li
                       onClick={() => {
@@ -339,15 +423,6 @@ export default function Navbar({
                         </li>
                       )
                     )}
-                  {/* <li
-                    onClick={() => {
-                      router.push("/coming-soon");
-                      setMobileMenuOpen(false);
-                    }}
-                    className="font-medium"
-                  >
-                    Creations
-                  </li> */}
                   <li
                     onClick={() => {
                       router.push("/contact-us");
@@ -398,7 +473,7 @@ export default function Navbar({
                     Products <ChevronDown className="w-4 h-4" />
                   </li>
                   {tab === "Products" &&
-                    megaNavItems?.regularProducts?.map(
+                    mobileProducts?.regularProducts?.map(
                       (
                         item: { title: string; route: string },
                         index: number
@@ -426,7 +501,7 @@ export default function Navbar({
                     Premium Products <ChevronDown className="w-4 h-4" />
                   </li>
                   {tab === "Our Products" &&
-                    megaNavItems?.premiumProducts?.map(
+                    mobileProducts?.premiumProducts?.map(
                       (
                         item: { title: string; route: string },
                         index: number
