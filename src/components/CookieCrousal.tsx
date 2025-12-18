@@ -31,15 +31,25 @@ import chocNChip from "../assets/packages/Choc-n-Chip-1.png";
 import chocoRings from "../assets/Choco Rings Wrapper.webp";
 import crustWafer from "../assets/packages/Crust-Wafer.png";
 import crustRolls from "../assets/packages/Crust-Rolls.png";
+import fabulousPeanutPack from "../assets/Fabulous Peanut Chip Cookies.png";
+import friskyRollsChocolateCoated from "../assets/Frisky Chocolate Coated Wafer Roll.png";
+import peanut from "../assets/packages/Peanut.png";
+import zeera from "../assets/packages/Zeera.png";
+import snapp from "../assets/packages/Snapp.png";
+import CrustOrangeRolls from "../assets/Crust-Roll-Orange.png";
+import CrustOrangeWaffer from "../assets/Crust Roll Orange.png";
+import CrustStrawberryWaffer from "../assets/Crust Roll Strawberry.png";
+
 import { useRouter } from "next/navigation";
 
 const cookies = [
   { image: havenChocolate, route: "/haven" },
   { image: havenCoffee, route: "/haven" },
-  { image: shortBread, route: "/short-bread" },
   { image: digestiveOriginal, route: "/digestive-premium" },
   { image: digestiveSugarFree, route: "/digestive-premium" },
+  { image: shortBread, route: "/short-bread" },
   { image: fabulous, route: "/fabulous" },
+  { image: fabulousPeanutPack, route: "/fabulous" },
   { image: goldenLotus, route: "/golden-lotus" },
   { image: biscoffi, route: "/biscoffi" },
   { image: friskyWaferChocolate, route: "/frisky-wafer" },
@@ -49,6 +59,7 @@ const cookies = [
   { image: friskyRollsChocolate, route: "/frisky-rolls" },
   { image: friskyRollsHazelnut, route: "/frisky-rolls" },
   { image: friskyRollsMilk, route: "/frisky-rolls" },
+  { image: friskyRollsChocolateCoated, route: "/frisky-rolls" },
   { image: bricklane, route: "/bricklane" },
   { image: bittens, route: "/bittens" },
   { image: digestiveRegular, route: "/digestive" },
@@ -56,11 +67,17 @@ const cookies = [
   { image: tooGud, route: "/tooo-gud" },
   { image: jumboJunior, route: "/jumbo-junior" },
   { image: goodies, route: "/goodies" },
+  { image: peanut, route: "/peanut" },
+  { image: zeera, route: "/zeera" },
   { image: charm, route: "/charm" },
   { image: chocNChip, route: "/choc-n-chip" },
   { image: chocoRings, route: "/choco-rings" },
   { image: crustWafer, route: "/crust-wafer" },
+  { image: CrustOrangeWaffer, route: "/crust-wafer" },
+  { image: CrustStrawberryWaffer, route: "/crust-wafer" },
   { image: crustRolls, route: "/crust-rolls" },
+  { image: CrustOrangeRolls, route: "/crust-rolls" },
+  { image: snapp, route: "/snapp" },
 ];
 
 export default function CookieCarousel() {
