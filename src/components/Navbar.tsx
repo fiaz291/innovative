@@ -339,7 +339,7 @@ export default function Navbar({
                   <li
                     onClick={() => {
                       if (tab === "Products") closeTab();
-                      else handleMegaNav("Products", products);
+                      else handleMegaNav("Products", mobileProducts);
                     }}
                     className="flex items-center gap-2 font-medium"
                   >
@@ -367,7 +367,7 @@ export default function Navbar({
                   <li
                     onClick={() => {
                       if (tab === "Our Products") closeTab();
-                      else handleMegaNav("Our Products", products);
+                      else handleMegaNav("Our Products", mobileProducts);
                     }}
                     className="flex items-center gap-2 font-medium"
                   >
@@ -375,37 +375,6 @@ export default function Navbar({
                   </li>
                   {tab === "Our Products" &&
                     mobileProducts?.premiumProducts?.map(
-                      (
-                        item: { title: string; route: string },
-                        index: number
-                      ) => (
-                        <li
-                          key={index}
-                          onClick={() => {
-                            router.push(item.route);
-                            setShowMegaNav(false);
-                            setMobileMenuOpen(false);
-                          }}
-                          className="text-base pl-4 hover:bg-gray-100 rounded cursor-pointer"
-                        >
-                          {item.title}
-                        </li>
-                      )
-                    )}
-
-                  {!isPremium && (
-                    <li
-                      onClick={() => {
-                        if (tab === "Products") closeTab();
-                        else handleMegaNav("Products", products);
-                      }}
-                      className="flex items-center gap-2 font-medium"
-                    >
-                      Products <ChevronDown className="w-4 h-4" />
-                    </li>
-                  )}
-                  {tab === "Products" &&
-                    megaNavItems?.regularProducts?.map(
                       (
                         item: { title: string; route: string },
                         index: number
