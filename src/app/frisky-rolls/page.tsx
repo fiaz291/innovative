@@ -3,13 +3,13 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import friskyChocolateRollsText from "../../../public/PremiumLogos/Frisky Roll Chocolate.webp";
-import friskyChocolateRolls from "../../assets/frisky-chocolate-rolls.webp";
+import friskyChocolateRolls from "../../assets/packages/Frisky-Rolls-Chocolate.png";
 import friskyHazelnutRollsText from "../../../public/PremiumLogos/Frisky Roll Hazelnut.webp";
 import friskyHazelnuteRolls from "../../assets/frisky-hazelnut-rolls.webp";
 import friskyMilkyRollsText from "../../../public/PremiumLogos/Frisky Roll Milk.webp";
 import friskyChocolateCoatedRollsText from "../../assets/Frisky Chocolate Coated Wafer Roll.webp";
 import friskyChocolateCoatedRollsPack from "../../assets/Frisky Chocolate Coated Wafer Rolls Packaging.webp";
-import friskyMilkyRolls from "../../assets/frisky-milky-rolls.webp";
+import friskyMilkyRolls from "../../assets/packages/Frisky-Rolls-Milk.png";
 import Faq from "@/components/Faq";
 
 export default function FriskyRollsPage() {

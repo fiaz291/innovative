@@ -37,6 +37,7 @@ const products = {
     { title: "Bittens", route: "/bittens" },
     { title: "Goodies", route: "/goodies" },
     { title: "Choco Rings", route: "/choco-rings" },
+    { title: "Bricklane", route: "/bricklane" },
   ],
   premiumProducts: [
     { title: "Haven", route: "/haven" },
@@ -47,7 +48,6 @@ const products = {
     { title: "Frisky Rolls", route: "/frisky-rolls" },
     { title: "Short Bread", route: "/short-bread" },
     { title: "Biscoffi", route: "/biscoffi" },
-    { title: "Bricklane", route: "/bricklane" },
   ],
 };
 
@@ -67,6 +67,7 @@ const mobileProducts = {
     { title: "Crust Roll", route: "/crust-rolls" }, // 12
     { title: "Snapp", route: "/snapp" }, // 13
     { title: "Bittens", route: "/bittens" }, // 14
+    { title: "Bricklane", route: "/bricklane" }, // 9
   ],
 
   premiumProducts: [
@@ -78,7 +79,6 @@ const mobileProducts = {
     { title: "Biscoffi", route: "/biscoffi" }, // 6
     { title: "Frisky Wafer", route: "/frisky-wafer" }, // 7
     { title: "Frisky Rolls", route: "/frisky-rolls" }, // 8
-    { title: "Bricklane", route: "/bricklane" }, // 9
   ],
 };
 
@@ -139,25 +139,41 @@ export default function Navbar({
               {isPremium ? (
                 <>
                   <li
-                    onClick={() => router.push("/premium-products")}
-                    className="text-lg flex items-center gap-1 cursor-pointer py-2 hover:border-b-5"
+                    onClick={() => handleMegaNav("Who We Are", whoWeAreItems)}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5 flex items-center gap-1"
                   >
-                    Home <ChevronDown className="w-4 h-4" />
+                    Who We Are <ChevronDown className="w-4 h-4" />
                   </li>
                   <li
-                    className="relative cursor-pointer py-2 hover:border-b-5"
                     onClick={() => handleMegaNav("Our Products", products)}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5 flex items-center gap-1"
                   >
-                    <div className="text-lg flex items-center gap-1">
-                      Our Products <ChevronDown className="w-4 h-4" />
-                    </div>
+                    Our Products <ChevronDown className="w-4 h-4" />
+                  </li>
+                  <li
+                    onClick={() => router.push("/export")}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5"
+                  >
+                    Export
                   </li>
                   {/* <li
                     onClick={() => router.push("/coming-soon")}
                     className="text-lg cursor-pointer py-2 hover:border-b-5"
                   >
-                    Creations
+                    Recipes
                   </li> */}
+                  <li
+                    onClick={() => handleMegaNav("Resources", resourcesItems)}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5 flex items-center gap-1"
+                  >
+                    Resources <ChevronDown className="w-4 h-4" />
+                  </li>
+                  <li
+                    onClick={() => router.push("/careers")}
+                    className="text-lg cursor-pointer py-2 hover:border-b-5"
+                  >
+                    Careers
+                  </li>
                 </>
               ) : (
                 <>
@@ -300,24 +316,15 @@ export default function Navbar({
                 <>
                   <li
                     onClick={() => {
-                      router.push("/premium-products");
-                      setMobileMenuOpen(false);
-                    }}
-                    className="font-medium"
-                  >
-                    Home
-                  </li>
-                  {/* <li
-                    onClick={() => {
-                      if (tab === "Our Products") closeTab();
-                      else handleMegaNav("Our Products", products);
+                      if (tab === "Who We Are") closeTab();
+                      else handleMegaNav("Who We Are", whoWeAreItems);
                     }}
                     className="flex items-center gap-2 font-medium"
                   >
-                    Premium Products <ChevronDown className="w-4 h-4" />
+                    Who We Are <ChevronDown className="w-4 h-4" />
                   </li>
-                  {tab === "Our Products" &&
-                    mobileProducts?.premiumProducts?.map(
+                  {tab === "Who We Are" &&
+                    megaNavItems?.map(
                       (
                         item: { title: string; route: string },
                         index: number
@@ -334,8 +341,7 @@ export default function Navbar({
                           {item.title}
                         </li>
                       )
-                    )} */}
-
+                    )}
                   <li
                     onClick={() => {
                       if (tab === "Products") closeTab();
@@ -392,6 +398,61 @@ export default function Navbar({
                         </li>
                       )
                     )}
+                  <li
+                    onClick={() => {
+                      router.push("/export");
+                      setMobileMenuOpen(false);
+                    }}
+                    className="font-medium"
+                  >
+                    Export
+                  </li>
+                  {/* <li
+                    onClick={() => {
+                      router.push("/coming-soon");
+                      setMobileMenuOpen(false);
+                    }}
+                    className="font-medium"
+                  >
+                    Recipes
+                  </li> */}
+                  <li
+                    onClick={() => {
+                      if (tab === "Resources") closeTab();
+                      else handleMegaNav("Resources", resourcesItems);
+                    }}
+                    className="flex items-center gap-2 font-medium"
+                  >
+                    Resources <ChevronDown className="w-4 h-4" />
+                  </li>
+                  {tab === "Resources" &&
+                    megaNavItems?.map(
+                      (
+                        item: { title: string; route: string },
+                        index: number
+                      ) => (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            router.push(item.route);
+                            setShowMegaNav(false);
+                            setMobileMenuOpen(false);
+                          }}
+                          className="text-base pl-4 hover:bg-gray-100 rounded cursor-pointer"
+                        >
+                          {item.title}
+                        </li>
+                      )
+                    )}
+                  <li
+                    onClick={() => {
+                      router.push("/careers");
+                      setMobileMenuOpen(false);
+                    }}
+                    className="font-medium"
+                  >
+                    Careers
+                  </li>
                   <li
                     onClick={() => {
                       router.push("/contact-us");

@@ -31,6 +31,8 @@ import snappLogo from '../../assets/products-assets/Snapp-Logo.png';
 import snappBox from '../../assets/products-assets/Snapp-Product.png';
 import bittensLogo from '../../assets/products-assets/Bitten-Logo.png';
 import bittensBox from '../../assets/products-assets/Bitten-Product.png';
+import bricklane from '../../assets/bricklane-1.png';
+import bricklaneBiscuits from '../../assets/bricklane-biscuits.webp';
 
 import { useRouter } from 'next/navigation';
 
@@ -219,6 +221,25 @@ export default function ProductsPage() {
                         Read More
                         <MoveRight className='w-[35px] h-[35px]' />
                     </div>
+                </div>
+            </div>
+
+            <div className='flex flex-col md:flex-row'>
+                <div className='flex flex-col md:w-[50%] bg-[#9f2a2a] pt-10 pb-30 justify-center text-white px-15'>
+                    <Image src={bricklane} alt={'digestive'} className='w-[25%] relative left-[-10px]'/>
+                    <div className='text-xl md:text-3xl font-black mt-6'>
+                        Experience The Chocolate Indulgence
+                    </div>
+                    <div className='text-lg md:text-2xl'>
+                        Premium taste with a purpose - ethically sourced, beautifully crafted, truly unforgettable
+                    </div>
+                    <div className='cursor-pointer flex items-center gap-2 text-lg md:text-2xl font-black mt-6' onClick={() => router.push('/bricklane')}>
+                        Read More
+                        <MoveRight className='w-[35px] h-[35px]' />
+                    </div>
+                </div>
+                <div className='py-10 items-center md:flex md:w-[50%] bg-[linear-gradient(to_bottom,#e7ad72_60%,#f5f0f2_60%)]'>
+                    <Image src={bricklaneBiscuits} alt='out-products-image' />
                 </div>
             </div>
 

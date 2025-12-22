@@ -9,8 +9,8 @@ import Faq from "@/components/Faq";
 export default function ShortBreadPage() {
   return (
     <div className="overflow-hidden">
-      <div className="relative w-full bg-[#e7ad72]">
-        <Navbar />
+      <div className="relative w-full bg-[#e7ad72] pb-10 md:pb-30">
+        <Navbar isPremium={false} />
         <div className="flex flex-col px-10 px-10 md:px-30 mt-12 md:mt-25">
           <Image
             src={bricklaneText}

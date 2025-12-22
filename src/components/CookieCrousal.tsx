@@ -16,11 +16,10 @@ import friskyWaferChocolate from "../assets/slider/Frisky-Wafer-Chocolate.png";
 import friskyWaferOrgange from "../assets/slider/Frisky-Wafer-Orange.png";
 import friskyWaferStrawberry from "../assets/slider/Frisky-Wafer-Strawberry.png";
 import friskyWaferVanilla from "../assets/slider/Frisky-Wafer-Vanilla.png";
-import friskyRollsChocolate from "../assets/slider/Frisky-Rolls-Chocolate.png";
-import friskyRollsHazelnut from "../assets/slider/Frisky-Rolls-Hazelnut.png";
-import friskyRollsMilk from "../assets/slider/Frisky-Rolls-Milk.png";
+import friskyRollsChocolate from "../assets/packages/Frisky-Rolls-Chocolate.png";
 import bricklane from "../assets/slider/Bricklane.png";
 import bittens from "../assets/packages/Bitten.png";
+import friskyRollsMilk from "../assets/packages/Frisky-Rolls-Milk.png";
 import digestiveRegular from "../assets/packages/Digestive.png";
 import butterCrunch from "../assets/packages/Butter-Crunch.png";
 import tooGud from "../assets/packages/TooGud.png";
@@ -32,7 +31,7 @@ import chocoRings from "../assets/Choco Rings Wrapper.webp";
 import crustWafer from "../assets/packages/Crust-Wafer.png";
 import crustRolls from "../assets/packages/Crust-Rolls.png";
 import fabulousPeanutPack from "../assets/Fabulous Peanut Chip Cookies.png";
-import friskyRollsChocolateCoated from "../assets/Frisky Chocolate Coated Wafer Roll.png";
+import friskyRollsChocolateCoated from "../assets/Frisky-Chocolate-Coated-Rolls.png";
 import peanut from "../assets/packages/Peanut.png";
 import zeera from "../assets/packages/Zeera.png";
 import snapp from "../assets/packages/Snapp.png";
@@ -57,7 +56,7 @@ const cookies = [
   { image: friskyWaferStrawberry, route: "/frisky-wafer" },
   { image: friskyWaferVanilla, route: "/frisky-wafer" },
   { image: friskyRollsChocolate, route: "/frisky-rolls" },
-  { image: friskyRollsHazelnut, route: "/frisky-rolls" },
+  // { image: friskyRollsHazelnut, route: "/frisky-rolls" },
   { image: friskyRollsMilk, route: "/frisky-rolls" },
   { image: friskyRollsChocolateCoated, route: "/frisky-rolls" },
   { image: bricklane, route: "/bricklane" },
@@ -123,7 +122,7 @@ export default function CookieCarousel() {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        className="!py-4"
+        className="!py-4 select-none"
       >
         {cookies.map((cookie, i) => (
           <SwiperSlide

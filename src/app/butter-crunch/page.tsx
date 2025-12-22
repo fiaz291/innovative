@@ -20,7 +20,7 @@ export default function ButterCrunchPage() {
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="absolute w-[35%] md:w-[25%] right-[0rem] md:right-[0rem] top-[-2rem] md:top-[-5rem]"/>
                   <Image src={butterCrunchBiscuits} alt='digestive-copy' className="hidden md:block absolute w-[20%] left-[0rem] md:left-[0rem] bottom-[-3.5rem] md:bottom-[-18rem]"/>
                   <Image src={butterCrunchButter} alt='digestive-copy' className="absolute w-[10%] right-[0rem] md:right-[0rem] bottom-[5rem]"/>
-                  <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+                  <div className="mb-6 text-[2.5rem] md:text-[7vw] leading-[2.5rem] md:leading-[7vw] font-black whitespace-pre-line">
                     {`Golden Oats,\nPure Delight.`}
                   </div>
                   <div className="text-base md:text-2xl text-left">{`Indulge in the Perfect Balance of Crunchy Oats and Rich Creamy Butter with Innovative Crunchy Oat Biscuits. Every bite delivers Wholesome Texture and Irresistible flavor - a satisfying treat for any time of day.`}</div>

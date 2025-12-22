@@ -29,7 +29,7 @@ export default function GoodiesPage() {
             alt="digestive-copy"
             className="block md:hidden absolute w-[25%] my-auto right-[0rem] md:right-[0rem] top-[2rem] rotate-[60deg]"
           />
-          <div className="mb-6 text-[2.5rem] md:text-[8rem] leading-[2.5rem] md:leading-[8rem] font-black whitespace-pre-line">
+          <div className="mb-6 text-[2.5rem] md:text-[7vw] leading-[2.5rem] md:leading-[7vw] font-black whitespace-pre-line">
             {`Classic Taste,\nFresh Goodness.`}
           </div>
           <div className="text-base md:text-2xl text-left">{`Crisp Elegance with a Lemon Twist - the Luxury of Lemon, Egg, and Milk in every Golden Bite.`}</div>
